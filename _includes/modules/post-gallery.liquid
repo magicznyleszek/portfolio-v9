@@ -1,5 +1,18 @@
 <section>
+
     {% for image in include.images %}
-        {{ image }}
+
+    <a href="{{ site.imagesPath }}{{ include.slug }}/original/{{ image }}">
+        <img
+            alt="{{ image }}"
+            src="{{ site.imagesPath }}{{ include.slug }}/large/{{ image }}"
+            srcset="
+                {{ site.imagesPath }}{{ include.slug }}/large/{{ image }} 1x,
+                {{ site.imagesPath }}{{ include.slug }}/large-x2/{{ image }} 2x
+            "
+        >
+    </a>
+    
     {% endfor %}
+
 </section>

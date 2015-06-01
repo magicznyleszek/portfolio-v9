@@ -20,7 +20,7 @@ module.exports = (grunt) ->
                     '_includes/icons.svg': ['_assets/icons/*.svg']
         clean:
             images:
-                src: ['public/images']
+                src: ['public/images/projects']
         responsive_images:
             default:
                 options:
@@ -73,9 +73,9 @@ module.exports = (grunt) ->
                     ]
                 files: [
                     expand: true
-                    cwd: '_assets/images'
+                    cwd: '_assets/images/projects'
                     src: ['**/*.{jpg,gif,png}']
-                    custom_dest: 'public/images/{%= path %}/{%= name %}/'
+                    custom_dest: 'public/images/projects/{%= path %}/{%= name %}/'
                 ]
         watch:
             icons:
@@ -84,12 +84,12 @@ module.exports = (grunt) ->
                     debounceDelay: 250
                 files: ['_assets/icons/*.svg']
                 tasks: ['svgstore']
-            images:
-                options:
-                    spawn: false
-                    debounceDelay: 5000
-                files: ['_assets/images/**/*.{jpg,gif,png}']
-                tasks: ['clean:images', 'responsive_images']
+            # images:
+            #     options:
+            #         spawn: false
+            #         debounceDelay: 5000
+            #     files: ['_assets/images/**/*.{jpg,gif,png}']
+            #     tasks: ['clean:images', 'responsive_images']
             styles:
                 files: ['_assets/styles/**/*.scss']
                 tasks: ['compass']
@@ -104,4 +104,5 @@ module.exports = (grunt) ->
 
     # register tasks
     grunt.registerTask('default', ['build', 'watch'])
-    grunt.registerTask('build', ['svgstore', 'compass', 'clean:images', 'responsive_images'])
+    grunt.registerTask('build', ['svgstore', 'compass'])
+    grunt.registerTask('build_images', ['clean:images', 'responsive_images'])

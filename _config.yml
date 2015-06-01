@@ -6,7 +6,8 @@ author: "Leszek Pietrzak"
 
 # address settings
 baseurl: "http://portfolio.smutnyleszek.com"
-permalink: /project/:title
+permalink: /projects/:title
+imagesPath: "/public/images/projects/"
 
 # site configuration
 safe: true
