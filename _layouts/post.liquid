@@ -1,0 +1,25 @@
+{% include html-begin.liquid %}
+{% include page-header.liquid %}
+
+    <section class="page-content page-content-single-post" role="main">
+        
+        <h1>{{ page.title }}</h1>
+
+        {{ content }}
+
+        <footer class="single-post-meta">
+            <time datetime="{{ page.date }}"><i class="fa fa-clock-o"></i> {{ page.date | date: "%B %Y" }}</time>
+            <section class="adjacent-posts">
+                {% if page.previous.url %}
+                    <a href="{{ site.baseurl }}{{ page.previous.url }}"><i class="fa fa-arrow-left"></i> Previus post</a>
+                {% endif %}
+                {% if page.next.url %}
+                    <a href="{{ site.baseurl }}{{ page.next.url }}">Next post <i class="fa fa-arrow-right"></i></a>
+                {% endif %}
+            </section>
+        </footer>
+
+    </section>
+
+{% include page-footer.liquid %}
+{% include html-end.liquid %}
