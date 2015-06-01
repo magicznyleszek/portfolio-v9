@@ -17,3 +17,7 @@ markdown: kramdown
 kramdown:
     auto_ids: false
 timezone: Europe/Warsaw
+
+# excludes
+exclude:
+    - node_modules

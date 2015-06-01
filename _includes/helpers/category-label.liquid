@@ -1,1 +1,5 @@
-{% for category in site.data.categories | where:"slug",include.category %}{{ category.label }}{% endfor %}
+{% for category in site.data.categories %}
+    {% if category.slug == include.category%}
+        {{ category.label }}
+    {% endif %}
+{% endfor %}
