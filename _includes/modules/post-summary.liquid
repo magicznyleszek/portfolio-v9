@@ -1,0 +1,9 @@
+<div>
+
+    <div><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></div>
+
+    <div><time>{{ post.date | date: "%B %Y" }}</time></div>
+
+    {% include modules/post-categories-list.liquid categories=post.categories %}
+
+</div>

@@ -1,0 +1,6 @@
+{% if page.title %}{{ page.title }} &ndash;{% endif %}
+{% if post.title %}{{ post.title }} &ndash;{% endif %}
+{% if page.category %}
+    {% include helpers/category-label.liquid category=page.category %} &ndash;
+{% endif %}
+{{ site.name }}
