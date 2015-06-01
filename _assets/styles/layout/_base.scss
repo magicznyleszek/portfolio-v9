@@ -1,0 +1,11 @@
+//------------------------------------------------------------------------------
+// base layout
+//------------------------------------------------------------------------------
+
+#app {
+    @include box-sizing(border-box);
+    width: 100%;
+    color: $app-txt-c;
+    background-color: $app-bg-c;
+    padding: rem($space-large);
+}

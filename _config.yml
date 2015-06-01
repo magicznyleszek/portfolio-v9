@@ -1,12 +1,12 @@
 # description
-name: "Title"
-description: "Short description"
-keywords: "foo, bar, fum, baz, qux, zot"
+name: "smutnyleszek presents"
+description: "A fistful of drawings and projects by Leszek Pietrzak, a Polish-born illustrator, designer and front-end developer."
+keywords: "code, icon, illustration, interface, lettering, logo, poster, print, design, webdesign, portfolio"
 author: "Leszek Pietrzak"
 
 # address settings
-baseurl: "http://boilerplate-jekyll.smutnyleszek.com"
-permalink: /post/:title
+baseurl: "http://portfolio.smutnyleszek.com"
+permalink: /project/:title
 
 # site configuration
 safe: true
