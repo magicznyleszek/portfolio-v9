@@ -1,5 +1,11 @@
 module.exports = (grunt) ->
 
+    # measures the time each task takes
+    require('time-grunt')(grunt)
+
+    # load grunt config
+    require('load-grunt-config')(grunt)
+
     # configuration
     grunt.initConfig(
         pkg: grunt.file.readJSON('package.json')
@@ -28,47 +34,22 @@ module.exports = (grunt) ->
                     newFilesOnly: false
                     sizes: [
                         {
-                            name: 'thumb'
+                            name: 'thumbnail'
                             rename: false
-                            width: 360
-                            height: 360
-                            aspectRatio: false
-                            upscale: true
-                            quality: 80
-                        }
-                        {
-                            name: 'thumb-x2'
-                            rename: false
-                            width: 720
-                            height: 720
-                            aspectRatio: false
-                            upscale: true
-                            quality: 80
-                        }
-                        {
-                            name: 'large'
-                            rename: false
-                            width: 640
-                            height: 640
+                            width: 400
+                            height: 400
                             aspectRatio: true
                             upscale: true
-                            quality: 80
+                            quality: 100
                         }
                         {
-                            name: 'large-x2'
+                            name: 'thumbnail-x2'
                             rename: false
-                            width: 1280
-                            height: 1280
+                            width: 800
+                            height: 800
                             aspectRatio: true
                             upscale: true
-                            quality: 80
-                        }
-                        {
-                            name: 'original'
-                            rename: false
-                            width: '100%'
-                            height: '100%'
-                            aspectRatio: true
+                            quality: 100
                         }
                     ]
                 files: [
@@ -76,6 +57,28 @@ module.exports = (grunt) ->
                     cwd: '_assets/images/projects'
                     src: ['**/*.{jpg,gif,png}']
                     custom_dest: 'public/images/projects/{%= path %}/{%= name %}/'
+                ]
+        copy:
+            images:
+                files: [
+                    expand: true
+                    cwd: '_assets/images/projects'
+                    src: ['**/*.{jpg,gif,png}']
+                    dest: 'public/images/projects/'
+                    rename: (dest, src) ->
+                        project = src.split('/')[0]
+                        file = src.split('/')[1]
+                        return "#{dest}#{project}/original/#{file}"
+                ]
+        imagemin:
+            default:
+                options:
+                    optimizationLevel: 5
+                files: [
+                    expand: true
+                    cwd: 'public/images/projects'
+                    src: ['**/*.{jpg,gif,png}']
+                    dest: 'public/images/projects'
                 ]
         watch:
             icons:
@@ -95,14 +98,27 @@ module.exports = (grunt) ->
                 tasks: ['compass']
     )
 
-    # load tasks
-    grunt.loadNpmTasks('grunt-svgstore')
-    grunt.loadNpmTasks('grunt-responsive-images')
-    grunt.loadNpmTasks('grunt-contrib-compass')
-    grunt.loadNpmTasks('grunt-contrib-clean')
-    grunt.loadNpmTasks('grunt-contrib-watch')
-
     # register tasks
-    grunt.registerTask('default', ['build', 'watch'])
-    grunt.registerTask('build', ['svgstore', 'compass'])
-    grunt.registerTask('build_images', ['clean:images', 'responsive_images'])
+    grunt.registerTask('default', [
+        'build_assets'
+        'watch'
+    ])
+    grunt.registerTask('build', [
+        'build_assets'
+        'build_images'
+    ])
+    grunt.registerTask('build_assets', [
+        'svgstore'
+        'compass'
+    ])
+    grunt.registerTask('build_images', [
+        'clean:images'
+        'responsive_images'
+        'copy:images'
+        'imagemin'
+    ])
+    grunt.registerTask('build_newer_images', [
+        'newer:responsive_images'
+        'newer:copy:images'
+        'newer:imagemin'
+    ])
