@@ -1,17 +1,19 @@
 {% include html-begin.liquid %}
-{% include page-header.liquid %}
+
+    {% include partials/page-header.liquid %}
 
     <section id="appContent" role="main">
 
-        <h2>{% include helpers/category-label.liquid category=page.category %}:</h2>
+        <h2>{% include helpers/category-label.liquid category=page.category %}</h2>
 
         {% for post in site.posts %}
-            {% if post.categories contains page.category %}
-                {% include modules/post-summary.liquid %}
-            {% endif %}
+        {% if post.categories contains page.category %}
+        {% include modules/post-summary.liquid %}
+        {% endif %}
         {% endfor %}
 
     </section>
 
-{% include page-footer.liquid %}
+    {% include partials/page-footer.liquid %}
+
 {% include html-end.liquid %}

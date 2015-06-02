@@ -1,0 +1,20 @@
+[
+    {
+        "label": "Home",
+        "description": "Lorem ipsum.",
+        "url": "/",
+        "icon": "house"
+    },
+    {
+        "label": "About me",
+        "description": "Lorem ipsum.",
+        "url": "/about",
+        "icon": "portrait"
+    },
+    {
+        "label": "Contact",
+        "description": "Lorem ipsum.",
+        "url": "/contact",
+        "icon": "letter"
+    }
+]

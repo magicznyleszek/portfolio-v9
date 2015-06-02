@@ -1,7 +1,9 @@
 <div>
 
     <a href="{{ post.url }}">
-        <svg am-icon="thumbnail"><use xlink:href="#icon-thumbnail-{{ post.slug }}"></svg>
+        <svg am-icon="thumbnail">
+            <use xlink:href="#icon-thumbnail-{{ post.slug }}">
+        </svg>
     </a>
 
     <div><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></div>

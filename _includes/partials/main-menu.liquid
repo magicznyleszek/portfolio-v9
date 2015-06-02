@@ -1,0 +1,13 @@
+<nav>
+    <ul am-list="inline">
+
+        {% for place in site.data.navigation %}
+        <li>
+            <a href="{{ site.baseurl }}{{ place.url }}">
+                {{ place.label }}
+            </a>
+        </li>
+        {% endfor %}
+
+    </ul>
+</nav>

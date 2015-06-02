@@ -1,9 +1,11 @@
 <ul am-list="inline">
+
     {% for category in include.categories %}
-        <li>
-            <a href="{{ site.baseurl }}/category/{{ category }}">
-                {% include helpers/category-label.liquid category=category %}
-            </a>
-        </li>
+    <li>
+        <a href="{{ site.baseurl }}/category/{{ category }}">
+            {% include helpers/category-label.liquid category=category %}
+        </a>
+    </li>
     {% endfor %}
+
 </ul>

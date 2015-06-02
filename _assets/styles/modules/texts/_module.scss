@@ -21,6 +21,7 @@
 
 // text transforms
 [am-text~="uppercased"] { text-transform: uppercase; }
+[am-text~="lowercased"] { text-transform: lowercase; }
 [am-text~="untransformed"] { text-transform: none; }
 
 [am-text~="dimmed"] { @include opacity($f-big); }

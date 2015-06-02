@@ -1,5 +1,5 @@
 {% for category in site.data.categories %}
-    {% if category.slug == include.category%}
-        {{ category.label }}
-    {% endif %}
+{% if category.slug == include.category%}
+{{ category.label }}
+{% endif %}
 {% endfor %}

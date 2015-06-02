@@ -1,7 +1,6 @@
 <section>
 
     {% for image in include.images %}
-
     <a href="{{ site.imagesPath }}{{ include.slug }}/original/{{ image }}">
         <img
             alt="{{ image }}"
@@ -12,7 +11,6 @@
             "
         >
     </a>
-    
     {% endfor %}
 
 </section>

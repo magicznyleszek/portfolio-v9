@@ -1,5 +1,6 @@
 {% include html-begin.liquid %}
-{% include page-header.liquid %}
+
+    {% include partials/page-header.liquid %}
 
     <section id="appContent" role="main">
 
@@ -20,7 +21,7 @@
             <footer>
 
                 <time datetime="{{ page.date }}">
-                    <i class="fa fa-clock-o"></i> {{ page.date | date: "%B %Y" }}
+                    CLOCK {{ page.date | date: "%B %Y" }}
                 </time>
 
             </footer>
@@ -30,20 +31,21 @@
         <section>
 
             {% if page.previous.url %}
-                <a href="{{ page.previous.url }}">
-                    Previus post
-                </a>
+            <a href="{{ page.previous.url }}">
+                Previus post
+            </a>
             {% endif %}
 
             {% if page.next.url %}
-                <a href="{{ page.next.url }}">
-                    Next post
-                </a>
+            <a href="{{ page.next.url }}">
+                Next post
+            </a>
             {% endif %}
 
         </section>
 
     </section>
 
-{% include page-footer.liquid %}
+    {% include partials/page-footer.liquid %}
+
 {% include html-end.liquid %}
