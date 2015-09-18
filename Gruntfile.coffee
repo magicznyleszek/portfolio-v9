@@ -31,7 +31,7 @@ module.exports = (grunt) ->
             default:
                 options:
                     engine: 'gm'
-                    newFilesOnly: false
+                    newFilesOnly: true
                     sizes: [
                         {
                             name: 'thumbnail'
@@ -112,13 +112,11 @@ module.exports = (grunt) ->
         'compass'
     ])
     grunt.registerTask('build_images', [
-        'clean:images'
         'responsive_images'
         'copy:images'
         'imagemin'
     ])
-    grunt.registerTask('build_newer_images', [
-        'newer:responsive_images'
-        'newer:copy:images'
-        'newer:imagemin'
+    grunt.registerTask('build_images_from_scratch', [
+        'clean:images'
+        'build_images'
     ])
