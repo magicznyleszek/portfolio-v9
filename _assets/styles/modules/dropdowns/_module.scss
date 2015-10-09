@@ -3,37 +3,37 @@
 //------------------------------------------------------------------------------
 
 /*
-<div am-dropdown>
-    <ul am-dropdown-list>
-        <span am-dropdown-list-triangle><i></i></span>
+<div gui-dropdown>
+    <ul gui-dropdown-list>
+        <span gui-dropdown-list-triangle><i></i></span>
         <li>FIRST OPTION</li>
         <li>SECOND OPTION</li>
     </ul>
-    <button am-button>TRIGGER</button>
+    <button gui-button>TRIGGER</button>
 </div>
 */
 
 @import "modules/dropdowns/config";
 
-[am-dropdown] {
+[gui-dropdown] {
     position: relative;
     display: inline-block;
     vertical-align: middle;
     &:hover { z-index: $z-2; }
-    &:hover > [am-dropdown-list] {
+    &:hover > [gui-dropdown-list] {
         @include transition($d-faster);
         @include transition-timing-function(ease-out);
         visibility: visible;
         @include opacity(1);
     }
-    > [am-dropdown-list] {
+    > [gui-dropdown-list] {
         @include transition($d-faster);
         @include transition-timing-function(ease-in);
         @include transition-delay($d-fast);
         visibility: hidden;
         @include opacity(0);
     }
-    > [am-dropdown-list] {
+    > [gui-dropdown-list] {
         position: absolute;
         z-index: $z-1;
         list-style: none;
@@ -49,7 +49,7 @@
             width: 100%;
             overflow: hidden;
         }
-        > [am-dropdown-list-triangle] {
+        > [gui-dropdown-list-triangle] {
             position: absolute;
             overflow: hidden;
             > i {
@@ -73,11 +73,11 @@
     }
 }
 
-[am-dropdown~="north"],
-[am-dropdown~="south"] {
-    > [am-dropdown-list] {
+[gui-dropdown~="north"],
+[gui-dropdown~="south"] {
+    > [gui-dropdown-list] {
         left: 0;
-        > [am-dropdown-list-triangle] {
+        > [gui-dropdown-list-triangle] {
             left: 0;
             height: rem($dropdown-triangle-h);
             width: 100%;
@@ -90,12 +90,12 @@
     }
 }
 
-[am-dropdown~="north"] {
-    > [am-dropdown-list] {
+[gui-dropdown~="north"] {
+    > [gui-dropdown-list] {
         bottom: 100%;
         margin-bottom: rem($dropdown-triangle-h);
         margin-top: rem($space-medium); // for end-of-screen cases
-        > [am-dropdown-list-triangle] {
+        > [gui-dropdown-list-triangle] {
             top: 100%;
             > i { bottom: 0; }
             > i:before { bottom: 50%; }
@@ -103,12 +103,12 @@
     }
 }
 
-[am-dropdown~="south"] {
-    > [am-dropdown-list] {
+[gui-dropdown~="south"] {
+    > [gui-dropdown-list] {
         top: 100%;
         margin-top: rem($dropdown-triangle-h);
         margin-bottom: rem($space-medium); // for end-of-screen cases
-        > [am-dropdown-list-triangle] {
+        > [gui-dropdown-list-triangle] {
             bottom: 100%;
             > i { top: 0; }
             > i:before { top: 50%; }
@@ -116,11 +116,11 @@
     }
 }
 
-[am-dropdown~="east"],
-[am-dropdown~="west"] {
-    > [am-dropdown-list] {
+[gui-dropdown~="east"],
+[gui-dropdown~="west"] {
+    > [gui-dropdown-list] {
         top: 0;
-        > [am-dropdown-list-triangle] {
+        > [gui-dropdown-list-triangle] {
             top: 0;
             height: 100%;
             width: rem($dropdown-triangle-h);
@@ -133,12 +133,12 @@
     }
 }
 
-[am-dropdown~="east"] {
-    > [am-dropdown-list] {
+[gui-dropdown~="east"] {
+    > [gui-dropdown-list] {
         margin-left: rem($dropdown-triangle-h);
         margin-right: rem($space-medium); // for end-of-screen cases
         left: 100%;
-        > [am-dropdown-list-triangle] {
+        > [gui-dropdown-list-triangle] {
             right: 100%;
             > i { left: 0; }
             > i:before { left: 50%; }
@@ -146,12 +146,12 @@
     }
 }
 
-[am-dropdown~="west"] {
-    > [am-dropdown-list] {
+[gui-dropdown~="west"] {
+    > [gui-dropdown-list] {
         margin-right: rem($dropdown-triangle-h);
         margin-left: rem($space-medium); // for end-of-screen cases
         right: 100%;
-        > [am-dropdown-list-triangle] {
+        > [gui-dropdown-list-triangle] {
             left: 100%;
             > i { right: 0; }
             > i:before { right: 50%; }

@@ -3,23 +3,23 @@
 //------------------------------------------------------------------------------
 
 /*
-<div am-hoverContainer>
-    <div am-hoverItem>VISIBLE ONLY ON CONTAINER HOVER</div>
+<div gui-hoverContainer>
+    <div gui-hoverItem>VISIBLE ONLY ON CONTAINER HOVER</div>
 </div>
 */
 
 @import "modules/hovers/config";
 
-[am-hoverContainer] {
-    &:not(:hover) [am-hoverItem~="show"],
-    &:hover [am-hoverItem~="hide"] {
+[gui-hoverContainer] {
+    &:not(:hover) [gui-hoverItem~="show"],
+    &:hover [gui-hoverItem~="hide"] {
         display: none;
     }
-    &:not(:hover) [am-hoverItem~="reveal"],
-    &:hover [am-hoverItem~="conceal"] {
+    &:not(:hover) [gui-hoverItem~="reveal"],
+    &:hover [gui-hoverItem~="conceal"] {
         visibility: hidden;
         @include opacity(0);
     }
 }
 
-[am-hoverItem~="animated"] { @include transition($d-faster); }
+[gui-hoverItem~="animated"] { @include transition($d-faster); }

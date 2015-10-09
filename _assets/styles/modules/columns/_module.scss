@@ -5,26 +5,26 @@
 // Remember to truncate the white space between columns!
 
 /*
-<div am-column="1/2 middle">LEFT</div>
-<div am-column="1/2 middle">RIGHT</div>
+<div gui-column="1/2 middle">LEFT</div>
+<div gui-column="1/2 middle">RIGHT</div>
 */
 
 @import "modules/columns/config";
 
-[am-column] { @include columnInit(); }
+[gui-column] { @include columnInit(); }
 
 // custom vertical aligns
-[am-column~="top"] { vertical-align: top; }
-[am-column~="middle"] { vertical-align: middle; }
-[am-column~="bottom"] { vertical-align: bottom; }
+[gui-column~="top"] { vertical-align: top; }
+[gui-column~="middle"] { vertical-align: middle; }
+[gui-column~="bottom"] { vertical-align: bottom; }
 
 // generate all useful ams with loop
 @for $a from 2 through $column-max {
     @for $b from 1 through ($a - 1) {
         // all columns
-        [am-column~="#{$b}/#{$a}"] { @include columnSet($b, $a); }
+        [gui-column~="#{$b}/#{$a}"] { @include columnSet($b, $a); }
         // all column spaces on left and right
-        [am-columnBefore~="#{$b}/#{$a}"] { @include columnBefore($b, $a); }
-        [am-columnAfter~="#{$b}/#{$a}"] { @include columnAfter($b, $a); }
+        [gui-columnBefore~="#{$b}/#{$a}"] { @include columnBefore($b, $a); }
+        [gui-columnAfter~="#{$b}/#{$a}"] { @include columnAfter($b, $a); }
     }
 }

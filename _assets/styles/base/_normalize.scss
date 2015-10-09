@@ -15,7 +15,7 @@ html {
 body { overflow: auto; }
 
 a {
-    &:not([am-button]) {
+    &:not([gui-button]) {
         color: inherit;
         text-decoration: none;
         // 0.125em = 2px @ 16px

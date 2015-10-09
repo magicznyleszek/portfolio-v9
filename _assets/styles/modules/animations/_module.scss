@@ -3,7 +3,7 @@
 //------------------------------------------------------------------------------
 
 /*
-<div am-animation="pulse">HEARTBEAT</div>
+<div gui-animation="pulse">HEARTBEAT</div>
 */
 
 @import "modules/animations/config";
@@ -17,7 +17,7 @@
     @include opacity(0);
     @include animation(framesFadeIn $d-medium linear $d-faster 1 forwards);
 }
-[am-animation~="fadeIn"] { @include fadeIn(); }
+[gui-animation~="fadeIn"] { @include fadeIn(); }
 
 // pulse loop
 @include keyframes(framesPulse) {
@@ -30,4 +30,4 @@
     100% { @include scale(1); }
 }
 @mixin pulse { @include animation(framesPulse $d-slow ease-in infinite); }
-[am-animation~="pulse"] { @include pulse; }
+[gui-animation~="pulse"] { @include pulse; }

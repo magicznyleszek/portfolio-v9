@@ -3,12 +3,12 @@
 //------------------------------------------------------------------------------
 
 /*
-<figure am-image="small" style="background-image: THUMBNAILURL"></figure>
+<figure gui-image="small" style="background-image: THUMBNAILURL"></figure>
 */
 
 @import "modules/images/config";
 
-[am-image] {
+[gui-image] {
     display: inline-block;
     vertical-align: top;
     margin: 0;
@@ -21,14 +21,14 @@
     @include backface-visibility(hidden);
 }
 
-[am-image~="small"] {
+[gui-image~="small"] {
     max-width: rem($image-small-w);
     height: rem($image-small-h);
-    &[am-image~="square"] { max-width: rem($image-small-h); }
+    &[gui-image~="square"] { max-width: rem($image-small-h); }
 }
 
-[am-image~="big"] {
+[gui-image~="big"] {
     max-width: rem($image-big-w);
     height: rem($image-big-h);
-    &[am-image~="square"] { max-width: rem($image-big-h); }
+    &[gui-image~="square"] { max-width: rem($image-big-h); }
 }
