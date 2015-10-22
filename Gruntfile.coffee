@@ -1,19 +1,20 @@
 module.exports = (grunt) ->
 
-    # measures the time each task takes
+    # prepare stuff
     require('time-grunt')(grunt)
-
-    # load grunt config
     require('load-grunt-config')(grunt)
 
     # configuration
     grunt.initConfig(
         pkg: grunt.file.readJSON('package.json')
-        compass:
-            default:
-                options:
-                    config: '_assets/config.rb'
-                    basePath: '_assets'
+        cssnext:
+            options:
+                sourcemap: true
+                import: true
+                # compress: true
+            dist:
+                files:
+                    "public/styles/main.css": "_assets/styles/main.css"
         svgstore:
             default:
                 options:
@@ -94,8 +95,8 @@ module.exports = (grunt) ->
             #     files: ['_assets/images/**/*.{jpg,gif,png}']
             #     tasks: ['clean:images', 'responsive_images']
             styles:
-                files: ['_assets/styles/**/*.scss']
-                tasks: ['compass']
+                files: ['_assets/styles/**/*.css']
+                tasks: ['cssnext']
     )
 
     # register tasks
@@ -109,7 +110,7 @@ module.exports = (grunt) ->
     ])
     grunt.registerTask('build_assets', [
         'svgstore'
-        'compass'
+        'cssnext'
     ])
     grunt.registerTask('build_images', [
         'responsive_images'

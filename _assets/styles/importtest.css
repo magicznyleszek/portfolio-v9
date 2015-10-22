@@ -1,0 +1,11 @@
+/* custom properties */
+:root {
+  --heading-color: hsl(280, 90%, 50%);
+}
+
+/* custom selectors */
+@custom-selector :--headings h1, h2, h3, h4, h5, h6;
+
+.dupa {
+    color: red;
+}

@@ -1,0 +1,6 @@
+@import "importtest.css";
+
+/* usage */
+:--headings {
+  color: var(--heading-color);
+}
