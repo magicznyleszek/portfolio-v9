@@ -1,0 +1,43 @@
+/*------------------------------------------------------------------------------
+common FUNCTIONAL variables (each module has own config file)
+------------------------------------------------------------------------------*/
+
+:root {
+
+    /* base */
+
+    --app-txt-c: var(--c-charcoal);
+    --app-bg-c: white;
+    --app-content-w: 900px;
+
+    /* breakpoints */
+
+    --break-bigger: 1600px;
+    --break-smaller: 800px;
+
+    /* root typography with font sizes for different screens scaling */
+
+    --rootFontWeight: 400;
+    --rootLineHeight: 1.5;
+    --rootFontFamily: var(--family-sourceSansPro);
+    --rootFontSize: 16px;
+    --rootFontSizeBigger: calc(var(--rootFontSize) * (1 + var(--f-small)));
+    --rootFontSizeSmaller: calc(var(--rootFontSize) * (1 - var(--f-small)));
+
+    /* specific elements */
+
+    --underline-w: 0.0625rem; /* 1px @ 16px */
+    --underline-hover-w: 0.125rem; /* 2px @ 16px */
+
+    --hr-bg-c: currentColor;
+    --hr-h: 0.125rem; /* 2px @ 16px */
+
+    --focus-outline-c: var(--c-amaranth);
+    --focus-outline-w: 0.25rem; /* 4px @ 16px */
+
+    --selection-txt-c: white;
+    --selection-bg-c: var(--c-amaranth);
+
+    --disabled-o: var(--f-big);
+
+}

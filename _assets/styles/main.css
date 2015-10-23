@@ -1,6 +1,12 @@
-@import "importtest.css";
+/*------------------------------------------------------------------------------
+main styles aggregation
+------------------------------------------------------------------------------*/
 
-/* usage */
-:--headings {
-  color: var(--heading-color);
-}
+@import "config/descriptiveVars.css";
+@import "config/functionalVars.css";
+@import "config/customs.css";
+
+@import "normalize/root.css";
+@import "normalize/typography.css";
+@import "normalize/states.css";
+@import "normalize/layout.css";

@@ -9,9 +9,9 @@ module.exports = (grunt) ->
         pkg: grunt.file.readJSON('package.json')
         cssnext:
             options:
-                sourcemap: true
+                sourcemap: false
                 import: true
-                # compress: true
+                # compress: true # DEV
             dist:
                 files:
                     "public/styles/main.css": "_assets/styles/main.css"

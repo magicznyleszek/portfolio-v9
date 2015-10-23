@@ -1,12 +1,12 @@
-//------------------------------------------------------------------------------
-// base typographic rules
-//------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------
+base typographic rules
+------------------------------------------------------------------------------*/
 
-h1, h2, h3, h4 {
+:--headers {
     line-height: 1;
     margin: 0;
-    padding-top: ($rootLineHeight - 1) * 0.5rem;
-    padding-bottom: ($rootLineHeight - 1) * 0.5rem;
+    padding-top: calc(var(--rootLineHeight) * 0.5rem);
+    padding-bottom: calc(var(--rootLineHeight) * 0.5rem);
 }
 
 h1 { font-size: 3rem; }
@@ -28,7 +28,7 @@ ul { list-style-type: disc; }
 
 ol { list-style-type: decimal; }
 
-small, sub, sup { font-size: $p-giant; }
+small, sub, sup { font-size: var(--p-giant); }
 
 sub, sup {
     line-height: 0;

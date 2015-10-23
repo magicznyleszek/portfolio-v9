@@ -1,19 +1,203 @@
-/* custom properties */
+/*------------------------------------------------------------------------------
+main styles aggregation
+------------------------------------------------------------------------------*/
 
-/* custom selectors */
+/*------------------------------------------------------------------------------
+all DESCRIPTIVE variables (colors, sizes, etc.)
+------------------------------------------------------------------------------*/
 
-.dupa {
-    color: red;
+:root {
+
+    /* colors */
+
+    /* font families */
+
+    /* fractions */
+
+    /* percents */
+
+    /* durations */
+
+    /* z-indexes */
+
+    /* sizes */ /* 80px @ 16px */ /* 64px @ 16px */ /* 40px @ 16px */ /* 32px @ 16px */ /* 20px @ 16px */ /* 16px @ 16px */ /* 10px @ 16px */ /* 8px @ 16px */ /* 5px @ 16px */
+
+}
+/*------------------------------------------------------------------------------
+common FUNCTIONAL variables (each module has own config file)
+------------------------------------------------------------------------------*/
+
+:root {
+
+    /* base */
+
+    /* breakpoints */
+
+    /* root typography with font sizes for different screens scaling */
+
+    /* specific elements */ /* 1px @ 16px */ /* 2px @ 16px */ /* 2px @ 16px */ /* 4px @ 16px */
+
+}
+/*------------------------------------------------------------------------------
+custom media queries and selectors
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+root stuff and normalizations
+------------------------------------------------------------------------------*/
+
+/* clever page scaling with root font size changes */
+
+html {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Source Sans Pro", sans-serif;
+    min-height: 100%;
+    color: hsl(0, 0%, 20%);
+    background-color: white;
 }
 
-/* usage */
+@media min-width: var(--break-bigger) { html { font-size: 18px; } }
+
+@media max-width: var(--break-smaller) { html { font-size: 14px; } }
+/*------------------------------------------------------------------------------
+base typographic rules
+------------------------------------------------------------------------------*/
+
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  color: hsl(280, 90%, 50%);
+h4 {
+    line-height: 1;
+    margin: 0;
+    padding-top: 12px;
+    padding-top: 0.75rem;
+    padding-bottom: 12px;
+    padding-bottom: 0.75rem;
 }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL19hc3NldHMvc3R5bGVzL2ltcG9ydHRlc3QuY3NzIiwiLi4vLi4vX2Fzc2V0cy9zdHlsZXMvbWFpbi5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsdUJBQXVCOztBQUt2QixzQkFBc0I7O0FBR3RCO0lBQ0ksV0FBVztDQUNkOztBQ1JELFdBQVc7QUFDWDs7Ozs7O0VBQ0UsMEJBQTRCO0NBQzdCIiwiZmlsZSI6Im1haW4uY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyogY3VzdG9tIHByb3BlcnRpZXMgKi9cbjpyb290IHtcbiAgLS1oZWFkaW5nLWNvbG9yOiBoc2woMjgwLCA5MCUsIDUwJSk7XG59XG5cbi8qIGN1c3RvbSBzZWxlY3RvcnMgKi9cbkBjdXN0b20tc2VsZWN0b3IgOi0taGVhZGluZ3MgaDEsIGgyLCBoMywgaDQsIGg1LCBoNjtcblxuLmR1cGEge1xuICAgIGNvbG9yOiByZWQ7XG59XG4iLCJAaW1wb3J0IFwiaW1wb3J0dGVzdC5jc3NcIjtcblxuLyogdXNhZ2UgKi9cbjotLWhlYWRpbmdzIHtcbiAgY29sb3I6IHZhcigtLWhlYWRpbmctY29sb3IpO1xufVxuIl19 */
+h1 { font-size: 48px; font-size: 3rem; }
+
+h2 { font-size: 32px; font-size: 2rem; }
+
+h3 { font-size: 24px; font-size: 1.5rem; }
+
+h4 {
+    font-size: inherit;
+    font-weight: 700;
+}
+
+p { margin: 0; }
+
+ul, ol { margin-left: 24px; margin-left: 1.5rem; }
+
+ul { list-style-type: disc; }
+
+ol { list-style-type: decimal; }
+
+small, sub, sup { font-size: 75%; }
+
+sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+strong { font-weight: 700; }
+
+em { font-style: italic; }
+
+blockquote {
+    font-style: italic;
+    cite { font-style: normal; }
+}
+/*------------------------------------------------------------------------------
+user-action influenced states
+------------------------------------------------------------------------------*/
+
+/* links */
+
+a {
+    color: inherit;
+    text-decoration: none;
+    /* custom underlines */
+    background-position: 0 95%;
+    background-size: 1px 0.0625rem;
+    background-image: -webkit-linear-gradient(transparent 50%, currentColor 50%);
+    background-image: linear-gradient(transparent 50%, currentColor 50%);
+    background-repeat: repeat-x;
+}
+
+a:hover { background-size: 1px 0.125rem; }
+
+a:visited,
+a:hover,
+a:active { color: inherit; }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a { background-size: 1px 0.125rem; }
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover { background-size: 1px 0.25rem; }
+
+/* text selection */
+
+:focus {
+    outline-color: hsl(348, 96%, 56%);
+    outline-style: auto;
+    outline-width: 4px;
+    outline-width: 0.25rem;
+}
+
+::-moz-focus-inner { border: 0; }
+
+::-moz-selection {
+    color: white;
+    background-color: hsl(348, 96%, 56%);
+}
+
+::selection {
+    color: white;
+    background-color: hsl(348, 96%, 56%);
+}
+
+/* disabled elements */
+
+[disabled] {
+    pointer-events: none;
+    opacity: 0.50;
+}
+/*------------------------------------------------------------------------------
+sizing base layout parts
+------------------------------------------------------------------------------*/
+
+body { margin: 0; }
+
+#unmovedMover {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16px;
+    padding: 1rem;
+}
+
+#pageHeader,
+#pageContent ,
+#pageFooter {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* spacing elements with lobotimized owl,
+see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
+
+#unmovedMover * + * { margin-top: 24px; margin-top: 1.5rem; }

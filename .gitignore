@@ -1,5 +1,11 @@
+# Jekyll site is built by gh-pages
 _site
-.sass-cache
-.DS_Store
+.jekyll-metadata
+
+# assets
 node_modules
-## wild-trilobites
+
+# OS generated
+.DS_Store
+ehthumbs.db
+Thumbs.db

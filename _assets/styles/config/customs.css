@@ -1,0 +1,8 @@
+/*------------------------------------------------------------------------------
+custom media queries and selectors
+------------------------------------------------------------------------------*/
+
+@custom-media --bigger min-width: var(--break-bigger);
+@custom-media --smaller max-width: var(--break-smaller);
+
+@custom-selector :--headers h1, h2, h3, h4;

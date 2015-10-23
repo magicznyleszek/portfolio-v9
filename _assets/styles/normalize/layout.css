@@ -1,0 +1,24 @@
+/*------------------------------------------------------------------------------
+sizing base layout parts
+------------------------------------------------------------------------------*/
+
+body { margin: 0; }
+
+#unmovedMover {
+    box-sizing: border-box;
+    width: 100%;
+    padding: var(--w-medium);
+}
+
+#pageHeader,
+#pageContent ,
+#pageFooter {
+    max-width: var(--app-content-w);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* spacing elements with lobotimized owl,
+see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
+
+#unmovedMover * + * { margin-top: calc(var(--rootLineHeight) * 1rem); }
