@@ -201,3 +201,27 @@ body { margin: 0; }
 see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
 
 #unmovedMover * + * { margin-top: 24px; margin-top: 1.5rem; }
+
+/*------------------------------------------------------------------------------
+postSummary base
+------------------------------------------------------------------------------*/
+
+[gui-postSummary] {
+    background: hsl(350, 100%, 90%);
+}
+
+[gui-postSummary-thumbnail] {
+    background: hsl(350, 100%, 85%);
+}
+
+[gui-postSummary-title] {
+    background: hsl(350, 100%, 80%);
+}
+
+[gui-postSummary-date] {
+    background: hsl(350, 100%, 75%);
+}
+
+[gui-postSummary-categories] {
+    background: hsl(350, 100%, 70%);
+}

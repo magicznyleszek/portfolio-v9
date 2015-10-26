@@ -1,0 +1,23 @@
+/*------------------------------------------------------------------------------
+postSummary base
+------------------------------------------------------------------------------*/
+
+[gui-postSummary] {
+    background: hsl(350, 100%, 90%);
+}
+
+[gui-postSummary-thumbnail] {
+    background: hsl(350, 100%, 85%);
+}
+
+[gui-postSummary-title] {
+    background: hsl(350, 100%, 80%);
+}
+
+[gui-postSummary-date] {
+    background: hsl(350, 100%, 75%);
+}
+
+[gui-postSummary-categories] {
+    background: hsl(350, 100%, 70%);
+}

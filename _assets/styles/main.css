@@ -10,3 +10,5 @@ main styles aggregation
 @import "normalize/typography.css";
 @import "normalize/states.css";
 @import "normalize/layout.css";
+
+@import "component/postSummary/base.css"

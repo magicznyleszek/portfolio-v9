@@ -1,15 +1,23 @@
-<div>
+<div gui-postSummary>
 
-    <a gui-icon-wrapper href="{{ post.url }}">
-        <svg gui-icon="thumbnail">
-            <use xlink:href="#icon-thumbnail-{{ post.slug }}">
-        </svg>
+    <a gui-postSummary-thumbnail href="{{ post.url }}">
+        <svg><use xlink:href="#icon-thumbnail-{{ post.slug }}"></svg>
     </a>
 
-    <div><h3><a href="{{ post.url }}">{{ post.title }}</a></h3></div>
+    <h3 gui-postSummary-title>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+    </h3>
 
-    <div><time>{{ post.date | date: "%B %Y" }}</time></div>
+    <time gui-postSummary-date>{{ post.date | date: "%B %Y" }}</time>
 
-    {% include modules/post-categories-list.liquid categories=post.categories %}
+    <ul gui-postSummary-categories>
+        {% for category in post.categories %}
+        <li>
+            <a href="{{ site.baseurl }}/category/{{ category }}">
+                {% include helpers/category-label.liquid category=category %}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
 
 </div>
