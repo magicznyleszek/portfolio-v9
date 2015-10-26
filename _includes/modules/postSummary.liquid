@@ -14,7 +14,7 @@
         {% for category in post.categories %}
         <li>
             <a href="{{ site.baseurl }}/category/{{ category }}">
-                {% include helpers/category-label.liquid category=category %}
+                {% include helpers/categoryLabel.liquid category=category %}
             </a>
         </li>
         {% endfor %}
