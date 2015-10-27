@@ -4,48 +4,48 @@
         "description": "Hand-writing code is something strongly philosophical -- organizing and categorizing thoughts, optimization in search of the ideal and constant falsification -- and unwittingly enriches life wisdom.",
         "url": "/category/code",
         "slug": "code",
-        "icon": "fa-code"
+        "icon": "factory"
     },
     {
         "label": "Icon",
         "description": "Small pictograms scienced-up in 1975, are a pleasant exercise in simplifying, organizing and distinct similiarizing. Of course, only with the properly geometric palette you will be able to build a path to the iconic nirvana.",
         "url": "/category/icon",
         "slug": "icon",
-        "icon": "fa-comment-o"
+        "icon": "sword"
     },
     {
         "label": "Illustration",
         "description": "After the initial 20 years of drought, only the low-absorbing (boring) classes at Cultural Studies were able to open my head and hands for drawing. And it ended up with me loving black ink and human heads.",
         "url": "/category/illustration",
         "slug": "illustration",
-        "icon": "fa-pencil"
+        "icon": "pencil"
     },
     {
         "label": "Interface",
         "description": "In the immense world of graphic design, there is probably nothing as actual, fascinating, full of life and vanishing theories, as interface design.",
         "url": "/category/interface",
         "slug": "interface",
-        "icon": "fa-sitemap"
+        "icon": "sitemap"
     },
     {
         "label": "Lettering",
         "description": "Nothing beats the act of putting down letters on paper by your own hand, and the ability to build them with an accuracy of around 6000% is just a new level of pleasure.",
         "url": "/category/lettering",
         "slug": "lettering",
-        "icon": "fa-font"
+        "icon": "letter"
     },
     {
         "label": "Logo",
         "description": "The best thing about symbols is that the whole leviathan of information, doodle and mathematics meets in one procreative implosion and finishes with minimalistic message straight to the face.",
         "url": "/category/logo",
         "slug": "logo",
-        "icon": "fa-eye"
+        "icon": "shield"
     },
     {
         "label": "Print",
         "description": "It is always nice to see the result of your own graphical work in the form of a physical artifact, and see how it behaves and changes under the influence of an ever-changing natural environment.",
         "url": "/category/print",
         "slug": "print",
-        "icon": "fa-print"
+        "icon": "poster"
     }
 ]

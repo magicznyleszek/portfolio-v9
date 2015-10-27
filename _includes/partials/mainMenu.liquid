@@ -1,10 +1,25 @@
-<nav>
-    <ul gui-list="inline">
+<nav gui-menu>
+    <h1>Navigation:</h1>
+
+    <ul gui-menu-list>
+
+        <strong>Main:</strong>
 
         {% for place in site.data.navigation %}
-        <li>
+        <li gui-menu-list-item>
             <a href="{{ site.baseurl }}{{ place.url }}">
                 {{ place.label }}
+            </a>
+        </li>
+        {% endfor %}
+
+        <br>
+        <strong>Categories:</strong>
+
+        {% for category in site.data.categories %}
+        <li gui-menu-list-item>
+            <a href="{{ site.baseurl }}{{ category.url }}">
+                {{ category.label }}
             </a>
         </li>
         {% endfor %}

@@ -1,0 +1,15 @@
+/*------------------------------------------------------------------------------
+menu base
+------------------------------------------------------------------------------*/
+
+[gui-menu] {
+    border-bottom: var(--underline-w) solid currentColor;
+}
+
+[gui-menu-list] {
+    display: inline-block;
+}
+
+[gui-menu-list-item]{
+    display: inline-block;
+}

@@ -1,6 +1,6 @@
 [
     {
-        "label": "Home",
+        "label": "Projects",
         "description": "Lorem ipsum.",
         "url": "/",
         "icon": "house"
@@ -15,6 +15,6 @@
         "label": "Contact",
         "description": "Lorem ipsum.",
         "url": "/contact",
-        "icon": "letter"
+        "icon": "envelope"
     }
 ]

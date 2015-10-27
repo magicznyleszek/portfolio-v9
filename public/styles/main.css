@@ -203,6 +203,22 @@ see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
 #unmovedMover * + * { margin-top: 24px; margin-top: 1.5rem; }
 
 /*------------------------------------------------------------------------------
+menu base
+------------------------------------------------------------------------------*/
+
+[gui-menu] {
+    border-bottom: 1px solid currentColor;
+    border-bottom: 0.0625rem solid currentColor;
+}
+
+[gui-menu-list] {
+    display: inline-block;
+}
+
+[gui-menu-list-item]{
+    display: inline-block;
+}
+/*------------------------------------------------------------------------------
 postSummary base
 ------------------------------------------------------------------------------*/
 
