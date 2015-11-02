@@ -6,7 +6,7 @@ common FUNCTIONAL variables (each module has own config file)
 
     /* base */
 
-    --app-txt-c: var(--c-charcoal);
+    --app-txt-c: var(--c-blackcurrant);
     --app-bg-c: white;
     --app-content-w: 900px;
 

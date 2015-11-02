@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------------------
+postSummary config
+------------------------------------------------------------------------------*/
+
+:root {
+
+    /* thumbnail */
+    --postSummary-thumbnail-c: currentColor;
+    --postSummary-thumbnail-c-hover: var(--c-amaranth);
+    --postSummary-thumbnail-c-active: var(--c-purple);
+    --postSummary-thumbnail-c-visited: var(--c-violet);
+    --postSummary-thumbnail-w: 15rem; /* 240px @ 16px */
+
+}

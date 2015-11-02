@@ -1,0 +1,25 @@
+/*------------------------------------------------------------------------------
+devPalette base
+------------------------------------------------------------------------------*/
+
+[gui-devPalette-color] {
+    padding: var(--w-medium);
+    color: white;
+    font-size: var(--w-small);
+}
+
+[gui-devPalette-color~="amaranth"] {
+    background-color: var(--c-amaranth);
+}
+
+[gui-devPalette-color~="purple"] {
+    background-color: var(--c-purple);
+}
+
+[gui-devPalette-color~="violet"] {
+    background-color: var(--c-violet);
+}
+
+[gui-devPalette-color~="blackcurrant"] {
+    background-color: var(--c-blackcurrant);
+}

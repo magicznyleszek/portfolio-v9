@@ -7,9 +7,9 @@ all DESCRIPTIVE variables (colors, sizes, etc.)
     /* colors */
 
     --c-amaranth: hsl(348, 96%, 56%);
-    --c-purple: hsl(330, 68%, 42%);
-    --c-violet: hsl(280, 60%, 32%);
-    --c-charcoal: hsl(0, 0%, 20%);
+    --c-purple: hsl(328, 72%, 44%);
+    --c-violet: hsl(276, 60%, 36%);
+    --c-blackcurrant: hsl(276, 32%, 12%);
 
     /* font families */
 

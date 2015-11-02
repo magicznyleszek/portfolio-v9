@@ -2,22 +2,16 @@
 postSummary base
 ------------------------------------------------------------------------------*/
 
-[gui-postSummary] {
-    background: hsl(350, 100%, 90%);
+@import "config.css";
+@import "thumbnail.css";
+@import "categories.css";
+
+[gui-postSummary] {}
+
+[gui-postSummary]:not(:first-child) {
+    margin-top: calc(var(--rootLineHeight) * 2rem);
 }
 
-[gui-postSummary-thumbnail] {
-    background: hsl(350, 100%, 85%);
-}
+[gui-postSummary-title] {}
 
-[gui-postSummary-title] {
-    background: hsl(350, 100%, 80%);
-}
-
-[gui-postSummary-date] {
-    background: hsl(350, 100%, 75%);
-}
-
-[gui-postSummary-categories] {
-    background: hsl(350, 100%, 70%);
-}
+[gui-postSummary-date] {}

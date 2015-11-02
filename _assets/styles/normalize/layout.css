@@ -17,8 +17,3 @@ body { margin: 0; }
     margin-left: auto;
     margin-right: auto;
 }
-
-/* spacing elements with lobotimized owl,
-see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
-
-#unmovedMover * + * { margin-top: calc(var(--rootLineHeight) * 1rem); }

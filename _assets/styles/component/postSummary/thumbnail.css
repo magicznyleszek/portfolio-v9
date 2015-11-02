@@ -1,0 +1,30 @@
+/*------------------------------------------------------------------------------
+postSummary thumbnail part
+------------------------------------------------------------------------------*/
+
+[gui-postSummary-thumbnail] {
+    display: block;
+    width: var(--postSummary-thumbnail-w);
+    height: var(--postSummary-thumbnail-w);
+    background-image: none;
+}
+
+[gui-postSummary-thumbnail] svg {
+    width: var(--postSummary-thumbnail-w);
+    height: var(--postSummary-thumbnail-w);
+    fill: var(--postSummary-thumbnail-c);
+}
+
+/* states ordered to make styles always work */
+
+[gui-postSummary-thumbnail]:visited svg {
+    fill: var(--postSummary-thumbnail-c-visited);
+}
+
+[gui-postSummary-thumbnail]:hover svg {
+    fill: var(--postSummary-thumbnail-c-hover);
+}
+
+[gui-postSummary-thumbnail]:active svg {
+    fill: var(--postSummary-thumbnail-c-active);
+}

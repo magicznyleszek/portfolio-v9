@@ -54,7 +54,7 @@ html {
     line-height: 1.5;
     font-family: "Source Sans Pro", sans-serif;
     min-height: 100%;
-    color: hsl(0, 0%, 20%);
+    color: hsl(276, 32%, 12%);
     background-color: white;
 }
 
@@ -197,11 +197,33 @@ body { margin: 0; }
     margin-right: auto;
 }
 
-/* spacing elements with lobotimized owl,
-see: http://alistapart.com/article/axiomatic-css-and-lobotomized-owls */
+/*------------------------------------------------------------------------------
+devPalette base
+------------------------------------------------------------------------------*/
 
-#unmovedMover * + * { margin-top: 24px; margin-top: 1.5rem; }
+[gui-devPalette-color] {
+    padding: 16px;
+    padding: 1rem;
+    color: white;
+    font-size: 10px;
+    font-size: 0.625rem;
+}
 
+[gui-devPalette-color~="amaranth"] {
+    background-color: hsl(348, 96%, 56%);
+}
+
+[gui-devPalette-color~="purple"] {
+    background-color: hsl(328, 72%, 44%);
+}
+
+[gui-devPalette-color~="violet"] {
+    background-color: hsl(276, 60%, 36%);
+}
+
+[gui-devPalette-color~="blackcurrant"] {
+    background-color: hsl(276, 32%, 12%);
+}
 /*------------------------------------------------------------------------------
 menu base
 ------------------------------------------------------------------------------*/
@@ -222,22 +244,70 @@ menu base
 postSummary base
 ------------------------------------------------------------------------------*/
 
-[gui-postSummary] {
-    background: hsl(350, 100%, 90%);
+/*------------------------------------------------------------------------------
+postSummary config
+------------------------------------------------------------------------------*/
+
+:root {
+
+    /* thumbnail */ /* 240px @ 16px */
+
 }
+/*------------------------------------------------------------------------------
+postSummary thumbnail part
+------------------------------------------------------------------------------*/
 
 [gui-postSummary-thumbnail] {
-    background: hsl(350, 100%, 85%);
+    display: block;
+    width: 240px;
+    width: 15rem;
+    height: 240px;
+    height: 15rem;
+    background-image: none;
 }
 
-[gui-postSummary-title] {
-    background: hsl(350, 100%, 80%);
+[gui-postSummary-thumbnail] svg {
+    width: 240px;
+    width: 15rem;
+    height: 240px;
+    height: 15rem;
+    fill: currentColor;
 }
 
-[gui-postSummary-date] {
-    background: hsl(350, 100%, 75%);
+/* states ordered to make styles always work */
+
+[gui-postSummary-thumbnail]:visited svg {
+    fill: hsl(276, 60%, 36%);
 }
+
+[gui-postSummary-thumbnail]:hover svg {
+    fill: hsl(348, 96%, 56%);
+}
+
+[gui-postSummary-thumbnail]:active svg {
+    fill: hsl(328, 72%, 44%);
+}
+/*------------------------------------------------------------------------------
+postSummary categories part
+------------------------------------------------------------------------------*/
 
 [gui-postSummary-categories] {
-    background: hsl(350, 100%, 70%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+[gui-postSummary-categories] li {
+    display: inline-block;
+}
+
+[gui-postSummary] {}
+
+[gui-postSummary]:not(:first-child) {
+    margin-top: 48px;
+    margin-top: 3rem;
+}
+
+[gui-postSummary-title] {}
+
+[gui-postSummary-date] {}
