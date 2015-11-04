@@ -1,51 +1,47 @@
 {% include htmlBegin.liquid %}
 
-    {% include partials/pageHeader.liquid %}
+{% include partials/pageHeader.liquid %}
 
-    <section id="pageContent" role="main">
+<section id="pageContent" role="main">
 
-        <article>
+    <article>
 
-            <header>
-                <h1>{{ page.title }}</h1>
-            </header>
+        <header>
+            <h1>{{ page.title }}</h1>
+        </header>
 
-            <h2>Description:</h2>
+        <h2>Description:</h2>
 
-            {{ content }}
+        {{ content }}
 
-            <h2>Gallery:</h2>
+        <h2>Gallery:</h2>
 
-            {% include modules/postGallery.liquid images=page.gallery slug=page.slug %}
+        {% include modules/postGallery.liquid images=page.gallery slug=page.slug %}
 
-            <footer>
+        <footer>
 
-                <time datetime="{{ page.date }}">
-                    CLOCK {{ page.date | date: "%B %Y" }}
-                </time>
+            <time datetime="{{ page.date }}">
+                CLOCK {{ page.date | date: "%B %Y" }}
+            </time>
 
-            </footer>
+        </footer>
 
-        </article>
+    </article>
 
-        <section>
+    <section>
 
-            {% if page.previous.url %}
-            <a href="{{ page.previous.url }}">
-                Previus post
-            </a>
-            {% endif %}
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url }}">Previus post</a>
+        {% endif %}
 
-            {% if page.next.url %}
-            <a href="{{ page.next.url }}">
-                Next post
-            </a>
-            {% endif %}
-
-        </section>
+        {% if page.next.url %}
+        <a href="{{ page.next.url }}">Next post</a>
+        {% endif %}
 
     </section>
 
-    {% include partials/pageFooter.liquid %}
+</section>
+
+{% include partials/pageFooter.liquid %}
 
 {% include htmlEnd.liquid %}

@@ -71,10 +71,10 @@ h3,
 h4 {
     line-height: 1;
     margin: 0;
-    padding-top: 12px;
-    padding-top: 0.75rem;
-    padding-bottom: 12px;
-    padding-bottom: 0.75rem;
+    padding-top: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
 }
 
 h1 { font-size: 48px; font-size: 3rem; }
@@ -185,13 +185,12 @@ body { margin: 0; }
 #unmovedMover {
     box-sizing: border-box;
     width: 100%;
-    padding: 16px;
-    padding: 1rem;
+    padding: 24px 12px;
+    padding: 1.5rem 0.75rem;
 }
 
 #pageHeader,
-#pageContent ,
-#pageFooter {
+#pageContent {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
@@ -231,14 +230,44 @@ menu base
 [gui-menu] {
     border-bottom: 1px solid currentColor;
     border-bottom: 0.0625rem solid currentColor;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
 [gui-menu-list] {
     display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 24px;
+    padding-bottom: 1.5rem;
 }
 
 [gui-menu-list-item]{
     display: inline-block;
+}
+/*------------------------------------------------------------------------------
+signature base
+------------------------------------------------------------------------------*/
+
+[gui-signature] {
+    margin-top: 24px;
+    margin-top: 1.5rem;
+
+    text-align: center;
+    font-weight: 700;
+    text-transform: lowercase;
+    font-style: italic;
+
+    /* magic value too look perfect (for 3 lines of text) */
+    line-height: 14px;
+    line-height: 0.875rem;
+
+    /* magic value to match missing pixels for 3 times rootLineHeight */
+    padding-top: 3px;
+    padding-top: 0.1875rem;
+    padding-bottom: 3px;
+    padding-bottom: 0.1875rem;
 }
 /*------------------------------------------------------------------------------
 postSummary base

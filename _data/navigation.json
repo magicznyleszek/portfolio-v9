@@ -1,9 +1,15 @@
 [
     {
-        "label": "Projects",
+        "label": "Home",
         "description": "Lorem ipsum.",
         "url": "/",
         "icon": "house"
+    },
+    {
+        "label": "Projects",
+        "description": "Lorem ipsum.",
+        "url": "/projects",
+        "icon": "drawer"
     },
     {
         "label": "About me",

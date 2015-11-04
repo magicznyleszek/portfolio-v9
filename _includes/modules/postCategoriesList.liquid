@@ -1,11 +1,5 @@
 <ul>
-
     {% for category in include.categories %}
-    <li>
-        <a href="{{ site.baseurl }}/category/{{ category }}">
-            {% include helpers/categoryLabel.liquid category=category %}
-        </a>
-    </li>
+    <li>{% include helpers/categoryLink.liquid category=category %}</li>
     {% endfor %}
-
 </ul>

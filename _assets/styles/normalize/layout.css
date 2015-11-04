@@ -7,12 +7,11 @@ body { margin: 0; }
 #unmovedMover {
     box-sizing: border-box;
     width: 100%;
-    padding: var(--w-medium);
+    padding: calc(var(--rootLineHeight) * 1rem) calc(var(--rootLineHeight) * 0.5rem);
 }
 
 #pageHeader,
-#pageContent ,
-#pageFooter {
+#pageContent {
     max-width: var(--app-content-w);
     margin-left: auto;
     margin-right: auto;

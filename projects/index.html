@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+<h1>Projects:</h1>
+
+{% for post in site.posts %}
+{% include modules/postSummary.liquid %}
+{% endfor %}

@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------------------
+signature base
+------------------------------------------------------------------------------*/
+
+[gui-signature] {
+    margin-top: calc(var(--rootLineHeight) * 1rem);
+
+    text-align: center;
+    font-weight: 700;
+    text-transform: lowercase;
+    font-style: italic;
+
+    /* magic value too look perfect (for 3 lines of text) */
+    line-height: 0.875rem;
+
+    /* magic value to match missing pixels for 3 times rootLineHeight */
+    padding-top: 0.1875rem;
+    padding-bottom: 0.1875rem;
+}
