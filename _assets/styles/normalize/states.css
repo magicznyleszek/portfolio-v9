@@ -44,4 +44,7 @@ a:active { color: inherit; }
 [disabled] {
     pointer-events: none;
     opacity: var(--disabled-o);
+
+    /* avoid adding up opacity on nested disabled elements */
+    [disabled] { opacity: 1; }
 }
