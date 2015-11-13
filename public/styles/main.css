@@ -35,7 +35,7 @@ common FUNCTIONAL variables (each module has own config file)
 
     /* root typography with font sizes for different screens scaling */
 
-    /* specific elements */ /* 1px @ 16px */ /* 2px @ 16px */ /* 2px @ 16px */ /* 4px @ 16px */
+    /* specific elements */ /* 1px 1px @ 16px */ /* 2px @ 16px */ /* 4px @ 16px */
 
 }
 /*------------------------------------------------------------------------------
@@ -53,14 +53,22 @@ html {
     font-size: 16px;
     line-height: 1.5;
     font-family: "Source Sans Pro", sans-serif;
+
     min-height: 100%;
+
     color: hsl(276, 32%, 12%);
     background-color: white;
+
+    box-sizing: border-box;
 }
 
 @media min-width: var(--break-bigger) { html { font-size: 18px; } }
 
 @media max-width: var(--break-smaller) { html { font-size: 14px; } }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
 /*------------------------------------------------------------------------------
 base typographic rules
 ------------------------------------------------------------------------------*/
@@ -125,29 +133,29 @@ user-action influenced states
 a {
     color: inherit;
     text-decoration: none;
+
     /* custom underlines */
-    background-position: 0 95%;
-    background-size: 1px 0.0625rem;
-    background-image: -webkit-linear-gradient(transparent 50%, currentColor 50%);
-    background-image: linear-gradient(transparent 50%, currentColor 50%);
+    background-position: 0 100%;
+    background-size: 0.125rem 0.0625rem;
+    background-image: -webkit-linear-gradient(right, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%);
+    background-image: linear-gradient( to left, transparent 0%,
+        transparent 50%,
+        currentColor 50%,
+        currentColor 100%
+     );
     background-repeat: repeat-x;
 }
-
-a:hover { background-size: 1px 0.125rem; }
-
-a:visited,
-a:hover,
-a:active { color: inherit; }
-
-h1 a,
-h2 a,
-h3 a,
-h4 a { background-size: 1px 0.125rem; }
-
-h1 a:hover,
-h2 a:hover,
-h3 a:hover,
-h4 a:hover { background-size: 1px 0.25rem; }
+a:hover {
+    color: inherit;
+    background-image: -webkit-linear-gradient(right, transparent 0%, currentColor 0%);
+    background-image: linear-gradient( to left, transparent 0%, currentColor 0% );
+}
+a:visited {
+    color: hsl(276, 60%, 36%);
+}
+a:active {
+    color: hsl(348, 96%, 56%);
+}
 
 /* text selection */
 
@@ -175,6 +183,9 @@ h4 a:hover { background-size: 1px 0.25rem; }
 [disabled] {
     pointer-events: none;
     opacity: 0.50;
+
+    /* avoid adding up opacity on nested disabled elements */
+    [disabled] { opacity: 1; }
 }
 /*------------------------------------------------------------------------------
 sizing base layout parts
@@ -227,24 +238,71 @@ devPalette base
 menu base
 ------------------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------------------
+menu config
+------------------------------------------------------------------------------*/
+
 [gui-menu] {
-    border-bottom: 1px solid currentColor;
-    border-bottom: 0.0625rem solid currentColor;
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
+    overflow: hidden;
 }
 
-[gui-menu-list] {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    padding-bottom: 24px;
-    padding-bottom: 1.5rem;
+[gui-menu-item] {
+    display: block;
+    float: left;
 }
 
-[gui-menu-list-item]{
-    display: inline-block;
+[gui-menu-item]:not(:last-child) {
+    margin-right: 5px;
+    margin-right: 0.3125rem;
+}
+
+[gui-menu-item~="current"] {
+    padding-left: 8px;
+    padding-left: 0.5rem;
+    padding-right: 8px;
+    padding-right: 0.5rem;
+
+    background-image: -webkit-linear-gradient(left, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%), -webkit-linear-gradient(top, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%), -webkit-linear-gradient(right, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%), -webkit-linear-gradient(bottom, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%);
+
+    background-image: linear-gradient( to right, transparent 0%,
+        transparent 50%,
+        currentColor 50%,
+        currentColor 100%
+     ),
+        linear-gradient( to bottom, transparent 0%,
+        transparent 50%,
+        currentColor 50%,
+        currentColor 100%
+     ),
+        linear-gradient( to left, transparent 0%,
+        transparent 50%,
+        currentColor 50%,
+        currentColor 100%
+     ),
+        linear-gradient( to top, transparent 0%,
+        transparent 50%,
+        currentColor 50%,
+        currentColor 100%
+     )
+    ;
+    background-size: 0.125rem
+        0.0625rem,
+        0.0625rem
+        0.125rem
+    ;
+    background-repeat: repeat-x, repeat-y;
+    background-position: 0 0, 100% 0, 0 100%;
+}
+
+[gui-menu-item~="current"]:hover {
+    background-image: -webkit-linear-gradient(left, transparent 0%, currentColor 0%), -webkit-linear-gradient(top, transparent 0%, currentColor 0%), -webkit-linear-gradient(right, transparent 0%, currentColor 0%), -webkit-linear-gradient(bottom, transparent 0%, currentColor 0%);
+    background-image: linear-gradient( to right, transparent 0%, currentColor 0% ),
+        linear-gradient( to bottom, transparent 0%, currentColor 0% ),
+        linear-gradient( to left, transparent 0%, currentColor 0% ),
+        linear-gradient( to top, transparent 0%, currentColor 0% )
+    ;
 }
 /*------------------------------------------------------------------------------
 signature base

@@ -1,6 +1,6 @@
 {% include htmlBegin.liquid %}
 
-{% include partials/pageHeader.liquid %}
+{% include global/pageHeader.liquid %}
 
 <section id="pageContent" role="main">
 
@@ -16,7 +16,7 @@
 
         <h2>Gallery:</h2>
 
-        {% include modules/postGallery.liquid images=page.gallery slug=page.slug %}
+        {% include post/gallery.liquid images=page.gallery slug=page.slug %}
 
         <footer>
 
@@ -28,20 +28,10 @@
 
     </article>
 
-    <section>
-
-        {% if page.previous.url %}
-        <a href="{{ page.previous.url }}">Previus post</a>
-        {% endif %}
-
-        {% if page.next.url %}
-        <a href="{{ page.next.url }}">Next post</a>
-        {% endif %}
-
-    </section>
+    {% include post/furtherLinks.liquid previousPost=page.previous nextPost=page.next %}
 
 </section>
 
-{% include partials/pageFooter.liquid %}
+{% include global/pageFooter.liquid %}
 
 {% include htmlEnd.liquid %}

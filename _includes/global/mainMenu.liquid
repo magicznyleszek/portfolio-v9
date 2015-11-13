@@ -1,0 +1,33 @@
+<h1>Navigation:</h1>
+
+<nav gui-menu>
+
+    <strong gui-menu-item>Main:</strong>
+
+    {% for place in site.data.navigation %}
+        <a
+            gui-menu-item="{% if place.slug == page.slug%}current{% endif %}"
+            href="{{ site.baseurl }}{{ place.url }}"
+        >
+            {{ place.label }}
+        </a>
+    {% endfor %}
+
+</nav>
+
+{% if page.layout == "category" %}
+<nav gui-menu>
+
+    <strong gui-menu-item>Categories:</strong>
+
+    {% for category in site.data.categories %}
+        <a
+            gui-menu-item="{% if category.slug == page.slug%}current{% endif %}"
+            href="{{ site.baseurl }}{{ category.url }}"
+        >
+            {{ category.label }}
+        </a>
+    {% endfor %}
+
+</nav>
+{% endif %}

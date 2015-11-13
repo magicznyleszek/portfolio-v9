@@ -26,8 +26,16 @@ common FUNCTIONAL variables (each module has own config file)
 
     /* specific elements */
 
-    --underline-w: 0.0625rem; /* 1px @ 16px */
-    --underline-hover-w: 0.125rem; /* 2px @ 16px */
+    --line-gr-w: 0.0625rem; /* 1px 1px @ 16px */
+    --line-gr-c:
+        transparent 0%,
+        transparent 50%,
+        currentColor 50%,
+        currentColor 100%
+    ;
+    --line-gr-c-hover: transparent 0%, currentColor 0%;
+    --line-gr: linear-gradient( to left, var(--line-gr-c) );
+    --line-gr-hover: linear-gradient( to left, var(--line-gr-c-hover) );
 
     --hr-bg-c: currentColor;
     --hr-h: 0.125rem; /* 2px @ 16px */

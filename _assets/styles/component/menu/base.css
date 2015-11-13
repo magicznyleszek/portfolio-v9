@@ -2,19 +2,37 @@
 menu base
 ------------------------------------------------------------------------------*/
 
+@import "config.css";
+
 [gui-menu] {
-    border-bottom: var(--underline-w) solid currentColor;
     margin-bottom: calc(var(--rootLineHeight) * 1rem);
+    overflow: hidden;
 }
 
-[gui-menu-list] {
-    display: inline-block;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-    padding-bottom: calc(var(--rootLineHeight) * 1rem);
+[gui-menu-item] {
+    display: block;
+    float: left;
 }
 
-[gui-menu-list-item]{
-    display: inline-block;
+[gui-menu-item]:not(:last-child) {
+    margin-right: var(--w-tiny);
+}
+
+[gui-menu-item~="current"] {
+    padding-left: var(--w-little);
+    padding-right: var(--w-little);
+
+    background-image: var(--menu-item-current-line-gr);
+    background-size:
+        calc(var(--menu-item-current-line-gr-w) * 2)
+        var(--menu-item-current-line-gr-w),
+        var(--menu-item-current-line-gr-w)
+        calc(var(--menu-item-current-line-gr-w) * 2)
+    ;
+    background-repeat: repeat-x, repeat-y;
+    background-position: 0 0, 100% 0, 0 100%;
+}
+
+[gui-menu-item~="current"]:hover {
+    background-image: var(--menu-item-current-line-gr-hover);
 }

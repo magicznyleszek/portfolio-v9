@@ -1,9 +1,10 @@
 ---
 layout: default
+slug: projects
 ---
 
 <h1>Projects:</h1>
 
 {% for post in site.posts %}
-{% include modules/postSummary.liquid %}
+{% include listing/postSummary.liquid %}
 {% endfor %}
