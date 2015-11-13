@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------------
+logo config
+------------------------------------------------------------------------------*/
+
+:root {
+
+    --logo-w: 6.25rem; /* 100px @ 16px */
+    --logo-c: currentColor;
+    --logo-c-visited: currentColor;
+    --logo-c-hover: var(--c-violet);
+    --logo-c-active: var(--c-amaranth);
+
+}

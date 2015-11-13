@@ -5,16 +5,16 @@ menu config
 :root {
 
     --menu-item-current-line-gr:
-        linear-gradient( to right, var(--line-gr-c) ),
-        linear-gradient( to bottom, var(--line-gr-c) ),
-        linear-gradient( to left, var(--line-gr-c) ),
-        linear-gradient( to top, var(--line-gr-c) )
+        linear-gradient( to right, var(--line-gr-solid-c) ),
+        linear-gradient( to bottom, var(--line-gr-solid-c) ),
+        linear-gradient( to left, var(--line-gr-solid-c) ),
+        linear-gradient( to top, var(--line-gr-solid-c) )
     ;
     --menu-item-current-line-gr-hover:
-        linear-gradient( to right, var(--line-gr-c-hover) ),
-        linear-gradient( to bottom, var(--line-gr-c-hover) ),
-        linear-gradient( to left, var(--line-gr-c-hover) ),
-        linear-gradient( to top, var(--line-gr-c-hover) )
+        linear-gradient( to right, var(--line-gr-solid-c) ),
+        linear-gradient( to bottom, var(--line-gr-solid-c) ),
+        linear-gradient( to left, var(--line-gr-solid-c) ),
+        linear-gradient( to top, var(--line-gr-solid-c) )
     ;
     --menu-item-current-line-gr-w: var(--line-gr-w);
 

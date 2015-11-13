@@ -12,6 +12,7 @@ main styles aggregation
 @import "normalize/layout.css";
 
 @import "component/devPalette/base.css";
+@import "component/logo/base.css";
 @import "component/menu/base.css";
 @import "component/signature/base.css";
 @import "component/postSummary/base.css";

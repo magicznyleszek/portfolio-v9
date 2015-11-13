@@ -6,12 +6,15 @@ postSummary thumbnail part
     display: block;
     width: var(--postSummary-thumbnail-w);
     height: var(--postSummary-thumbnail-w);
-    background-image: none;
+
+    /* remove link styles */
+    background-image: none !important;
 }
 
 [gui-postSummary-thumbnail] svg {
     width: var(--postSummary-thumbnail-w);
     height: var(--postSummary-thumbnail-w);
+
     fill: var(--postSummary-thumbnail-c);
 }
 

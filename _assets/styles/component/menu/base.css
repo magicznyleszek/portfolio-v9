@@ -6,7 +6,10 @@ menu base
 
 [gui-menu] {
     margin-bottom: calc(var(--rootLineHeight) * 1rem);
-    overflow: hidden;
+
+    /* fix floats */
+    float: left;
+    width: 100%;
 }
 
 [gui-menu-item] {
@@ -34,5 +37,11 @@ menu base
 }
 
 [gui-menu-item~="current"]:hover {
-    background-image: var(--menu-item-current-line-gr-hover);
+    background-image: var(--menu-item-current-line-gr);
+    background-size:
+        calc(var(--menu-item-current-line-gr-w) * 4)
+        calc(var(--menu-item-current-line-gr-w) * 2),
+        calc(var(--menu-item-current-line-gr-w) * 2)
+        calc(var(--menu-item-current-line-gr-w) * 4)
+    ;
 }

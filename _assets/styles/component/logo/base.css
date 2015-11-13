@@ -1,0 +1,36 @@
+/*------------------------------------------------------------------------------
+logo base
+------------------------------------------------------------------------------*/
+
+@import "config.css";
+
+[gui-logo] {
+    display: block;
+    width: var(--logo-w);
+    height: var(--logo-w);
+
+    margin-bottom: calc(var(--rootLineHeight) * 1rem);
+
+    /* remove link styles */
+    background-image: none !important;
+}
+
+[gui-logo] svg {
+    width: var(--logo-w);
+    height: var(--logo-w);
+    fill: var(--logo-c);
+}
+
+/* states ordered to make styles always work */
+
+[gui-logo]:visited svg {
+    fill: var(--logo-c-visited);
+}
+
+[gui-logo]:hover svg {
+    fill: var(--logo-c-hover);
+}
+
+[gui-logo]:active svg {
+    fill: var(--logo-c-active);
+}

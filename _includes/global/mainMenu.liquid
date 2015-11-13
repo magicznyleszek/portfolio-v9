@@ -1,8 +1,6 @@
-<h1>Navigation:</h1>
-
 <nav gui-menu>
 
-    <strong gui-menu-item>Main:</strong>
+    <span gui-menu-item>Main:</span>
 
     {% for place in site.data.navigation %}
         <a
@@ -18,7 +16,7 @@
 {% if page.layout == "category" %}
 <nav gui-menu>
 
-    <strong gui-menu-item>Categories:</strong>
+    <span gui-menu-item>Categories:</span>
 
     {% for category in site.data.categories %}
         <a

@@ -235,6 +235,53 @@ devPalette base
     background-color: hsl(276, 32%, 12%);
 }
 /*------------------------------------------------------------------------------
+logo base
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+logo config
+------------------------------------------------------------------------------*/
+
+:root { /* 100px @ 16px */
+
+}
+
+[gui-logo] {
+    display: block;
+    width: 100px;
+    width: 6.25rem;
+    height: 100px;
+    height: 6.25rem;
+
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+
+    /* remove link styles */
+    background-image: none !important;
+}
+
+[gui-logo] svg {
+    width: 100px;
+    width: 6.25rem;
+    height: 100px;
+    height: 6.25rem;
+    fill: currentColor;
+}
+
+/* states ordered to make styles always work */
+
+[gui-logo]:visited svg {
+    fill: currentColor;
+}
+
+[gui-logo]:hover svg {
+    fill: hsl(276, 60%, 36%);
+}
+
+[gui-logo]:active svg {
+    fill: hsl(348, 96%, 56%);
+}
+/*------------------------------------------------------------------------------
 menu base
 ------------------------------------------------------------------------------*/
 
@@ -245,7 +292,10 @@ menu config
 [gui-menu] {
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
-    overflow: hidden;
+
+    /* fix floats */
+    float: left;
+    width: 100%;
 }
 
 [gui-menu-item] {
@@ -264,28 +314,12 @@ menu config
     padding-right: 8px;
     padding-right: 0.5rem;
 
-    background-image: -webkit-linear-gradient(left, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%), -webkit-linear-gradient(top, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%), -webkit-linear-gradient(right, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%), -webkit-linear-gradient(bottom, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%);
+    background-image: -webkit-linear-gradient(left, transparent 0%, currentColor 0%), -webkit-linear-gradient(top, transparent 0%, currentColor 0%), -webkit-linear-gradient(right, transparent 0%, currentColor 0%), -webkit-linear-gradient(bottom, transparent 0%, currentColor 0%);
 
-    background-image: linear-gradient( to right, transparent 0%,
-        transparent 50%,
-        currentColor 50%,
-        currentColor 100%
-     ),
-        linear-gradient( to bottom, transparent 0%,
-        transparent 50%,
-        currentColor 50%,
-        currentColor 100%
-     ),
-        linear-gradient( to left, transparent 0%,
-        transparent 50%,
-        currentColor 50%,
-        currentColor 100%
-     ),
-        linear-gradient( to top, transparent 0%,
-        transparent 50%,
-        currentColor 50%,
-        currentColor 100%
-     )
+    background-image: linear-gradient( to right, transparent 0%, currentColor 0% ),
+        linear-gradient( to bottom, transparent 0%, currentColor 0% ),
+        linear-gradient( to left, transparent 0%, currentColor 0% ),
+        linear-gradient( to top, transparent 0%, currentColor 0% )
     ;
     background-size: 0.125rem
         0.0625rem,
@@ -302,6 +336,11 @@ menu config
         linear-gradient( to bottom, transparent 0%, currentColor 0% ),
         linear-gradient( to left, transparent 0%, currentColor 0% ),
         linear-gradient( to top, transparent 0%, currentColor 0% )
+    ;
+    background-size: 0.25rem
+        0.125rem,
+        0.125rem
+        0.25rem
     ;
 }
 /*------------------------------------------------------------------------------
@@ -337,7 +376,7 @@ postSummary config
 
 :root {
 
-    /* thumbnail */ /* 240px @ 16px */
+    /* thumbnail */ /* 200px @ 16px */
 
 }
 /*------------------------------------------------------------------------------
@@ -346,18 +385,21 @@ postSummary thumbnail part
 
 [gui-postSummary-thumbnail] {
     display: block;
-    width: 240px;
-    width: 15rem;
-    height: 240px;
-    height: 15rem;
-    background-image: none;
+    width: 200px;
+    width: 12.5rem;
+    height: 200px;
+    height: 12.5rem;
+
+    /* remove link styles */
+    background-image: none !important;
 }
 
 [gui-postSummary-thumbnail] svg {
-    width: 240px;
-    width: 15rem;
-    height: 240px;
-    height: 15rem;
+    width: 200px;
+    width: 12.5rem;
+    height: 200px;
+    height: 12.5rem;
+
     fill: currentColor;
 }
 
