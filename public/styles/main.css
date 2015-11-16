@@ -79,10 +79,7 @@ h3,
 h4 {
     line-height: 1;
     margin: 0;
-    padding-top: 24px;
-    padding-top: 1.5rem;
-    padding-bottom: 24px;
-    padding-bottom: 1.5rem;
+    padding: 0;
 }
 
 h1 { font-size: 48px; font-size: 3rem; }
@@ -136,26 +133,20 @@ a {
 
     /* custom underlines */
     background-position: 0 100%;
-    background-size: 0.125rem 0.0625rem;
-    background-image: -webkit-linear-gradient(right, transparent 0%, transparent 50%, currentColor 50%, currentColor 100%);
-    background-image: linear-gradient( to left, transparent 0%,
-        transparent 50%,
-        currentColor 50%,
-        currentColor 100%
-     );
+    background-size: 0.0625rem 0.0625rem;
+    background-image: -webkit-linear-gradient(right, currentColor 0%, currentColor 0%);
+    background-image: linear-gradient( to left, currentColor 0%, currentColor 0% );
     background-repeat: repeat-x;
 }
+
 a:hover {
     color: inherit;
-    background-image: -webkit-linear-gradient(right, transparent 0%, currentColor 0%);
-    background-image: linear-gradient( to left, transparent 0%, currentColor 0% );
+    background-size: 0.125rem 0.125rem;
 }
-a:visited {
-    color: hsl(276, 60%, 36%);
-}
-a:active {
-    color: hsl(348, 96%, 56%);
-}
+
+a:visited { color: inherit; }
+
+a:active { color: hsl(348, 96%, 56%); }
 
 /* text selection */
 
@@ -194,10 +185,14 @@ sizing base layout parts
 body { margin: 0; }
 
 #unmovedMover {
-    box-sizing: border-box;
     width: 100%;
-    padding: 24px 12px;
-    padding: 1.5rem 0.75rem;
+    padding: 48px
+        24px
+    ;
+    padding: 3rem
+        1.5rem
+    ;
+    box-sizing: border-box;
 }
 
 #pageHeader,
@@ -205,6 +200,15 @@ body { margin: 0; }
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+}
+
+#pageHeader:after,
+#pageContent:after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 /*------------------------------------------------------------------------------
@@ -289,23 +293,27 @@ menu base
 menu config
 ------------------------------------------------------------------------------*/
 
-[gui-menu] {
+[gui-menu]:not(:last-child) {
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
+}
 
-    /* fix floats */
-    float: left;
-    width: 100%;
+[gui-menu]:after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
 [gui-menu-item] {
     display: block;
     float: left;
+
+    text-transform: lowercase;
 }
 
 [gui-menu-item]:not(:last-child) {
-    margin-right: 5px;
-    margin-right: 0.3125rem;
+    margin-right: 10px;
+    margin-right: 0.625rem;
 }
 
 [gui-menu-item~="current"] {
@@ -314,43 +322,35 @@ menu config
     padding-right: 8px;
     padding-right: 0.5rem;
 
-    background-image: -webkit-linear-gradient(left, transparent 0%, currentColor 0%), -webkit-linear-gradient(top, transparent 0%, currentColor 0%), -webkit-linear-gradient(right, transparent 0%, currentColor 0%), -webkit-linear-gradient(bottom, transparent 0%, currentColor 0%);
+    background-image: -webkit-linear-gradient(left, currentColor 0%, currentColor 0%), -webkit-linear-gradient(top, currentColor 0%, currentColor 0%), -webkit-linear-gradient(right, currentColor 0%, currentColor 0%), -webkit-linear-gradient(bottom, currentColor 0%, currentColor 0%) !important;
 
-    background-image: linear-gradient( to right, transparent 0%, currentColor 0% ),
-        linear-gradient( to bottom, transparent 0%, currentColor 0% ),
-        linear-gradient( to left, transparent 0%, currentColor 0% ),
-        linear-gradient( to top, transparent 0%, currentColor 0% )
-    ;
-    background-size: 0.125rem
-        0.0625rem,
-        0.0625rem
-        0.125rem
-    ;
+    background-image: linear-gradient( to right, currentColor 0%, currentColor 0% ),
+        linear-gradient( to bottom, currentColor 0%, currentColor 0% ),
+        linear-gradient( to left, currentColor 0%, currentColor 0% ),
+        linear-gradient( to top, currentColor 0%, currentColor 0% )
+     !important;
     background-repeat: repeat-x, repeat-y;
     background-position: 0 0, 100% 0, 0 100%;
 }
+/*------------------------------------------------------------------------------
+pageTitle base
+------------------------------------------------------------------------------*/
 
-[gui-menu-item~="current"]:hover {
-    background-image: -webkit-linear-gradient(left, transparent 0%, currentColor 0%), -webkit-linear-gradient(top, transparent 0%, currentColor 0%), -webkit-linear-gradient(right, transparent 0%, currentColor 0%), -webkit-linear-gradient(bottom, transparent 0%, currentColor 0%);
-    background-image: linear-gradient( to right, transparent 0%, currentColor 0% ),
-        linear-gradient( to bottom, transparent 0%, currentColor 0% ),
-        linear-gradient( to left, transparent 0%, currentColor 0% ),
-        linear-gradient( to top, transparent 0%, currentColor 0% )
-    ;
-    background-size: 0.25rem
-        0.125rem,
-        0.125rem
-        0.25rem
-    ;
+[gui-pageTitle] {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+
+    font-weight: 700;
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 48px;
+    line-height: 3rem;
 }
 /*------------------------------------------------------------------------------
 signature base
 ------------------------------------------------------------------------------*/
 
 [gui-signature] {
-    margin-top: 24px;
-    margin-top: 1.5rem;
-
     text-align: center;
     font-weight: 700;
     text-transform: lowercase;
@@ -385,16 +385,27 @@ postSummary thumbnail part
 
 [gui-postSummary-thumbnail] {
     display: block;
-    width: 200px;
-    width: 12.5rem;
-    height: 200px;
-    height: 12.5rem;
 
     /* remove link styles */
     background-image: none !important;
 }
 
-[gui-postSummary-thumbnail] svg {
+[gui-postSummary-thumbnail-title] {
+    display: block;
+
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    /* computed height of leading and margin is 2x default leading */
+    line-height: 32px;
+    line-height: 2rem;
+    margin-bottom: 16px;
+    margin-bottom: 1rem;
+}
+
+[gui-postSummary-thumbnail-icon] {
+    display: block;
     width: 200px;
     width: 12.5rem;
     height: 200px;
@@ -405,15 +416,24 @@ postSummary thumbnail part
 
 /* states ordered to make styles always work */
 
-[gui-postSummary-thumbnail]:visited svg {
+[gui-postSummary-thumbnail]:visited {
+    color: hsl(276, 60%, 36%);
+}
+[gui-postSummary-thumbnail]:visited [gui-postSummary-thumbnail-icon] {
     fill: hsl(276, 60%, 36%);
 }
 
-[gui-postSummary-thumbnail]:hover svg {
+[gui-postSummary-thumbnail]:hover {
+    color: hsl(348, 96%, 56%);
+}
+[gui-postSummary-thumbnail]:hover [gui-postSummary-thumbnail-icon] {
     fill: hsl(348, 96%, 56%);
 }
 
-[gui-postSummary-thumbnail]:active svg {
+[gui-postSummary-thumbnail]:active {
+    color: hsl(328, 72%, 44%);
+}
+[gui-postSummary-thumbnail]:active [gui-postSummary-thumbnail-icon] {
     fill: hsl(328, 72%, 44%);
 }
 /*------------------------------------------------------------------------------
@@ -421,22 +441,40 @@ postSummary categories part
 ------------------------------------------------------------------------------*/
 
 [gui-postSummary-categories] {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-[gui-postSummary-categories] li {
     display: inline-block;
 }
 
-[gui-postSummary] {}
-
-[gui-postSummary]:not(:first-child) {
-    margin-top: 48px;
-    margin-top: 3rem;
+[gui-postSummary-categories]:after {
+    content: '';
+    display: table;
+    clear: both;
 }
 
-[gui-postSummary-title] {}
+[gui-postSummary-categories] a {
+    display: block;
+    float: left;
 
-[gui-postSummary-date] {}
+    text-transform: lowercase;
+}
+
+[gui-postSummary-categories] a:not(:last-child) {
+    margin-right: 10px;
+    margin-right: 0.625rem;
+}
+
+[gui-postSummary] {
+    float: left;
+    clear: both;
+
+    text-align: center;
+}
+
+[gui-postSummary]:not(:last-child) {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+}
+
+[gui-postSummary-date] {
+    display: block;
+    text-transform: lowercase;
+}

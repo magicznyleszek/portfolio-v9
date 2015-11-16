@@ -3,11 +3,22 @@ postSummary categories part
 ------------------------------------------------------------------------------*/
 
 [gui-postSummary-categories] {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    display: inline-block;
 }
 
-[gui-postSummary-categories] li {
-    display: inline-block;
+[gui-postSummary-categories]:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[gui-postSummary-categories] a {
+    display: block;
+    float: left;
+
+    text-transform: lowercase;
+}
+
+[gui-postSummary-categories] a:not(:last-child) {
+    margin-right: var(--w-small);
 }

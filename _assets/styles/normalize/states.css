@@ -10,20 +10,19 @@ a {
 
     /* custom underlines */
     background-position: 0 100%;
-    background-size: calc(var(--line-gr-w) * 2) var(--line-gr-w);
+    background-size: var(--line-gr-w) var(--line-gr-w);
     background-image: var(--line-gr);
     background-repeat: repeat-x;
 }
+
 a:hover {
     color: inherit;
-    background-image: var(--line-gr-hover);
+    background-size: calc(var(--line-gr-w) * 2) calc(var(--line-gr-w) * 2);
 }
-a:visited {
-    color: var(--c-violet);
-}
-a:active {
-    color: var(--c-amaranth);
-}
+
+a:visited { color: inherit; }
+
+a:active { color: var(--c-amaranth); }
 
 /* text selection */
 

@@ -5,8 +5,7 @@ base typographic rules
 :--headers {
     line-height: 1;
     margin: 0;
-    padding-top: calc(var(--rootLineHeight) * 1rem);
-    padding-bottom: calc(var(--rootLineHeight) * 1rem);
+    padding: 0;
 }
 
 h1 { font-size: 3rem; }

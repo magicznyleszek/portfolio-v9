@@ -33,9 +33,8 @@ common FUNCTIONAL variables (each module has own config file)
         currentColor 50%,
         currentColor 100%
     ;
-    --line-gr-solid-c: transparent 0%, currentColor 0%;
-    --line-gr: linear-gradient( to left, var(--line-gr-dotted-c) );
-    --line-gr-hover: linear-gradient( to left, var(--line-gr-solid-c) );
+    --line-gr-solid-c: currentColor 0%, currentColor 0%;
+    --line-gr: linear-gradient( to left, var(--line-gr-solid-c) );
 
     --hr-bg-c: currentColor;
     --hr-h: 0.125rem; /* 2px @ 16px */

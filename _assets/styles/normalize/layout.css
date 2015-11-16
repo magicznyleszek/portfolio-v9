@@ -5,9 +5,12 @@ sizing base layout parts
 body { margin: 0; }
 
 #unmovedMover {
-    box-sizing: border-box;
     width: 100%;
-    padding: calc(var(--rootLineHeight) * 1rem) calc(var(--rootLineHeight) * 0.5rem);
+    padding:
+        calc(var(--rootLineHeight) * 2rem)
+        calc(var(--rootLineHeight) * 1rem)
+    ;
+    box-sizing: border-box;
 }
 
 #pageHeader,
@@ -15,4 +18,12 @@ body { margin: 0; }
     max-width: var(--app-content-w);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: calc(var(--rootLineHeight) * 2rem);
+}
+
+#pageHeader:after,
+#pageContent:after {
+    content: '';
+    display: table;
+    clear: both;
 }

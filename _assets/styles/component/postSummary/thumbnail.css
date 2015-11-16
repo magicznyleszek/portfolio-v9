@@ -4,14 +4,24 @@ postSummary thumbnail part
 
 [gui-postSummary-thumbnail] {
     display: block;
-    width: var(--postSummary-thumbnail-w);
-    height: var(--postSummary-thumbnail-w);
 
     /* remove link styles */
     background-image: none !important;
 }
 
-[gui-postSummary-thumbnail] svg {
+[gui-postSummary-thumbnail-title] {
+    display: block;
+
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    /* computed height of leading and margin is 2x default leading */
+    line-height: calc(var(--rootLineHeight) * 4rem / 3rem);
+    margin-bottom: calc(var(--rootLineHeight) * 2rem / 3rem);
+}
+
+[gui-postSummary-thumbnail-icon] {
+    display: block;
     width: var(--postSummary-thumbnail-w);
     height: var(--postSummary-thumbnail-w);
 
@@ -20,14 +30,23 @@ postSummary thumbnail part
 
 /* states ordered to make styles always work */
 
-[gui-postSummary-thumbnail]:visited svg {
+[gui-postSummary-thumbnail]:visited {
+    color: var(--postSummary-thumbnail-c-visited);
+}
+[gui-postSummary-thumbnail]:visited [gui-postSummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-visited);
 }
 
-[gui-postSummary-thumbnail]:hover svg {
+[gui-postSummary-thumbnail]:hover {
+    color: var(--postSummary-thumbnail-c-hover);
+}
+[gui-postSummary-thumbnail]:hover [gui-postSummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-hover);
 }
 
-[gui-postSummary-thumbnail]:active svg {
+[gui-postSummary-thumbnail]:active {
+    color: var(--postSummary-thumbnail-c-active);
+}
+[gui-postSummary-thumbnail]:active [gui-postSummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-active);
 }

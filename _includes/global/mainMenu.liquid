@@ -1,10 +1,9 @@
 <nav gui-menu>
 
-    <span gui-menu-item>Main:</span>
-
     {% for place in site.data.navigation %}
         <a
-            gui-menu-item="{% if place.slug == page.slug%}current{% endif %}"
+            gui-menu-item="{% if place.slug == page.slug %}current{% endif %}
+                "
             href="{{ site.baseurl }}{{ place.url }}"
         >
             {{ place.label }}
@@ -15,8 +14,6 @@
 
 {% if page.layout == "category" %}
 <nav gui-menu>
-
-    <span gui-menu-item>Categories:</span>
 
     {% for category in site.data.categories %}
         <a

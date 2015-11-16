@@ -6,12 +6,18 @@ postSummary base
 @import "thumbnail.css";
 @import "categories.css";
 
-[gui-postSummary] {}
+[gui-postSummary] {
+    float: left;
+    clear: both;
 
-[gui-postSummary]:not(:first-child) {
-    margin-top: calc(var(--rootLineHeight) * 2rem);
+    text-align: center;
 }
 
-[gui-postSummary-title] {}
+[gui-postSummary]:not(:last-child) {
+    margin-bottom: calc(var(--rootLineHeight) * 2rem);
+}
 
-[gui-postSummary-date] {}
+[gui-postSummary-date] {
+    display: block;
+    text-transform: lowercase;
+}

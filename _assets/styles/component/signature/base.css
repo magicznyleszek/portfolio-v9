@@ -3,8 +3,6 @@ signature base
 ------------------------------------------------------------------------------*/
 
 [gui-signature] {
-    margin-top: calc(var(--rootLineHeight) * 1rem);
-
     text-align: center;
     font-weight: 700;
     text-transform: lowercase;
