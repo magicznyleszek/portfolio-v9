@@ -279,11 +279,11 @@ logo config
 }
 
 [gui-logo]:hover svg {
-    fill: hsl(276, 60%, 36%);
+    fill: hsl(348, 96%, 56%);
 }
 
 [gui-logo]:active svg {
-    fill: hsl(348, 96%, 56%);
+    fill: hsl(328, 72%, 44%);
 }
 /*------------------------------------------------------------------------------
 menu base
@@ -340,9 +340,9 @@ pageTitle base
     margin-bottom: 48px;
     margin-bottom: 3rem;
 
-    font-weight: 700;
-    font-size: 48px;
-    font-size: 3rem;
+    font-weight: 400;
+    font-size: 64px;
+    font-size: 4rem;
     line-height: 48px;
     line-height: 3rem;
 }
@@ -392,6 +392,8 @@ postSummary thumbnail part
 
 [gui-postSummary-thumbnail-title] {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     font-size: 24px;
     font-size: 1.5rem;

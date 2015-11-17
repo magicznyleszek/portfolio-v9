@@ -1,0 +1,12 @@
+<nav gui-menu>
+
+    {% for category in site.data.categories %}
+        <a
+            gui-menu-item="{% if category.slug == page.slug%}current{% endif %}"
+            href="{{ site.baseurl }}{{ category.url }}"
+        >
+            {{ category.label }}
+        </a>
+    {% endfor %}
+
+</nav>

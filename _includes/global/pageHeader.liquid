@@ -6,4 +6,8 @@
 
     {% include global/mainMenu.liquid %}
 
+    {% if page.layout == "category" %}
+        {% include global/categoriesMenu.liquid %}
+    {% endif %}
+
 </header>

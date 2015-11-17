@@ -11,6 +11,8 @@ postSummary thumbnail part
 
 [gui-postSummary-thumbnail-title] {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
 
     font-size: 1.5rem;
     font-weight: 700;

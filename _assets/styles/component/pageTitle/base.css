@@ -5,7 +5,7 @@ pageTitle base
 [gui-pageTitle] {
     margin-bottom: calc(var(--rootLineHeight) * 2rem);
 
-    font-weight: 700;
-    font-size: 3rem;
+    font-weight: 400;
+    font-size: 4rem;
     line-height: calc(var(--rootLineHeight) * 2rem);
 }
