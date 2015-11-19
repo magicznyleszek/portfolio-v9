@@ -2,12 +2,17 @@
 signature base
 ------------------------------------------------------------------------------*/
 
+@import "config.css";
+
 [gui-signature] {
     float: left;
 
     font-weight: 700;
     text-transform: lowercase;
     font-style: italic;
+
+    /* remove link styles */
+    background-image: none !important;
 
     /* magic value too look perfect (for 4 lines of text) */
     line-height: 0.875rem;
@@ -16,3 +21,7 @@ signature base
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+
+[gui-signature]:visited { color: var(--signature-c-visited); }
+[gui-signature]:hover { color: var(--signature-c-hover); }
+[gui-signature]:active { color: var(--signature-c-active); }

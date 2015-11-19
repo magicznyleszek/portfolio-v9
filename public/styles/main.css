@@ -365,12 +365,19 @@ pageSection base
 signature base
 ------------------------------------------------------------------------------*/
 
+/*------------------------------------------------------------------------------
+signature config
+------------------------------------------------------------------------------*/
+
 [gui-signature] {
     float: left;
 
     font-weight: 700;
     text-transform: lowercase;
     font-style: italic;
+
+    /* remove link styles */
+    background-image: none !important;
 
     /* magic value too look perfect (for 4 lines of text) */
     line-height: 14px;
@@ -382,6 +389,10 @@ signature base
     padding-bottom: 8px;
     padding-bottom: 0.5rem;
 }
+
+[gui-signature]:visited { color: hsl(276, 60%, 36%); }
+[gui-signature]:hover { color: hsl(348, 96%, 56%); }
+[gui-signature]:active { color: hsl(328, 72%, 44%); }
 /*------------------------------------------------------------------------------
 postSummary base
 ------------------------------------------------------------------------------*/
