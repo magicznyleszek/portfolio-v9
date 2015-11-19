@@ -1,13 +1,9 @@
-<header id="pageHeader">
+<header gui-pageSection="short">
 
     <a gui-logo href="{{ site.baseurl }}/">
         <svg><use xlink:href="#icon-smutnyleszek-logo"></svg>
     </a>
 
-    {% include global/mainMenu.liquid %}
-
-    {% if page.layout == "category" %}
-        {% include global/categoriesMenu.liquid %}
-    {% endif %}
+    {% include global/categoriesMenu.liquid %}
 
 </header>

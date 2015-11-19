@@ -3,9 +3,20 @@ pageTitle base
 ------------------------------------------------------------------------------*/
 
 [gui-pageTitle] {
-    margin-bottom: calc(var(--rootLineHeight) * 2rem);
 
+}
+
+[gui-pageTitle-name] {
     font-weight: 400;
     font-size: 4rem;
     line-height: calc(var(--rootLineHeight) * 2rem);
+}
+
+[gui-pageTitle-meta] {
+    display: block;
+
+    font-style: italic;
+    text-transform: lowercase;
+
+    margin-top: calc(var(--rootLineHeight) * 1rem);
 }

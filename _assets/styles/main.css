@@ -15,5 +15,7 @@ main styles aggregation
 @import "component/logo/base.css";
 @import "component/menu/base.css";
 @import "component/pageTitle/base.css";
+@import "component/pageSection/base.css";
 @import "component/signature/base.css";
 @import "component/postSummary/base.css";
+@import "component/postFurther/base.css";

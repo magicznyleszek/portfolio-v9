@@ -2,31 +2,25 @@
 
 {% include global/pageHeader.liquid %}
 
-<section id="pageContent" role="main">
+<section role="main">
 
-    <article>
+    <header gui-pageTitle gui-pageSection="short">
+        <h1 gui-pageTitle-name>{{ page.title }}</h1>
 
-        <h1 gui-pageTitle>{{ page.title }}</h1>
+        <time gui-pageTitle-meta datetime="{{ page.date }}">
+            from {{ page.date | date: "%B %Y" }}
+        </time>
+    </header>
 
-        <h2>Description:</h2>
-
+    <section gui-pageSection="short">
         {{ content }}
+    </section>
 
-        <h2>Gallery:</h2>
-
+    <section gui-pageSection>
         {% include post/gallery.liquid images=page.gallery slug=page.slug %}
+    </section>
 
-        <footer>
-
-            <time datetime="{{ page.date }}">
-                CLOCK {{ page.date | date: "%B %Y" }}
-            </time>
-
-        </footer>
-
-    </article>
-
-    {% include post/furtherLinks.liquid previousPost=page.previous nextPost=page.next %}
+    {% include post/furtherPosts.liquid previousPost=page.previous nextPost=page.next %}
 
 </section>
 

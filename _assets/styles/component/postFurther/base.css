@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------------------
+postFurther base
+------------------------------------------------------------------------------*/
+
+@import "config.css";
+
+[gui-postFurther] {
+    display: block;
+    float: left;
+
+    text-align: center;
+
+    /* remove link styles */
+    background-image: none !important;
+}
+
+[gui-postFurther]:not(:last-child) {
+    margin-right: var(--w-big);
+}
+
+[gui-postFurther-title] {
+    display: block;
+    font-weight: 700;
+}
+
+[gui-postFurther-subtitle] { display: block; }
+
+[gui-postFurther-icon] {
+    display: block;
+    width: var(--postFurther-icon-w);
+    height: var(--postFurther-icon-w);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: var(--postFurther-icon-margin);
+
+    fill: var(--postFurther-c);
+}
+
+/* states ordered to make styles always work */
+
+[gui-postFurther]:visited {
+    color: var(--postFurther-c-visited);
+}
+[gui-postFurther]:visited [gui-postFurther-icon] {
+    fill: var(--postFurther-c-visited);
+}
+
+[gui-postFurther]:hover {
+    color: var(--postFurther-c-hover);
+}
+[gui-postFurther]:hover [gui-postFurther-icon] {
+    fill: var(--postFurther-c-hover);
+}
+
+[gui-postFurther]:active {
+    color: var(--postFurther-c-active);
+}
+[gui-postFurther]:active [gui-postFurther-icon] {
+    fill: var(--postFurther-c-active);
+}

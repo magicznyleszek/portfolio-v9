@@ -8,7 +8,7 @@ common FUNCTIONAL variables (each module has own config file)
 
     --app-txt-c: var(--c-blackcurrant);
     --app-bg-c: white;
-    --app-content-w: 900px;
+    --app-content-w: 600px;
 
     /* breakpoints */
 

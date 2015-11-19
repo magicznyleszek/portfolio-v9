@@ -12,18 +12,3 @@ body { margin: 0; }
     ;
     box-sizing: border-box;
 }
-
-#pageHeader,
-#pageContent {
-    max-width: var(--app-content-w);
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: calc(var(--rootLineHeight) * 2rem);
-}
-
-#pageHeader:after,
-#pageContent:after {
-    content: '';
-    display: table;
-    clear: both;
-}

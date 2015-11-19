@@ -1,0 +1,15 @@
+/*------------------------------------------------------------------------------
+postFurther config
+------------------------------------------------------------------------------*/
+
+:root {
+
+    /* thumbnail */
+    --postFurther-c: currentColor;
+    --postFurther-c-hover: var(--c-amaranth);
+    --postFurther-c-active: var(--c-purple);
+    --postFurther-c-visited: var(--c-violet);
+    --postFurther-icon-w: 5.5rem; /* 88px @ 16px */
+    --postFurther-icon-margin: 0.5rem; /* 8px @ 16px */
+
+}

@@ -1,0 +1,23 @@
+<section gui-pageSection="short">
+
+    {% if include.previousPost %}
+        <a gui-postFurther="previous" href="{{ include.previousPost.url }}">
+            <svg gui-postFurther-icon>
+                <use xlink:href="#icon-thumbnail-{{ include.previousPost.slug }}">
+            </svg>
+            <span gui-postFurther-title>{{ include.previousPost.title }}</span>
+            <span gui-postFurther-subtitle>previous</span>
+        </a>
+    {% endif %}
+
+    {% if include.nextPost %}
+        <a gui-postFurther="next" href="{{ include.nextPost.url }}">
+            <svg gui-postFurther-icon>
+                <use xlink:href="#icon-thumbnail-{{ include.nextPost.slug }}">
+            </svg>
+            <span gui-postFurther-title>{{ include.nextPost.title }}</span>
+            <span gui-postFurther-subtitle>next</span>
+        </a>
+    {% endif %}
+
+</section>
