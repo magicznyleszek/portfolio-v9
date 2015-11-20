@@ -14,9 +14,18 @@ signature base
     /* remove link styles */
     background-image: none !important;
 
-    /* magic value too look perfect (for 4 lines of text) */
+    /* magic value too look perfect */
     line-height: 0.875rem;
 
+}
+
+[gui-signature~="3"] {
+    /* magic value to match missing pixels for 3 times rootLineHeight */
+    padding-top: 0.1875rem;
+    padding-bottom: 0.1875rem;
+}
+
+[gui-signature~="4"] {
     /* magic value to match missing pixels for 4 times rootLineHeight */
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;

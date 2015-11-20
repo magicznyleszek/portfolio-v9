@@ -23,14 +23,8 @@ logo base
 
 /* states ordered to make styles always work */
 
-[gui-logo]:visited svg {
-    fill: var(--logo-c-visited);
-}
+[gui-logo]:visited svg { fill: var(--logo-c-visited); }
 
-[gui-logo]:hover svg {
-    fill: var(--logo-c-hover);
-}
+[gui-logo]:hover svg { fill: var(--logo-c-hover); }
 
-[gui-logo]:active svg {
-    fill: var(--logo-c-active);
-}
+[gui-logo]:active svg { fill: var(--logo-c-active); }

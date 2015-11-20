@@ -230,16 +230,16 @@ logo base
 logo config
 ------------------------------------------------------------------------------*/
 
-:root { /* 100px @ 16px */
+:root { /* 96px @ 16px */
 
 }
 
 [gui-logo] {
     display: block;
-    width: 100px;
-    width: 6.25rem;
-    height: 100px;
-    height: 6.25rem;
+    width: 96px;
+    width: 6rem;
+    height: 96px;
+    height: 6rem;
 
     margin-bottom: 24px;
     margin-bottom: 1.5rem;
@@ -249,26 +249,20 @@ logo config
 }
 
 [gui-logo] svg {
-    width: 100px;
-    width: 6.25rem;
-    height: 100px;
-    height: 6.25rem;
+    width: 96px;
+    width: 6rem;
+    height: 96px;
+    height: 6rem;
     fill: currentColor;
 }
 
 /* states ordered to make styles always work */
 
-[gui-logo]:visited svg {
-    fill: currentColor;
-}
+[gui-logo]:visited svg { fill: currentColor; }
 
-[gui-logo]:hover svg {
-    fill: hsl(348, 96%, 56%);
-}
+[gui-logo]:hover svg { fill: hsl(348, 96%, 56%); }
 
-[gui-logo]:active svg {
-    fill: hsl(328, 72%, 44%);
-}
+[gui-logo]:active svg { fill: hsl(328, 72%, 44%); }
 /*------------------------------------------------------------------------------
 menu base
 ------------------------------------------------------------------------------*/
@@ -379,10 +373,21 @@ signature config
     /* remove link styles */
     background-image: none !important;
 
-    /* magic value too look perfect (for 4 lines of text) */
+    /* magic value too look perfect */
     line-height: 14px;
     line-height: 0.875rem;
 
+}
+
+[gui-signature~="3"] {
+    /* magic value to match missing pixels for 3 times rootLineHeight */
+    padding-top: 3px;
+    padding-top: 0.1875rem;
+    padding-bottom: 3px;
+    padding-bottom: 0.1875rem;
+}
+
+[gui-signature~="4"] {
     /* magic value to match missing pixels for 4 times rootLineHeight */
     padding-top: 8px;
     padding-top: 0.5rem;
@@ -521,7 +526,7 @@ postFurther config
 
 :root {
 
-    /* thumbnail */ /* 88px @ 16px */ /* 8px @ 16px */
+    /* thumbnail */ /* 96px @ 16px */
 
 }
 
@@ -549,14 +554,12 @@ postFurther config
 
 [gui-postFurther-icon] {
     display: block;
-    width: 88px;
-    width: 5.5rem;
-    height: 88px;
-    height: 5.5rem;
+    width: 96px;
+    width: 6rem;
+    height: 96px;
+    height: 6rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 8px;
-    margin-bottom: 0.5rem;
 
     fill: currentColor;
 }

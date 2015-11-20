@@ -31,7 +31,6 @@ postFurther base
     height: var(--postFurther-icon-w);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: var(--postFurther-icon-margin);
 
     fill: var(--postFurther-c);
 }
