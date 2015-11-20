@@ -12,15 +12,11 @@
         </time>
     </header>
 
-    <section gui-pageSection="short">
+    <section gui-projectContent>
         {{ content }}
     </section>
 
-    <section gui-pageSection>
-        {% include post/gallery.liquid images=page.gallery slug=page.slug %}
-    </section>
-
-    {% include post/furtherPosts.liquid previousPost=page.previous nextPost=page.next %}
+    {% include project/relateds.liquid older=page.previous newer=page.next %}
 
 </section>
 

@@ -10,7 +10,7 @@ gallery:
     - niezgrani-5.png
     - niezgrani-6.png
     - niezgrani-7.png
-layout: post
+layout: project
 ---
 
 [Niezgrani.pl](http://niezgrani.pl) is an independent gaming portal, specializing in the news of the gameworld and keeping with the memories of the retro times. The decided to go with the logotype inspired by the oldschool companies logos.

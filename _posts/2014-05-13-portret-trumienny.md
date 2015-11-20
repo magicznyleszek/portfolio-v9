@@ -20,7 +20,7 @@ gallery:
     - portret-trumienny-photo-5.jpg
     - portret-trumienny-photo-6.jpg
     - portret-trumienny-photo-7.jpg
-layout: post
+layout: project
 ---
 
 "Portret trumienny" is the debut novel of Kuba Wojtaszczyk ([interview with Milena Buszkiewicz for Booklips -- in polish](http://booklips.pl/wywiady/polski-portret-wywiad-z-kuba-wojtaszczykiem/)), a young, promising writer and cultural studies graduate. Originally I was comissioned for few illustrations, but I ended up creating the cover, designing and preparing the whole book for print and virtually the entire visual stuff related to the book. The novel was self-published in small quantity.

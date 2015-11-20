@@ -395,7 +395,7 @@ signature config
     padding-bottom: 0.5rem;
 }
 
-[gui-signature]:visited { color: hsl(276, 60%, 36%); }
+[gui-signature]:visited { color: currentColor; }
 [gui-signature]:hover { color: hsl(348, 96%, 56%); }
 [gui-signature]:active { color: hsl(328, 72%, 44%); }
 /*------------------------------------------------------------------------------
@@ -406,9 +406,7 @@ postSummary base
 postSummary config
 ------------------------------------------------------------------------------*/
 
-:root {
-
-    /* thumbnail */ /* 200px @ 16px */
+:root { /* 200px @ 16px */
 
 }
 /*------------------------------------------------------------------------------
@@ -517,47 +515,42 @@ postSummary categories part
     text-transform: lowercase;
 }
 /*------------------------------------------------------------------------------
-postFurther base
+projectRelated base
 ------------------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------------------
-postFurther config
+projectRelated config
 ------------------------------------------------------------------------------*/
 
-:root {
-
-    /* thumbnail */ /* 96px @ 16px */
-
-}
-
-[gui-postFurther] {
+[gui-projectRelated] {
     display: block;
     float: left;
-
-    text-align: center;
+    clear: both;
 
     /* remove link styles */
     background-image: none !important;
 }
 
-[gui-postFurther]:not(:last-child) {
-    margin-right: 32px;
-    margin-right: 2rem;
+[gui-projectRelated]:not(:last-child) {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
 }
 
-[gui-postFurther-title] {
-    display: block;
-    font-weight: 700;
+[gui-projectRelated-title] { font-weight: 700; }
+
+
+[gui-projectRelated-icon],
+[gui-projectRelated-title],
+[gui-projectRelated-subtitle] {
+    display: inline-block;
+    vertical-align: middle;
 }
 
-[gui-postFurther-subtitle] { display: block; }
-
-[gui-postFurther-icon] {
-    display: block;
-    width: 96px;
-    width: 6rem;
-    height: 96px;
-    height: 6rem;
+[gui-projectRelated-icon] {
+    width: 24px;
+    width: 1.5rem;
+    height: 24px;
+    height: 1.5rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -566,23 +559,79 @@ postFurther config
 
 /* states ordered to make styles always work */
 
-[gui-postFurther]:visited {
+[gui-projectRelated]:visited {
     color: hsl(276, 60%, 36%);
 }
-[gui-postFurther]:visited [gui-postFurther-icon] {
+[gui-projectRelated]:visited [gui-projectRelated-icon] {
     fill: hsl(276, 60%, 36%);
 }
 
-[gui-postFurther]:hover {
+[gui-projectRelated]:hover {
     color: hsl(348, 96%, 56%);
 }
-[gui-postFurther]:hover [gui-postFurther-icon] {
+[gui-projectRelated]:hover [gui-projectRelated-icon] {
     fill: hsl(348, 96%, 56%);
 }
 
-[gui-postFurther]:active {
+[gui-projectRelated]:active {
     color: hsl(328, 72%, 44%);
 }
-[gui-postFurther]:active [gui-postFurther-icon] {
+[gui-projectRelated]:active [gui-projectRelated-icon] {
     fill: hsl(328, 72%, 44%);
+}
+/*------------------------------------------------------------------------------
+projectContent base
+------------------------------------------------------------------------------*/
+
+/* handles markdown-generated content of Jekyll posts */
+
+[gui-projectContent] {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+}
+
+[gui-projectContent] > ul,
+[gui-projectContent] > ol,
+[gui-projectContent] > code,
+[gui-projectContent] > blockquote,
+[gui-projectContent] > p {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[gui-projectContent] > ul:not(:last-child),
+[gui-projectContent] > ol:not(:last-child),
+[gui-projectContent] > code:not(:last-child),
+[gui-projectContent] > blockquote:not(:last-child),
+[gui-projectContent] > p:not(:last-child) {
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+}
+
+[gui-projectContent] > ul,
+[gui-projectContent] > ol {
+    margin-top: 0;
+}
+/*------------------------------------------------------------------------------
+projectImage base
+------------------------------------------------------------------------------*/
+
+[gui-projectImage] {
+    max-width: 100%;
+
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
+}
+
+[gui-projectImage-thumbnail],
+[gui-projectImage-thumbnail] img {
+    max-width: inherit;
+}
+
+[gui-projectImage-title] {
+    display: block;
 }

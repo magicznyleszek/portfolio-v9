@@ -1,0 +1,21 @@
+/*------------------------------------------------------------------------------
+projectImage base
+------------------------------------------------------------------------------*/
+
+[gui-projectImage] {
+    max-width: 100%;
+
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc(var(--rootLineHeight) * 1rem);
+}
+
+[gui-projectImage-thumbnail],
+[gui-projectImage-thumbnail] img {
+    max-width: inherit;
+}
+
+[gui-projectImage-title] {
+    display: block;
+}

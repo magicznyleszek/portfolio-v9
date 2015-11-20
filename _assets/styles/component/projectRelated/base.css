@@ -1,0 +1,60 @@
+/*------------------------------------------------------------------------------
+projectRelated base
+------------------------------------------------------------------------------*/
+
+@import "config.css";
+
+[gui-projectRelated] {
+    display: block;
+    float: left;
+    clear: both;
+
+    /* remove link styles */
+    background-image: none !important;
+}
+
+[gui-projectRelated]:not(:last-child) {
+    margin-bottom: calc(var(--rootLineHeight) * 1rem);
+}
+
+[gui-projectRelated-title] { font-weight: 700; }
+
+
+[gui-projectRelated-icon],
+[gui-projectRelated-title],
+[gui-projectRelated-subtitle] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+[gui-projectRelated-icon] {
+    width: var(--projectRelated-icon-w);
+    height: var(--projectRelated-icon-w);
+    margin-left: auto;
+    margin-right: auto;
+
+    fill: var(--projectRelated-c);
+}
+
+/* states ordered to make styles always work */
+
+[gui-projectRelated]:visited {
+    color: var(--projectRelated-c-visited);
+}
+[gui-projectRelated]:visited [gui-projectRelated-icon] {
+    fill: var(--projectRelated-c-visited);
+}
+
+[gui-projectRelated]:hover {
+    color: var(--projectRelated-c-hover);
+}
+[gui-projectRelated]:hover [gui-projectRelated-icon] {
+    fill: var(--projectRelated-c-hover);
+}
+
+[gui-projectRelated]:active {
+    color: var(--projectRelated-c-active);
+}
+[gui-projectRelated]:active [gui-projectRelated-icon] {
+    fill: var(--projectRelated-c-active);
+}

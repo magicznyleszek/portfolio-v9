@@ -1,0 +1,18 @@
+{% capture slugPath %}{{ site.imagesPath }}{{ include.slug }}{% endcapture %}
+
+<figure gui-projectImage>
+
+    <a gui-projectImage-thumbnail href="{{ slugPath }}/original/{{ include.image }}">
+        <img
+            src="{{ slugPath }}/thumbnail/{{ include.image }}"
+            srcset="{{ slugPath }}/thumbnail/{{ include.image }} 1x,
+                {{ slugPath }}/thumbnail-x2/{{ include.image }} 2x"
+            alt="{{ include.image }}"
+        >
+    </a>
+
+    {% if include.title %}
+        <span gui-projectImage-title>{{ include.title }}</span>
+    {% endif %}
+
+</figure>

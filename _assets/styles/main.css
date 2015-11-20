@@ -18,4 +18,6 @@ main styles aggregation
 @import "component/pageSection/base.css";
 @import "component/signature/base.css";
 @import "component/postSummary/base.css";
-@import "component/postFurther/base.css";
+@import "component/projectRelated/base.css";
+@import "component/projectContent/base.css";
+@import "component/projectImage/base.css";

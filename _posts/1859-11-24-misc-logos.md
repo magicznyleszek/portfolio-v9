@@ -21,7 +21,7 @@ gallery:
     - misc-logos-15-ex-libris-wesola.png
     - misc-logos-16-cert-pl.png
     - misc-logos-17-krakow-2022.png
-layout: post
+layout: project
 ---
 
 A collection of logos from jobs, classes at the university and several contests.

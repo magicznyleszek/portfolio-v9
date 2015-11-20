@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------------
+projectRelated config
+------------------------------------------------------------------------------*/
+
+:root {
+
+    --projectRelated-c: currentColor;
+    --projectRelated-c-visited: var(--c-violet);
+    --projectRelated-c-hover: var(--c-amaranth);
+    --projectRelated-c-active: var(--c-purple);
+    --projectRelated-icon-w: calc(var(--rootLineHeight) * 1rem);
+
+}

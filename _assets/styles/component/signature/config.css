@@ -5,8 +5,8 @@ signature config
 :root {
 
     --signature-c: currentColor;
+    --signature-c-visited: currentColor;
     --signature-c-hover: var(--c-amaranth);
     --signature-c-active: var(--c-purple);
-    --signature-c-visited: var(--c-violet);
 
 }

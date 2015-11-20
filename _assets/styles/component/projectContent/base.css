@@ -1,0 +1,32 @@
+/*------------------------------------------------------------------------------
+projectContent base
+------------------------------------------------------------------------------*/
+
+/* handles markdown-generated content of Jekyll posts */
+
+[gui-projectContent] {
+    margin-bottom: calc(var(--rootLineHeight) * 2rem);
+}
+
+[gui-projectContent] > ul,
+[gui-projectContent] > ol,
+[gui-projectContent] > code,
+[gui-projectContent] > blockquote,
+[gui-projectContent] > p {
+    max-width: var(--app-content-w);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[gui-projectContent] > ul:not(:last-child),
+[gui-projectContent] > ol:not(:last-child),
+[gui-projectContent] > code:not(:last-child),
+[gui-projectContent] > blockquote:not(:last-child),
+[gui-projectContent] > p:not(:last-child) {
+    margin-bottom: calc(var(--rootLineHeight) * 1rem);
+}
+
+[gui-projectContent] > ul,
+[gui-projectContent] > ol {
+    margin-top: 0;
+}

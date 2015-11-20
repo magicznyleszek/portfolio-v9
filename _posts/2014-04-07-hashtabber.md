@@ -10,7 +10,7 @@ gallery:
     - hashtabber-05-website-2.png
     - hashtabber-06-website-3.png
     - hashtabber-07-website-4.png
-layout: post
+layout: project
 ---
 
 [HashTabber](http://hashtabber.smutnyleszek.com) is a simple `JavaScript` plugin for tabbed navigation with hash-driven links.
@@ -27,9 +27,9 @@ The plugin was featured i.a. on:
 
 In some free time I built a simple logo based on the shapes of "#" and "T" characters and the tabbed interface itself. Visually, I dressed it in jade green and some warmer grays.
 
-[![logo][hashtabber-01]][hashtabber-01]
+{% include project/image.liquid slug=page.slug image="hashtabber-01-logo.png" title="Simple logo of the project" %}
 
-[![palette][hashtabber-02]][hashtabber-02]
+{% include project/image.liquid slug=page.slug image="hashtabber-02-palette.png" title="Color palette" %}
 
 *Modus operandi* of the script is more precise and technically-wise described [on the website of the project](http://hashtabber.smutnyleszek.com), but in short it can be described by the following diagram:
 
@@ -41,16 +41,16 @@ In some free time I built a simple logo based on the shapes of "#" and "T" chara
 
 This may sound banal, but thanks to the hash links, the page doesn't reload and you can change tabs from the outside. And the whole functionality is minimalistic, slick and ready for use with very low requirements.
 
-[![diagram][hashtabber-03]][hashtabber-03]
+{% include project/image.liquid slug=page.slug image="hashtabber-03-diagram.png" title="Diagram" %}
 
 The page didn't need practically nothing but some smooth typography -- I used *Source Sans Pro* from Paul Hunt, a slim modular scale and a few clever `media queries` for mobile devices.
 
-[![website-1][hashtabber-04]][hashtabber-04]
+{% include project/image.liquid slug=page.slug image="hashtabber-04-website-1.png" %}
 
-[![website-2][hashtabber-05]][hashtabber-05]
+{% include project/image.liquid slug=page.slug image="hashtabber-05-website-2.png" %}
 
-[![website-3][hashtabber-06]][hashtabber-06]
+{% include project/image.liquid slug=page.slug image="hashtabber-06-website-3.png" %}
 
-[![website-4][hashtabber-07]][hashtabber-07]
+{% include project/image.liquid slug=page.slug image="hashtabber-07-website-4.png" %}
 
 In addition, the entire script is [availabe in the Public Domain](https://creativecommons.org/publicdomain/zero/1.0/), i.e. for free.

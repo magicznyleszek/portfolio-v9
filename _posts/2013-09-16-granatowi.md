@@ -9,7 +9,7 @@ gallery:
     - granatowi-04-overview-1.png
     - granatowi-05-overview-2.png
     - granatowi-06-sekcja.png
-layout: post
+layout: project
 ---
 
 As a part of the work at [Clos Brothers](http://closbrothers.pl) mockup-proposal for a new website for Granatowi agency. The idea is based on the similarity to the International Astrophysical Observatory "Granat" -- made in USSR in cooperation with Denmark, France and Bulgaria.

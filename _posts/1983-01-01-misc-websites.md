@@ -10,7 +10,7 @@ gallery:
     - misc-websites-05-clos-kartka-1.png
     - misc-websites-06-clos-kartka-2.png
     - misc-websites-07-clos-kartka-3.png
-layout: post
+layout: project
 ---
 
 A collection of several mockups for websites.

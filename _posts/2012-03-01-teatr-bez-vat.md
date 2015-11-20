@@ -14,7 +14,7 @@ gallery:
     - teatr-bez-vat-9.jpg
     - teatr-bez-vat-10.jpg
     - teatr-bez-vat-11.jpg
-layout: post
+layout: project
 ---
 
 I cooperated with Teatr Bez Vat for several years as a graphic designer. I made numerous posters, leaflets, a website and virtually the entire visual identity -- actually long enough to update the first myself-designed logo:

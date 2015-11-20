@@ -11,7 +11,7 @@ gallery:
     - autoportrety-1-6.jpg
     - autoportrety-1-7.jpg
     - autoportrety-1-8.jpg
-layout: post
+layout: project
 ---
 
 A first series of concrete drawings of the heads of Leszek. The proposal that stems from them is that the heads from the head are worse than the heads from the mirror -- which of course doesn't mean that I will come to my senses and will use this advice... Tge last one is by far the closest one physically, but somehow lacking psychologically.
