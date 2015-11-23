@@ -10,6 +10,7 @@ all DESCRIPTIVE variables (colors, sizes, etc.)
     --c-purple: hsl(328, 72%, 44%);
     --c-violet: hsl(276, 60%, 36%);
     --c-blackcurrant: hsl(276, 32%, 12%);
+    --c-white: hsl(0, 0%, 100%);
 
     /* font families */
 

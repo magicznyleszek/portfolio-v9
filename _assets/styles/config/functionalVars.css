@@ -7,7 +7,7 @@ common FUNCTIONAL variables (each module has own config file)
     /* base */
 
     --app-txt-c: var(--c-blackcurrant);
-    --app-bg-c: white;
+    --app-bg-c: var(--c-white);
     --app-content-w: 600px;
 
     /* breakpoints */
@@ -42,7 +42,7 @@ common FUNCTIONAL variables (each module has own config file)
     --focus-outline-c: var(--c-amaranth);
     --focus-outline-w: 0.25rem; /* 4px @ 16px */
 
-    --selection-txt-c: white;
+    --selection-txt-c: var(--c-white);
     --selection-bg-c: var(--c-amaranth);
 
     --disabled-o: var(--f-big);

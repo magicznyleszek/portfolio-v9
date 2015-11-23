@@ -4,6 +4,7 @@ postSummary thumbnail part
 
 [gui-postSummary-thumbnail] {
     display: block;
+    position: relative;
 
     /* remove link styles */
     background-image: none !important;
@@ -15,9 +16,10 @@ postSummary thumbnail part
     font-size: 1.5rem;
     font-weight: 700;
 
-    /* computed height of leading and margin is 2x default leading */
-    line-height: calc(var(--rootLineHeight) * 4rem / 3rem);
-    margin-bottom: calc(var(--rootLineHeight) * 2rem / 3rem);
+    /* computed height of leading and margins is 2x default leading */
+    line-height: calc(var(--rootLineHeight) * 1rem);
+    margin-top: calc(var(--rootLineHeight) * 0.5rem);
+    margin-bottom: calc(var(--rootLineHeight) * 0.5rem);
 }
 
 [gui-postSummary-thumbnail-icon] {
@@ -28,6 +30,41 @@ postSummary thumbnail part
     margin-right: auto;
 
     fill: var(--postSummary-thumbnail-c);
+}
+
+[gui-postSummary-thumbnail-description] {
+    display: block;
+    position: absolute;
+    z-index: var(--z-1);
+    top: 100%;
+    left: -10%;
+    right: -10%;
+
+    margin-top: calc(var(--rootLineHeight) * 0.5rem);
+    padding: calc(var(--rootLineHeight) * 0.5rem);
+
+    background-color: var(--app-bg-c);
+    box-shadow: 0 0 0 var(--line-gr-w) currentColor;
+
+    pointer-events: none;
+
+    text-align: left;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition-property: opacity, visibility;
+    transition-delay: var(--d-faster);
+    transition-duration: var(--d-fast);
+}
+
+[gui-postSummary-thumbnail]:hover [gui-postSummary-thumbnail-description] {
+    visibility: visible;
+    opacity: 1;
+
+    transition-property: opacity, visibility;
+    transition-delay: var(--d-slower);
+    transition-duration: var(--d-fast);
 }
 
 /* states ordered to make styles always work */

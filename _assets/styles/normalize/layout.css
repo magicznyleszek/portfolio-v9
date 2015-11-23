@@ -10,5 +10,4 @@ body { margin: 0; }
         calc(var(--rootLineHeight) * 2rem)
         calc(var(--rootLineHeight) * 1rem)
     ;
-    box-sizing: border-box;
 }

@@ -1,5 +1,6 @@
 ---
 title: Teatr Bez Vat
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 slug: teatr-bez-vat
 categories: [code, interface, logo, print]
 gallery:

@@ -1,10 +1,20 @@
 <div gui-postSummary>
 
+    <!-- clickable thumbnail -->
     <a gui-postSummary-thumbnail href="{{ post.url }}">
+
         <svg gui-postSummary-thumbnail-icon>
             <use xlink:href="#icon-thumbnail-{{ post.slug }}">
         </svg>
-        <span gui-postSummary-thumbnail-title>{{ post.title }}</span>
+
+        <span gui-postSummary-thumbnail-title>
+            {{ post.title }}
+        </span>
+
+        <span gui-postSummary-thumbnail-description>
+            {{ post.description}}
+        </span>
+
     </a>
 
     <time gui-postSummary-date>{{ post.date | date: "%B %Y" }}</time>

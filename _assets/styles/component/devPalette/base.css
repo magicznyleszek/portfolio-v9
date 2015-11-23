@@ -4,7 +4,7 @@ devPalette base
 
 [gui-devPalette-color] {
     padding: var(--w-medium);
-    color: white;
+    color: var(--c-white);
     font-size: var(--w-small);
 }
 
