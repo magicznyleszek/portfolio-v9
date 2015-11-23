@@ -4,6 +4,7 @@ postSummary categories part
 
 [gui-postSummary-categories] {
     display: inline-block;
+    vertical-align: top;
 }
 
 [gui-postSummary-categories]:after {

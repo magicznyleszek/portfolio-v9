@@ -4,7 +4,7 @@ logo config
 
 :root {
 
-    --logo-w: 6rem; /* 96px @ 16px */
+    --logo-w: calc(var(--rootLineHeight) * 4rem); /* 96px */
     --logo-c: currentColor;
     --logo-c-visited: currentColor;
     --logo-c-hover: var(--c-amaranth);

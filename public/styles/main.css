@@ -230,7 +230,7 @@ logo base
 logo config
 ------------------------------------------------------------------------------*/
 
-:root { /* 96px @ 16px */
+:root { /* 96px */
 
 }
 
@@ -406,7 +406,7 @@ postSummary base
 postSummary config
 ------------------------------------------------------------------------------*/
 
-:root { /* 200px @ 16px */
+:root { /* 192px */
 
 }
 /*------------------------------------------------------------------------------
@@ -436,10 +436,10 @@ postSummary thumbnail part
 
 [gui-postSummary-thumbnail-icon] {
     display: block;
-    width: 200px;
-    width: 12.5rem;
-    height: 200px;
-    height: 12.5rem;
+    width: 192px;
+    width: 12rem;
+    height: 192px;
+    height: 12rem;
     margin-left: auto;
     margin-right: auto;
 
@@ -474,6 +474,7 @@ postSummary categories part
 
 [gui-postSummary-categories] {
     display: inline-block;
+    vertical-align: top;
 }
 
 [gui-postSummary-categories]:after {
