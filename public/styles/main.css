@@ -29,13 +29,11 @@ common FUNCTIONAL variables (each module has own config file)
 
 :root {
 
-    /* base */
-
-    /* breakpoints */
+    /* base */ /* 576px @ 16px */
 
     /* root typography with font sizes for different screens scaling */
 
-    /* specific elements */ /* 1px 1px @ 16px */ /* 2px @ 16px */ /* 4px @ 16px */
+    /* specific elements */ /* 1px @ 16px */ /* 4px @ 16px */
 
 }
 /*------------------------------------------------------------------------------
@@ -50,7 +48,7 @@ root stuff and normalizations
 
 html {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     font-family: "Source Sans Pro", sans-serif;
 
@@ -62,9 +60,9 @@ html {
     box-sizing: border-box;
 }
 
-@media min-width: var(--break-bigger) { html { font-size: 18px; } }
+@media (min-width: 1536px) { html { font-size: 20px; } }
 
-@media max-width: var(--break-smaller) { html { font-size: 14px; } }
+@media (max-width: 720px) { html { font-size: 16px; } }
 
 *, *:before, *:after {
     box-sizing: inherit;
@@ -82,11 +80,11 @@ h4 {
     padding: 0;
 }
 
-h1 { font-size: 48px; font-size: 3rem; }
+h1 { font-size: 54px; font-size: 3rem; }
 
-h2 { font-size: 32px; font-size: 2rem; }
+h2 { font-size: 36px; font-size: 2rem; }
 
-h3 { font-size: 24px; font-size: 1.5rem; }
+h3 { font-size: 27px; font-size: 1.5rem; }
 
 h4 {
     font-size: inherit;
@@ -95,7 +93,7 @@ h4 {
 
 p { margin: 0; }
 
-ul, ol { margin-left: 24px; margin-left: 1.5rem; }
+ul, ol { margin-left: 27px; margin-left: 1.5rem; }
 
 ul { list-style-type: disc; }
 
@@ -186,8 +184,8 @@ body { margin: 0; }
 
 #unmovedMover {
     width: 100%;
-    padding: 48px
-        24px
+    padding: 54px
+        27px
     ;
     padding: 3rem
         1.5rem
@@ -199,10 +197,10 @@ devPalette base
 ------------------------------------------------------------------------------*/
 
 [gui-devPalette-color] {
-    padding: 16px;
+    padding: 18px;
     padding: 1rem;
     color: hsl(0, 0%, 100%);
-    font-size: 10px;
+    font-size: 11px;
     font-size: 0.625rem;
 }
 
@@ -235,12 +233,12 @@ logo config
 
 [gui-logo] {
     display: block;
-    width: 96px;
+    width: 108px;
     width: 6rem;
-    height: 96px;
+    height: 108px;
     height: 6rem;
 
-    margin-bottom: 24px;
+    margin-bottom: 27px;
     margin-bottom: 1.5rem;
 
     /* remove link styles */
@@ -248,9 +246,9 @@ logo config
 }
 
 [gui-logo] svg {
-    width: 96px;
+    width: 108px;
     width: 6rem;
-    height: 96px;
+    height: 108px;
     height: 6rem;
     fill: currentColor;
 }
@@ -271,7 +269,7 @@ menu config
 ------------------------------------------------------------------------------*/
 
 [gui-menu]:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 27px;
     margin-bottom: 1.5rem;
 }
 
@@ -289,14 +287,14 @@ menu config
 }
 
 [gui-menu-item]:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 11px;
     margin-right: 0.625rem;
 }
 
 [gui-menu-item~="current"] {
-    padding-left: 8px;
+    padding-left: 9px;
     padding-left: 0.5rem;
-    padding-right: 8px;
+    padding-right: 9px;
     padding-right: 0.5rem;
 
     background-image: -webkit-linear-gradient(left, currentColor 0%, currentColor 0%), -webkit-linear-gradient(top, currentColor 0%, currentColor 0%), -webkit-linear-gradient(right, currentColor 0%, currentColor 0%), -webkit-linear-gradient(bottom, currentColor 0%, currentColor 0%) !important;
@@ -308,51 +306,6 @@ menu config
      !important;
     background-repeat: repeat-x, repeat-y;
     background-position: 0 0, 100% 0, 0 100%;
-}
-/*------------------------------------------------------------------------------
-pageTitle base
-------------------------------------------------------------------------------*/
-
-[gui-pageTitle] {
-
-}
-
-[gui-pageTitle-name] {
-    font-weight: 400;
-    font-size: 64px;
-    font-size: 4rem;
-    line-height: 48px;
-    line-height: 3rem;
-}
-
-[gui-pageTitle-meta] {
-    display: block;
-
-    font-style: italic;
-    text-transform: lowercase;
-
-    margin-top: 24px;
-    margin-top: 1.5rem;
-}
-/*------------------------------------------------------------------------------
-pageSection base
-------------------------------------------------------------------------------*/
-
-[gui-pageSection] {
-    margin-bottom: 48px;
-    margin-bottom: 3rem;
-}
-
-[gui-pageSection~="short"] {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-[gui-pageSection]:after {
-    content: '';
-    display: table;
-    clear: both;
 }
 /*------------------------------------------------------------------------------
 signature base
@@ -373,7 +326,7 @@ signature config
     background-image: none !important;
 
     /* magic value too look perfect */
-    line-height: 14px;
+    line-height: 15px;
     line-height: 0.875rem;
 
 }
@@ -388,9 +341,9 @@ signature config
 
 [gui-signature~="4"] {
     /* magic value to match missing pixels for 4 times rootLineHeight */
-    padding-top: 8px;
+    padding-top: 9px;
     padding-top: 0.5rem;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     padding-bottom: 0.5rem;
 }
 
@@ -423,24 +376,24 @@ postSummary thumbnail part
 [gui-postSummary-thumbnail-title] {
     display: block;
 
-    font-size: 24px;
+    font-size: 27px;
     font-size: 1.5rem;
     font-weight: 700;
 
     /* computed height of leading and margins is 2x default leading */
-    line-height: 24px;
+    line-height: 27px;
     line-height: 1.5rem;
-    margin-top: 12px;
+    margin-top: 13px;
     margin-top: 0.75rem;
-    margin-bottom: 12px;
+    margin-bottom: 13px;
     margin-bottom: 0.75rem;
 }
 
 [gui-postSummary-thumbnail-icon] {
     display: block;
-    width: 216px;
+    width: 243px;
     width: 13.5rem;
-    height: 216px;
+    height: 243px;
     height: 13.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -456,9 +409,9 @@ postSummary thumbnail part
     left: -10%;
     right: -10%;
 
-    margin-top: 12px;
+    margin-top: 13px;
     margin-top: 0.75rem;
-    padding: 12px;
+    padding: 13px;
     padding: 0.75rem;
 
     background-color: hsl(0, 0%, 100%);
@@ -538,7 +491,7 @@ postSummary categories part
 }
 
 [gui-postSummary-categories] a:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 11px;
     margin-right: 0.625rem;
 }
 
@@ -548,11 +501,11 @@ postSummary categories part
 
 [gui-postSummary] {
     display: inline-block;
-    margin-left: 24px;
+    margin-left: 27px;
     margin-left: 1.5rem;
-    margin-right: 24px;
+    margin-right: 27px;
     margin-right: 1.5rem;
-    margin-bottom: 48px;
+    margin-bottom: 54px;
     margin-bottom: 3rem;
 
     text-align: center;
@@ -561,6 +514,112 @@ postSummary categories part
 [gui-postSummary-date] {
     display: block;
     text-transform: lowercase;
+}
+/*------------------------------------------------------------------------------
+pageSection base
+------------------------------------------------------------------------------*/
+
+[gui-pageSection] {
+    margin-bottom: 54px;
+    margin-bottom: 3rem;
+}
+
+[gui-pageSection~="short"] {
+    max-width: 648px;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[gui-pageSection]:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+/*------------------------------------------------------------------------------
+pageTitle base
+------------------------------------------------------------------------------*/
+
+[gui-pageTitle-name] {
+    font-weight: 400;
+    font-size: 72px;
+    font-size: 4rem;
+    line-height: 54px;
+    line-height: 3rem;
+}
+
+[gui-pageTitle-meta] {
+    display: block;
+    margin-top: 27px;
+    margin-top: 1.5rem;
+
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+[gui-pageTitle-description] {
+    display: block;
+    margin-top: 27px;
+    margin-top: 1.5rem;
+
+    font-weight: 700;
+}
+/*------------------------------------------------------------------------------
+projectImage base
+------------------------------------------------------------------------------*/
+
+[gui-projectImage] {
+    max-width: 100%;
+
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+}
+
+[gui-projectImage-thumbnail],
+[gui-projectImage-thumbnail] img {
+    max-width: inherit;
+}
+
+[gui-projectImage-title] {
+    display: block;
+}
+/*------------------------------------------------------------------------------
+projectContent base
+------------------------------------------------------------------------------*/
+
+/* handles markdown-generated content of Jekyll posts */
+
+[gui-projectContent] {
+    margin-bottom: 54px;
+    margin-bottom: 3rem;
+}
+
+[gui-projectContent] > ul,
+[gui-projectContent] > ol,
+[gui-projectContent] > code,
+[gui-projectContent] > blockquote,
+[gui-projectContent] > p {
+    max-width: 648px;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[gui-projectContent] > ul:not(:last-child),
+[gui-projectContent] > ol:not(:last-child),
+[gui-projectContent] > code:not(:last-child),
+[gui-projectContent] > blockquote:not(:last-child),
+[gui-projectContent] > p:not(:last-child) {
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+}
+
+[gui-projectContent] > ul,
+[gui-projectContent] > ol {
+    margin-top: 0;
 }
 /*------------------------------------------------------------------------------
 projectRelated base
@@ -580,7 +639,7 @@ projectRelated config
 }
 
 [gui-projectRelated]:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 27px;
     margin-bottom: 1.5rem;
 }
 
@@ -591,13 +650,14 @@ projectRelated config
 [gui-projectRelated-title],
 [gui-projectRelated-subtitle] {
     display: inline-block;
-    vertical-align: middle;
+    /* not middle, because of generating additional vertical pxs */
+    vertical-align: top;
 }
 
 [gui-projectRelated-icon] {
-    width: 24px;
+    width: 27px;
     width: 1.5rem;
-    height: 24px;
+    height: 27px;
     height: 1.5rem;
     margin-left: auto;
     margin-right: auto;
@@ -626,60 +686,4 @@ projectRelated config
 }
 [gui-projectRelated]:active [gui-projectRelated-icon] {
     fill: hsl(328, 72%, 44%);
-}
-/*------------------------------------------------------------------------------
-projectContent base
-------------------------------------------------------------------------------*/
-
-/* handles markdown-generated content of Jekyll posts */
-
-[gui-projectContent] {
-    margin-bottom: 48px;
-    margin-bottom: 3rem;
-}
-
-[gui-projectContent] > ul,
-[gui-projectContent] > ol,
-[gui-projectContent] > code,
-[gui-projectContent] > blockquote,
-[gui-projectContent] > p {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-[gui-projectContent] > ul:not(:last-child),
-[gui-projectContent] > ol:not(:last-child),
-[gui-projectContent] > code:not(:last-child),
-[gui-projectContent] > blockquote:not(:last-child),
-[gui-projectContent] > p:not(:last-child) {
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
-}
-
-[gui-projectContent] > ul,
-[gui-projectContent] > ol {
-    margin-top: 0;
-}
-/*------------------------------------------------------------------------------
-projectImage base
-------------------------------------------------------------------------------*/
-
-[gui-projectImage] {
-    max-width: 100%;
-
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
-}
-
-[gui-projectImage-thumbnail],
-[gui-projectImage-thumbnail] img {
-    max-width: inherit;
-}
-
-[gui-projectImage-title] {
-    display: block;
 }

@@ -14,10 +14,10 @@ main styles aggregation
 @import "component/devPalette/base.css";
 @import "component/logo/base.css";
 @import "component/menu/base.css";
-@import "component/pageTitle/base.css";
-@import "component/pageSection/base.css";
 @import "component/signature/base.css";
 @import "component/postSummary/base.css";
-@import "component/projectRelated/base.css";
-@import "component/projectContent/base.css";
+@import "component/pageSection/base.css";
+@import "component/pageTitle/base.css";
 @import "component/projectImage/base.css";
+@import "component/projectContent/base.css";
+@import "component/projectRelated/base.css";

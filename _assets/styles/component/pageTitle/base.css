@@ -2,10 +2,6 @@
 pageTitle base
 ------------------------------------------------------------------------------*/
 
-[gui-pageTitle] {
-
-}
-
 [gui-pageTitle-name] {
     font-weight: 400;
     font-size: 4rem;
@@ -14,9 +10,15 @@ pageTitle base
 
 [gui-pageTitle-meta] {
     display: block;
+    margin-top: calc(var(--rootLineHeight) * 1rem);
 
     font-style: italic;
     text-transform: lowercase;
+}
 
+[gui-pageTitle-description] {
+    display: block;
     margin-top: calc(var(--rootLineHeight) * 1rem);
+
+    font-weight: 700;
 }

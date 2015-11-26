@@ -8,25 +8,20 @@ common FUNCTIONAL variables (each module has own config file)
 
     --app-txt-c: var(--c-blackcurrant);
     --app-bg-c: var(--c-white);
-    --app-content-w: 600px;
-
-    /* breakpoints */
-
-    --break-bigger: 1600px;
-    --break-smaller: 800px;
+    --app-content-w: 36rem; /* 576px @ 16px */
 
     /* root typography with font sizes for different screens scaling */
 
     --rootFontWeight: 400;
     --rootLineHeight: 1.5;
     --rootFontFamily: var(--family-sourceSansPro);
-    --rootFontSize: 16px;
-    --rootFontSizeBigger: calc(var(--rootFontSize) * (1 + var(--f-small)));
-    --rootFontSizeSmaller: calc(var(--rootFontSize) * (1 - var(--f-small)));
+    --rootFontSize: 18px;
+    --rootFontSizeSmaller: 16px;
+    --rootFontSizeBigger: 20px;
 
     /* specific elements */
 
-    --line-gr-w: 0.0625rem; /* 1px 1px @ 16px */
+    --line-gr-w: 0.0625rem; /* 1px @ 16px */
     --line-gr-dotted-c:
         transparent 0%,
         transparent 50%,
@@ -35,9 +30,6 @@ common FUNCTIONAL variables (each module has own config file)
     ;
     --line-gr-solid-c: currentColor 0%, currentColor 0%;
     --line-gr: linear-gradient( to left, var(--line-gr-solid-c) );
-
-    --hr-bg-c: currentColor;
-    --hr-h: 0.125rem; /* 2px @ 16px */
 
     --focus-outline-c: var(--c-amaranth);
     --focus-outline-w: 0.25rem; /* 4px @ 16px */

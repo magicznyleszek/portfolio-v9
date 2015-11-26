@@ -24,7 +24,8 @@ projectRelated base
 [gui-projectRelated-title],
 [gui-projectRelated-subtitle] {
     display: inline-block;
-    vertical-align: middle;
+    /* not middle, because of generating additional vertical pxs */
+    vertical-align: top;
 }
 
 [gui-projectRelated-icon] {

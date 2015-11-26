@@ -5,17 +5,16 @@
 <section role="main">
 
     <header gui-pageTitle gui-pageSection="short">
+
         <h1 gui-pageTitle-name>{{ page.title }}</h1>
 
-        <time gui-pageTitle-meta datetime="{{ page.date }}">
-            from {{ page.date | date: "%B %Y" }}
-        </time>
-    </header>
+        <p gui-pageTitle-description>{{ page.description }}</p>
 
-    <section gui-projectShortDescription>
-        <strong>TL;DR</strong>
-        {{ page.description }}
-    </section>
+        <time gui-pageTitle-meta datetime="{{ page.date }}">
+            {{ page.date | date: "%B %Y" }}
+        </time>
+
+    </header>
 
     <section gui-projectContent>
         {{ content }}
