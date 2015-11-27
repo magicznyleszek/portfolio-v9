@@ -51,6 +51,7 @@ html {
     font-size: 18px;
     line-height: 1.5;
     font-family: "Source Sans Pro", sans-serif;
+    text-rendering: optimizeLegibility;
 
     min-height: 100%;
 
@@ -539,6 +540,15 @@ pageSection base
 /*------------------------------------------------------------------------------
 pageTitle base
 ------------------------------------------------------------------------------*/
+
+[gui-pageTitle] {
+    margin-bottom: 54px;
+    margin-bottom: 3rem;
+    max-width: 648px;
+    max-width: 36rem;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 [gui-pageTitle-name] {
     font-weight: 400;
