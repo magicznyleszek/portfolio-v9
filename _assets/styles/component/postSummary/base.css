@@ -6,11 +6,11 @@ postSummary base
 @import "thumbnail.css";
 @import "categories.css";
 
-[gui-postSummary-container] {
+[gui-postsummary-container] {
     text-align: center;
 }
 
-[gui-postSummary] {
+[gui-postsummary] {
     display: inline-block;
     margin-left: calc(var(--rootLineHeight) * 1rem);
     margin-right: calc(var(--rootLineHeight) * 1rem);
@@ -19,7 +19,7 @@ postSummary base
     text-align: center;
 }
 
-[gui-postSummary-date] {
+[gui-postsummary-date] {
     display: block;
     text-transform: lowercase;
 }

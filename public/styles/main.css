@@ -197,7 +197,7 @@ body { margin: 0; }
 devPalette base
 ------------------------------------------------------------------------------*/
 
-[gui-devPalette-color] {
+[gui-devpalette-color] {
     padding: 18px;
     padding: 1rem;
     color: hsl(0, 0%, 100%);
@@ -205,19 +205,19 @@ devPalette base
     font-size: 0.625rem;
 }
 
-[gui-devPalette-color~="amaranth"] {
+[gui-devpalette-color~="amaranth"] {
     background-color: hsl(348, 96%, 56%);
 }
 
-[gui-devPalette-color~="purple"] {
+[gui-devpalette-color~="purple"] {
     background-color: hsl(328, 72%, 44%);
 }
 
-[gui-devPalette-color~="violet"] {
+[gui-devpalette-color~="violet"] {
     background-color: hsl(276, 60%, 36%);
 }
 
-[gui-devPalette-color~="blackcurrant"] {
+[gui-devpalette-color~="blackcurrant"] {
     background-color: hsl(276, 32%, 12%);
 }
 /*------------------------------------------------------------------------------
@@ -366,7 +366,7 @@ postSummary config
 postSummary thumbnail part
 ------------------------------------------------------------------------------*/
 
-[gui-postSummary-thumbnail] {
+[gui-postsummary-thumbnail] {
     display: block;
     position: relative;
 
@@ -374,7 +374,7 @@ postSummary thumbnail part
     background-image: none !important;
 }
 
-[gui-postSummary-thumbnail-title] {
+[gui-postsummary-thumbnail-title] {
     display: block;
 
     font-size: 27px;
@@ -390,7 +390,7 @@ postSummary thumbnail part
     margin-bottom: 0.75rem;
 }
 
-[gui-postSummary-thumbnail-icon] {
+[gui-postsummary-thumbnail-icon] {
     display: block;
     width: 243px;
     width: 13.5rem;
@@ -402,7 +402,7 @@ postSummary thumbnail part
     fill: currentColor;
 }
 
-[gui-postSummary-thumbnail-description] {
+[gui-postsummary-thumbnail-description] {
     display: block;
     position: absolute;
     z-index: 10;
@@ -434,7 +434,7 @@ postSummary thumbnail part
             transition-duration: 0.25s;
 }
 
-[gui-postSummary-thumbnail]:hover [gui-postSummary-thumbnail-description] {
+[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-description] {
     visibility: visible;
     opacity: 1;
 
@@ -449,58 +449,58 @@ postSummary thumbnail part
 
 /* states ordered to make styles always work */
 
-[gui-postSummary-thumbnail]:visited {
+[gui-postsummary-thumbnail]:visited {
     color: hsl(276, 60%, 36%);
 }
-[gui-postSummary-thumbnail]:visited [gui-postSummary-thumbnail-icon] {
+[gui-postsummary-thumbnail]:visited [gui-postsummary-thumbnail-icon] {
     fill: hsl(276, 60%, 36%);
 }
 
-[gui-postSummary-thumbnail]:hover {
+[gui-postsummary-thumbnail]:hover {
     color: hsl(348, 96%, 56%);
 }
-[gui-postSummary-thumbnail]:hover [gui-postSummary-thumbnail-icon] {
+[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-icon] {
     fill: hsl(348, 96%, 56%);
 }
 
-[gui-postSummary-thumbnail]:active {
+[gui-postsummary-thumbnail]:active {
     color: hsl(328, 72%, 44%);
 }
-[gui-postSummary-thumbnail]:active [gui-postSummary-thumbnail-icon] {
+[gui-postsummary-thumbnail]:active [gui-postsummary-thumbnail-icon] {
     fill: hsl(328, 72%, 44%);
 }
 /*------------------------------------------------------------------------------
 postSummary categories part
 ------------------------------------------------------------------------------*/
 
-[gui-postSummary-categories] {
+[gui-postsummary-categories] {
     display: inline-block;
     vertical-align: top;
 }
 
-[gui-postSummary-categories]:after {
+[gui-postsummary-categories]:after {
     content: '';
     display: table;
     clear: both;
 }
 
-[gui-postSummary-categories] a {
+[gui-postsummary-categories] a {
     display: block;
     float: left;
 
     text-transform: lowercase;
 }
 
-[gui-postSummary-categories] a:not(:last-child) {
+[gui-postsummary-categories] a:not(:last-child) {
     margin-right: 11px;
     margin-right: 0.625rem;
 }
 
-[gui-postSummary-container] {
+[gui-postsummary-container] {
     text-align: center;
 }
 
-[gui-postSummary] {
+[gui-postsummary] {
     display: inline-block;
     margin-left: 27px;
     margin-left: 1.5rem;
@@ -512,7 +512,7 @@ postSummary categories part
     text-align: center;
 }
 
-[gui-postSummary-date] {
+[gui-postsummary-date] {
     display: block;
     text-transform: lowercase;
 }
@@ -520,19 +520,19 @@ postSummary categories part
 pageSection base
 ------------------------------------------------------------------------------*/
 
-[gui-pageSection] {
+[gui-pagesection] {
     margin-bottom: 54px;
     margin-bottom: 3rem;
 }
 
-[gui-pageSection~="short"] {
+[gui-pagesection~="short"] {
     max-width: 648px;
     max-width: 36rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-[gui-pageSection]:after {
+[gui-pagesection]:after {
     content: '';
     display: table;
     clear: both;
@@ -541,7 +541,7 @@ pageSection base
 pageTitle base
 ------------------------------------------------------------------------------*/
 
-[gui-pageTitle] {
+[gui-pagetitle] {
     margin-bottom: 54px;
     margin-bottom: 3rem;
     max-width: 648px;
@@ -550,7 +550,7 @@ pageTitle base
     margin-right: auto;
 }
 
-[gui-pageTitle-name] {
+[gui-pagetitle-name] {
     font-weight: 400;
     font-size: 72px;
     font-size: 4rem;
@@ -558,7 +558,7 @@ pageTitle base
     line-height: 3rem;
 }
 
-[gui-pageTitle-meta] {
+[gui-pagetitle-meta] {
     display: block;
     margin-top: 27px;
     margin-top: 1.5rem;
@@ -567,7 +567,7 @@ pageTitle base
     text-transform: lowercase;
 }
 
-[gui-pageTitle-description] {
+[gui-pagetitle-description] {
     display: block;
     margin-top: 27px;
     margin-top: 1.5rem;
@@ -578,7 +578,7 @@ pageTitle base
 projectImage base
 ------------------------------------------------------------------------------*/
 
-[gui-projectImage] {
+[gui-projectimage] {
     max-width: 100%;
 
     margin-top: 0;
@@ -588,12 +588,12 @@ projectImage base
     margin-bottom: 1.5rem;
 }
 
-[gui-projectImage-thumbnail],
-[gui-projectImage-thumbnail] img {
+[gui-projectimage-thumbnail],
+[gui-projectimage-thumbnail] img {
     max-width: inherit;
 }
 
-[gui-projectImage-title] {
+[gui-projectimage-title] {
     display: block;
 }
 /*------------------------------------------------------------------------------
@@ -602,33 +602,33 @@ projectContent base
 
 /* handles markdown-generated content of Jekyll posts */
 
-[gui-projectContent] {
+[gui-projectcontent] {
     margin-bottom: 54px;
     margin-bottom: 3rem;
 }
 
-[gui-projectContent] > ul,
-[gui-projectContent] > ol,
-[gui-projectContent] > code,
-[gui-projectContent] > blockquote,
-[gui-projectContent] > p {
+[gui-projectcontent] > ul,
+[gui-projectcontent] > ol,
+[gui-projectcontent] > code,
+[gui-projectcontent] > blockquote,
+[gui-projectcontent] > p {
     max-width: 648px;
     max-width: 36rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-[gui-projectContent] > ul:not(:last-child),
-[gui-projectContent] > ol:not(:last-child),
-[gui-projectContent] > code:not(:last-child),
-[gui-projectContent] > blockquote:not(:last-child),
-[gui-projectContent] > p:not(:last-child) {
+[gui-projectcontent] > ul:not(:last-child),
+[gui-projectcontent] > ol:not(:last-child),
+[gui-projectcontent] > code:not(:last-child),
+[gui-projectcontent] > blockquote:not(:last-child),
+[gui-projectcontent] > p:not(:last-child) {
     margin-bottom: 27px;
     margin-bottom: 1.5rem;
 }
 
-[gui-projectContent] > ul,
-[gui-projectContent] > ol {
+[gui-projectcontent] > ul,
+[gui-projectcontent] > ol {
     margin-top: 0;
 }
 /*------------------------------------------------------------------------------
@@ -639,7 +639,7 @@ projectRelated base
 projectRelated config
 ------------------------------------------------------------------------------*/
 
-[gui-projectRelated] {
+[gui-projectrelated] {
     display: block;
     float: left;
     clear: both;
@@ -648,52 +648,49 @@ projectRelated config
     background-image: none !important;
 }
 
-[gui-projectRelated]:not(:last-child) {
+[gui-projectrelated]:not(:last-child) {
     margin-bottom: 27px;
     margin-bottom: 1.5rem;
 }
 
-[gui-projectRelated-title] { font-weight: 700; }
+[gui-projectrelated-title] { font-weight: 700; }
 
-
-[gui-projectRelated-icon],
-[gui-projectRelated-title],
-[gui-projectRelated-subtitle] {
+[gui-projectrelated-icon],
+[gui-projectrelated-title],
+[gui-projectrelated-subtitle] {
     display: inline-block;
     /* not middle, because of generating additional vertical pxs */
     vertical-align: top;
 }
 
-[gui-projectRelated-icon] {
+[gui-projectrelated-icon] {
     width: 27px;
     width: 1.5rem;
     height: 27px;
     height: 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
 
     fill: currentColor;
 }
 
 /* states ordered to make styles always work */
 
-[gui-projectRelated]:visited {
+[gui-projectrelated]:visited {
     color: hsl(276, 60%, 36%);
 }
-[gui-projectRelated]:visited [gui-projectRelated-icon] {
+[gui-projectrelated]:visited [gui-projectrelated-icon] {
     fill: hsl(276, 60%, 36%);
 }
 
-[gui-projectRelated]:hover {
+[gui-projectrelated]:hover {
     color: hsl(348, 96%, 56%);
 }
-[gui-projectRelated]:hover [gui-projectRelated-icon] {
+[gui-projectrelated]:hover [gui-projectrelated-icon] {
     fill: hsl(348, 96%, 56%);
 }
 
-[gui-projectRelated]:active {
+[gui-projectrelated]:active {
     color: hsl(328, 72%, 44%);
 }
-[gui-projectRelated]:active [gui-projectRelated-icon] {
+[gui-projectrelated]:active [gui-projectrelated-icon] {
     fill: hsl(328, 72%, 44%);
 }

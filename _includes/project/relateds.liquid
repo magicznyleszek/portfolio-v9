@@ -1,22 +1,22 @@
-<section gui-pageSection="short">
+<section gui-pagesection="short">
 
     {% if include.older %}
-        <a gui-projectRelated="previous" href="{{ include.older.url }}">
-            <span gui-projectRelated-subtitle>previous:</span>
-            <svg gui-projectRelated-icon>
+        <a gui-projectrelated="previous" href="{{ include.older.url }}">
+            <span gui-projectrelated-subtitle>previous:</span>
+            <svg gui-projectrelated-icon>
                 <use xlink:href="#icon-thumbnail-{{ include.older.slug }}">
             </svg>
-            <span gui-projectRelated-title>{{ include.older.title }}</span>
+            <span gui-projectrelated-title>{{ include.older.title }}</span>
         </a>
     {% endif %}
 
     {% if include.newer %}
-        <a gui-projectRelated="next" href="{{ include.newer.url }}">
-            <span gui-projectRelated-subtitle>next:</span>
-            <svg gui-projectRelated-icon>
+        <a gui-projectrelated="next" href="{{ include.newer.url }}">
+            <span gui-projectrelated-subtitle>next:</span>
+            <svg gui-projectrelated-icon>
                 <use xlink:href="#icon-thumbnail-{{ include.newer.slug }}">
             </svg>
-            <span gui-projectRelated-title>{{ include.newer.title }}</span>
+            <span gui-projectrelated-title>{{ include.newer.title }}</span>
         </a>
     {% endif %}
 

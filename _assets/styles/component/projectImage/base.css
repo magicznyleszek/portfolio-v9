@@ -2,7 +2,7 @@
 projectImage base
 ------------------------------------------------------------------------------*/
 
-[gui-projectImage] {
+[gui-projectimage] {
     max-width: 100%;
 
     margin-top: 0;
@@ -11,11 +11,11 @@ projectImage base
     margin-bottom: calc(var(--rootLineHeight) * 1rem);
 }
 
-[gui-projectImage-thumbnail],
-[gui-projectImage-thumbnail] img {
+[gui-projectimage-thumbnail],
+[gui-projectimage-thumbnail] img {
     max-width: inherit;
 }
 
-[gui-projectImage-title] {
+[gui-projectimage-title] {
     display: block;
 }

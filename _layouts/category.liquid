@@ -4,11 +4,11 @@
 
 <section role="main">
 
-    <section gui-pageSection="short">
+    <section gui-pagesection="short">
         {% include helpers/categoryDescription.liquid category=page.slug %}
     </section>
 
-    <section gui-postSummary-container>
+    <section gui-postsummary-container>
         {% for post in site.posts %}
             {% if post.categories contains page.slug %}
                 {% include listing/postSummary.liquid %}

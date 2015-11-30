@@ -2,24 +2,24 @@
 postSummary categories part
 ------------------------------------------------------------------------------*/
 
-[gui-postSummary-categories] {
+[gui-postsummary-categories] {
     display: inline-block;
     vertical-align: top;
 }
 
-[gui-postSummary-categories]:after {
+[gui-postsummary-categories]:after {
     content: '';
     display: table;
     clear: both;
 }
 
-[gui-postSummary-categories] a {
+[gui-postsummary-categories] a {
     display: block;
     float: left;
 
     text-transform: lowercase;
 }
 
-[gui-postSummary-categories] a:not(:last-child) {
+[gui-postsummary-categories] a:not(:last-child) {
     margin-right: var(--w-small);
 }

@@ -2,24 +2,24 @@
 devPalette base
 ------------------------------------------------------------------------------*/
 
-[gui-devPalette-color] {
+[gui-devpalette-color] {
     padding: var(--w-medium);
     color: var(--c-white);
     font-size: var(--w-small);
 }
 
-[gui-devPalette-color~="amaranth"] {
+[gui-devpalette-color~="amaranth"] {
     background-color: var(--c-amaranth);
 }
 
-[gui-devPalette-color~="purple"] {
+[gui-devpalette-color~="purple"] {
     background-color: var(--c-purple);
 }
 
-[gui-devPalette-color~="violet"] {
+[gui-devpalette-color~="violet"] {
     background-color: var(--c-violet);
 }
 
-[gui-devPalette-color~="blackcurrant"] {
+[gui-devpalette-color~="blackcurrant"] {
     background-color: var(--c-blackcurrant);
 }

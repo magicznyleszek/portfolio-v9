@@ -4,7 +4,7 @@ projectRelated base
 
 @import "config.css";
 
-[gui-projectRelated] {
+[gui-projectrelated] {
     display: block;
     float: left;
     clear: both;
@@ -13,49 +13,46 @@ projectRelated base
     background-image: none !important;
 }
 
-[gui-projectRelated]:not(:last-child) {
+[gui-projectrelated]:not(:last-child) {
     margin-bottom: calc(var(--rootLineHeight) * 1rem);
 }
 
-[gui-projectRelated-title] { font-weight: 700; }
+[gui-projectrelated-title] { font-weight: 700; }
 
-
-[gui-projectRelated-icon],
-[gui-projectRelated-title],
-[gui-projectRelated-subtitle] {
+[gui-projectrelated-icon],
+[gui-projectrelated-title],
+[gui-projectrelated-subtitle] {
     display: inline-block;
     /* not middle, because of generating additional vertical pxs */
     vertical-align: top;
 }
 
-[gui-projectRelated-icon] {
+[gui-projectrelated-icon] {
     width: var(--projectRelated-icon-w);
     height: var(--projectRelated-icon-w);
-    margin-left: auto;
-    margin-right: auto;
 
     fill: var(--projectRelated-c);
 }
 
 /* states ordered to make styles always work */
 
-[gui-projectRelated]:visited {
+[gui-projectrelated]:visited {
     color: var(--projectRelated-c-visited);
 }
-[gui-projectRelated]:visited [gui-projectRelated-icon] {
+[gui-projectrelated]:visited [gui-projectrelated-icon] {
     fill: var(--projectRelated-c-visited);
 }
 
-[gui-projectRelated]:hover {
+[gui-projectrelated]:hover {
     color: var(--projectRelated-c-hover);
 }
-[gui-projectRelated]:hover [gui-projectRelated-icon] {
+[gui-projectrelated]:hover [gui-projectrelated-icon] {
     fill: var(--projectRelated-c-hover);
 }
 
-[gui-projectRelated]:active {
+[gui-projectrelated]:active {
     color: var(--projectRelated-c-active);
 }
-[gui-projectRelated]:active [gui-projectRelated-icon] {
+[gui-projectrelated]:active [gui-projectrelated-icon] {
     fill: var(--projectRelated-c-active);
 }

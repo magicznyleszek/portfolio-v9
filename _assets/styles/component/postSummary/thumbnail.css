@@ -2,7 +2,7 @@
 postSummary thumbnail part
 ------------------------------------------------------------------------------*/
 
-[gui-postSummary-thumbnail] {
+[gui-postsummary-thumbnail] {
     display: block;
     position: relative;
 
@@ -10,7 +10,7 @@ postSummary thumbnail part
     background-image: none !important;
 }
 
-[gui-postSummary-thumbnail-title] {
+[gui-postsummary-thumbnail-title] {
     display: block;
 
     font-size: 1.5rem;
@@ -22,7 +22,7 @@ postSummary thumbnail part
     margin-bottom: calc(var(--rootLineHeight) * 0.5rem);
 }
 
-[gui-postSummary-thumbnail-icon] {
+[gui-postsummary-thumbnail-icon] {
     display: block;
     width: var(--postSummary-thumbnail-w);
     height: var(--postSummary-thumbnail-w);
@@ -32,7 +32,7 @@ postSummary thumbnail part
     fill: var(--postSummary-thumbnail-c);
 }
 
-[gui-postSummary-thumbnail-description] {
+[gui-postsummary-thumbnail-description] {
     display: block;
     position: absolute;
     z-index: var(--z-1);
@@ -58,7 +58,7 @@ postSummary thumbnail part
     transition-duration: var(--d-fast);
 }
 
-[gui-postSummary-thumbnail]:hover [gui-postSummary-thumbnail-description] {
+[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-description] {
     visibility: visible;
     opacity: 1;
 
@@ -69,23 +69,23 @@ postSummary thumbnail part
 
 /* states ordered to make styles always work */
 
-[gui-postSummary-thumbnail]:visited {
+[gui-postsummary-thumbnail]:visited {
     color: var(--postSummary-thumbnail-c-visited);
 }
-[gui-postSummary-thumbnail]:visited [gui-postSummary-thumbnail-icon] {
+[gui-postsummary-thumbnail]:visited [gui-postsummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-visited);
 }
 
-[gui-postSummary-thumbnail]:hover {
+[gui-postsummary-thumbnail]:hover {
     color: var(--postSummary-thumbnail-c-hover);
 }
-[gui-postSummary-thumbnail]:hover [gui-postSummary-thumbnail-icon] {
+[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-hover);
 }
 
-[gui-postSummary-thumbnail]:active {
+[gui-postsummary-thumbnail]:active {
     color: var(--postSummary-thumbnail-c-active);
 }
-[gui-postSummary-thumbnail]:active [gui-postSummary-thumbnail-icon] {
+[gui-postsummary-thumbnail]:active [gui-postsummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-active);
 }
