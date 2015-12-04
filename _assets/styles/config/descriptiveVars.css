@@ -15,7 +15,7 @@ all DESCRIPTIVE variables (colors, sizes, etc.)
     /* font families */
 
     --family-sourceSansPro: "Source Sans Pro", sans-serif;
-    --family-sourceCodePro: "Source Code Pro", monospace;
+    --family-monospace: "Source Code Pro" , "Input Mono" , "Consolas" , "Fira Mono", "Inconsolata",  "Monaco" , "Lucida Console" , "Liberation Mono" , "DejaVu Sans Mono" , "Bitstream Vera Sans Mono" , "Courier New" , monospace;
 
     /* fractions */
 

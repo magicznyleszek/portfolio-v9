@@ -120,6 +120,8 @@ blockquote {
     font-style: italic;
     cite { font-style: normal; }
 }
+
+code { font-family: "Source Code Pro" , "Input Mono" , "Consolas" , "Fira Mono", "Inconsolata",  "Monaco" , "Lucida Console" , "Liberation Mono" , "DejaVu Sans Mono" , "Bitstream Vera Sans Mono" , "Courier New" , monospace }
 /*------------------------------------------------------------------------------
 user-action influenced states
 ------------------------------------------------------------------------------*/

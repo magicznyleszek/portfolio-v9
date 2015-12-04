@@ -47,3 +47,5 @@ blockquote {
     font-style: italic;
     cite { font-style: normal; }
 }
+
+code { font-family: var(--family-monospace) }
