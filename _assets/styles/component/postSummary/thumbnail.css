@@ -33,38 +33,17 @@ postSummary thumbnail part
 }
 
 [gui-postsummary-thumbnail-description] {
-    display: block;
-    position: absolute;
-    z-index: var(--z-1);
-    top: 100%;
-    left: -10%;
-    right: -10%;
+    display: inline-block;
+    max-width: var(--postSummary-thumbnail-w);
 
     margin-top: calc(var(--rootLineHeight) * 0.5rem);
+    margin-bottom: calc(var(--rootLineHeight) * 0.5rem);
     padding: calc(var(--rootLineHeight) * 0.5rem);
 
     background-color: var(--app-bg-c);
     box-shadow: 0 0 0 var(--line-gr-w) currentColor;
 
-    pointer-events: none;
-
     text-align: left;
-
-    visibility: hidden;
-    opacity: 0;
-
-    transition-property: opacity, visibility;
-    transition-delay: var(--d-faster);
-    transition-duration: var(--d-fast);
-}
-
-[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-description] {
-    visibility: visible;
-    opacity: 1;
-
-    transition-property: opacity, visibility;
-    transition-delay: var(--d-slower);
-    transition-duration: var(--d-fast);
 }
 
 /* states ordered to make styles always work */
