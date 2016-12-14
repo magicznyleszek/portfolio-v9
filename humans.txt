@@ -9,7 +9,6 @@ Location: Warsaw, Poland
 ## THANKS
 
 Tom Preston-Werner, Nick Quaranto: jekyllrb.com
-Christopher Eppstein: compass-style.org
 Chris Armstrong: goldilocksapproach.com
 Brandon Mathis: hslpicker.com
 Chirag Mehta: chir.ag/projects/name-that-color
@@ -17,6 +16,6 @@ Chirag Mehta: chir.ag/projects/name-that-color
 
 ## SITE
 
-Last update: 18/05/2014
+Last update: 01/01/2017
 Language: English
 Software: Atom, Adobe Illustrator

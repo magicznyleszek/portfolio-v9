@@ -2,10 +2,10 @@
 _site
 .jekyll-metadata
 
-# assets
+# NPM
 node_modules
+npm-debug.log
 
 # OS generated
 .DS_Store
-ehthumbs.db
 Thumbs.db
