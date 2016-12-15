@@ -1,8 +1,6 @@
 <div gui-postsummary>
-
     <!-- clickable thumbnail -->
     <a gui-postsummary-thumbnail href="{{ post.url }}">
-
         <svg gui-postsummary-thumbnail-icon>
             <use xlink:href="#symbol-thumbnail-{{ post.slug }}">
         </svg>
@@ -14,7 +12,6 @@
         <span gui-postsummary-thumbnail-description>
             {{ post.description}}
         </span>
-
     </a>
 
     <time gui-postsummary-date>{{ post.date | date: "%B %Y" }}</time>
@@ -24,5 +21,4 @@
             {% include helpers/categoryLink.liquid category=category %}
         {% endfor %}
     </div>
-
 </div>

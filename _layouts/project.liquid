@@ -3,9 +3,7 @@
 {% include global/pageHeader.liquid %}
 
 <section role="main">
-
     <header gui-pagetitle>
-
         <h1 gui-pagetitle-name>{{ page.title }}</h1>
 
         <p gui-pagetitle-description>{{ page.description }}</p>
@@ -13,7 +11,6 @@
         <time gui-pagetitle-meta datetime="{{ page.date }}">
             {{ page.date | date: "%B %Y" }}
         </time>
-
     </header>
 
     <section gui-projectContent>
@@ -21,7 +18,6 @@
     </section>
 
     {% include project/relateds.liquid older=page.previous newer=page.next %}
-
 </section>
 
 {% include global/pageFooter.liquid %}
