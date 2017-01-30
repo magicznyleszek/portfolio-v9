@@ -197,34 +197,6 @@ body { margin: 0; }
 }
 
 /*------------------------------------------------------------------------------
-devPalette base
-------------------------------------------------------------------------------*/
-
-[gui-devpalette-color] {
-    padding: 18px;
-    padding: 1rem;
-    color: hsl(0, 0%, 100%);
-    font-size: 11.25px;
-    font-size: 0.625rem;
-}
-
-[gui-devpalette-color~="amaranth"] {
-    background-color: hsl(348, 96%, 56%);
-}
-
-[gui-devpalette-color~="purple"] {
-    background-color: hsl(328, 72%, 44%);
-}
-
-[gui-devpalette-color~="violet"] {
-    background-color: hsl(276, 60%, 36%);
-}
-
-[gui-devpalette-color~="blackcurrant"] {
-    background-color: hsl(276, 32%, 12%);
-}
-
-/*------------------------------------------------------------------------------
 logo base
 ------------------------------------------------------------------------------*/
 
