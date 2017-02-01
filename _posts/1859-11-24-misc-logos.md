@@ -1,6 +1,6 @@
 ---
 title: Misc logos
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: "A collection of logos from jobs, classes at the university and several contests."
 slug: misc-logos
 categories: [lettering, logo]
 gallery:

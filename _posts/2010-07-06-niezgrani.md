@@ -1,6 +1,6 @@
 ---
 title: Niezgrani
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: "Retro-inspired identity for a gaming portal."
 slug: niezgrani
 categories: [icon, illustration, logo]
 gallery:

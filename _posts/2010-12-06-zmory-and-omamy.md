@@ -1,6 +1,6 @@
 ---
 title: Zmory & omamy
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: "Horror and dream-like visions from my head."
 slug: zmory-and-omamy
 categories: [illustration]
 gallery:

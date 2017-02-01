@@ -1,6 +1,6 @@
 ---
 title: Autoportrety 2
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: "Another try at drawing my own face."
 slug: autoportrety-2
 categories: [illustration]
 gallery:

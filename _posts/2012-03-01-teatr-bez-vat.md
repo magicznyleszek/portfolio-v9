@@ -1,6 +1,6 @@
 ---
 title: Teatr Bez Vat
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+description: "Identity and web work for independent Polish theatre."
 slug: teatr-bez-vat
 categories: [code, interface, logo, print]
 gallery:
