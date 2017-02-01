@@ -42,7 +42,7 @@ variables - all global and pallete variables for project
     --root-fontSize-bigger: 125%; /* probably 20px */
 
     /* leading size for all spacing between elements to be pretty */
-    --s-leading: calc(var(--root-lineHeight) * 1rem);
+    --s-leading: var(--s-leading);
 
     /* globals */
     --s-global-br: 0.125rem;

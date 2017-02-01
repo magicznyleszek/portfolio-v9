@@ -3,7 +3,7 @@ logo base
 ------------------------------------------------------------------------------*/
 
 :root {
-    --logo-w: calc(var(--root-lineHeight) * 4rem); /* 96px */
+    --logo-w: calc(var(--s-leading) * 4); /* 96px */
     --logo-c: currentColor;
     --logo-c-visited: currentColor;
     --logo-c-hover: var(--c-amaranth);
@@ -15,7 +15,7 @@ logo base
     width: var(--logo-w);
     height: var(--logo-w);
 
-    margin-bottom: calc(var(--root-lineHeight) * 1rem);
+    margin-bottom: var(--s-leading);
 
     /* remove link styles */
     background-image: none !important;

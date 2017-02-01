@@ -19,7 +19,7 @@ menu base
 }
 
 [gui-menu]:not(:last-child) {
-    margin-bottom: calc(var(--root-lineHeight) * 1rem);
+    margin-bottom: var(--s-leading);
 }
 
 [gui-menu]:after {

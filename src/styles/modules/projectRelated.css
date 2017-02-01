@@ -7,7 +7,7 @@ projectRelated base
     --projectRelated-c-visited: var(--c-violet);
     --projectRelated-c-hover: var(--c-amaranth);
     --projectRelated-c-active: var(--c-purple);
-    --projectRelated-symbol-w: calc(var(--root-lineHeight) * 1rem);
+    --projectRelated-symbol-w: var(--s-leading);
 }
 
 [gui-projectrelated] {
@@ -20,7 +20,7 @@ projectRelated base
 }
 
 [gui-projectrelated]:not(:last-child) {
-    margin-bottom: calc(var(--root-lineHeight) * 1rem);
+    margin-bottom: var(--s-leading);
 }
 
 [gui-projectrelated-title] { font-weight: 700; }

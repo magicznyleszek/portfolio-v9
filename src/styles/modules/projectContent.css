@@ -5,7 +5,7 @@ projectContent base
 /* handles markdown-generated content of Jekyll posts */
 
 [gui-projectcontent] {
-    margin-bottom: calc(var(--root-lineHeight) * 2rem);
+    margin-bottom: calc(var(--s-leading) * 2);
 }
 
 [gui-projectcontent] > ul,
@@ -23,7 +23,7 @@ projectContent base
 [gui-projectcontent] > code:not(:last-child),
 [gui-projectcontent] > blockquote:not(:last-child),
 [gui-projectcontent] > p:not(:last-child) {
-    margin-bottom: calc(var(--root-lineHeight) * 1rem);
+    margin-bottom: var(--s-leading);
 }
 
 [gui-projectcontent] > ul,

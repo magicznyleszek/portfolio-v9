@@ -3,7 +3,7 @@ pageSection base
 ------------------------------------------------------------------------------*/
 
 [gui-pagesection] {
-    margin-bottom: calc(var(--root-lineHeight) * 2rem);
+    margin-bottom: calc(var(--s-leading) * 2);
 }
 
 [gui-pagesection~="short"] {

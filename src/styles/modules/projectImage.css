@@ -8,7 +8,7 @@ projectImage base
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: calc(var(--root-lineHeight) * 1rem);
+    margin-bottom: var(--s-leading);
 }
 
 [gui-projectimage-thumbnail],
