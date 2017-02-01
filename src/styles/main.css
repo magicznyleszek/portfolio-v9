@@ -1,22 +1,23 @@
-/*------------------------------------------------------------------------------
+/*******************************************************************************
 main styles aggregation
-------------------------------------------------------------------------------*/
+*******************************************************************************/
 
-@import "config/descriptiveVars.css";
-@import "config/functionalVars.css";
-@import "config/customs.css";
+/* variables palette */
+@import "variables.css";
 
+/* basics */
 @import "normalize/root.css";
 @import "normalize/typography.css";
 @import "normalize/states.css";
 @import "normalize/layout.css";
 
-@import "component/logo/base.css";
-@import "component/menu/base.css";
-@import "component/signature/base.css";
-@import "component/postSummary/base.css";
-@import "component/pageSection/base.css";
-@import "component/pageTitle/base.css";
-@import "component/projectImage/base.css";
-@import "component/projectContent/base.css";
-@import "component/projectRelated/base.css";
+/* modules */
+@import "modules/logo/base.css";
+@import "modules/menu/base.css";
+@import "modules/signature/base.css";
+@import "modules/postSummary/base.css";
+@import "modules/pageSection/base.css";
+@import "modules/pageTitle/base.css";
+@import "modules/projectImage/base.css";
+@import "modules/projectContent/base.css";
+@import "modules/projectRelated/base.css";
