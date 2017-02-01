@@ -12,9 +12,10 @@ postSummary module
 
 [i-postsummary] {
     display: inline-block;
-    margin-left: var(--s-leading);
-    margin-right: var(--s-leading);
-    margin-bottom: calc(var(--s-leading) * 2);
+    vertical-align: top;
+    padding: var(--s-leading);
+    padding-bottom: calc(var(--s-leading) * 2);
+    max-width: calc(var(--s-postSummary-thumbnail) + calc(var(--s-leading) * 2));
     text-align: center;
 }
 
@@ -57,9 +58,7 @@ postSummary thumbnail
     display: inline-block;
     margin-top: calc(var(--s-leading) * 0.5);
     margin-bottom: calc(var(--s-leading) * 0.5);
-    padding: calc(var(--s-leading) * 0.5);
     max-width: var(--s-postSummary-thumbnail);
-    box-shadow: 0 0 0 var(--line-gr-w) currentColor;
     text-align: left;
 }
 

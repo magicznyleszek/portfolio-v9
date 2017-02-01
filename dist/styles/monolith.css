@@ -306,16 +306,9 @@ categoriesList module
     margin-bottom: 1.5rem;
 }
 
-[i-categoriesList]::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 [i-categoriesList-item] {
-    display: block;
-    float: left;
-
+    display: inline-block;
+    vertical-align: bottom;
     text-transform: lowercase;
 }
 
@@ -448,12 +441,13 @@ postSummary module
 
 [i-postsummary] {
     display: inline-block;
-    margin-left: 27px;
-    margin-left: 1.5rem;
-    margin-right: 27px;
-    margin-right: 1.5rem;
-    margin-bottom: 54px;
-    margin-bottom: 3rem;
+    vertical-align: top;
+    padding: 27px;
+    padding: 1.5rem;
+    padding-bottom: 54px;
+    padding-bottom: 3rem;
+    max-width: 297px;
+    max-width: 16.5rem;
     text-align: center;
 }
 
@@ -504,11 +498,8 @@ postSummary thumbnail
     margin-top: 0.75rem;
     margin-bottom: 13.5px;
     margin-bottom: 0.75rem;
-    padding: 13.5px;
-    padding: 0.75rem;
     max-width: 243px;
     max-width: 13.5rem;
-    box-shadow: 0 0 0 0.0625rem currentColor;
     text-align: left;
 }
 

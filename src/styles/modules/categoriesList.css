@@ -25,16 +25,9 @@ categoriesList module
     margin-bottom: var(--s-leading);
 }
 
-[i-categoriesList]::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 [i-categoriesList-item] {
-    display: block;
-    float: left;
-
+    display: inline-block;
+    vertical-align: bottom;
     text-transform: lowercase;
 }
 
