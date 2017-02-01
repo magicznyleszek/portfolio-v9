@@ -1,20 +1,20 @@
-<div gui-postsummary>
+<div i-postsummary>
     <!-- clickable thumbnail -->
-    <a gui-postsummary-thumbnail href="{{ post.url }}">
-        <svg gui-postsummary-thumbnail-icon>
+    <a i-postsummary-thumbnail href="{{ post.url }}">
+        <svg i-postsummary-thumbnail-icon>
             <use xlink:href="#symbol-thumbnail-{{ post.slug }}">
         </svg>
 
-        <span gui-postsummary-thumbnail-title>
+        <span i-postsummary-thumbnail-title>
             {{ post.title }}
         </span>
 
-        <span gui-postsummary-thumbnail-description>
+        <span i-postsummary-thumbnail-description>
             {{ post.description}}
         </span>
     </a>
 
-    <time gui-postsummary-date>{{ post.date | date: "%B %Y" }}</time>
+    <time i-postsummary-date>{{ post.date | date: "%B %Y" }}</time>
 
     {% include helpers/categoriesList.liquid categories=post.categories %}
 </div>

@@ -2,17 +2,17 @@
 pageSection base
 *******************************************************************************/
 
-[gui-pagesection] {
+[i-pagesection] {
     margin-bottom: calc(var(--s-leading) * 2);
 }
 
-[gui-pagesection~="short"] {
+[i-pagesection~="short"] {
     max-width: var(--s-root-content);
     margin-left: auto;
     margin-right: auto;
 }
 
-[gui-pagesection]:after {
+[i-pagesection]:after {
     content: '';
     display: table;
     clear: both;

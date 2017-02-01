@@ -10,7 +10,7 @@ logo base
     --logo-c-active: var(--c-purple);
 }
 
-[gui-logo] {
+[i-logo] {
     display: block;
     width: var(--logo-w);
     height: var(--logo-w);
@@ -21,7 +21,7 @@ logo base
     background-image: none !important;
 }
 
-[gui-logo] svg {
+[i-logo] svg {
     width: var(--logo-w);
     height: var(--logo-w);
     fill: var(--logo-c);
@@ -29,8 +29,8 @@ logo base
 
 /* states ordered to make styles always work */
 
-[gui-logo]:visited svg { fill: var(--logo-c-visited); }
+[i-logo]:visited svg { fill: var(--logo-c-visited); }
 
-[gui-logo]:hover svg { fill: var(--logo-c-hover); }
+[i-logo]:hover svg { fill: var(--logo-c-hover); }
 
-[gui-logo]:active svg { fill: var(--logo-c-active); }
+[i-logo]:active svg { fill: var(--logo-c-active); }

@@ -4,29 +4,29 @@ projectContent base
 
 /* handles markdown-generated content of Jekyll posts */
 
-[gui-projectcontent] {
+[i-projectcontent] {
     margin-bottom: calc(var(--s-leading) * 2);
 }
 
-[gui-projectcontent] > ul,
-[gui-projectcontent] > ol,
-[gui-projectcontent] > code,
-[gui-projectcontent] > blockquote,
-[gui-projectcontent] > p {
+[i-projectcontent] > ul,
+[i-projectcontent] > ol,
+[i-projectcontent] > code,
+[i-projectcontent] > blockquote,
+[i-projectcontent] > p {
     max-width: var(--s-root-content);
     margin-left: auto;
     margin-right: auto;
 }
 
-[gui-projectcontent] > ul:not(:last-child),
-[gui-projectcontent] > ol:not(:last-child),
-[gui-projectcontent] > code:not(:last-child),
-[gui-projectcontent] > blockquote:not(:last-child),
-[gui-projectcontent] > p:not(:last-child) {
+[i-projectcontent] > ul:not(:last-child),
+[i-projectcontent] > ol:not(:last-child),
+[i-projectcontent] > code:not(:last-child),
+[i-projectcontent] > blockquote:not(:last-child),
+[i-projectcontent] > p:not(:last-child) {
     margin-bottom: var(--s-leading);
 }
 
-[gui-projectcontent] > ul,
-[gui-projectcontent] > ol {
+[i-projectcontent] > ul,
+[i-projectcontent] > ol {
     margin-top: 0;
 }

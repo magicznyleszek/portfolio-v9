@@ -3,11 +3,11 @@
 {% include global/pageHeader.liquid %}
 
 <section role="main">
-    <section gui-pagesection="short">
+    <section i-pagesection="short">
         {% include helpers/categoryDescription.liquid categorySlug=page.slug %}
     </section>
 
-    <section gui-postsummary-container>
+    <section i-postsummary-container>
         {% for post in site.posts %}
             {% if post.categories contains page.slug %}
                 {% include listing/postSummary.liquid %}

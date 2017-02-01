@@ -9,7 +9,7 @@ signature base
     --signature-c-active: var(--c-purple);
 }
 
-[gui-signature] {
+[i-signature] {
     float: left;
 
     font-weight: 700;
@@ -24,18 +24,18 @@ signature base
 
 }
 
-[gui-signature~="3"] {
+[i-signature~="3"] {
     /* magic value to match missing pixels for 3 times rootLineHeight */
     padding-top: 0.1875rem;
     padding-bottom: 0.1875rem;
 }
 
-[gui-signature~="4"] {
+[i-signature~="4"] {
     /* magic value to match missing pixels for 4 times rootLineHeight */
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
 
-[gui-signature]:visited { color: var(--signature-c-visited); }
-[gui-signature]:hover { color: var(--signature-c-hover); }
-[gui-signature]:active { color: var(--signature-c-active); }
+[i-signature]:visited { color: var(--signature-c-visited); }
+[i-signature]:hover { color: var(--signature-c-hover); }
+[i-signature]:active { color: var(--signature-c-active); }

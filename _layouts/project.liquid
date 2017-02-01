@@ -3,17 +3,17 @@
 {% include global/pageHeader.liquid %}
 
 <section role="main">
-    <header gui-pagetitle>
-        <h1 gui-pagetitle-name>{{ page.title }}</h1>
+    <header i-pagetitle>
+        <h1 i-pagetitle-name>{{ page.title }}</h1>
 
-        <p gui-pagetitle-description>{{ page.description }}</p>
+        <p i-pagetitle-description>{{ page.description }}</p>
 
-        <time gui-pagetitle-meta datetime="{{ page.date }}">
+        <time i-pagetitle-meta datetime="{{ page.date }}">
             {{ page.date | date: "%B %Y" }}
         </time>
     </header>
 
-    <section gui-projectContent>
+    <section i-projectContent>
         {{ content }}
     </section>
 

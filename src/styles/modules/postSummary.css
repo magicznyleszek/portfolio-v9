@@ -10,11 +10,11 @@ postSummary
     --postSummary-thumbnail-w: calc(var(--s-leading) * 9); /* 216px */
 }
 
-[gui-postsummary-container] {
+[i-postsummary-container] {
     text-align: center;
 }
 
-[gui-postsummary] {
+[i-postsummary] {
     display: inline-block;
     margin-left: var(--s-leading);
     margin-right: var(--s-leading);
@@ -23,7 +23,7 @@ postSummary
     text-align: center;
 }
 
-[gui-postsummary-date] {
+[i-postsummary-date] {
     display: block;
     text-transform: lowercase;
 }
@@ -32,7 +32,7 @@ postSummary
 postSummary thumbnail
 *******************************************************************************/
 
-[gui-postsummary-thumbnail] {
+[i-postsummary-thumbnail] {
     display: block;
     position: relative;
 
@@ -40,7 +40,7 @@ postSummary thumbnail
     background-image: none !important;
 }
 
-[gui-postsummary-thumbnail-title] {
+[i-postsummary-thumbnail-title] {
     display: block;
 
     font-size: 1.5rem;
@@ -52,7 +52,7 @@ postSummary thumbnail
     margin-bottom: calc(var(--s-leading) * 0.5);
 }
 
-[gui-postsummary-thumbnail-icon] {
+[i-postsummary-thumbnail-icon] {
     display: block;
     width: var(--postSummary-thumbnail-w);
     height: var(--postSummary-thumbnail-w);
@@ -62,7 +62,7 @@ postSummary thumbnail
     fill: var(--postSummary-thumbnail-c);
 }
 
-[gui-postsummary-thumbnail-description] {
+[i-postsummary-thumbnail-description] {
     display: inline-block;
     max-width: var(--postSummary-thumbnail-w);
 
@@ -77,23 +77,23 @@ postSummary thumbnail
 
 /* states ordered to make styles always work */
 
-[gui-postsummary-thumbnail]:visited {
+[i-postsummary-thumbnail]:visited {
     color: var(--postSummary-thumbnail-c-visited);
 }
-[gui-postsummary-thumbnail]:visited [gui-postsummary-thumbnail-icon] {
+[i-postsummary-thumbnail]:visited [i-postsummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-visited);
 }
 
-[gui-postsummary-thumbnail]:hover {
+[i-postsummary-thumbnail]:hover {
     color: var(--postSummary-thumbnail-c-hover);
 }
-[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-icon] {
+[i-postsummary-thumbnail]:hover [i-postsummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-hover);
 }
 
-[gui-postsummary-thumbnail]:active {
+[i-postsummary-thumbnail]:active {
     color: var(--postSummary-thumbnail-c-active);
 }
-[gui-postsummary-thumbnail]:active [gui-postsummary-thumbnail-icon] {
+[i-postsummary-thumbnail]:active [i-postsummary-thumbnail-icon] {
     fill: var(--postSummary-thumbnail-c-active);
 }

@@ -2,20 +2,20 @@
 pageTitle base
 *******************************************************************************/
 
-[gui-pagetitle] {
+[i-pagetitle] {
     margin-bottom: calc(var(--s-leading) * 2);
     max-width: var(--s-root-content);
     margin-left: auto;
     margin-right: auto;
 }
 
-[gui-pagetitle-name] {
+[i-pagetitle-name] {
     font-weight: 400;
     font-size: 4rem;
     line-height: calc(var(--s-leading) * 2);
 }
 
-[gui-pagetitle-meta] {
+[i-pagetitle-meta] {
     display: block;
     margin-top: var(--s-leading);
 
@@ -23,7 +23,7 @@ pageTitle base
     text-transform: lowercase;
 }
 
-[gui-pagetitle-description] {
+[i-pagetitle-description] {
     display: block;
     margin-top: var(--s-leading);
 

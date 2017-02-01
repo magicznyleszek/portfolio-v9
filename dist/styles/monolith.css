@@ -344,7 +344,7 @@ logo base
 :root { /* 96px */
 }
 
-[gui-logo] {
+[i-logo] {
     display: block;
     width: 108px;
     width: 6rem;
@@ -358,7 +358,7 @@ logo base
     background-image: none !important;
 }
 
-[gui-logo] svg {
+[i-logo] svg {
     width: 108px;
     width: 6rem;
     height: 108px;
@@ -368,29 +368,29 @@ logo base
 
 /* states ordered to make styles always work */
 
-[gui-logo]:visited svg { fill: currentColor; }
+[i-logo]:visited svg { fill: currentColor; }
 
-[gui-logo]:hover svg { fill: hsl(348, 96%, 56%); }
+[i-logo]:hover svg { fill: hsl(348, 96%, 56%); }
 
-[gui-logo]:active svg { fill: hsl(328, 72%, 44%); }
+[i-logo]:active svg { fill: hsl(328, 72%, 44%); }
 
 /*******************************************************************************
 pageSection base
 *******************************************************************************/
 
-[gui-pagesection] {
+[i-pagesection] {
     margin-bottom: 54px;
     margin-bottom: 3rem;
 }
 
-[gui-pagesection~="short"] {
+[i-pagesection~="short"] {
     max-width: 720px;
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-[gui-pagesection]:after {
+[i-pagesection]:after {
     content: '';
     display: table;
     clear: both;
@@ -400,7 +400,7 @@ pageSection base
 pageTitle base
 *******************************************************************************/
 
-[gui-pagetitle] {
+[i-pagetitle] {
     margin-bottom: 54px;
     margin-bottom: 3rem;
     max-width: 720px;
@@ -409,7 +409,7 @@ pageTitle base
     margin-right: auto;
 }
 
-[gui-pagetitle-name] {
+[i-pagetitle-name] {
     font-weight: 400;
     font-size: 72px;
     font-size: 4rem;
@@ -417,7 +417,7 @@ pageTitle base
     line-height: 3rem;
 }
 
-[gui-pagetitle-meta] {
+[i-pagetitle-meta] {
     display: block;
     margin-top: 27px;
     margin-top: 1.5rem;
@@ -426,7 +426,7 @@ pageTitle base
     text-transform: lowercase;
 }
 
-[gui-pagetitle-description] {
+[i-pagetitle-description] {
     display: block;
     margin-top: 27px;
     margin-top: 1.5rem;
@@ -441,11 +441,11 @@ postSummary
 :root { /* 216px */
 }
 
-[gui-postsummary-container] {
+[i-postsummary-container] {
     text-align: center;
 }
 
-[gui-postsummary] {
+[i-postsummary] {
     display: inline-block;
     margin-left: 27px;
     margin-left: 1.5rem;
@@ -457,7 +457,7 @@ postSummary
     text-align: center;
 }
 
-[gui-postsummary-date] {
+[i-postsummary-date] {
     display: block;
     text-transform: lowercase;
 }
@@ -466,7 +466,7 @@ postSummary
 postSummary thumbnail
 *******************************************************************************/
 
-[gui-postsummary-thumbnail] {
+[i-postsummary-thumbnail] {
     display: block;
     position: relative;
 
@@ -474,7 +474,7 @@ postSummary thumbnail
     background-image: none !important;
 }
 
-[gui-postsummary-thumbnail-title] {
+[i-postsummary-thumbnail-title] {
     display: block;
 
     font-size: 27px;
@@ -490,7 +490,7 @@ postSummary thumbnail
     margin-bottom: 0.75rem;
 }
 
-[gui-postsummary-thumbnail-icon] {
+[i-postsummary-thumbnail-icon] {
     display: block;
     width: 243px;
     width: 13.5rem;
@@ -502,7 +502,7 @@ postSummary thumbnail
     fill: currentColor;
 }
 
-[gui-postsummary-thumbnail-description] {
+[i-postsummary-thumbnail-description] {
     display: inline-block;
     max-width: 243px;
     max-width: 13.5rem;
@@ -521,27 +521,27 @@ postSummary thumbnail
 
 /* states ordered to make styles always work */
 
-[gui-postsummary-thumbnail]:visited {
+[i-postsummary-thumbnail]:visited {
     color: hsl(276, 60%, 36%);
 }
 
-[gui-postsummary-thumbnail]:visited [gui-postsummary-thumbnail-icon] {
+[i-postsummary-thumbnail]:visited [i-postsummary-thumbnail-icon] {
     fill: hsl(276, 60%, 36%);
 }
 
-[gui-postsummary-thumbnail]:hover {
+[i-postsummary-thumbnail]:hover {
     color: hsl(348, 96%, 56%);
 }
 
-[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-icon] {
+[i-postsummary-thumbnail]:hover [i-postsummary-thumbnail-icon] {
     fill: hsl(348, 96%, 56%);
 }
 
-[gui-postsummary-thumbnail]:active {
+[i-postsummary-thumbnail]:active {
     color: hsl(328, 72%, 44%);
 }
 
-[gui-postsummary-thumbnail]:active [gui-postsummary-thumbnail-icon] {
+[i-postsummary-thumbnail]:active [i-postsummary-thumbnail-icon] {
     fill: hsl(328, 72%, 44%);
 }
 
@@ -551,33 +551,33 @@ projectContent base
 
 /* handles markdown-generated content of Jekyll posts */
 
-[gui-projectcontent] {
+[i-projectcontent] {
     margin-bottom: 54px;
     margin-bottom: 3rem;
 }
 
-[gui-projectcontent] > ul,
-[gui-projectcontent] > ol,
-[gui-projectcontent] > code,
-[gui-projectcontent] > blockquote,
-[gui-projectcontent] > p {
+[i-projectcontent] > ul,
+[i-projectcontent] > ol,
+[i-projectcontent] > code,
+[i-projectcontent] > blockquote,
+[i-projectcontent] > p {
     max-width: 720px;
     max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-[gui-projectcontent] > ul:not(:last-child),
-[gui-projectcontent] > ol:not(:last-child),
-[gui-projectcontent] > code:not(:last-child),
-[gui-projectcontent] > blockquote:not(:last-child),
-[gui-projectcontent] > p:not(:last-child) {
+[i-projectcontent] > ul:not(:last-child),
+[i-projectcontent] > ol:not(:last-child),
+[i-projectcontent] > code:not(:last-child),
+[i-projectcontent] > blockquote:not(:last-child),
+[i-projectcontent] > p:not(:last-child) {
     margin-bottom: 27px;
     margin-bottom: 1.5rem;
 }
 
-[gui-projectcontent] > ul,
-[gui-projectcontent] > ol {
+[i-projectcontent] > ul,
+[i-projectcontent] > ol {
     margin-top: 0;
 }
 
@@ -585,7 +585,7 @@ projectContent base
 projectImage base
 *******************************************************************************/
 
-[gui-projectimage] {
+[i-projectimage] {
     max-width: 100%;
 
     margin-top: 0;
@@ -595,12 +595,12 @@ projectImage base
     margin-bottom: 1.5rem;
 }
 
-[gui-projectimage-thumbnail],
-[gui-projectimage-thumbnail] img {
+[i-projectimage-thumbnail],
+[i-projectimage-thumbnail] img {
     max-width: inherit;
 }
 
-[gui-projectimage-title] {
+[i-projectimage-title] {
     display: block;
 }
 
@@ -608,7 +608,7 @@ projectImage base
 projectRelated base
 *******************************************************************************/
 
-[gui-projectrelated] {
+[i-projectrelated] {
     display: block;
     float: left;
     clear: both;
@@ -617,22 +617,22 @@ projectRelated base
     background-image: none !important;
 }
 
-[gui-projectrelated]:not(:last-child) {
+[i-projectrelated]:not(:last-child) {
     margin-bottom: 27px;
     margin-bottom: 1.5rem;
 }
 
-[gui-projectrelated-title] { font-weight: 700; }
+[i-projectrelated-title] { font-weight: 700; }
 
-[gui-projectrelated-icon],
-[gui-projectrelated-title],
-[gui-projectrelated-subtitle] {
+[i-projectrelated-icon],
+[i-projectrelated-title],
+[i-projectrelated-subtitle] {
     display: inline-block;
     /* not middle, because of generating additional vertical pxs */
     vertical-align: top;
 }
 
-[gui-projectrelated-icon] {
+[i-projectrelated-icon] {
     width: 27px;
     width: 1.5rem;
     height: 27px;
@@ -643,27 +643,27 @@ projectRelated base
 
 /* states ordered to make styles always work */
 
-[gui-projectrelated]:visited {
+[i-projectrelated]:visited {
     color: hsl(276, 60%, 36%);
 }
 
-[gui-projectrelated]:visited [gui-projectrelated-icon] {
+[i-projectrelated]:visited [i-projectrelated-icon] {
     fill: hsl(276, 60%, 36%);
 }
 
-[gui-projectrelated]:hover {
+[i-projectrelated]:hover {
     color: hsl(348, 96%, 56%);
 }
 
-[gui-projectrelated]:hover [gui-projectrelated-icon] {
+[i-projectrelated]:hover [i-projectrelated-icon] {
     fill: hsl(348, 96%, 56%);
 }
 
-[gui-projectrelated]:active {
+[i-projectrelated]:active {
     color: hsl(328, 72%, 44%);
 }
 
-[gui-projectrelated]:active [gui-projectrelated-icon] {
+[i-projectrelated]:active [i-projectrelated-icon] {
     fill: hsl(328, 72%, 44%);
 }
 
@@ -671,7 +671,7 @@ projectRelated base
 signature base
 *******************************************************************************/
 
-[gui-signature] {
+[i-signature] {
     float: left;
 
     font-weight: 700;
@@ -687,7 +687,7 @@ signature base
 
 }
 
-[gui-signature~="3"] {
+[i-signature~="3"] {
     /* magic value to match missing pixels for 3 times rootLineHeight */
     padding-top: 3.375px;
     padding-top: 0.1875rem;
@@ -695,7 +695,7 @@ signature base
     padding-bottom: 0.1875rem;
 }
 
-[gui-signature~="4"] {
+[i-signature~="4"] {
     /* magic value to match missing pixels for 4 times rootLineHeight */
     padding-top: 9px;
     padding-top: 0.5rem;
@@ -703,8 +703,8 @@ signature base
     padding-bottom: 0.5rem;
 }
 
-[gui-signature]:visited { color: currentColor; }
+[i-signature]:visited { color: currentColor; }
 
-[gui-signature]:hover { color: hsl(348, 96%, 56%); }
+[i-signature]:hover { color: hsl(348, 96%, 56%); }
 
-[gui-signature]:active { color: hsl(328, 72%, 44%); }
+[i-signature]:active { color: hsl(328, 72%, 44%); }
