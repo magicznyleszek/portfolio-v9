@@ -1,0 +1,17 @@
+{% comment %}
+categoriesList uses an array of slugs to display an inline list of categories
+{% endcomment %}
+<nav i-categoriesList>
+{% for categorySlug in include.categories %}
+{% for categoryData in site.data.categories %}
+{% if categoryData.slug == categorySlug%}
+    <a
+        i-categoriesList-item="{% if categoryData.slug == page.slug or page.categories contains categoryData.slug%}current{% endif %}"
+        href="{{ site.baseurl }}{{ categoryData.url }}"
+    >
+        {{ categoryData.label }}
+    </a>
+{% endif %}
+{% endfor %}
+{% endfor %}
+</nav>

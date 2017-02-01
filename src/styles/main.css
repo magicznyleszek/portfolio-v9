@@ -11,8 +11,8 @@ main styles aggregation
 @import "setup/typography.css";
 
 /* modules */
+@import "modules/categoriesList.css";
 @import "modules/logo.css";
-@import "modules/menu.css";
 @import "modules/pageSection.css";
 @import "modules/pageTitle.css";
 @import "modules/postSummary/postSummary.css";

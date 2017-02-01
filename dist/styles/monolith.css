@@ -293,6 +293,51 @@ textarea {
 /* modules */
 
 /*------------------------------------------------------------------------------
+categoriesList base
+------------------------------------------------------------------------------*/
+
+[i-categoriesList]:not(:last-child) {
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+}
+
+[i-categoriesList]::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[i-categoriesList-item] {
+    display: block;
+    float: left;
+
+    text-transform: lowercase;
+}
+
+[i-categoriesList-item]:not(:last-child) {
+    margin-right: 11.25px;
+    margin-right: 0.625rem;
+}
+
+[i-categoriesList-item~="current"] {
+    padding-left: 9px;
+    padding-left: 0.5rem;
+    padding-right: 9px;
+    padding-right: 0.5rem;
+    /* we need important to override a-tag bg image */
+    background-image: -webkit-linear-gradient(left, currentColor 0%, currentColor 0%),
+        -webkit-linear-gradient(top, currentColor 0%, currentColor 0%),
+        -webkit-linear-gradient(right, currentColor 0%, currentColor 0%),
+        -webkit-linear-gradient(bottom, currentColor 0%, currentColor 0%) !important;
+    background-image: linear-gradient(to right, currentColor 0%, currentColor 0%),
+        linear-gradient(to bottom, currentColor 0%, currentColor 0%),
+        linear-gradient(to left, currentColor 0%, currentColor 0%),
+        linear-gradient(to top, currentColor 0%, currentColor 0%) !important;
+    background-repeat: repeat-x, repeat-y;
+    background-position: 0 0, 100% 0, 0 100%;
+}
+
+/*------------------------------------------------------------------------------
 logo base
 ------------------------------------------------------------------------------*/
 
@@ -328,52 +373,6 @@ logo base
 [gui-logo]:hover svg { fill: hsl(348, 96%, 56%); }
 
 [gui-logo]:active svg { fill: hsl(328, 72%, 44%); }
-
-/*------------------------------------------------------------------------------
-menu base
-------------------------------------------------------------------------------*/
-
-[gui-menu]:not(:last-child) {
-    margin-bottom: 27px;
-    margin-bottom: 1.5rem;
-}
-
-[gui-menu]:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-[gui-menu-item] {
-    display: block;
-    float: left;
-
-    text-transform: lowercase;
-}
-
-[gui-menu-item]:not(:last-child) {
-    margin-right: 11.25px;
-    margin-right: 0.625rem;
-}
-
-[gui-menu-item~="current"] {
-    padding-left: 9px;
-    padding-left: 0.5rem;
-    padding-right: 9px;
-    padding-right: 0.5rem;
-
-    background-image: -webkit-linear-gradient( left, currentColor 0%, currentColor 0% ),
-        -webkit-linear-gradient( top, currentColor 0%, currentColor 0% ),
-        -webkit-linear-gradient( right, currentColor 0%, currentColor 0% ),
-        -webkit-linear-gradient( bottom, currentColor 0%, currentColor 0% ) !important;
-
-    background-image: linear-gradient( to right, currentColor 0%, currentColor 0% ),
-        linear-gradient( to bottom, currentColor 0%, currentColor 0% ),
-        linear-gradient( to left, currentColor 0%, currentColor 0% ),
-        linear-gradient( to top, currentColor 0%, currentColor 0% ) !important;
-    background-repeat: repeat-x, repeat-y;
-    background-position: 0 0, 100% 0, 0 100%;
-}
 
 /*------------------------------------------------------------------------------
 pageSection base
@@ -523,33 +522,6 @@ postSummary thumbnail part
 
 [gui-postsummary-thumbnail]:active [gui-postsummary-thumbnail-icon] {
     fill: hsl(328, 72%, 44%);
-}
-
-/*------------------------------------------------------------------------------
-postSummary categories part
-------------------------------------------------------------------------------*/
-
-[gui-postsummary-categories] {
-    display: inline-block;
-    vertical-align: top;
-}
-
-[gui-postsummary-categories]:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-
-[gui-postsummary-categories] a {
-    display: block;
-    float: left;
-
-    text-transform: lowercase;
-}
-
-[gui-postsummary-categories] a:not(:last-child) {
-    margin-right: 11.25px;
-    margin-right: 0.625rem;
 }
 
 [gui-postsummary-container] {

@@ -1,5 +1,0 @@
-{% for category in site.data.categories %}
-{% if category.slug == include.category%}
-<a href="{{ site.baseurl }}{{ category.url }}">{{ category.label }}</a>
-{% endif %}
-{% endfor %}

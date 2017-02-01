@@ -3,7 +3,6 @@ postSummary base
 ------------------------------------------------------------------------------*/
 
 @import "thumbnail.css";
-@import "categories.css";
 
 [gui-postsummary-container] {
     text-align: center;

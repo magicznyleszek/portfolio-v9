@@ -16,9 +16,5 @@
 
     <time gui-postsummary-date>{{ post.date | date: "%B %Y" }}</time>
 
-    <div gui-postsummary-categories>
-        {% for category in post.categories %}
-            {% include helpers/categoryLink.liquid category=category %}
-        {% endfor %}
-    </div>
+    {% include helpers/categoriesList.liquid categories=post.categories %}
 </div>

@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------------------
+categoriesList base
+------------------------------------------------------------------------------*/
+
+:root {
+    --categoriesList-item-current-gr:
+        linear-gradient(to right, var(--line-gr-solid-c)),
+        linear-gradient(to bottom, var(--line-gr-solid-c)),
+        linear-gradient(to left, var(--line-gr-solid-c)),
+        linear-gradient(to top, var(--line-gr-solid-c));
+    --categoriesList-item-current-gr-hover:
+        linear-gradient(to right, var(--line-gr-solid-c)),
+        linear-gradient(to bottom, var(--line-gr-solid-c)),
+        linear-gradient(to left, var(--line-gr-solid-c)),
+        linear-gradient(to top, var(--line-gr-solid-c));
+    --categoriesList-item-current-gr-w: var(--line-gr-w);
+}
+
+[i-categoriesList]:not(:last-child) {
+    margin-bottom: var(--s-leading);
+}
+
+[i-categoriesList]::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[i-categoriesList-item] {
+    display: block;
+    float: left;
+
+    text-transform: lowercase;
+}
+
+[i-categoriesList-item]:not(:last-child) {
+    margin-right: 0.625rem;
+}
+
+[i-categoriesList-item~="current"] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    /* we need important to override a-tag bg image */
+    background-image: var(--categoriesList-item-current-gr) !important;
+    background-repeat: repeat-x, repeat-y;
+    background-position: 0 0, 100% 0, 0 100%;
+}
