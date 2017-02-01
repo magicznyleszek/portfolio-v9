@@ -435,15 +435,36 @@ pageTitle base
 }
 
 /*------------------------------------------------------------------------------
-postSummary base
-------------------------------------------------------------------------------*/
-
-/*------------------------------------------------------------------------------
-postSummary thumbnail part
+postSummary
 ------------------------------------------------------------------------------*/
 
 :root { /* 216px */
 }
+
+[gui-postsummary-container] {
+    text-align: center;
+}
+
+[gui-postsummary] {
+    display: inline-block;
+    margin-left: 27px;
+    margin-left: 1.5rem;
+    margin-right: 27px;
+    margin-right: 1.5rem;
+    margin-bottom: 54px;
+    margin-bottom: 3rem;
+
+    text-align: center;
+}
+
+[gui-postsummary-date] {
+    display: block;
+    text-transform: lowercase;
+}
+
+/*------------------------------------------------------------------------------
+postSummary thumbnail
+------------------------------------------------------------------------------*/
 
 [gui-postsummary-thumbnail] {
     display: block;
@@ -522,27 +543,6 @@ postSummary thumbnail part
 
 [gui-postsummary-thumbnail]:active [gui-postsummary-thumbnail-icon] {
     fill: hsl(328, 72%, 44%);
-}
-
-[gui-postsummary-container] {
-    text-align: center;
-}
-
-[gui-postsummary] {
-    display: inline-block;
-    margin-left: 27px;
-    margin-left: 1.5rem;
-    margin-right: 27px;
-    margin-right: 1.5rem;
-    margin-bottom: 54px;
-    margin-bottom: 3rem;
-
-    text-align: center;
-}
-
-[gui-postsummary-date] {
-    display: block;
-    text-transform: lowercase;
 }
 
 /*------------------------------------------------------------------------------

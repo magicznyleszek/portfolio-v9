@@ -1,5 +1,5 @@
 /*------------------------------------------------------------------------------
-postSummary thumbnail part
+postSummary
 ------------------------------------------------------------------------------*/
 
 :root {
@@ -9,6 +9,28 @@ postSummary thumbnail part
     --postSummary-thumbnail-c-visited: var(--c-violet);
     --postSummary-thumbnail-w: calc(var(--s-leading) * 9); /* 216px */
 }
+
+[gui-postsummary-container] {
+    text-align: center;
+}
+
+[gui-postsummary] {
+    display: inline-block;
+    margin-left: var(--s-leading);
+    margin-right: var(--s-leading);
+    margin-bottom: calc(var(--s-leading) * 2);
+
+    text-align: center;
+}
+
+[gui-postsummary-date] {
+    display: block;
+    text-transform: lowercase;
+}
+
+/*------------------------------------------------------------------------------
+postSummary thumbnail
+------------------------------------------------------------------------------*/
 
 [gui-postsummary-thumbnail] {
     display: block;

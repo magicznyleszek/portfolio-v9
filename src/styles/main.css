@@ -15,7 +15,7 @@ main styles aggregation
 @import "modules/logo.css";
 @import "modules/pageSection.css";
 @import "modules/pageTitle.css";
-@import "modules/postSummary/postSummary.css";
+@import "modules/postSummary.css";
 @import "modules/projectContent.css";
 @import "modules/projectImage.css";
 @import "modules/projectRelated.css";
