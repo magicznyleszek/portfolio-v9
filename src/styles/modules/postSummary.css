@@ -6,22 +6,22 @@ postSummary module
     --s-postSummary-thumbnail: calc(var(--s-leading) * 9); /* 216px */
 }
 
-[i-postsummary-container] {
-    text-align: center;
-}
-
 [i-postsummary] {
     display: inline-block;
     vertical-align: top;
     padding: var(--s-leading);
     padding-bottom: calc(var(--s-leading) * 2);
     max-width: calc(var(--s-postSummary-thumbnail) + calc(var(--s-leading) * 2));
-    text-align: center;
 }
 
 [i-postsummary-date] {
     display: block;
     text-transform: lowercase;
+}
+
+[i-postsummary-date]::before {
+    content: "@\00a0";
+    display: inline-block;
 }
 
 /*******************************************************************************
@@ -43,6 +43,7 @@ postSummary thumbnail
     font-size: 1.5rem;
     font-weight: 700;
     line-height: var(--s-leading);
+    text-align: center;
 }
 
 [i-postsummary-thumbnail-icon] {

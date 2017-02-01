@@ -301,11 +301,6 @@ categoriesList module
     vertical-align: bottom;
 }
 
-[i-categoriesList]:not(:last-child) {
-    margin-bottom: 27px;
-    margin-bottom: 1.5rem;
-}
-
 [i-categoriesList-item] {
     display: inline-block;
     vertical-align: bottom;
@@ -435,10 +430,6 @@ postSummary module
 :root { /* 216px */
 }
 
-[i-postsummary-container] {
-    text-align: center;
-}
-
 [i-postsummary] {
     display: inline-block;
     vertical-align: top;
@@ -448,12 +439,16 @@ postSummary module
     padding-bottom: 3rem;
     max-width: 297px;
     max-width: 16.5rem;
-    text-align: center;
 }
 
 [i-postsummary-date] {
     display: block;
     text-transform: lowercase;
+}
+
+[i-postsummary-date]::before {
+    content: "@\00a0";
+    display: inline-block;
 }
 
 /*******************************************************************************
@@ -479,6 +474,7 @@ postSummary thumbnail
     font-weight: 700;
     line-height: 27px;
     line-height: 1.5rem;
+    text-align: center;
 }
 
 [i-postsummary-thumbnail-icon] {

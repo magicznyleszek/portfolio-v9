@@ -21,10 +21,6 @@ categoriesList module
     vertical-align: bottom;
 }
 
-[i-categoriesList]:not(:last-child) {
-    margin-bottom: var(--s-leading);
-}
-
 [i-categoriesList-item] {
     display: inline-block;
     vertical-align: bottom;
