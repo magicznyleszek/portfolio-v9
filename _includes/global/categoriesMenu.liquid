@@ -1,11 +1,4 @@
 <nav gui-menu>
-    <a
-        gui-menu-item="{% if page.slug == 'projects' %}current{% endif %}"
-        href="{{ site.baseurl }}/"
-    >
-        All
-    </a>
-
     {% for category in site.data.categories %}
         <a
             gui-menu-item="{% if category.slug == page.slug or page.categories contains category.slug%}current{% endif %}"
