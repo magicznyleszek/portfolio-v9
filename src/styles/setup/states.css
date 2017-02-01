@@ -33,9 +33,9 @@ a:hover {
     color: inherit;
 }
 
-a:visited { color: var(--c-violet); }
+a:visited { color: var(--c-global-visited); }
 
-a:active { color: var(--c-amaranth); }
+a:active { color: var(--c-global-active); }
 
 /* text selection */
 
