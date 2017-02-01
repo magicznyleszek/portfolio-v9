@@ -1,5 +1,5 @@
 /*******************************************************************************
-categoriesList base
+categoriesList module
 *******************************************************************************/
 
 :root {
@@ -14,6 +14,11 @@ categoriesList base
         linear-gradient(to left, var(--line-gr-solid-c)),
         linear-gradient(to top, var(--line-gr-solid-c));
     --categoriesList-item-current-gr-w: var(--line-gr-w);
+}
+
+[i-categoriesList] {
+    display: inline-block;
+    vertical-align: bottom;
 }
 
 [i-categoriesList]:not(:last-child) {

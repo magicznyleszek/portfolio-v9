@@ -1,36 +1,30 @@
 /*******************************************************************************
-logo base
+logo module
 *******************************************************************************/
 
 :root {
-    --logo-w: calc(var(--s-leading) * 4); /* 96px */
-    --logo-c: currentColor;
-    --logo-c-visited: currentColor;
-    --logo-c-hover: var(--c-amaranth);
-    --logo-c-active: var(--c-purple);
+    --s-logo: calc(var(--s-leading) * 4); /* 96px */
 }
 
 [i-logo] {
     display: block;
-    width: var(--logo-w);
-    height: var(--logo-w);
-
     margin-bottom: var(--s-leading);
-
+    width: var(--s-logo);
+    height: var(--s-logo);
     /* remove link styles */
     background-image: none !important;
 }
 
 [i-logo] svg {
-    width: var(--logo-w);
-    height: var(--logo-w);
-    fill: var(--logo-c);
+    width: var(--s-logo);
+    height: var(--s-logo);
+    fill: currentColor;
 }
 
 /* states ordered to make styles always work */
 
-[i-logo]:visited svg { fill: var(--logo-c-visited); }
+[i-logo]:visited svg { fill: currentColor; }
 
-[i-logo]:hover svg { fill: var(--logo-c-hover); }
+[i-logo]:hover svg { fill: var(--c-amaranth); }
 
-[i-logo]:active svg { fill: var(--logo-c-active); }
+[i-logo]:active svg { fill: var(--c-purple); }

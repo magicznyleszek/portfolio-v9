@@ -1,41 +1,20 @@
 /*******************************************************************************
-signature base
+signature module
 *******************************************************************************/
 
-:root {
-    --signature-c: currentColor;
-    --signature-c-visited: currentColor;
-    --signature-c-hover: var(--c-amaranth);
-    --signature-c-active: var(--c-purple);
-}
-
 [i-signature] {
-    float: left;
-
-    font-weight: 700;
-    text-transform: lowercase;
-    font-style: italic;
-
+    display: inline-block;
+    vertical-align: bottom;
     /* remove link styles */
     background-image: none !important;
-
+    color: currentColor;
+    font-weight: 700;
+    font-style: italic;
     /* magic value too look perfect */
-    line-height: 0.875rem;
-
+    line-height: calc(var(--s-leading) / 1.5);
+    text-transform: lowercase;
 }
 
-[i-signature~="3"] {
-    /* magic value to match missing pixels for 3 times rootLineHeight */
-    padding-top: 0.1875rem;
-    padding-bottom: 0.1875rem;
-}
-
-[i-signature~="4"] {
-    /* magic value to match missing pixels for 4 times rootLineHeight */
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-}
-
-[i-signature]:visited { color: var(--signature-c-visited); }
-[i-signature]:hover { color: var(--signature-c-hover); }
-[i-signature]:active { color: var(--signature-c-active); }
+[i-signature]:visited { color: currentColor; }
+[i-signature]:hover { color: var(--c-amaranth); }
+[i-signature]:active { color: var(--c-purple); }

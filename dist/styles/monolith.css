@@ -293,8 +293,13 @@ textarea {
 /* modules */
 
 /*******************************************************************************
-categoriesList base
+categoriesList module
 *******************************************************************************/
+
+[i-categoriesList] {
+    display: inline-block;
+    vertical-align: bottom;
+}
 
 [i-categoriesList]:not(:last-child) {
     margin-bottom: 27px;
@@ -338,7 +343,7 @@ categoriesList base
 }
 
 /*******************************************************************************
-logo base
+logo module
 *******************************************************************************/
 
 :root { /* 96px */
@@ -346,14 +351,12 @@ logo base
 
 [i-logo] {
     display: block;
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
     width: 108px;
     width: 6rem;
     height: 108px;
     height: 6rem;
-
-    margin-bottom: 27px;
-    margin-bottom: 1.5rem;
-
     /* remove link styles */
     background-image: none !important;
 }
@@ -375,7 +378,7 @@ logo base
 [i-logo]:active svg { fill: hsl(328, 72%, 44%); }
 
 /*******************************************************************************
-pageSection base
+pageSection module
 *******************************************************************************/
 
 [i-pagesection] {
@@ -397,7 +400,7 @@ pageSection base
 }
 
 /*******************************************************************************
-pageTitle base
+pageTitle module
 *******************************************************************************/
 
 [i-pagetitle] {
@@ -435,7 +438,7 @@ pageTitle base
 }
 
 /*******************************************************************************
-postSummary
+postSummary module
 *******************************************************************************/
 
 :root { /* 216px */
@@ -546,7 +549,7 @@ postSummary thumbnail
 }
 
 /*******************************************************************************
-projectContent base
+projectContent module
 *******************************************************************************/
 
 /* handles markdown-generated content of Jekyll posts */
@@ -582,7 +585,7 @@ projectContent base
 }
 
 /*******************************************************************************
-projectImage base
+projectImage module
 *******************************************************************************/
 
 [i-projectimage] {
@@ -605,7 +608,7 @@ projectImage base
 }
 
 /*******************************************************************************
-projectRelated base
+projectRelated module
 *******************************************************************************/
 
 [i-projectrelated] {
@@ -668,39 +671,21 @@ projectRelated base
 }
 
 /*******************************************************************************
-signature base
+signature module
 *******************************************************************************/
 
 [i-signature] {
-    float: left;
-
-    font-weight: 700;
-    text-transform: lowercase;
-    font-style: italic;
-
+    display: inline-block;
+    vertical-align: bottom;
     /* remove link styles */
     background-image: none !important;
-
+    color: currentColor;
+    font-weight: 700;
+    font-style: italic;
     /* magic value too look perfect */
-    line-height: 15.75px;
-    line-height: 0.875rem;
-
-}
-
-[i-signature~="3"] {
-    /* magic value to match missing pixels for 3 times rootLineHeight */
-    padding-top: 3.375px;
-    padding-top: 0.1875rem;
-    padding-bottom: 3.375px;
-    padding-bottom: 0.1875rem;
-}
-
-[i-signature~="4"] {
-    /* magic value to match missing pixels for 4 times rootLineHeight */
-    padding-top: 9px;
-    padding-top: 0.5rem;
-    padding-bottom: 9px;
-    padding-bottom: 0.5rem;
+    line-height: 18px;
+    line-height: 1rem;
+    text-transform: lowercase;
 }
 
 [i-signature]:visited { color: currentColor; }
