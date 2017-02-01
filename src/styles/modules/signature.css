@@ -16,5 +16,5 @@ signature module
 }
 
 [i-signature]:visited { color: currentColor; }
-[i-signature]:hover { color: var(--c-amaranth); }
-[i-signature]:active { color: var(--c-purple); }
+[i-signature]:hover { color: var(--c-global-hover); }
+[i-signature]:active { color: var(--c-global-active); }

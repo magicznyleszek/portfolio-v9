@@ -3,10 +3,10 @@ pageTitle module
 *******************************************************************************/
 
 [i-pagetitle] {
-    margin-bottom: calc(var(--s-leading) * 2);
-    max-width: var(--s-root-content);
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: calc(var(--s-leading) * 2);
+    max-width: var(--s-root-content);
 }
 
 [i-pagetitle-name] {
@@ -18,7 +18,6 @@ pageTitle module
 [i-pagetitle-meta] {
     display: block;
     margin-top: var(--s-leading);
-
     font-style: italic;
     text-transform: lowercase;
 }
@@ -26,6 +25,5 @@ pageTitle module
 [i-pagetitle-description] {
     display: block;
     margin-top: var(--s-leading);
-
     font-weight: 700;
 }

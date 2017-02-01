@@ -33,7 +33,7 @@ a:hover {
     color: inherit;
 }
 
-a:visited { color: inherit; }
+a:visited { color: var(--c-violet); }
 
 a:active { color: var(--c-amaranth); }
 

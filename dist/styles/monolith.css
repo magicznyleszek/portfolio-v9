@@ -106,7 +106,7 @@ a:hover {
     color: inherit;
 }
 
-a:visited { color: inherit; }
+a:visited { color: hsl(276, 60%, 36%); }
 
 a:active { color: hsl(348, 96%, 56%); }
 
@@ -387,14 +387,14 @@ pageSection module
 }
 
 [i-pagesection~="short"] {
-    max-width: 720px;
-    max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
+    max-width: 720px;
+    max-width: 40rem;
 }
 
-[i-pagesection]:after {
-    content: '';
+[i-pagesection]::after {
+    content: "";
     display: table;
     clear: both;
 }
@@ -404,12 +404,12 @@ pageTitle module
 *******************************************************************************/
 
 [i-pagetitle] {
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 54px;
     margin-bottom: 3rem;
     max-width: 720px;
     max-width: 40rem;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 [i-pagetitle-name] {
@@ -424,7 +424,6 @@ pageTitle module
     display: block;
     margin-top: 27px;
     margin-top: 1.5rem;
-
     font-style: italic;
     text-transform: lowercase;
 }
@@ -433,7 +432,6 @@ pageTitle module
     display: block;
     margin-top: 27px;
     margin-top: 1.5rem;
-
     font-weight: 700;
 }
 
@@ -456,7 +454,6 @@ postSummary module
     margin-right: 1.5rem;
     margin-bottom: 54px;
     margin-bottom: 3rem;
-
     text-align: center;
 }
 
@@ -472,59 +469,54 @@ postSummary thumbnail
 [i-postsummary-thumbnail] {
     display: block;
     position: relative;
-
     /* remove link styles */
     background-image: none !important;
 }
 
 [i-postsummary-thumbnail-title] {
     display: block;
-
-    font-size: 27px;
-    font-size: 1.5rem;
-    font-weight: 700;
-
     /* computed height of leading and margins is 2x default leading */
-    line-height: 27px;
-    line-height: 1.5rem;
     margin-top: 13.5px;
     margin-top: 0.75rem;
     margin-bottom: 13.5px;
     margin-bottom: 0.75rem;
+    font-size: 27px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 27px;
+    line-height: 1.5rem;
 }
 
 [i-postsummary-thumbnail-icon] {
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 243px;
     width: 13.5rem;
     height: 243px;
     height: 13.5rem;
-    margin-left: auto;
-    margin-right: auto;
-
     fill: currentColor;
 }
 
 [i-postsummary-thumbnail-description] {
     display: inline-block;
-    max-width: 243px;
-    max-width: 13.5rem;
-
     margin-top: 13.5px;
     margin-top: 0.75rem;
     margin-bottom: 13.5px;
     margin-bottom: 0.75rem;
     padding: 13.5px;
     padding: 0.75rem;
-
+    max-width: 243px;
+    max-width: 13.5rem;
     box-shadow: 0 0 0 0.0625rem currentColor;
-
     text-align: left;
 }
 
 /* states ordered to make styles always work */
 
-[i-postsummary-thumbnail]:visited {
+[i-postsummary-thumbnail]:visited,
+[i-postsummary-thumbnail]:visited [i-postsummary-thumbnail-title],
+[i-postsummary-thumbnail]:visited [i-postsummary-thumbnail-description] {
     color: hsl(276, 60%, 36%);
 }
 
@@ -532,7 +524,9 @@ postSummary thumbnail
     fill: hsl(276, 60%, 36%);
 }
 
-[i-postsummary-thumbnail]:hover {
+[i-postsummary-thumbnail]:hover,
+[i-postsummary-thumbnail]:hover [i-postsummary-thumbnail-title],
+[i-postsummary-thumbnail]:hover [i-postsummary-thumbnail-description] {
     color: hsl(348, 96%, 56%);
 }
 
@@ -540,7 +534,9 @@ postSummary thumbnail
     fill: hsl(348, 96%, 56%);
 }
 
-[i-postsummary-thumbnail]:active {
+[i-postsummary-thumbnail]:active,
+[i-postsummary-thumbnail]:active [i-postsummary-thumbnail-title],
+[i-postsummary-thumbnail]:active [i-postsummary-thumbnail-description] {
     color: hsl(328, 72%, 44%);
 }
 
@@ -564,10 +560,10 @@ projectContent module
 [i-projectcontent] > code,
 [i-projectcontent] > blockquote,
 [i-projectcontent] > p {
-    max-width: 720px;
-    max-width: 40rem;
     margin-left: auto;
     margin-right: auto;
+    max-width: 720px;
+    max-width: 40rem;
 }
 
 [i-projectcontent] > ul:not(:last-child),
@@ -589,13 +585,12 @@ projectImage module
 *******************************************************************************/
 
 [i-projectimage] {
-    max-width: 100%;
-
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 27px;
     margin-bottom: 1.5rem;
+    max-width: 100%;
 }
 
 [i-projectimage-thumbnail],
@@ -615,7 +610,6 @@ projectRelated module
     display: block;
     float: left;
     clear: both;
-
     /* remove link styles */
     background-image: none !important;
 }
@@ -640,7 +634,6 @@ projectRelated module
     width: 1.5rem;
     height: 27px;
     height: 1.5rem;
-
     fill: currentColor;
 }
 

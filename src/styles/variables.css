@@ -46,6 +46,10 @@ variables - all global and pallete variables for project
 
     /* globals */
     --s-global-br: 0.125rem;
+
+    --c-global-hover: var(--c-amaranth);
+    --c-global-active: var(--c-purple);
+    --c-global-visited: var(--c-violet);
 }
 
 /*******************************************************************************

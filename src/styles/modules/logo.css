@@ -25,6 +25,6 @@ logo module
 
 [i-logo]:visited svg { fill: currentColor; }
 
-[i-logo]:hover svg { fill: var(--c-amaranth); }
+[i-logo]:hover svg { fill: var(--c-global-hover); }
 
-[i-logo]:active svg { fill: var(--c-purple); }
+[i-logo]:active svg { fill: var(--c-global-active); }

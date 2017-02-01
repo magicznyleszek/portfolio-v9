@@ -2,19 +2,10 @@
 projectRelated module
 *******************************************************************************/
 
-:root {
-    --projectRelated-c: currentColor;
-    --projectRelated-c-visited: var(--c-violet);
-    --projectRelated-c-hover: var(--c-amaranth);
-    --projectRelated-c-active: var(--c-purple);
-    --projectRelated-symbol-w: var(--s-leading);
-}
-
 [i-projectrelated] {
     display: block;
     float: left;
     clear: both;
-
     /* remove link styles */
     background-image: none !important;
 }
@@ -34,31 +25,33 @@ projectRelated module
 }
 
 [i-projectrelated-icon] {
-    width: var(--projectRelated-symbol-w);
-    height: var(--projectRelated-symbol-w);
-
-    fill: var(--projectRelated-c);
+    width: var(--s-leading);
+    height: var(--s-leading);
+    fill: currentColor;
 }
 
 /* states ordered to make styles always work */
 
 [i-projectrelated]:visited {
-    color: var(--projectRelated-c-visited);
+    color: var(--c-global-visited);
 }
+
 [i-projectrelated]:visited [i-projectrelated-icon] {
-    fill: var(--projectRelated-c-visited);
+    fill: var(--c-global-visited);
 }
 
 [i-projectrelated]:hover {
-    color: var(--projectRelated-c-hover);
+    color: var(--c-global-hover);
 }
+
 [i-projectrelated]:hover [i-projectrelated-icon] {
-    fill: var(--projectRelated-c-hover);
+    fill: var(--c-global-hover);
 }
 
 [i-projectrelated]:active {
-    color: var(--projectRelated-c-active);
+    color: var(--c-global-active);
 }
+
 [i-projectrelated]:active [i-projectrelated-icon] {
-    fill: var(--projectRelated-c-active);
+    fill: var(--c-global-active);
 }

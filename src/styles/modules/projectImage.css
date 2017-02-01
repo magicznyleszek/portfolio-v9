@@ -3,12 +3,11 @@ projectImage module
 *******************************************************************************/
 
 [i-projectimage] {
-    max-width: 100%;
-
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: var(--s-leading);
+    max-width: 100%;
 }
 
 [i-projectimage-thumbnail],
