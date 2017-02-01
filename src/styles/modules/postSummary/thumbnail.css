@@ -2,6 +2,14 @@
 postSummary thumbnail part
 ------------------------------------------------------------------------------*/
 
+:root {
+    --postSummary-thumbnail-c: currentColor;
+    --postSummary-thumbnail-c-hover: var(--c-amaranth);
+    --postSummary-thumbnail-c-active: var(--c-purple);
+    --postSummary-thumbnail-c-visited: var(--c-violet);
+    --postSummary-thumbnail-w: calc(var(--root-lineHeight) * 9rem); /* 216px */
+}
+
 [gui-postsummary-thumbnail] {
     display: block;
     position: relative;
@@ -17,9 +25,9 @@ postSummary thumbnail part
     font-weight: 700;
 
     /* computed height of leading and margins is 2x default leading */
-    line-height: calc(var(--rootLineHeight) * 1rem);
-    margin-top: calc(var(--rootLineHeight) * 0.5rem);
-    margin-bottom: calc(var(--rootLineHeight) * 0.5rem);
+    line-height: calc(var(--root-lineHeight) * 1rem);
+    margin-top: calc(var(--root-lineHeight) * 0.5rem);
+    margin-bottom: calc(var(--root-lineHeight) * 0.5rem);
 }
 
 [gui-postsummary-thumbnail-icon] {
@@ -36,11 +44,10 @@ postSummary thumbnail part
     display: inline-block;
     max-width: var(--postSummary-thumbnail-w);
 
-    margin-top: calc(var(--rootLineHeight) * 0.5rem);
-    margin-bottom: calc(var(--rootLineHeight) * 0.5rem);
-    padding: calc(var(--rootLineHeight) * 0.5rem);
+    margin-top: calc(var(--root-lineHeight) * 0.5rem);
+    margin-bottom: calc(var(--root-lineHeight) * 0.5rem);
+    padding: calc(var(--root-lineHeight) * 0.5rem);
 
-    background-color: var(--app-bg-c);
     box-shadow: 0 0 0 var(--line-gr-w) currentColor;
 
     text-align: left;

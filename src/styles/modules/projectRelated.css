@@ -2,7 +2,13 @@
 projectRelated base
 ------------------------------------------------------------------------------*/
 
-@import "config.css";
+:root {
+    --projectRelated-c: currentColor;
+    --projectRelated-c-visited: var(--c-violet);
+    --projectRelated-c-hover: var(--c-amaranth);
+    --projectRelated-c-active: var(--c-purple);
+    --projectRelated-symbol-w: calc(var(--root-lineHeight) * 1rem);
+}
 
 [gui-projectrelated] {
     display: block;
@@ -14,7 +20,7 @@ projectRelated base
 }
 
 [gui-projectrelated]:not(:last-child) {
-    margin-bottom: calc(var(--rootLineHeight) * 1rem);
+    margin-bottom: calc(var(--root-lineHeight) * 1rem);
 }
 
 [gui-projectrelated-title] { font-weight: 700; }

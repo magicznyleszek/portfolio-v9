@@ -2,7 +2,6 @@
 postSummary base
 ------------------------------------------------------------------------------*/
 
-@import "config.css";
 @import "thumbnail.css";
 @import "categories.css";
 
@@ -12,9 +11,9 @@ postSummary base
 
 [gui-postsummary] {
     display: inline-block;
-    margin-left: calc(var(--rootLineHeight) * 1rem);
-    margin-right: calc(var(--rootLineHeight) * 1rem);
-    margin-bottom: calc(var(--rootLineHeight) * 2rem);
+    margin-left: calc(var(--root-lineHeight) * 1rem);
+    margin-right: calc(var(--root-lineHeight) * 1rem);
+    margin-bottom: calc(var(--root-lineHeight) * 2rem);
 
     text-align: center;
 }

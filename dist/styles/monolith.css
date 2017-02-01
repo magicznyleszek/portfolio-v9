@@ -1,15 +1,13 @@
-
-@import "normalize/root.css";
-@import "normalize/typography.css";
-@import "normalize/states.css";
-@import "normalize/layout.css";
 /*******************************************************************************
 main styles aggregation
 *******************************************************************************/
+
 /* variables palette */
+
 /*******************************************************************************
 variables - all global and pallete variables for project
 *******************************************************************************/
+
 :root {
     /* colors palette */
 
@@ -25,87 +23,682 @@ variables - all global and pallete variables for project
 
     /* globals */
 }
+
 /*******************************************************************************
 custom media queries and selectors shortcuts
 *******************************************************************************/
+
 /* media queries for scaling everything */
+
 /* retina media query */
+
 /* groups selectors */
+
 /* basics */
+
+/*******************************************************************************
+root stuff and normalizations
+
+NOTE: Root line height is being used in many places throughout the project.
+It is recommended to keep all vertical margins and heights of elements to match
+the leading. Use caution when adding borders or when using vertical-align middle
+as they tend to add unwanted pixels, thus braking the flow.
+*******************************************************************************/
+
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(276, 32%, 12%);
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 112.5%;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+/* clever page scaling with root font size changes */
+
+@media (min-width: 1536px) { html { font-size: 125%; } }
+
+@media (max-width: 720px) { html { font-size: 100%; } }
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 54px 27px;
+    padding: 3rem 1.5rem;
+    width: 100%;
+}
+
+/*******************************************************************************
+user-action influenced states
+*******************************************************************************/
+
+:root { /* 1px @ 16px */
+}
+
+/* links */
+
+a {
+    /* custom underlines */
+    background-position: 0 100%;
+    background-size: 0.0625rem 0.0625rem;
+    background-image: -webkit-linear-gradient(right, currentColor 0%, currentColor 0%);
+    background-image: linear-gradient(to left, currentColor 0%, currentColor 0%);
+    background-repeat: repeat-x;
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    background-size: 0.125rem 0.125rem;
+    color: inherit;
+}
+
+a:visited { color: inherit; }
+
+a:active { color: hsl(348, 96%, 56%); }
+
+/* text selection */
+
+:focus {
+    outline-color: hsl(348, 96%, 56%);
+    outline-style: auto;
+    outline-width: 4.5px;
+    outline-width: 0.25rem;
+}
+
+::-moz-focus-inner { border: 0; }
+
+::-moz-selection {
+    background-color: hsl(348, 96%, 56%);
+    color: hsl(0, 0%, 100%);
+}
+
+::selection {
+    background-color: hsl(348, 96%, 56%);
+    color: hsl(0, 0%, 100%);
+}
+
+/* disabled elements */
+
+[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+
+    /* avoid adding up opacity on nested disabled elements */
+    [disabled] { opacity: 1; }
+}
+
+/*******************************************************************************
+base typographic rules
+*******************************************************************************/
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+h1:not(:last-child),
+h2:not(:last-child),
+h3:not(:last-child),
+h4:not(:last-child),
+p:not(:last-child),
+ul:not(:last-child),
+ol:not(:last-child),
+blockquote:not(:last-child),
+pre:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+}
+
+h1 { font-size: 54px; font-size: 3rem; }
+
+h2 {
+    padding-top: 9px;
+    padding-top: 0.5rem;
+    padding-bottom: 9px;
+    padding-bottom: 0.5rem;
+    font-size: 36px;
+    font-size: 2rem;
+}
+
+h3 { font-size: 27px; font-size: 1.5rem; }
+
+h4 {
+    font-size: inherit;
+    font-weight: 700;
+}
+
+p,
+pre {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin-left: 27px;
+    margin-left: 1.5rem;
+    padding: 0;
+}
+
+ul { list-style-type: disc; }
+
+ol { list-style-type: decimal; }
+
+small,
+sub,
+sup {
+    font-size: 75%;
+}
+
+sub,
+sup {
+    vertical-align: baseline;
+    position: relative;
+    line-height: 0;
+}
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+strong { font-weight: 700; }
+
+em { font-style: italic; }
+
+blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 27px;
+    padding-left: 1.5rem;
+    box-shadow: inset 0.25rem 0 0 0 hsl(0, 0%, 80%);
+    font-style: italic;
+}
+
+blockquote cite::before {
+    content: "\2014";
+    display: inline-block;
+    margin-right: 4.5px;
+    margin-right: 0.25rem;
+}
+
+code,
+pre {
+    font-family: "Input Mono",
+        "Office Code Pro",
+        "Source Code Pro",
+        "Fira Mono",
+        "Inconsolata",
+        "Monaco",
+        "Consolas",
+        "Lucida Console",
+        "Liberation Mono",
+        "DejaVu Sans Mono",
+        monospace;
+}
+
+code {
+    display: inline-block;
+    vertical-align: bottom;
+    border-radius: 0.125rem;
+    padding-left: 4.5px;
+    padding-left: 0.25rem;
+    padding-right: 4.5px;
+    padding-right: 0.25rem;
+    background-color: hsl(0, 0%, 80%);
+    color: hsl(276, 32%, 12%);
+    font-size: 13.5px;
+    font-size: 0.75rem;
+    line-height: 27px;
+    line-height: 1.5rem;
+}
+
+/* bigger blocks */
+
+pre code {
+    display: block;
+    overflow: auto;
+    max-width: 100%;
+}
+
+/* form elements */
+
+button,
+input,
+select,
+textarea {
+    color: inherit;
+    font-family: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
 /* modules */
+
 /*------------------------------------------------------------------------------
 logo base
 ------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------
-logo config
-------------------------------------------------------------------------------*/
-:root { /* 96px */
 
+:root { /* 96px */
 }
+
 [gui-logo] {
     display: block;
-    width: calc(var(--rootLineHeight) * 4rem);
-    height: calc(var(--rootLineHeight) * 4rem);
+    width: 108px;
+    width: 6rem;
+    height: 108px;
+    height: 6rem;
 
-    margin-bottom: calc(var(--rootLineHeight) * 1rem);
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
 
     /* remove link styles */
     background-image: none !important;
 }
+
 [gui-logo] svg {
-    width: calc(var(--rootLineHeight) * 4rem);
-    height: calc(var(--rootLineHeight) * 4rem);
+    width: 108px;
+    width: 6rem;
+    height: 108px;
+    height: 6rem;
     fill: currentColor;
 }
+
 /* states ordered to make styles always work */
+
 [gui-logo]:visited svg { fill: currentColor; }
+
 [gui-logo]:hover svg { fill: hsl(348, 96%, 56%); }
+
 [gui-logo]:active svg { fill: hsl(328, 72%, 44%); }
+
 /*------------------------------------------------------------------------------
 menu base
 ------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------
-menu config
-------------------------------------------------------------------------------*/
+
 [gui-menu]:not(:last-child) {
-    margin-bottom: calc(var(--rootLineHeight) * 1rem);
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
 }
+
 [gui-menu]:after {
     content: '';
     display: table;
     clear: both;
 }
+
 [gui-menu-item] {
     display: block;
     float: left;
 
     text-transform: lowercase;
 }
+
 [gui-menu-item]:not(:last-child) {
-    margin-right: var(--w-small);
+    margin-right: 11.25px;
+    margin-right: 0.625rem;
 }
+
 [gui-menu-item~="current"] {
-    padding-left: var(--w-little);
-    padding-right: var(--w-little);
+    padding-left: 9px;
+    padding-left: 0.5rem;
+    padding-right: 9px;
+    padding-right: 0.5rem;
 
-    background-image: -webkit-linear-gradient( left, var(--line-gr-solid-c) ),
-        -webkit-linear-gradient( top, var(--line-gr-solid-c) ),
-        -webkit-linear-gradient( right, var(--line-gr-solid-c) ),
-        -webkit-linear-gradient( bottom, var(--line-gr-solid-c) ) !important;
+    background-image: -webkit-linear-gradient( left, currentColor 0%, currentColor 0% ),
+        -webkit-linear-gradient( top, currentColor 0%, currentColor 0% ),
+        -webkit-linear-gradient( right, currentColor 0%, currentColor 0% ),
+        -webkit-linear-gradient( bottom, currentColor 0%, currentColor 0% ) !important;
 
-    background-image: linear-gradient( to right, var(--line-gr-solid-c) ),
-        linear-gradient( to bottom, var(--line-gr-solid-c) ),
-        linear-gradient( to left, var(--line-gr-solid-c) ),
-        linear-gradient( to top, var(--line-gr-solid-c) ) !important;
+    background-image: linear-gradient( to right, currentColor 0%, currentColor 0% ),
+        linear-gradient( to bottom, currentColor 0%, currentColor 0% ),
+        linear-gradient( to left, currentColor 0%, currentColor 0% ),
+        linear-gradient( to top, currentColor 0%, currentColor 0% ) !important;
     background-repeat: repeat-x, repeat-y;
     background-position: 0 0, 100% 0, 0 100%;
 }
+
+/*------------------------------------------------------------------------------
+pageSection base
+------------------------------------------------------------------------------*/
+
+[gui-pagesection] {
+    margin-bottom: 54px;
+    margin-bottom: 3rem;
+}
+
+[gui-pagesection~="short"] {
+    max-width: 720px;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[gui-pagesection]:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/*------------------------------------------------------------------------------
+pageTitle base
+------------------------------------------------------------------------------*/
+
+[gui-pagetitle] {
+    margin-bottom: 54px;
+    margin-bottom: 3rem;
+    max-width: 720px;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[gui-pagetitle-name] {
+    font-weight: 400;
+    font-size: 72px;
+    font-size: 4rem;
+    line-height: 54px;
+    line-height: 3rem;
+}
+
+[gui-pagetitle-meta] {
+    display: block;
+    margin-top: 27px;
+    margin-top: 1.5rem;
+
+    font-style: italic;
+    text-transform: lowercase;
+}
+
+[gui-pagetitle-description] {
+    display: block;
+    margin-top: 27px;
+    margin-top: 1.5rem;
+
+    font-weight: 700;
+}
+
+/*------------------------------------------------------------------------------
+postSummary base
+------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------
+postSummary thumbnail part
+------------------------------------------------------------------------------*/
+
+:root { /* 216px */
+}
+
+[gui-postsummary-thumbnail] {
+    display: block;
+    position: relative;
+
+    /* remove link styles */
+    background-image: none !important;
+}
+
+[gui-postsummary-thumbnail-title] {
+    display: block;
+
+    font-size: 27px;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+    /* computed height of leading and margins is 2x default leading */
+    line-height: 27px;
+    line-height: 1.5rem;
+    margin-top: 13.5px;
+    margin-top: 0.75rem;
+    margin-bottom: 13.5px;
+    margin-bottom: 0.75rem;
+}
+
+[gui-postsummary-thumbnail-icon] {
+    display: block;
+    width: 243px;
+    width: 13.5rem;
+    height: 243px;
+    height: 13.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    fill: currentColor;
+}
+
+[gui-postsummary-thumbnail-description] {
+    display: inline-block;
+    max-width: 243px;
+    max-width: 13.5rem;
+
+    margin-top: 13.5px;
+    margin-top: 0.75rem;
+    margin-bottom: 13.5px;
+    margin-bottom: 0.75rem;
+    padding: 13.5px;
+    padding: 0.75rem;
+
+    box-shadow: 0 0 0 0.0625rem currentColor;
+
+    text-align: left;
+}
+
+/* states ordered to make styles always work */
+
+[gui-postsummary-thumbnail]:visited {
+    color: hsl(276, 60%, 36%);
+}
+
+[gui-postsummary-thumbnail]:visited [gui-postsummary-thumbnail-icon] {
+    fill: hsl(276, 60%, 36%);
+}
+
+[gui-postsummary-thumbnail]:hover {
+    color: hsl(348, 96%, 56%);
+}
+
+[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-icon] {
+    fill: hsl(348, 96%, 56%);
+}
+
+[gui-postsummary-thumbnail]:active {
+    color: hsl(328, 72%, 44%);
+}
+
+[gui-postsummary-thumbnail]:active [gui-postsummary-thumbnail-icon] {
+    fill: hsl(328, 72%, 44%);
+}
+
+/*------------------------------------------------------------------------------
+postSummary categories part
+------------------------------------------------------------------------------*/
+
+[gui-postsummary-categories] {
+    display: inline-block;
+    vertical-align: top;
+}
+
+[gui-postsummary-categories]:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+[gui-postsummary-categories] a {
+    display: block;
+    float: left;
+
+    text-transform: lowercase;
+}
+
+[gui-postsummary-categories] a:not(:last-child) {
+    margin-right: 11.25px;
+    margin-right: 0.625rem;
+}
+
+[gui-postsummary-container] {
+    text-align: center;
+}
+
+[gui-postsummary] {
+    display: inline-block;
+    margin-left: 27px;
+    margin-left: 1.5rem;
+    margin-right: 27px;
+    margin-right: 1.5rem;
+    margin-bottom: 54px;
+    margin-bottom: 3rem;
+
+    text-align: center;
+}
+
+[gui-postsummary-date] {
+    display: block;
+    text-transform: lowercase;
+}
+
+/*------------------------------------------------------------------------------
+projectContent base
+------------------------------------------------------------------------------*/
+
+/* handles markdown-generated content of Jekyll posts */
+
+[gui-projectcontent] {
+    margin-bottom: 54px;
+    margin-bottom: 3rem;
+}
+
+[gui-projectcontent] > ul,
+[gui-projectcontent] > ol,
+[gui-projectcontent] > code,
+[gui-projectcontent] > blockquote,
+[gui-projectcontent] > p {
+    max-width: 720px;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+[gui-projectcontent] > ul:not(:last-child),
+[gui-projectcontent] > ol:not(:last-child),
+[gui-projectcontent] > code:not(:last-child),
+[gui-projectcontent] > blockquote:not(:last-child),
+[gui-projectcontent] > p:not(:last-child) {
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+}
+
+[gui-projectcontent] > ul,
+[gui-projectcontent] > ol {
+    margin-top: 0;
+}
+
+/*------------------------------------------------------------------------------
+projectImage base
+------------------------------------------------------------------------------*/
+
+[gui-projectimage] {
+    max-width: 100%;
+
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+}
+
+[gui-projectimage-thumbnail],
+[gui-projectimage-thumbnail] img {
+    max-width: inherit;
+}
+
+[gui-projectimage-title] {
+    display: block;
+}
+
+/*------------------------------------------------------------------------------
+projectRelated base
+------------------------------------------------------------------------------*/
+
+[gui-projectrelated] {
+    display: block;
+    float: left;
+    clear: both;
+
+    /* remove link styles */
+    background-image: none !important;
+}
+
+[gui-projectrelated]:not(:last-child) {
+    margin-bottom: 27px;
+    margin-bottom: 1.5rem;
+}
+
+[gui-projectrelated-title] { font-weight: 700; }
+
+[gui-projectrelated-icon],
+[gui-projectrelated-title],
+[gui-projectrelated-subtitle] {
+    display: inline-block;
+    /* not middle, because of generating additional vertical pxs */
+    vertical-align: top;
+}
+
+[gui-projectrelated-icon] {
+    width: 27px;
+    width: 1.5rem;
+    height: 27px;
+    height: 1.5rem;
+
+    fill: currentColor;
+}
+
+/* states ordered to make styles always work */
+
+[gui-projectrelated]:visited {
+    color: hsl(276, 60%, 36%);
+}
+
+[gui-projectrelated]:visited [gui-projectrelated-icon] {
+    fill: hsl(276, 60%, 36%);
+}
+
+[gui-projectrelated]:hover {
+    color: hsl(348, 96%, 56%);
+}
+
+[gui-projectrelated]:hover [gui-projectrelated-icon] {
+    fill: hsl(348, 96%, 56%);
+}
+
+[gui-projectrelated]:active {
+    color: hsl(328, 72%, 44%);
+}
+
+[gui-projectrelated]:active [gui-projectrelated-icon] {
+    fill: hsl(328, 72%, 44%);
+}
+
 /*------------------------------------------------------------------------------
 signature base
 ------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------
-signature config
-------------------------------------------------------------------------------*/
+
 [gui-signature] {
     float: left;
 
@@ -117,271 +710,29 @@ signature config
     background-image: none !important;
 
     /* magic value too look perfect */
-    line-height: 14px;
+    line-height: 15.75px;
     line-height: 0.875rem;
 
 }
+
 [gui-signature~="3"] {
     /* magic value to match missing pixels for 3 times rootLineHeight */
-    padding-top: 3px;
+    padding-top: 3.375px;
     padding-top: 0.1875rem;
-    padding-bottom: 3px;
+    padding-bottom: 3.375px;
     padding-bottom: 0.1875rem;
 }
+
 [gui-signature~="4"] {
     /* magic value to match missing pixels for 4 times rootLineHeight */
-    padding-top: 8px;
+    padding-top: 9px;
     padding-top: 0.5rem;
-    padding-bottom: 8px;
+    padding-bottom: 9px;
     padding-bottom: 0.5rem;
 }
+
 [gui-signature]:visited { color: currentColor; }
+
 [gui-signature]:hover { color: hsl(348, 96%, 56%); }
+
 [gui-signature]:active { color: hsl(328, 72%, 44%); }
-/*------------------------------------------------------------------------------
-postSummary base
-------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------
-postSummary config
-------------------------------------------------------------------------------*/
-:root { /* 216px */
-
-}
-/*------------------------------------------------------------------------------
-postSummary thumbnail part
-------------------------------------------------------------------------------*/
-[gui-postsummary-thumbnail] {
-    display: block;
-    position: relative;
-
-    /* remove link styles */
-    background-image: none !important;
-}
-[gui-postsummary-thumbnail-title] {
-    display: block;
-
-    font-size: 24px;
-    font-size: 1.5rem;
-    font-weight: 700;
-
-    /* computed height of leading and margins is 2x default leading */
-    line-height: calc(var(--rootLineHeight) * 1rem);
-    margin-top: calc(var(--rootLineHeight) * 0.5rem);
-    margin-bottom: calc(var(--rootLineHeight) * 0.5rem);
-}
-[gui-postsummary-thumbnail-icon] {
-    display: block;
-    width: calc(var(--rootLineHeight) * 9rem);
-    height: calc(var(--rootLineHeight) * 9rem);
-    margin-left: auto;
-    margin-right: auto;
-
-    fill: currentColor;
-}
-[gui-postsummary-thumbnail-description] {
-    display: inline-block;
-    max-width: calc(var(--rootLineHeight) * 9rem);
-
-    margin-top: calc(var(--rootLineHeight) * 0.5rem);
-    margin-bottom: calc(var(--rootLineHeight) * 0.5rem);
-    padding: calc(var(--rootLineHeight) * 0.5rem);
-
-    background-color: var(--app-bg-c);
-    box-shadow: 0 0 0 var(--line-gr-w) currentColor;
-
-    text-align: left;
-}
-/* states ordered to make styles always work */
-[gui-postsummary-thumbnail]:visited {
-    color: hsl(276, 60%, 36%);
-}
-[gui-postsummary-thumbnail]:visited [gui-postsummary-thumbnail-icon] {
-    fill: hsl(276, 60%, 36%);
-}
-[gui-postsummary-thumbnail]:hover {
-    color: hsl(348, 96%, 56%);
-}
-[gui-postsummary-thumbnail]:hover [gui-postsummary-thumbnail-icon] {
-    fill: hsl(348, 96%, 56%);
-}
-[gui-postsummary-thumbnail]:active {
-    color: hsl(328, 72%, 44%);
-}
-[gui-postsummary-thumbnail]:active [gui-postsummary-thumbnail-icon] {
-    fill: hsl(328, 72%, 44%);
-}
-/*------------------------------------------------------------------------------
-postSummary categories part
-------------------------------------------------------------------------------*/
-[gui-postsummary-categories] {
-    display: inline-block;
-    vertical-align: top;
-}
-[gui-postsummary-categories]:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-[gui-postsummary-categories] a {
-    display: block;
-    float: left;
-
-    text-transform: lowercase;
-}
-[gui-postsummary-categories] a:not(:last-child) {
-    margin-right: var(--w-small);
-}
-[gui-postsummary-container] {
-    text-align: center;
-}
-[gui-postsummary] {
-    display: inline-block;
-    margin-left: calc(var(--rootLineHeight) * 1rem);
-    margin-right: calc(var(--rootLineHeight) * 1rem);
-    margin-bottom: calc(var(--rootLineHeight) * 2rem);
-
-    text-align: center;
-}
-[gui-postsummary-date] {
-    display: block;
-    text-transform: lowercase;
-}
-/*------------------------------------------------------------------------------
-pageSection base
-------------------------------------------------------------------------------*/
-[gui-pagesection] {
-    margin-bottom: calc(var(--rootLineHeight) * 2rem);
-}
-[gui-pagesection~="short"] {
-    max-width: var(--app-content-w);
-    margin-left: auto;
-    margin-right: auto;
-}
-[gui-pagesection]:after {
-    content: '';
-    display: table;
-    clear: both;
-}
-/*------------------------------------------------------------------------------
-pageTitle base
-------------------------------------------------------------------------------*/
-[gui-pagetitle] {
-    margin-bottom: calc(var(--rootLineHeight) * 2rem);
-    max-width: var(--app-content-w);
-    margin-left: auto;
-    margin-right: auto;
-}
-[gui-pagetitle-name] {
-    font-weight: 400;
-    font-size: 64px;
-    font-size: 4rem;
-    line-height: calc(var(--rootLineHeight) * 2rem);
-}
-[gui-pagetitle-meta] {
-    display: block;
-    margin-top: calc(var(--rootLineHeight) * 1rem);
-
-    font-style: italic;
-    text-transform: lowercase;
-}
-[gui-pagetitle-description] {
-    display: block;
-    margin-top: calc(var(--rootLineHeight) * 1rem);
-
-    font-weight: 700;
-}
-/*------------------------------------------------------------------------------
-projectImage base
-------------------------------------------------------------------------------*/
-[gui-projectimage] {
-    max-width: 100%;
-
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: calc(var(--rootLineHeight) * 1rem);
-}
-[gui-projectimage-thumbnail],
-[gui-projectimage-thumbnail] img {
-    max-width: inherit;
-}
-[gui-projectimage-title] {
-    display: block;
-}
-/*------------------------------------------------------------------------------
-projectContent base
-------------------------------------------------------------------------------*/
-/* handles markdown-generated content of Jekyll posts */
-[gui-projectcontent] {
-    margin-bottom: calc(var(--rootLineHeight) * 2rem);
-}
-[gui-projectcontent] > ul,
-[gui-projectcontent] > ol,
-[gui-projectcontent] > code,
-[gui-projectcontent] > blockquote,
-[gui-projectcontent] > p {
-    max-width: var(--app-content-w);
-    margin-left: auto;
-    margin-right: auto;
-}
-[gui-projectcontent] > ul:not(:last-child),
-[gui-projectcontent] > ol:not(:last-child),
-[gui-projectcontent] > code:not(:last-child),
-[gui-projectcontent] > blockquote:not(:last-child),
-[gui-projectcontent] > p:not(:last-child) {
-    margin-bottom: calc(var(--rootLineHeight) * 1rem);
-}
-[gui-projectcontent] > ul,
-[gui-projectcontent] > ol {
-    margin-top: 0;
-}
-/*------------------------------------------------------------------------------
-projectRelated base
-------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------
-projectRelated config
-------------------------------------------------------------------------------*/
-[gui-projectrelated] {
-    display: block;
-    float: left;
-    clear: both;
-
-    /* remove link styles */
-    background-image: none !important;
-}
-[gui-projectrelated]:not(:last-child) {
-    margin-bottom: calc(var(--rootLineHeight) * 1rem);
-}
-[gui-projectrelated-title] { font-weight: 700; }
-[gui-projectrelated-icon],
-[gui-projectrelated-title],
-[gui-projectrelated-subtitle] {
-    display: inline-block;
-    /* not middle, because of generating additional vertical pxs */
-    vertical-align: top;
-}
-[gui-projectrelated-icon] {
-    width: calc(var(--rootLineHeight) * 1rem);
-    height: calc(var(--rootLineHeight) * 1rem);
-
-    fill: currentColor;
-}
-/* states ordered to make styles always work */
-[gui-projectrelated]:visited {
-    color: hsl(276, 60%, 36%);
-}
-[gui-projectrelated]:visited [gui-projectrelated-icon] {
-    fill: hsl(276, 60%, 36%);
-}
-[gui-projectrelated]:hover {
-    color: hsl(348, 96%, 56%);
-}
-[gui-projectrelated]:hover [gui-projectrelated-icon] {
-    fill: hsl(348, 96%, 56%);
-}
-[gui-projectrelated]:active {
-    color: hsl(328, 72%, 44%);
-}
-[gui-projectrelated]:active [gui-projectrelated-icon] {
-    fill: hsl(328, 72%, 44%);
-}

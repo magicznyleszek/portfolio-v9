@@ -8,6 +8,7 @@ variables - all global and pallete variables for project
     --c-purple: hsl(328, 72%, 44%);
     --c-violet: hsl(276, 60%, 36%);
     --c-blackcurrant: hsl(276, 32%, 12%);
+    --c-silver: hsl(0, 0%, 80%);
     --c-white: hsl(0, 0%, 100%);
 
     /* font families palette */
@@ -26,7 +27,7 @@ variables - all global and pallete variables for project
         monospace;
 
     /* base */
-    --c-root-txt: var(--c-charcoal);
+    --c-root-txt: var(--c-blackcurrant);
     --c-root-bg: var(--c-white);
     --s-root-content: 40rem; /* 640px @ 16px */
 

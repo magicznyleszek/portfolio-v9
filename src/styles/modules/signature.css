@@ -2,7 +2,12 @@
 signature base
 ------------------------------------------------------------------------------*/
 
-@import "config.css";
+:root {
+    --signature-c: currentColor;
+    --signature-c-visited: currentColor;
+    --signature-c-hover: var(--c-amaranth);
+    --signature-c-active: var(--c-purple);
+}
 
 [gui-signature] {
     float: left;

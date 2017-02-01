@@ -6,18 +6,17 @@ main styles aggregation
 @import "variables.css";
 
 /* basics */
-@import "normalize/root.css";
-@import "normalize/typography.css";
-@import "normalize/states.css";
-@import "normalize/layout.css";
+@import "setup/root.css";
+@import "setup/states.css";
+@import "setup/typography.css";
 
 /* modules */
-@import "modules/logo/base.css";
-@import "modules/menu/base.css";
-@import "modules/signature/base.css";
-@import "modules/postSummary/base.css";
-@import "modules/pageSection/base.css";
-@import "modules/pageTitle/base.css";
-@import "modules/projectImage/base.css";
-@import "modules/projectContent/base.css";
-@import "modules/projectRelated/base.css";
+@import "modules/logo.css";
+@import "modules/menu.css";
+@import "modules/pageSection.css";
+@import "modules/pageTitle.css";
+@import "modules/postSummary/postSummary.css";
+@import "modules/projectContent.css";
+@import "modules/projectImage.css";
+@import "modules/projectRelated.css";
+@import "modules/signature.css";

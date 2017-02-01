@@ -2,14 +2,20 @@
 logo base
 ------------------------------------------------------------------------------*/
 
-@import "config.css";
+:root {
+    --logo-w: calc(var(--root-lineHeight) * 4rem); /* 96px */
+    --logo-c: currentColor;
+    --logo-c-visited: currentColor;
+    --logo-c-hover: var(--c-amaranth);
+    --logo-c-active: var(--c-purple);
+}
 
 [gui-logo] {
     display: block;
     width: var(--logo-w);
     height: var(--logo-w);
 
-    margin-bottom: calc(var(--rootLineHeight) * 1rem);
+    margin-bottom: calc(var(--root-lineHeight) * 1rem);
 
     /* remove link styles */
     background-image: none !important;
