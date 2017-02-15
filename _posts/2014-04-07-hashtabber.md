@@ -2,7 +2,7 @@
 title: HashTabber
 description: "A simple plugin for tabbed navigation."
 slug: hashtabber
-categories: [code, logo]
+categories: [code, design]
 gallery:
     - hashtabber-01-logo.png
     - hashtabber-02-palette.png
