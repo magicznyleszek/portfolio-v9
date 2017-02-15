@@ -14,7 +14,6 @@ Merge categories?:
 
 Projects that didn't make to final list:
 - Roboty
-- Zmory and omamy
 - Wegajty
 - Muzeum Powstań Śląskich
 
@@ -25,7 +24,10 @@ Final final list of projects:
 - ? Hues (as todo?)
 - Human Parts icons
 - Where icons
-- Abstractions (incl. Szarości)
+- Abstractions (incl. Szarości and Zmory & omamy)
+- Natalki
+- Various anti-religious drawings?
+- various portraits over the years?
 - Kuba Wojtaszczyk books (separate?)
     - Portret trumienny
     - Kiedy zdarza się przemoc, lubię patrzeć
