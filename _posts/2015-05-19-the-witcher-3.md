@@ -10,4 +10,4 @@ I was in a team responsible for the activation process of the game. You see, the
 In my team I was responsible for frontend part of galaxy
 (Activation flow, credits)
 
-https://www.youtube.com/watch?v=ph_OXoQJ840
+https://youtu.be/ph_OXoQJ840?t=570
