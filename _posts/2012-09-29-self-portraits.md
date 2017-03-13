@@ -1,7 +1,7 @@
 ---
-title: Self-portraits
+title: Selfportraits
 description: "A two-year spanning self-portraiting project."
-slug: self-portraits
+slug: selfportraits
 categories: [illustration]
 gallery:
     - autoportrety-1-1.jpg

@@ -1,7 +1,7 @@
 ---
 title: Where icons
 description: "Some icons"
-slug: where-icons
+slug: where
 categories: [design]
 layout: project
 ---
