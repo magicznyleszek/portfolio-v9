@@ -3,7 +3,7 @@ user-action influenced states
 *******************************************************************************/
 
 :root {
-    --line-gr-w: 0.0625rem; /* 1px @ 16px */
+    --line-gr-w: 0.125rem;
     --line-gr-solid-c: currentColor 0%, currentColor 0%;
     --line-gr: linear-gradient(to left, var(--line-gr-solid-c));
 
@@ -12,8 +12,6 @@ user-action influenced states
 
     --selection-txt-c: var(--c-white);
     --selection-bg-c: var(--c-amaranth);
-
-    --disabled-o: 0.5;
 }
 
 /* links */
@@ -56,7 +54,7 @@ a:active { color: var(--c-global-active); }
 
 [disabled] {
     pointer-events: none;
-    opacity: var(--disabled-o);
+    opacity: 0.5;
 
     /* avoid adding up opacity on nested disabled elements */
     [disabled] { opacity: 1; }

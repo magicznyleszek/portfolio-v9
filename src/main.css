@@ -10,6 +10,7 @@ main styles aggregation
 @import "appSetup/root.css";
 @import "appSetup/states.css";
 @import "appSetup/print.css";
+@import "appSetup/typography.css";
 
 /* modules */
 @import "modules/categoriesList.css";
