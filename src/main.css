@@ -6,9 +6,10 @@ main styles aggregation
 @import "variables.css";
 
 /* basics */
-@import "setup/root.css";
-@import "setup/states.css";
-@import "setup/typography.css";
+@import "appSetup/reset.css";
+@import "appSetup/root.css";
+@import "appSetup/states.css";
+@import "appSetup/print.css";
 
 /* modules */
 @import "modules/categoriesList.css";

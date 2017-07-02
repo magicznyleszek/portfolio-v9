@@ -13,27 +13,18 @@ html {
     background-color: var(--c-root-bg);
     color: var(--c-root-txt);
     font-family: var(--root-fontFamily);
-    font-weight: var(--root-fontWeight);
-    font-size: var(--root-fontSize-medium);
+    font-weight: 400;
+    font-size: 100%;
     line-height: var(--root-lineHeight);
     text-rendering: optimizeLegibility;
 }
 
-/* clever page scaling with root font size changes */
-
-@media (--bigger) { html { font-size: var(--root-fontSize-bigger); } }
-
-@media (--smaller) { html { font-size: var(--root-fontSize-smaller); } }
-
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-    color: inherit;
-    font-size: inherit;
-    font-family: inherit;
+/*
+clever page scaling with root font size changes:
+https://www.smashingmagazine.com/2016/05/fluid-typography/
+*/
+html {
+    font-size: calc(1rem + (2 - 1) * (100vw - 40rem) / (120 - 40));
 }
 
 body {

@@ -1,21 +1,21 @@
-{% include htmlBegin.liquid %}
+{% include appSetup/templateStart.liquid %}
 
-{% include global/pageHeader.liquid %}
+{% include modules/pageHeader.liquid %}
 
 <section role="main">
     <section i-pagesection="short">
-        {% include helpers/categoryDescription.liquid categorySlug=page.slug %}
+        {% include modules/categoryDescription.liquid categorySlug=page.slug %}
     </section>
 
     <section i-postsummary-container>
         {% for post in site.posts %}
             {% if post.categories contains page.slug %}
-                {% include listing/postSummary.liquid %}
+                {% include modules/listing/postSummary.liquid %}
             {% endif %}
         {% endfor %}
     </section>
 </section>
 
-{% include global/pageFooter.liquid %}
+{% include modules/pageFooter.liquid %}
 
-{% include htmlEnd.liquid %}
+{% include appSetup/templateEnd.liquid %}
