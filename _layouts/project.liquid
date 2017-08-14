@@ -1,25 +1,28 @@
-{% include appSetup/templateStart.liquid %}
+{% include setup/template-start.liquid %}
 
-{% include modules/pageHeader.liquid %}
+{% include modules/page-header.liquid %}
 
 <section role="main">
-    <header i-pagetitle>
-        <h1 i-pagetitle-name>{{ page.title }}</h1>
+    <header i-page-title>
+        <h1 i-page-title--name>{{ page.title }}</h1>
 
-        <p i-pagetitle-description>{{ page.description }}</p>
+        <p i-page-title--description>
+            <strong>TL;DR</strong>
+            {{ page.description }}
+        </p>
 
-        <time i-pagetitle-meta datetime="{{ page.date }}">
+        <time i-page-title--meta datetime="{{ page.date }}">
             {{ page.date | date: "%B %Y" }}
         </time>
     </header>
 
-    <section i-projectContent>
+    <section i-project-content>
         {{ content }}
     </section>
 
-    {% include modules/project/relateds.liquid older=page.previous newer=page.next %}
+    {% include modules/related-projects/related-projects.liquid older=page.previous newer=page.next %}
 </section>
 
-{% include modules/pageFooter.liquid %}
+{% include modules/page-footer.liquid %}
 
-{% include appSetup/templateEnd.liquid %}
+{% include setup/template-end.liquid %}

@@ -1,0 +1,30 @@
+{% comment %}
+This template renders links to previous and next projects
+@param older - comes from page.previous
+@param newer - comes from page.next
+{% endcomment %}
+<section i-page-section="short">
+    {% if include.older %}
+        <a i-related-projects="previous" href="{{ include.older.url }}">
+            <span i-related-projects--subtitle>previous:</span>
+
+            <svg i-related-projects--icon>
+                <use xlink:href="#symbol-thumbnail-{{ include.older.slug }}">
+            </svg>
+
+            <span i-related-projects--title>{{ include.older.title }}</span>
+        </a>
+    {% endif %}
+
+    {% if include.newer %}
+        <a i-related-projects="next" href="{{ include.newer.url }}">
+            <span i-related-projects--subtitle>next:</span>
+
+            <svg i-related-projects--icon>
+                <use xlink:href="#symbol-thumbnail-{{ include.newer.slug }}">
+            </svg>
+
+            <span i-related-projects--title>{{ include.newer.title }}</span>
+        </a>
+    {% endif %}
+</section>

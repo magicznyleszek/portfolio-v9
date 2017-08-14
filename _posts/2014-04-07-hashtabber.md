@@ -28,9 +28,9 @@ The plugin was featured i.a. on:
 
 In some free time I built a simple logo based on the shapes of "#" and "T" characters and the tabbed interface itself. Visually, I dressed it in jade green and some warmer grays.
 
-{% include modules/project/image.liquid dir=page.slug filename="hashtabber-01-logo.png" title="Simple logo of the project" %}
+{% include modules/project-image/project-image.liquid dir=page.slug filename="hashtabber-01-logo.png" title="Simple logo of the project" %}
 
-{% include modules/project/image.liquid dir=page.slug filename="hashtabber-02-palette.png" title="Color palette" %}
+{% include modules/project-image/project-image.liquid dir=page.slug filename="hashtabber-02-palette.png" title="Color palette" %}
 
 *Modus operandi* of the script is more precise and technically-wise described [on the website of the project](http://hashtabber.smutnyleszek.com), but in short it can be described by the following diagram:
 
@@ -42,16 +42,16 @@ In some free time I built a simple logo based on the shapes of "#" and "T" chara
 
 This may sound banal, but thanks to the hash links, the page doesn't reload and you can change tabs from the outside. And the whole functionality is minimalistic, slick and ready for use with very low requirements.
 
-{% include modules/project/image.liquid dir=page.slug filename="hashtabber-03-diagram.png" title="Diagram" %}
+{% include modules/project-image/project-image.liquid dir=page.slug filename="hashtabber-03-diagram.png" title="Diagram" %}
 
 The page didn't need practically nothing but some smooth typography -- I used *Source Sans Pro* from Paul Hunt, a slim modular scale and a few clever `media queries` for mobile devices.
 
-{% include modules/project/image.liquid dir=page.slug filename="hashtabber-04-website-1.png" %}
+{% include modules/project-image/project-image.liquid dir=page.slug filename="hashtabber-04-website-1.png" %}
 
-{% include modules/project/image.liquid dir=page.slug filename="hashtabber-05-website-2.png" %}
+{% include modules/project-image/project-image.liquid dir=page.slug filename="hashtabber-05-website-2.png" %}
 
-{% include modules/project/image.liquid dir=page.slug filename="hashtabber-06-website-3.png" %}
+{% include modules/project-image/project-image.liquid dir=page.slug filename="hashtabber-06-website-3.png" %}
 
-{% include modules/project/image.liquid dir=page.slug filename="hashtabber-07-website-4.png" %}
+{% include modules/project-image/project-image.liquid dir=page.slug filename="hashtabber-07-website-4.png" %}
 
 In addition, the entire script is [availabe in the Public Domain](https://creativecommons.org/publicdomain/zero/1.0/), i.e. for free.

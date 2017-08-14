@@ -1,28 +1,28 @@
 /*******************************************************************************
-pageTitle module
+page-title module
 *******************************************************************************/
 
-[i-pagetitle] {
+[i-page-title] {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: calc(var(--s-leading) * 2);
     max-width: var(--s-root-content);
 }
 
-[i-pagetitle-name] {
+[i-page-title--name] {
     font-weight: 400;
     font-size: 4rem;
     line-height: calc(var(--s-leading) * 2);
 }
 
-[i-pagetitle-meta] {
+[i-page-title--meta] {
     display: block;
     margin-top: var(--s-leading);
     font-style: italic;
     text-transform: lowercase;
 }
 
-[i-pagetitle-description] {
+[i-page-title--description] {
     display: block;
     margin-top: var(--s-leading);
     font-weight: 700;

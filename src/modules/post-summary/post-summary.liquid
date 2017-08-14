@@ -1,20 +1,20 @@
-<div i-postsummary>
+<div i-post-summary>
     <!-- clickable thumbnail -->
-    <a i-postsummary-thumbnail href="{{ post.url }}">
-        <svg i-postsummary-thumbnail-icon>
+    <a i-post-summary--thumbnail href="{{ post.url }}">
+        <svg i-post-summary--thumbnail-icon>
             <use xlink:href="#symbol-thumbnail-{{ post.slug }}">
         </svg>
 
-        <span i-postsummary-thumbnail-title>
+        <span i-post-summary--thumbnail-title>
             {{ post.title }}
         </span>
 
-        <span i-postsummary-thumbnail-description>
+        <span i-post-summary--thumbnail-description>
             {{ post.description}}
         </span>
     </a>
 
-    <time i-postsummary-date>{{ post.date | date: "%B %Y" }}</time>
+    <time i-post-summary--date>{{ post.date | date: "%B %Y" }}</time>
 
     {% include modules/categories-list/categories-list.liquid categories=post.categories %}
 </div>

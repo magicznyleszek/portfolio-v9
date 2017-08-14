@@ -1,8 +1,8 @@
 /*******************************************************************************
-projectImage module
+project-image module
 *******************************************************************************/
 
-[i-projectimage] {
+[i-project-image] {
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -10,11 +10,11 @@ projectImage module
     max-width: 100%;
 }
 
-[i-projectimage-thumbnail],
-[i-projectimage-thumbnail] img {
+[i-project-image-thumbnail],
+[i-project-image-thumbnail] img {
     max-width: inherit;
 }
 
-[i-projectimage-title] {
+[i-project-image-title] {
     display: block;
 }
