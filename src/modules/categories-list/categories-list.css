@@ -1,41 +1,41 @@
 /*******************************************************************************
-categoriesList module
+categories-list module
 *******************************************************************************/
 
 :root {
-    --categoriesList-item-current-gr:
+    --categories-list-item-current-gr:
         linear-gradient(to right, var(--line-gr-solid-c)),
         linear-gradient(to bottom, var(--line-gr-solid-c)),
         linear-gradient(to left, var(--line-gr-solid-c)),
         linear-gradient(to top, var(--line-gr-solid-c));
-    --categoriesList-item-current-gr-hover:
+    --categories-list-item-current-gr-hover:
         linear-gradient(to right, var(--line-gr-solid-c)),
         linear-gradient(to bottom, var(--line-gr-solid-c)),
         linear-gradient(to left, var(--line-gr-solid-c)),
         linear-gradient(to top, var(--line-gr-solid-c));
-    --categoriesList-item-current-gr-w: var(--line-gr-w);
+    --categories-list-item-current-gr-w: var(--line-gr-w);
 }
 
-[i-categoriesList] {
+[i-categories-list] {
     display: inline-block;
     vertical-align: bottom;
 }
 
-[i-categoriesList-item] {
+[i-categories-list--item] {
     display: inline-block;
     vertical-align: bottom;
     text-transform: lowercase;
 }
 
-[i-categoriesList-item]:not(:last-child) {
+[i-categories-list--item]:not(:last-child) {
     margin-right: 0.625rem;
 }
 
-[i-categoriesList-item~="current"] {
+[i-categories-list--item~="current"] {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     /* we need important to override a-tag bg image */
-    background-image: var(--categoriesList-item-current-gr) !important;
+    background-image: var(--categories-list-item-current-gr) !important;
     background-repeat: repeat-x, repeat-y;
     background-position: 0 0, 100% 0, 0 100%;
 }

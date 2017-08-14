@@ -13,7 +13,7 @@ main styles aggregation
 @import "appSetup/typography.css";
 
 /* modules */
-@import "modules/categoriesList.css";
+@import "modules/categories-list/categories-list.css";
 @import "modules/logo.css";
 @import "modules/pageSection.css";
 @import "modules/pageTitle.css";
