@@ -1,0 +1,19 @@
+{
+  "name": "smutnyleszek",
+  "short_name": "smutnyleszek",
+  "description": "A fistful of drawings and projects by Leszek Pietrzak, a Polish-born illustrator, designer and front-end developer.",
+  "lang": "en-US",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#333333",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "48x48 72x72 96x96 128x128 256x256 512x512",
+      "type": "image/png"
+    }
+  ],
+  "prefer_related_applications": false
+}

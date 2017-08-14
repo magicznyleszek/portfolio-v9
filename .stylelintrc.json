@@ -1,5 +1,8 @@
 {
-    "plugins": ["stylelint-order"],
+    "plugins": [
+        "stylelint-order",
+        "stylelint-selector-pattern"
+    ],
     "rules": {
         "color-hex-case": null,
         "color-hex-length": null,
@@ -23,7 +26,6 @@
         "function-name-case": ["lower", {"severity": "warning"}],
         "function-parentheses-newline-inside": ["always-multi-line", {"severity": "warning"}],
         "function-parentheses-space-inside": ["never-single-line", {"severity": "warning"}],
-        "function-url-data-uris": null,
         "function-url-no-scheme-relative": null,
         "function-url-quotes": ["always", {"severity": "warning"}],
         "function-url-scheme-whitelist": null,
@@ -81,7 +83,7 @@
         "declaration-property-value-whitelist": null,
 
         "declaration-block-no-duplicate-properties": [true, {"severity": "error"}],
-        "declaration-block-no-redundant-longhand-properties": [true, {"severity": "warning"}],
+        "declaration-block-no-redundant-longhand-properties": [true, {"severity": "warning", "ignoreShorthands": ["animation"]}],
         "declaration-block-no-shorthand-property-overrides": [true, {"severity": "warning"}],
         "declaration-block-semicolon-newline-after": ["always-multi-line", {"severity": "warning"}],
         "declaration-block-semicolon-newline-before": null,
@@ -115,9 +117,6 @@
         "selector-max-compound-selectors": [3, {"severity": "warning"}],
         "selector-max-specificity": ["0,5,0", {"severity": "warning"}],
         "selector-nested-pattern": null,
-        "selector-no-attribute": null,
-        "selector-no-combinator": null,
-        "selector-no-id": [true, {"severity": "warning"}],
         "selector-no-qualifying-type": [
             true,
             {
@@ -125,8 +124,6 @@
                 "ignore": ["attribute"]
             }
         ],
-        "selector-no-type": null,
-        "selector-no-universal": null,
         "selector-no-vendor-prefix": [true, {"severity": "warning"}],
         "selector-pseudo-class-blacklist": null,
         "selector-pseudo-class-case": ["lower", {"severity": "warning"}],
@@ -207,6 +204,12 @@
         "no-missing-end-of-source-newline": [true, {"severity": "warning"}],
         "no-unknown-animations": [true, {"severity": "error"}],
 
+        "xi/selector-pattern": [
+            "^[^A-Z.]+(\"{1}.+\"{1})*[^A-Z]*$",
+            {"severity": "warning"},
+            "CUSTOM COMMENT: Disallow uppercase letters (unless inside attribute modifier) and disallow classes"
+        ],
+
         "order/order": [
             [
                 "custom-properties",
@@ -226,6 +229,30 @@
 
                 "display",
                 "vertical-align",
+
+                "grid",
+                {
+                    "properties": [
+                        "grid-area",
+                        "grid-auto-columns",
+                        "grid-auto-flow",
+                        "grid-auto-rows",
+                        "grid-column",
+                        "grid-column-end",
+                        "grid-column-gap",
+                        "grid-column-start",
+                        "grid-gap",
+                        "grid-row",
+                        "grid-row-end",
+                        "grid-row-gap",
+                        "grid-row-start",
+                        "grid-template",
+                        "grid-template-areas",
+                        "grid-template-columns",
+                        "grid-template-rows"
+                    ],
+                    "order": "flexible"
+                },
 
                 "flex",
                 {
