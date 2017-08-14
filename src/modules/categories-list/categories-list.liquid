@@ -1,0 +1,12 @@
+{% comment %}
+categories-list displays an inline list of categories links
+@param categories - array of categories slugs
+
+NOTE: the code is inlined to remove inline-block in-between spaces
+{% endcomment %}
+<nav i-categories-list>
+{% for categorySlug in include.categories %}{% for categoryData in site.data.categories %}{% if categoryData.slug == categorySlug%}<a
+    i-categories-list--item="{% if categoryData.slug == page.slug or page.categories contains categoryData.slug%}current{% endif %}"
+    href="{{ site.baseurl }}{{ categoryData.url }}"
+>{{ categoryData.label }}</a>{% endif %}{% endfor %}{% endfor %}
+</nav>

@@ -1,0 +1,24 @@
+/*******************************************************************************
+main styles aggregation
+*******************************************************************************/
+
+/* variables palette */
+@import "variables.css";
+
+/* basics */
+@import "appSetup/reset.css";
+@import "appSetup/root.css";
+@import "appSetup/states.css";
+@import "appSetup/print.css";
+@import "appSetup/typography.css";
+
+/* modules */
+@import "modules/categories-list/categories-list.css";
+@import "modules/logo.css";
+@import "modules/pageSection.css";
+@import "modules/pageTitle.css";
+@import "modules/postSummary.css";
+@import "modules/projectContent.css";
+@import "modules/projectImage.css";
+@import "modules/projectRelated.css";
+@import "modules/signature.css";

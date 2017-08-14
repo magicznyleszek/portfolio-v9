@@ -15,12 +15,16 @@
   },
   "homepage": "https://github.com/smutnyleszek/portfolio",
   "scripts": {
+    "start": "npm-run-all watch",
+    "test": "npm-run-all lint",
     "build": "npm-run-all dist:rebuild svg:build styles:build images:build",
     "watch": "npm-watch",
-    "dist:rebuild": "rm -rf dist && mkdir dist && mkdir dist/styles",
-    "styles:build": "postcss -u postcss-import -u postcss-cssnext -o dist/styles/monolith.css src/styles/main.css",
+    "serve": "npm-run-all build jekyll:serve",
+    "lint": "stylelint \"src/**/*.css\"",
+    "dist:rebuild": "rm -rf dist && mkdirp dist && mkdirp dist/styles",
+    "styles:build": "postcss src/main.css -o dist/monolith.css",
     "images:build": "node bin/buildImages.js",
-    "svg:build": "svgo -f src/symbols/ && svgshelf -p symbol- src/symbols/\\*.svg _includes/symbols.svg",
+    "svg:build": "svgo -f src/symbols/ && svgshelf -p symbol- src/symbols/\\*.svg src/_symbolsMerged.svg",
     "jekyll:build": "jekyll build",
     "jekyll:serve": "jekyll serve --watch --baseurl ''"
   },
@@ -34,15 +38,20 @@
     }
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.3",
+    "autoprefixer": "^7.1.2",
+    "cssnano": "^3.10.0",
     "gm": "^1.23.0",
-    "npm-run-all": "^2.3.0",
-    "npm-watch": "^0.1.5",
-    "postcss": "^5.0.19",
-    "postcss-cli": "^2.5.1",
-    "postcss-cssnext": "^2.4.0",
-    "postcss-import": "^8.0.2",
-    "svgo": "^0.6.1",
+    "mkdirp": "^0.5.1",
+    "npm-run-all": "^4.0.2",
+    "npm-watch": "^0.2.0",
+    "postcss": "^6.0.9",
+    "postcss-cli": "^4.1.0",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^10.0.0",
+    "stylelint": "^8.0.0",
+    "stylelint-order": "^0.6.0",
+    "stylelint-selector-pattern": "0.0.2",
+    "svgo": "^0.7.2",
     "svgshelf": "^1.0.3"
   }
 }

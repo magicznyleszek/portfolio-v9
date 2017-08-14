@@ -1,0 +1,33 @@
+/*******************************************************************************
+a simple reset
+*******************************************************************************/
+
+* {
+    vertical-align: baseline;
+    box-sizing: inherit;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+svg {
+    color: inherit;
+    shape-rendering: geometricPrecision;
+    fill: currentColor;
+}

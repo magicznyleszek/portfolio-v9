@@ -1,6 +1,6 @@
-{% include htmlBegin.liquid %}
+{% include appSetup/templateStart.liquid %}
 
-{% include global/pageHeader.liquid %}
+{% include modules/pageHeader.liquid %}
 
 <section role="main">
     <header i-pagetitle>
@@ -17,9 +17,9 @@
         {{ content }}
     </section>
 
-    {% include project/relateds.liquid older=page.previous newer=page.next %}
+    {% include modules/project/relateds.liquid older=page.previous newer=page.next %}
 </section>
 
-{% include global/pageFooter.liquid %}
+{% include modules/pageFooter.liquid %}
 
-{% include htmlEnd.liquid %}
+{% include appSetup/templateEnd.liquid %}

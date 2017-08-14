@@ -14,7 +14,6 @@ Merge categories?:
 
 Projects that didn't make to final list:
 - Roboty
-- Zmory and omamy
 - Wegajty
 - Muzeum Powstań Śląskich
 
@@ -25,7 +24,10 @@ Final final list of projects:
 - ? Hues (as todo?)
 - Human Parts icons
 - Where icons
-- Abstractions (incl. Szarości)
+- Abstractions (incl. Szarości and Zmory & omamy)
+- Natalki
+- Various anti-religious drawings?
+- various portraits over the years?
 - Kuba Wojtaszczyk books (separate?)
     - Portret trumienny
     - Kiedy zdarza się przemoc, lubię patrzeć
@@ -41,15 +43,3 @@ Final final list of projects:
 Create portfolio-trans-v8-to-v9 website:
 - Move CNAME leszekpietrzak.com to trans website
 - try doing just a plain redirect on ovh
-
-## Projects
-
-### Galaxy
-Application
-Web services
-Website (/galaxy)
-
-### TW3
-I was in a team responsible for the activation process of the game. You see, the game boxes sold had cd with 99% game files and Galaxy client installer. You could buy the game before release and then on release date only a tiny patch was released that made the game working. This means that we had to be completely sure the process will not fail. TW3 is a really heavy game (~40GB) and having it playable on day one was really important.
-In my team I was responsible for frontend part of galaxy
-(Activation flow, credits)
