@@ -3,10 +3,7 @@ project-image module
 *******************************************************************************/
 
 [i-project-image] {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: var(--s-leading);
+    margin: 0 auto var(--s-leading);
     max-width: 100%;
 }
 

@@ -38,9 +38,7 @@ a:active { color: var(--c-global-active); }
 /* text selection */
 
 :focus {
-    outline-color: var(--focus-outline-c);
-    outline-style: auto;
-    outline-width: var(--focus-outline-w);
+    outline: var(--focus-outline-w) auto var(--focus-outline-c);
 }
 
 ::-moz-focus-inner { border: 0; }
