@@ -1,0 +1,44 @@
+/*******************************************************************************
+main-menu module
+*******************************************************************************/
+
+:root {
+    --s-main-menu-logo: calc(var(--s-leading) * 2);
+}
+
+[i-main-menu] {
+    padding: var(--s-leading);
+}
+
+[i-main-menu--categories] {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*******************************************************************************
+logo part
+*******************************************************************************/
+
+[i-main-menu--logo] {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+    width: var(--s-main-menu-logo);
+    height: var(--s-main-menu-logo);
+    /* remove link styles */
+    background-image: none !important;
+}
+
+[i-main-menu--logo] svg {
+    width: var(--s-main-menu-logo);
+    height: var(--s-main-menu-logo);
+    fill: currentColor;
+}
+
+/* states ordered to make styles always work */
+
+[i-main-menu--logo]:visited svg { fill: currentColor; }
+
+[i-main-menu--logo]:hover svg { fill: var(--c-global-hover); }
+
+[i-main-menu--logo]:active svg { fill: var(--c-global-active); }

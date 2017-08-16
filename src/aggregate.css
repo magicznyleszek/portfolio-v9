@@ -13,7 +13,7 @@ main styles aggregation
 
 /* modules */
 @import "modules/categories-list/categories-list.css";
-@import "modules/logo.css";
+@import "modules/main-menu/main-menu.css";
 @import "modules/page-title.css";
 @import "modules/post-summary/post-summary.css";
 @import "modules/picture/picture.css";

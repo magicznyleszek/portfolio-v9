@@ -1,0 +1,11 @@
+<nav i-main-menu>
+    <a i-main-menu--logo href="{{ site.baseurl }}/">
+        <svg><use xlink:href="#symbol-smutnyleszek-logo"></svg>
+    </a>
+
+    <div i-main-menu--categories>
+        {% capture categoriesIds %}{% for categoryData in site.data.categories %}{% if forloop.first == false %}|{% endif %}{{categoryData.slug}}{% endfor%}{% endcapture %}
+        {% assign categoriesArray = categoriesIds | replace: " ", "" | split:"|" %}
+        {% include modules/categories-list/categories-list.liquid categories=categoriesArray %}
+    </div>
+</nav>
