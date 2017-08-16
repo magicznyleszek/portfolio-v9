@@ -7,5 +7,9 @@
         {% capture categoriesIds %}{% for categoryData in site.data.categories %}{% if forloop.first == false %}|{% endif %}{{categoryData.slug}}{% endfor%}{% endcapture %}
         {% assign categoriesArray = categoriesIds | replace: " ", "" | split:"|" %}
         {% include modules/categories-list/categories-list.liquid categories=categoriesArray %}
-    </div>
+    </div>{% comment %}
+
+    {% endcomment %}<address i-main-menu--mail>
+        <a href="mailto:{{site.email}}">&#9993;</a>
+    </address>
 </nav>
