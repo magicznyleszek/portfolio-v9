@@ -22,7 +22,7 @@ logo part
 [i-main-menu--logo] {
     display: inline-block;
     vertical-align: middle;
-    margin-right: 0.5rem;
+    margin-right: 0.625rem;
     width: var(--s-main-menu-logo);
     height: var(--s-main-menu-logo);
     /* remove link styles */
