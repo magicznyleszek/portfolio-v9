@@ -3,8 +3,9 @@ picture module
 *******************************************************************************/
 
 [i-picture] {
-    display: block;
-    /* trim if doesn't fit the scren */
+    display: inline-block;
+    vertical-align: top;
+    /* trim if doesn't fit the screen */
     overflow-x: hidden;
 }
 

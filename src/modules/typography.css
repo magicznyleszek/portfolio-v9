@@ -1,70 +1,81 @@
 /*******************************************************************************
-base typographic rules
+typographic styles for generated content
 *******************************************************************************/
 
-:--headers {
+[i-typography] h1,
+[i-typography] h2,
+[i-typography] h3,
+[i-typography] h4 {
     margin: 0;
     padding: 0;
     line-height: 1;
 }
 
-:--textblocks:not(:last-child) {
+[i-typography] h1:not(:last-child),
+[i-typography] h2:not(:last-child),
+[i-typography] h3:not(:last-child),
+[i-typography] h4:not(:last-child),
+[i-typography] p:not(:last-child),
+[i-typography] ul:not(:last-child),
+[i-typography] ol:not(:last-child),
+[i-typography] blockquote:not(:last-child),
+[i-typography] pre:not(:last-child) {
     margin-top: 0;
     margin-bottom: var(--s-leading);
 }
 
-h1 { font-size: 3rem; }
+[i-typography] h1 { font-size: 3rem; }
 
-h2 {
+[i-typography] h2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     font-size: 2rem;
 }
 
-h3 { font-size: 1.5rem; }
+[i-typography] h3 { font-size: 1.5rem; }
 
-h4 {
+[i-typography] h4 {
     font-size: inherit;
     font-weight: 700;
 }
 
-p,
-pre {
+[i-typography] p,
+[i-typography] pre {
     margin: 0;
 }
 
-ul,
-ol {
+[i-typography] ul,
+[i-typography] ol {
     margin-left: var(--s-leading);
     padding: 0;
 }
 
-ul { list-style-type: disc; }
+[i-typography] ul { list-style-type: disc; }
 
-ol { list-style-type: decimal; }
+[i-typography] ol { list-style-type: decimal; }
 
-small,
-sub,
-sup {
+[i-typography] small,
+[i-typography] sub,
+[i-typography] sup {
     font-size: 75%;
 }
 
-sub,
-sup {
+[i-typography] sub,
+[i-typography] sup {
     vertical-align: baseline;
     position: relative;
     line-height: 0;
 }
 
-sup { top: -0.5em; }
+[i-typography] sup { top: -0.5em; }
 
-sub { bottom: -0.25em; }
+[i-typography] sub { bottom: -0.25em; }
 
-strong { font-weight: 700; }
+[i-typography] strong { font-weight: 700; }
 
-em { font-style: italic; }
+[i-typography] em { font-style: italic; }
 
-blockquote {
+[i-typography] blockquote {
     margin-left: 0;
     margin-right: 0;
     padding-left: var(--s-leading);
@@ -72,18 +83,18 @@ blockquote {
     font-style: italic;
 }
 
-blockquote cite::before {
+[i-typography] blockquote cite::before {
     content: "\2014";
     display: inline-block;
     margin-right: 0.25rem;
 }
 
-code,
-pre {
+[i-typography] code,
+[i-typography] pre {
     font-family: var(--font-monospace);
 }
 
-code {
+[i-typography] code {
     display: inline-block;
     vertical-align: bottom;
     border-radius: var(--s-global-br);
@@ -96,16 +107,8 @@ code {
 }
 
 /* bigger blocks */
-pre code {
+[i-typography] pre code {
     display: block;
     overflow: auto;
     max-width: 100%;
-}
-
-/* form elements */
-:--formelements {
-    color: inherit;
-    font-family: inherit;
-    font-style: inherit;
-    font-weight: inherit;
 }

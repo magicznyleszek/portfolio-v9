@@ -15,8 +15,8 @@ const sourceDir = './src/images';
 const destinationDir = './dist/images';
 const imageSizes = {
     small: {
-        width: 400,
-        height: 400,
+        width: 640,
+        height: 640,
         jpgQuality: 80,
         suffix: '_small'
     }

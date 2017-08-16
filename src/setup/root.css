@@ -28,6 +28,5 @@ html {
 
 body {
     margin: 0;
-    padding: calc(var(--s-leading) * 2) var(--s-leading);
     width: 100%;
 }

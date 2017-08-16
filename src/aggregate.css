@@ -10,15 +10,13 @@ main styles aggregation
 @import "setup/root.css";
 @import "setup/states.css";
 @import "setup/print.css";
-@import "setup/typography.css";
 
 /* modules */
 @import "modules/categories-list/categories-list.css";
 @import "modules/logo.css";
-@import "modules/page-section.css";
 @import "modules/page-title.css";
 @import "modules/post-summary/post-summary.css";
-@import "modules/project-content.css";
 @import "modules/picture/picture.css";
 @import "modules/related-projects/related-projects.css";
 @import "modules/signature.css";
+@import "modules/typography.css";

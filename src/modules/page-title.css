@@ -3,10 +3,7 @@ page-title module
 *******************************************************************************/
 
 [i-page-title] {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: calc(var(--s-leading) * 2);
-    max-width: var(--s-root-content);
+    padding: var(--s-leading);
 }
 
 [i-page-title--name] {
