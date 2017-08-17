@@ -1,41 +1,41 @@
 /*******************************************************************************
-post-summary module
+listed-project module
 *******************************************************************************/
 
 :root {
-    --s-post-summary-thumbnail: calc(var(--s-leading) * 9); /* 216px */
+    --s-listed-project-thumbnail: calc(var(--s-leading) * 9); /* 216px */
 }
 
-[i-post-summary] {
+[i-listed-project] {
     display: inline-block;
     vertical-align: top;
     padding: var(--s-leading);
     padding-bottom: var(--s-leading-double);
-    max-width: calc(var(--s-post-summary-thumbnail) + calc(var(--s-leading) * 2));
+    max-width: calc(var(--s-listed-project-thumbnail) + calc(var(--s-leading) * 2));
 }
 
-[i-post-summary--date] {
+[i-listed-project--date] {
     display: block;
     text-transform: lowercase;
 }
 
-[i-post-summary--date]::before {
+[i-listed-project--date]::before {
     content: "@\00a0";
     display: inline-block;
 }
 
 /*******************************************************************************
-post-summary thumbnail
+listed-project thumbnail
 *******************************************************************************/
 
-[i-post-summary--thumbnail] {
+[i-listed-project--thumbnail] {
     display: block;
     position: relative;
     /* remove link styles */
     background-image: none !important;
 }
 
-[i-post-summary--thumbnail-title] {
+[i-listed-project--thumbnail-title] {
     display: block;
     /* computed height of leading and margins is 2x default leading */
     margin-top: calc(var(--s-leading) * 0.5);
@@ -46,51 +46,51 @@ post-summary thumbnail
     text-align: center;
 }
 
-[i-post-summary--thumbnail-icon] {
+[i-listed-project--thumbnail-icon] {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: var(--s-post-summary-thumbnail);
-    height: var(--s-post-summary-thumbnail);
+    width: var(--s-listed-project-thumbnail);
+    height: var(--s-listed-project-thumbnail);
     fill: currentColor;
 }
 
-[i-post-summary--thumbnail-description] {
+[i-listed-project--thumbnail-description] {
     display: inline-block;
     margin-top: calc(var(--s-leading) * 0.5);
     margin-bottom: calc(var(--s-leading) * 0.5);
-    max-width: var(--s-post-summary-thumbnail);
+    max-width: var(--s-listed-project-thumbnail);
     text-align: left;
 }
 
 /* states ordered to make styles always work */
 
-[i-post-summary--thumbnail]:visited,
-[i-post-summary--thumbnail]:visited [i-post-summary--thumbnail-title],
-[i-post-summary--thumbnail]:visited [i-post-summary--thumbnail-description] {
+[i-listed-project--thumbnail]:visited,
+[i-listed-project--thumbnail]:visited [i-listed-project--thumbnail-title],
+[i-listed-project--thumbnail]:visited [i-listed-project--thumbnail-description] {
     color: var(--c-global-visited);
 }
 
-[i-post-summary--thumbnail]:visited [i-post-summary--thumbnail-icon] {
+[i-listed-project--thumbnail]:visited [i-listed-project--thumbnail-icon] {
     fill: var(--c-global-visited);
 }
 
-[i-post-summary--thumbnail]:hover,
-[i-post-summary--thumbnail]:hover [i-post-summary--thumbnail-title],
-[i-post-summary--thumbnail]:hover [i-post-summary--thumbnail-description] {
+[i-listed-project--thumbnail]:hover,
+[i-listed-project--thumbnail]:hover [i-listed-project--thumbnail-title],
+[i-listed-project--thumbnail]:hover [i-listed-project--thumbnail-description] {
     color: var(--c-global-hover);
 }
 
-[i-post-summary--thumbnail]:hover [i-post-summary--thumbnail-icon] {
+[i-listed-project--thumbnail]:hover [i-listed-project--thumbnail-icon] {
     fill: var(--c-global-hover);
 }
 
-[i-post-summary--thumbnail]:active,
-[i-post-summary--thumbnail]:active [i-post-summary--thumbnail-title],
-[i-post-summary--thumbnail]:active [i-post-summary--thumbnail-description] {
+[i-listed-project--thumbnail]:active,
+[i-listed-project--thumbnail]:active [i-listed-project--thumbnail-title],
+[i-listed-project--thumbnail]:active [i-listed-project--thumbnail-description] {
     color: var(--c-global-active);
 }
 
-[i-post-summary--thumbnail]:active [i-post-summary--thumbnail-icon] {
+[i-listed-project--thumbnail]:active [i-listed-project--thumbnail-icon] {
     fill: var(--c-global-active);
 }

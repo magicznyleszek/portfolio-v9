@@ -1,0 +1,7 @@
+<section i-projects-list>
+    {% for post in site.posts %}
+        {% if post.categories contains page.slug or page.slug == "all" %}
+            {% include modules/projects-list/listed-project.liquid %}
+        {% endif %}
+    {% endfor %}
+</section>

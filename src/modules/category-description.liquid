@@ -1,5 +1,0 @@
-{% comment %}
-This template renders the description for category
-@param categorySlug
-{% endcomment %}
-{% for categoryData in site.data.categories %}{% if categoryData.slug == include.categorySlug%}{{ categoryData.description }}{% endif %}{% endfor %}

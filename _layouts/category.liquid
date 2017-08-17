@@ -3,17 +3,9 @@
 {% include modules/main-menu/main-menu.liquid %}
 
 <section role="main">
-    <section>
-        {% include modules/category-description.liquid categorySlug=page.slug %}
-    </section>
+    {% include modules/category-description/category-description.liquid categorySlug=page.slug %}
 
-    <section i-post-summary-container>
-        {% for post in site.posts %}
-            {% if post.categories contains page.slug %}
-                {% include modules/post-summary/post-summary.liquid %}
-            {% endif %}
-        {% endfor %}
-    </section>
+    {% include modules/projects-list/projects-list.liquid %}
 </section>
 
 {% include modules/page-footer.liquid %}
