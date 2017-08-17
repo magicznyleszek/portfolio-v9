@@ -8,6 +8,10 @@ main-menu module
 [i-main-menu--icon-link] {
     display: inline-block;
     vertical-align: middle;
+}
+
+[i-main-menu--categories]:not(:last-child),
+[i-main-menu--icon-link]:not(:last-child) {
     margin-right: 0.625rem;
 }
 
