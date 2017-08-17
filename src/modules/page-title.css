@@ -9,7 +9,7 @@ page-title module
 [i-page-title--name] {
     font-weight: 400;
     font-size: 4rem;
-    line-height: calc(var(--s-leading) * 2);
+    line-height: var(--s-leading-double);
 }
 
 [i-page-title--meta] {

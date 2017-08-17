@@ -10,7 +10,7 @@ post-summary module
     display: inline-block;
     vertical-align: top;
     padding: var(--s-leading);
-    padding-bottom: calc(var(--s-leading) * 2);
+    padding-bottom: var(--s-leading-double);
     max-width: calc(var(--s-post-summary-thumbnail) + calc(var(--s-leading) * 2));
 }
 

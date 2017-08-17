@@ -1,5 +1,5 @@
 <nav i-main-menu>
-    <a i-main-menu--logo href="{{ site.baseurl }}/">
+    <a i-main-menu--icon-link="double" href="{{ site.baseurl }}/">
         <svg><use xlink:href="#symbol-smutnyleszek-logo"></svg>
     </a>{% comment %}
 
@@ -9,7 +9,7 @@
         {% include modules/categories-list/categories-list.liquid categories=categoriesArray %}
     </div>{% comment %}
 
-    {% endcomment %}<address i-main-menu--mail>
-        <a href="mailto:{{site.email}}">&#9993;</a>
-    </address>
+    {% endcomment %}<a i-main-menu--icon-link href="mailto:{{site.email}}">
+        <svg><use xlink:href="#symbol-envelope"></svg>
+    </a>
 </nav>
