@@ -2,4 +2,4 @@
 This template renders the tile for given HTML document:
 page-title - categoryName - siteName - siteDescription
 {% endcomment %}
-{% if page.title %}{{ page.title }} &ndash;{% elsif page.layout == 'category' %}{% include modules/category-label.liquid categorySlug=page.slug %} &ndash; {% endif %}{{ site.name }}
+{% if page.title %}{{ page.title }} @ {% elsif page.layout == 'category' %}{% include modules/category-label.liquid categorySlug=page.slug %} @ {% endif %}{{ site.name }}
