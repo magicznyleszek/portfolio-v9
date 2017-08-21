@@ -3,15 +3,16 @@ listed-project module
 *******************************************************************************/
 
 :root {
-    --s-listed-project-thumbnail: calc(var(--s-leading) * 9); /* 216px */
+    --s-listed-project-icon: calc(var(--s-leading) * 6);
 }
 
 [i-listed-project] {
-    display: inline-block;
-    vertical-align: top;
-    padding: var(--s-leading);
-    padding-bottom: var(--s-leading-double);
-    max-width: calc(var(--s-listed-project-thumbnail) + calc(var(--s-leading) * 2));
+    display: block;
+    position: relative;
+    /* overflow hack for floated icon */
+    overflow: hidden;
+    padding: var(--s-leading) var(--s-leading) var(--s-leading) calc(var(--s-listed-project-icon) + var(--s-leading));
+    min-height: var(--s-listed-project-icon);
 }
 
 [i-listed-project--date] {
@@ -25,72 +26,59 @@ listed-project module
 }
 
 /*******************************************************************************
-listed-project thumbnail
+listed-project link
 *******************************************************************************/
 
-[i-listed-project--thumbnail] {
+[i-listed-project--link] {
     display: block;
-    position: relative;
     /* remove link styles */
     background-image: none !important;
 }
 
-[i-listed-project--thumbnail-title] {
+[i-listed-project--title] {
     display: block;
-    /* computed height of leading and margins is 2x default leading */
-    margin-top: calc(var(--s-leading) * 0.5);
-    margin-bottom: calc(var(--s-leading) * 0.5);
-    font-size: 1.5rem;
+    font-size: 200%;
     font-weight: 700;
-    line-height: var(--s-leading);
-    text-align: center;
 }
 
-[i-listed-project--thumbnail-icon] {
+[i-listed-project--icon] {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: var(--s-listed-project-thumbnail);
-    height: var(--s-listed-project-thumbnail);
+    position: absolute;
+    top: var(--s-leading);
+    left: var(--s-leading);
+    width: var(--s-listed-project-icon);
+    height: var(--s-listed-project-icon);
     fill: currentColor;
 }
 
-[i-listed-project--thumbnail-description] {
-    display: inline-block;
-    margin-top: calc(var(--s-leading) * 0.5);
-    margin-bottom: calc(var(--s-leading) * 0.5);
-    max-width: var(--s-listed-project-thumbnail);
-    text-align: left;
+[i-listed-project--description] {
+    display: block;
+    max-width: var(--s-max-text-line-width);
 }
 
-/* states ordered to make styles always work */
+/* states needs to be in this particular order and explicitly set for each
+selector, as browsers can't inherit or use currentColor properly yet :-( */
 
-[i-listed-project--thumbnail]:visited,
-[i-listed-project--thumbnail]:visited [i-listed-project--thumbnail-title],
-[i-listed-project--thumbnail]:visited [i-listed-project--thumbnail-description] {
+[i-listed-project--link]:visited,
+[i-listed-project--link]:visited [i-listed-project--icon],
+[i-listed-project--link]:visited [i-listed-project--title],
+[i-listed-project--link]:visited [i-listed-project--description] {
     color: var(--c-global-visited);
-}
-
-[i-listed-project--thumbnail]:visited [i-listed-project--thumbnail-icon] {
     fill: var(--c-global-visited);
 }
 
-[i-listed-project--thumbnail]:hover,
-[i-listed-project--thumbnail]:hover [i-listed-project--thumbnail-title],
-[i-listed-project--thumbnail]:hover [i-listed-project--thumbnail-description] {
+[i-listed-project--link]:hover,
+[i-listed-project--link]:hover [i-listed-project--icon],
+[i-listed-project--link]:hover [i-listed-project--title],
+[i-listed-project--link]:hover [i-listed-project--description] {
     color: var(--c-global-hover);
-}
-
-[i-listed-project--thumbnail]:hover [i-listed-project--thumbnail-icon] {
     fill: var(--c-global-hover);
 }
 
-[i-listed-project--thumbnail]:active,
-[i-listed-project--thumbnail]:active [i-listed-project--thumbnail-title],
-[i-listed-project--thumbnail]:active [i-listed-project--thumbnail-description] {
+[i-listed-project--link]:active,
+[i-listed-project--link]:active [i-listed-project--icon],
+[i-listed-project--link]:active [i-listed-project--title],
+[i-listed-project--link]:active [i-listed-project--description] {
     color: var(--c-global-active);
-}
-
-[i-listed-project--thumbnail]:active [i-listed-project--thumbnail-icon] {
     fill: var(--c-global-active);
 }

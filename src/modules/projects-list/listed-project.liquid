@@ -1,20 +1,16 @@
-<div i-listed-project>
+<article i-listed-project>
     <!-- clickable thumbnail -->
-    <a i-listed-project--thumbnail href="{{ post.url }}">
-        <svg i-listed-project--thumbnail-icon>
-            <use xlink:href="#symbol-thumbnail-{{ post.slug }}">
+    <a i-listed-project--link href="{{ post.url }}">
+        <svg i-listed-project--icon>
+            <use xlink:href="#symbol-project-{{ post.slug }}">
         </svg>
 
-        <span i-listed-project--thumbnail-title>
-            {{ post.title }}
-        </span>
+        <h2 i-listed-project--title>{{ post.title }}</h2>
 
-        <span i-listed-project--thumbnail-description>
-            {{ post.description}}
-        </span>
+        <p i-listed-project--description>{{ post.description}}</p>
     </a>
 
     <time i-listed-project--date>{{ post.date | date: "%B %Y" }}</time>
 
     {% include modules/categories-list/categories-list.liquid categories=post.categories %}
-</div>
+</article>

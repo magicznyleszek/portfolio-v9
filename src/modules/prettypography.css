@@ -2,11 +2,6 @@
 typographic styles for generated content
 *******************************************************************************/
 
-:root {
-    /* this should ideally give around 75 cpl (characters per line) */
-    --s-typography-max-line-width: 35rem;
-}
-
 [i-prettypography] h1,
 [i-prettypography] h2,
 [i-prettypography] h3,
@@ -33,7 +28,7 @@ typographic styles for generated content
 [i-prettypography] ul,
 [i-prettypography] ol,
 [i-prettypography] blockquote {
-    max-width: var(--s-typography-max-line-width);
+    max-width: var(--s-max-text-line-width);
 }
 
 [i-prettypography] h1 { font-size: 3rem; }

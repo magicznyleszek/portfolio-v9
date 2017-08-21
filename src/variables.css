@@ -45,6 +45,9 @@ variables - all global and pallete variables for project
     --s-leading: calc(var(--root-lineHeight) * 1rem);
     --s-leading-double: calc(var(--s-leading) * 2);
 
+    /* this should ideally give around 75 cpl (characters per line) */
+    --s-max-text-line-width: 35rem;
+
     /* globals */
     --s-global-br: 0.125rem;
 
