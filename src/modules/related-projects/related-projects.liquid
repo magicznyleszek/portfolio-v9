@@ -3,28 +3,31 @@ This template renders links to previous and next projects
 @param older - comes from page.previous
 @param newer - comes from page.next
 {% endcomment %}
-<section>
-    {% if include.older %}
-        <a i-related-projects="previous" href="{{ include.older.url }}">
-            <span i-related-projects--subtitle>previous:</span>
+<section i-related-projects>
+    <span i-related-projects--title>Go deeper:</span>
 
-            <svg i-related-projects--icon>
-                <use xlink:href="#symbol-thumbnail-{{ include.older.slug }}">
+    {% if include.older %}
+        <a i-related-project="previous" href="{{ include.older.url }}">
+
+            <svg i-related-project--icon>
+                <use xlink:href="#symbol-project-{{ include.older.slug }}">
             </svg>
 
-            <span i-related-projects--title>{{ include.older.title }}</span>
+            <span i-related-project--title>{{ include.older.title }}</span>
+
+            <span i-related-project--subtitle>++</span>
         </a>
     {% endif %}
 
     {% if include.newer %}
-        <a i-related-projects="next" href="{{ include.newer.url }}">
-            <span i-related-projects--subtitle>next:</span>
-
-            <svg i-related-projects--icon>
-                <use xlink:href="#symbol-thumbnail-{{ include.newer.slug }}">
+        <a i-related-project="next" href="{{ include.newer.url }}">
+            <svg i-related-project--icon>
+                <use xlink:href="#symbol-project-{{ include.newer.slug }}">
             </svg>
 
-            <span i-related-projects--title>{{ include.newer.title }}</span>
+            <span i-related-project--title>{{ include.newer.title }}</span>
+
+            <span i-related-project--subtitle>--</span>
         </a>
     {% endif %}
 </section>

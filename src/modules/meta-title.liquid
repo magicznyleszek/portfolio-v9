@@ -1,5 +1,5 @@
 {% comment %}
 This template renders the tile for given HTML document:
-page-title - categoryName - siteName - siteDescription
+pageTitle - categoryName - siteName - siteDescription
 {% endcomment %}
 {% if page.title %}{{ page.title }} @ {% elsif page.layout == 'category' %}{% include modules/category-label.liquid categorySlug=page.slug %} @ {% endif %}{{ site.name }}

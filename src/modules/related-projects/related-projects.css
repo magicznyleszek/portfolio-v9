@@ -3,28 +3,33 @@ related-projects module
 *******************************************************************************/
 
 [i-related-projects] {
+    clear: both;
+    overflow: hidden;
+    padding: var(--s-leading);
+}
+
+[i-related-project] {
     display: block;
     float: left;
-    clear: both;
     /* remove link styles */
     background-image: none !important;
 }
 
-[i-related-projects]:not(:last-child) {
+[i-related-project]:not(:last-child) {
     margin-bottom: var(--s-leading);
 }
 
-[i-related-projects--title] { font-weight: 700; }
+[i-related-project--title] { font-weight: 700; }
 
-[i-related-projects--icon],
-[i-related-projects--title],
-[i-related-projects--subtitle] {
+[i-related-project--icon],
+[i-related-project--title],
+[i-related-project--subtitle] {
     display: inline-block;
     /* not middle, because of generating additional vertical pxs */
     vertical-align: top;
 }
 
-[i-related-projects--icon] {
+[i-related-project--icon] {
     width: var(--s-leading);
     height: var(--s-leading);
     fill: currentColor;
@@ -32,26 +37,26 @@ related-projects module
 
 /* states ordered to make styles always work */
 
-[i-related-projects]:visited {
+[i-related-project]:visited {
     color: var(--c-global-visited);
 }
 
-[i-related-projects]:visited [i-related-projects--icon] {
+[i-related-project]:visited [i-related-project--icon] {
     fill: var(--c-global-visited);
 }
 
-[i-related-projects]:hover {
+[i-related-project]:hover {
     color: var(--c-global-hover);
 }
 
-[i-related-projects]:hover [i-related-projects--icon] {
+[i-related-project]:hover [i-related-project--icon] {
     fill: var(--c-global-hover);
 }
 
-[i-related-projects]:active {
+[i-related-project]:active {
     color: var(--c-global-active);
 }
 
-[i-related-projects]:active [i-related-projects--icon] {
+[i-related-project]:active [i-related-project--icon] {
     fill: var(--c-global-active);
 }

@@ -1,25 +1,25 @@
 /*******************************************************************************
-page-title module
+project-header module
 *******************************************************************************/
 
-[i-page-title] {
+[i-project-header] {
     padding: var(--s-leading);
 }
 
-[i-page-title--name] {
+[i-project-header--name] {
     font-weight: 400;
     font-size: 4rem;
     line-height: var(--s-leading-double);
 }
 
-[i-page-title--meta] {
+[i-project-header--meta] {
     display: block;
     margin-top: var(--s-leading);
     font-style: italic;
     text-transform: lowercase;
 }
 
-[i-page-title--description] {
+[i-project-header--description] {
     display: block;
     margin-top: var(--s-leading);
     font-weight: 700;

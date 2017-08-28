@@ -3,20 +3,9 @@
 {% include modules/main-menu/main-menu.liquid %}
 
 <section role="main">
-    <header i-page-title>
-        <h1 i-page-title--name>{{ page.title }}</h1>
+    {% include modules/project-header/project-header.liquid %}
 
-        <p i-page-title--description>
-            <strong>TL;DR</strong>
-            {{ page.description }}
-        </p>
-
-        <time i-page-title--meta datetime="{{ page.date }}">
-            {{ page.date | date: "%B %Y" }}
-        </time>
-    </header>
-
-    <section i-prettypography>
+    <section i-prettypography i-project-content>
         {{ content }}
     </section>
 

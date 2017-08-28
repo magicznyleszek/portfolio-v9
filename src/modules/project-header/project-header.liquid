@@ -1,0 +1,12 @@
+<header i-project-header>
+    <h1 i-project-header--name>{{ page.title }}</h1>
+
+    <p i-project-header--description>
+        <strong>TLDR:</strong>
+        {{ page.description }}
+    </p>
+
+    <time i-project-header--meta datetime="{{ page.date }}">
+        {{ page.date | date: "%B %Y" }}
+    </time>
+</header>

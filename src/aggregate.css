@@ -15,9 +15,10 @@ main styles aggregation
 @import "modules/categories-list/categories-list.css";
 @import "modules/category-description/category-description.css";
 @import "modules/main-menu/main-menu.css";
-@import "modules/page-title.css";
 @import "modules/picture/picture.css";
-@import "modules/projects-list/projects-list.css";
 @import "modules/prettypography.css";
+@import "modules/project-content.css";
+@import "modules/project-header/project-header.css";
+@import "modules/projects-list/projects-list.css";
 @import "modules/related-projects/related-projects.css";
 @import "modules/signature.css";
