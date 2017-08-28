@@ -9,33 +9,24 @@ related-projects module
 }
 
 [i-related-project] {
-    display: block;
-    float: left;
     /* remove link styles */
     background-image: none !important;
+    font-weight: 700;
 }
 
-[i-related-project]:not(:last-child) {
-    margin-bottom: var(--s-leading);
-}
-
-[i-related-project--title] { font-weight: 700; }
-
-[i-related-project--icon],
-[i-related-project--title],
-[i-related-project--subtitle] {
+[i-related-project],
+[i-related-project--icon] {
     display: inline-block;
-    /* not middle, because of generating additional vertical pxs */
-    vertical-align: top;
+    vertical-align: middle;
 }
 
 [i-related-project--icon] {
-    width: var(--s-leading);
-    height: var(--s-leading);
+    width: var(--s-leading-double);
+    height: var(--s-leading-double);
     fill: currentColor;
 }
 
-/* states ordered to make styles always work */
+/* states ordered in a way that makes it just work™ */
 
 [i-related-project]:visited {
     color: var(--c-global-visited);
