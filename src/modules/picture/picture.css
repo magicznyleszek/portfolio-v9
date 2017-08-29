@@ -11,6 +11,14 @@ picture module
     font-style: italic;
 }
 
+[i-picture--caption]::before {
+    content: "\201c";
+}
+
+[i-picture--caption]::after {
+    content: "\201d";
+}
+
 [i-picture--link]:hover {
     opacity: 0.9;
 }

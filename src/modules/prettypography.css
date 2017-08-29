@@ -11,6 +11,7 @@ typographic styles for generated content
     line-height: 1;
 }
 
+[i-prettypography] figure:not(:last-child),
 [i-prettypography] h1:not(:last-child),
 [i-prettypography] h2:not(:last-child),
 [i-prettypography] h3:not(:last-child),
