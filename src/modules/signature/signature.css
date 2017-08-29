@@ -8,6 +8,7 @@ signature module
 
 [i-signature--link] {
     display: block;
+    margin: 0 0 0 auto;
     width: fit-content;
     /* remove link styles */
     background-image: none !important;
@@ -16,6 +17,7 @@ signature module
     font-style: italic;
     font-size: 75%;
     line-height: calc(var(--s-leading) * 2 / 3);
+    text-align: right;
     text-transform: lowercase;
 }
 
