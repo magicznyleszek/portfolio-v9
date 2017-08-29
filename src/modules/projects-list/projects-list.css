@@ -9,8 +9,8 @@ listed-project module
 [i-listed-project] {
     display: block;
     position: relative;
-    /* overflow hack for floated icon */
-    overflow: hidden;
+    /* to make sure it fits min-height of the icon */
+    box-sizing: content-box;
     padding: var(--s-leading) var(--s-leading) var(--s-leading) calc(var(--s-listed-project-icon) + var(--s-leading));
     min-height: var(--s-listed-project-icon);
 }
