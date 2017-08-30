@@ -5,6 +5,7 @@ picture module
 [i-picture] {
     display: inline-block;
     vertical-align: top;
+    padding: var(--s-leading);
 }
 
 [i-picture--caption] {

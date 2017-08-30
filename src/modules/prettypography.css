@@ -11,7 +11,6 @@ typographic styles for generated content
     line-height: 1;
 }
 
-[i-prettypography] figure:not(:last-child),
 [i-prettypography] h1:not(:last-child),
 [i-prettypography] h2:not(:last-child),
 [i-prettypography] h3:not(:last-child),
@@ -21,8 +20,20 @@ typographic styles for generated content
 [i-prettypography] ol:not(:last-child),
 [i-prettypography] blockquote:not(:last-child),
 [i-prettypography] pre:not(:last-child) {
-    margin-top: 0;
     margin-bottom: var(--s-leading);
+}
+
+/* custom rules to ensure good distance after i-picture */
+[i-prettypography] [i-picture] + h1,
+[i-prettypography] [i-picture] + h2,
+[i-prettypography] [i-picture] + h3,
+[i-prettypography] [i-picture] + h4,
+[i-prettypography] [i-picture] + p,
+[i-prettypography] [i-picture] + ul,
+[i-prettypography] [i-picture] + ol,
+[i-prettypography] [i-picture] + blockquote,
+[i-prettypography] [i-picture] + pre {
+    margin-top: var(--s-leading);
 }
 
 [i-prettypography] p,
