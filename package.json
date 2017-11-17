@@ -21,7 +21,7 @@
     "watch": "npm-watch",
     "serve": "npm-run-all jekyll-serve",
     "lint": "stylelint \"src/**/*.css\"",
-    "dist-rebuild": "rm -rf dist && mkdirp dist && mkdirp dist/styles",
+    "dist-rebuild": "rm -rf dist && mkdirp dist",
     "styles-build": "postcss src/aggregate.css -o dist/smutnyleszek.css",
     "svg-build": "svgo -f src/symbols/ && svgshelf -p symbol- src/symbols/\\*.svg src/.symbols-merged.svg",
     "images-build": "node bin/buildImages.js",
