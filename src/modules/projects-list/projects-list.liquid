@@ -1,7 +1,22 @@
 <section i-projects-list>
-    {% for post in site.posts %}
+    {% for post in site.projects %}
         {% if post.categories contains page.slug or page.slug == "all" %}
-            {% include modules/projects-list/listed-project.liquid %}
+            <article i-listed-project>
+                <!-- clickable thumbnail -->
+                <a i-listed-project--link href="{{ post.url }}">
+                    <svg i-listed-project--icon>
+                        <use xlink:href="#symbol-project-{{ post.slug }}">
+                    </svg>
+
+                    <h2 i-listed-project--title>{{ post.title }}</h2>
+
+                    <p i-listed-project--description>{{ post.description}}</p>
+                </a>
+
+                <time i-listed-project--date>{{ post.date }}</time>
+
+                {% include modules/categories-list/categories-list.liquid categories=post.categories %}
+            </article>
         {% endif %}
     {% endfor %}
 </section>

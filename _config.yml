@@ -23,6 +23,8 @@ markdown: kramdown
 kramdown:
     auto_ids: false
 timezone: Europe/Warsaw
+# 0 to 65535
+port: 2038
 
 # pull includes from other directory
 includes_dir: src
@@ -34,3 +36,21 @@ exclude:
     - LICENSE
     - README.md
     - package.json
+    - package-lock.json
+    - postcss.config.js
+    - VERSION.md
+
+# ------------------------------------------------------------------------------
+# page categories and custom collections
+# ------------------------------------------------------------------------------
+
+collections:
+    projects:
+        output: true
+        permalink: /:collection/:name/index.html
+defaults:
+    - scope:
+        path: ''
+        type: projects
+      values:
+        layout: project
