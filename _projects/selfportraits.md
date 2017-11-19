@@ -55,6 +55,7 @@ The second series of portraits of Leszek. This time more hipsterish and on the s
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2012-with-logotype-021.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2012-with-teeth.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-as-80s-porn-star.jpg" caption="X" %}
+{% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-as-shocker-skull-boy.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-in-elevator.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-with-gems.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-with-spinoza.jpg" caption="X" %}
