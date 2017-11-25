@@ -2,6 +2,7 @@
 title: Dinosaurs
 description: "Life without extinction."
 categories: [illustration]
+year: "2014"
 ---
 
 NaN BC.

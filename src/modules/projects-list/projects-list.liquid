@@ -1,21 +1,21 @@
 <section i-projects-list>
-    {% for post in site.projects %}
-        {% if post.categories contains page.slug or page.slug == "all" %}
+    {% for project in site.projects %}
+        {% if project.categories contains page.slug or page.slug == "all" %}
             <article i-listed-project>
                 <!-- clickable thumbnail -->
-                <a i-listed-project--link href="{{ post.url }}">
+                <a i-listed-project--link href="{{ project.url }}">
                     <svg i-listed-project--icon>
-                        <use xlink:href="#symbol-project-{{ post.slug }}">
+                        <use xlink:href="#symbol-project-{{ project.slug }}">
                     </svg>
 
-                    <h2 i-listed-project--title>{{ post.title }}</h2>
+                    <h2 i-listed-project--title>{{ project.title }}</h2>
 
-                    <p i-listed-project--description>{{ post.description}}</p>
+                    <p i-listed-project--description>{{ project.description}}</p>
                 </a>
 
-                <time i-listed-project--date>{{ post.date }}</time>
+                <time i-listed-project--date>{{ project.year }}</time>
 
-                {% include modules/categories-list/categories-list.liquid categories=post.categories %}
+                {% include modules/categories-list/categories-list.liquid categories=project.categories %}
             </article>
         {% endif %}
     {% endfor %}

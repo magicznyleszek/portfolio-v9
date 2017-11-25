@@ -2,6 +2,7 @@
 title: Selfportraits
 description: "A four-year spanning self-portraiting project."
 categories: [illustration]
+year: "2010-2014"
 ---
 
 I learn new things about myself when I draw my selfportraits.

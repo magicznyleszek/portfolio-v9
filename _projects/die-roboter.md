@@ -2,6 +2,7 @@
 title: Die Roboter
 description: "Mechanical lives matter."
 categories: [illustration]
+year: "2009-2010"
 ---
 
 Robots are fascination creatures. I draw many of them between 2009 and 2010. Then they died because of human hatred -- as a monument of their wonderful life, I give you those few drawings, a large pile of other ones and one short drama entitled _"Balety, cycuchy, roboty -- część 3"_, that may be read at schools in the future (though probably not) and may be published electrically someday.

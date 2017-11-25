@@ -2,6 +2,7 @@
 title: Natalki
 description: "A series of drawings depicting me meeting her."
 categories: [illustration]
+year: "2012"
 ---
 
 {% include modules/picture/picture.liquid file="natalki/natalki-1-2012.jpg" caption="Natalki 1" %}

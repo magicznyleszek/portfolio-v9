@@ -2,6 +2,7 @@
 title: Mares & Delusions
 description: "Qwerty"
 categories: [illustration]
+year: "2010-2014"
 ---
 
 You wouldn't want to dream up something like this, and definitely wouldn't want to experience those visions while awake -- which unfortunately happened in my case. The only benefit is this modest report in drawing form. Let it serve as a warning.
