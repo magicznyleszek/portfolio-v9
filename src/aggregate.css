@@ -13,7 +13,6 @@ main styles aggregation
 
 /* modules */
 @import "modules/categories-list/categories-list.css";
-@import "modules/category-description/category-description.css";
 @import "modules/main-menu/main-menu.css";
 @import "modules/picture/picture.css";
 @import "modules/prettypography.css";

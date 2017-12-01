@@ -3,7 +3,9 @@
 {% include modules/main-menu/main-menu.liquid %}
 
 <section role="main">
-    {% include modules/category-description/category-description.liquid categorySlug=page.slug %}
+    <section i-prettypography i-project-content>
+        {{ content }}
+    </section>
 
     {% include modules/projects-list/projects-list.liquid %}
 </section>

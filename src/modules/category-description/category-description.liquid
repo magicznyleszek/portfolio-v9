@@ -1,9 +1,0 @@
-{% comment %}
-This template renders the description for category
-@param categorySlug
-{% endcomment %}
-<section i-category-description i-prettypography>
-    {% for categoryData in site.data.categories %}{% if categoryData.slug == include.categorySlug%}
-        {{ categoryData.description | markdownify }}
-    {% endif %}{% endfor %}
-</section>

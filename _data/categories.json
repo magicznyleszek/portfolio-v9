@@ -2,25 +2,21 @@
     {
         "label": "All",
         "slug": "all",
-        "description": "The three values closest to my heart are: simplicity, order and meaning. I design and build systems of various complexity, either via frontend code or graphical handmakings. My _artistic side_ [sic] is brought to light when I draw and illustrate stuff.\n\nAs I fear for the future of humanity, and don't want to throw more senseless evil out there, I try to take part only in meaningful, nature- and future-friendly projects.",
         "url": "/"
     },
     {
         "label": "Code",
         "slug": "code",
-        "description": "Hand-writing code is something strongly philosophical -- organizing and categorizing thoughts, optimization in search of the ideal and constant falsification -- and unwittingly enriches life wisdom.",
         "url": "/categories/code"
     },
     {
         "label": "Design",
         "slug": "design",
-        "description": "What I love about graphic design is that you take detective-like researching, doodling like crazy person and mathematics -- and build a beautiful, minimalistic message that doesn't need words to be understood.",
         "url": "/categories/design"
     },
     {
         "label": "Illustration",
         "slug": "illustration",
-        "description": "After the initial 20 years of drought, only the low-absorbing (boring) classes at Cultural Studies were able to open my head and hands for drawing. And I ended up loving the black ink, unnamed textures and human organisms.",
         "url": "/categories/illustration"
     }
 ]
