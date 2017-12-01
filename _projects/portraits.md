@@ -1,6 +1,6 @@
 ---
 title: Portraits
-description: "Qwerty"
+description: "Faces of real human beings."
 categories: [illustration]
 year: "2009-2014"
 ---

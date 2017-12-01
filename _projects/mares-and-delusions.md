@@ -1,6 +1,6 @@
 ---
 title: Mares & Delusions
-description: "Qwerty"
+description: "Dreamlike visions of madness."
 categories: [illustration]
 year: "2010-2014"
 ---
@@ -8,8 +8,6 @@ year: "2010-2014"
 You wouldn't want to dream up something like this, and definitely wouldn't want to experience those visions while awake -- which unfortunately happened in my case. The only benefit is this modest report in drawing form. Let it serve as a warning.
 
 You can find here some tours, escapes, amusing embarrassments and faith in astronauts. Also: a lot of browsing, snooping and encountering.
-
-{% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-905.jpg" caption="X" %}
 
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-905.jpg" caption="905, 2010" %}
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-912.jpg" caption="912, 2010" %}

@@ -1,6 +1,6 @@
 ---
 title: Selfportraits
-description: "A four-year spanning self-portraiting project."
+description: "A continuous self-portraiting project."
 categories: [illustration]
 year: "2010-2014"
 ---
