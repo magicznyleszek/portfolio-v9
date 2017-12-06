@@ -5,11 +5,11 @@
         {% include modules/categories-list/categories-list.liquid categories=categoriesArray %}
     </div>{% comment %}
 
-    {% endcomment %}<a i-main-menu--icon-link="double" href="{{ site.baseurl }}/">
+    {% endcomment %}<a i-main-menu--icon-link="double" href="{{ site.baseurl }}/" title="home page">
         <svg><use xlink:href="#symbol-smutnyleszek-logo"></svg>
     </a>{% comment %}
 
-    {% endcomment %}<a i-main-menu--icon-link href="mailto:{{site.email}}">
+    {% endcomment %}<a i-main-menu--icon-link href="mailto:{{site.email}}" title="email me">
         <svg><use xlink:href="#symbol-envelope"></svg>
     </a>
 </nav>
