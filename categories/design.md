@@ -4,4 +4,4 @@ slug: design
 description: Graphical design projects.
 ---
 
-What I love about graphic design is that you take detective-like researching, doodling like crazy person and mathematics -- and build a beautiful, minimalistic message that doesn't need words to be understood.
+Take detective research, doodling like cray cray and evolutionary math -- blend it together with proper opacities and you get graphic design. Building these minimalistic messages that don't need words to be understood is very fulfilling.

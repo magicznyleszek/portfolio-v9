@@ -5,7 +5,9 @@ categories: [illustration]
 year: "2010-2015"
 ---
 
-I always thought that drawings depicting feelings and concepts are superior to those that mimic the visible world. This is of course not true, but doesn't change the fact that creating those always __felt right__. In good abstraction you build up the image not until it resembles something, but until it's emotionally whole.
+I always thought that drawings depicting feelings and concepts are superior to those that mimic the visible world. This is of course not true, but doesn't change the fact that creating those always __felt right__.
+
+IMO, in good abstraction you build up the image not until it resembles something, but until it's emotionally whole. If I would have to choose "the Pinnacle of Art", I would definitely answer "abstract art". Giving people the pure intent is obviously ~~extremely hard~~ impossible, but still worth striving for.
 
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2015-1.jpg" caption="1, 2015" %}
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2015-2.jpg" caption="2, 2015" %}
@@ -14,7 +16,7 @@ I always thought that drawings depicting feelings and concepts are superior to t
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2015-5.jpg" caption="5, 2015" %}
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2015-6.jpg" caption="6, 2015" %}
 
-Although it could sound really strict, I don't follow any rules and sometimes I do incorporate real objects in abstract drawings. When I do, I strip them from their original meaning. Similar to the basics of drawing -- you should only see shapes, lights and shadows, and put those on paper -- meaningless things turn into symbols and patterns.
+Although the creation process could seem really strict and mind-consuming, I don't follow any rules. I just let it flow. Sometimes I do incorporate real objects in abstract drawings. When I do, I strip them from their original meaning. Similar to the basics of drawing -- you should only see shapes, lights and shadows, and put those on paper -- meaningful things turn into meaningless symbols and patterns.
 
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2012-death-plane-2.jpg" caption="Death Plane 2, 2012" %}
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2011-b-024.jpg" caption="B-024, 2011" %}
@@ -44,7 +46,7 @@ Although it could sound really strict, I don't follow any rules and sometimes I 
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2011-szarosci-3.jpg" caption="Szarości 3, 2011" %}
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2011-szarosci-4.jpg" caption="Szarości 4, 2011" %}
 
-I like typography and lettering, so I do use their visual appeal in my work on occasion. As our brains are programmed to unconsciously scan eye vision input for meaningful phrases, it can be used as an invisible guide through the drawing.
+I like typography and lettering, so I do use their visual appeal in my work on occasion. As our brains are programmed to unconsciously scan eye vision input for messages, it can be used as an invisible guide through the drawing.
 
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2011-w-017.jpg" caption="W-017, 2011" %}
 {% include modules/picture/picture.liquid file="abstractions/abstraction-2011-3.jpg" caption="3, 2011" %}
