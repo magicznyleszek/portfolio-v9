@@ -1,6 +1,6 @@
 ---
 title: Abstractions
-description: "A bunch of non-descriptive drawings."
+description: "Removing the traces of reality."
 categories: [illustration]
 year: "2010-2015"
 ---
