@@ -4,11 +4,13 @@ slug: design
 description: Hopefully useful visual designs for the masses.
 ---
 
-1. Take detective research from CSI: Design.
-2. Mix it with doodling like cray cray.
-3. Pour evolutionary math all over it.
-4. Blend it all together with proper opacities.
-5. Add an extra ingredient to the concoction (Chemical X).
+Ingredients:
+
+1. Detective research from CSI: Design
+2. Doodling like cray cray
+3. Evolutionary math
+4. Pretending being someone else
+5. Chemical X
 
 Thus, you get graphic design.
 
