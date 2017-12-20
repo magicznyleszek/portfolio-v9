@@ -1,21 +1,13 @@
 ---
 title: Selfportraits
-description: "A continuous self-portraiting project."
+description: "A continuous selfportraiting project."
 categories: [illustration]
 year: "2010-2014"
 ---
 
-I learn new things about myself when I draw my selfportraits.
+I learn new things about myself when I draw my selfportraits. On thing I learned is that small area of hair on my head is growing in a spiral way. And it was like that even before I've read "Uzumaki" by Junji Ito.
 
----
-
-A first series of concrete drawings of the heads of Leszek. The proposal that stems from them is that the heads from the head are worse than the heads from the mirror -- which of course doesn't mean that I will come to my senses and will use this advice... The last one is by far the closest one physically, but somehow lacking psychologically.
-
----
-
-A first series of concrete drawings of the heads of Leszek. The proposal that stems from them is that the heads from the head are worse than the heads from the mirror -- which of course doesn't mean that I will come to my senses and will use this advice... The last one is by far the closest one physically, but somehow lacking psychologically.
-
-The second series of portraits of Leszek. This time more hipsterish and on the subject -- still fun with a mixture of techniques. Supposedly some of them are perfectly on the spot, and the others quite funny -- unfortunately I do not know, which are which.
+There are four different moments in time visible here: 2010, 2011, 2012 and 2014. ~~I got lazy after that~~ I focused on other projects after that.
 
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-as-80s-porn-star.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-as-shocker-skull-boy.jpg" caption="X" %}
@@ -24,6 +16,9 @@ The second series of portraits of Leszek. This time more hipsterish and on the s
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-with-spinoza.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-with-sword.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2014-without-mustache.jpg" caption="X" %}
+
+I basically go soul searching every few years. This is cool, because I ~~reshape~~ improve my way of drawing a lot every time it happens. 2012 was a time of sickness and depression (ok, depression probably was a thing, a subject, a theme until around 2017 :-P).
+
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2012-010.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2012-014.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2012-025.jpg" caption="X" %}
@@ -31,6 +26,9 @@ The second series of portraits of Leszek. This time more hipsterish and on the s
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2012-with-empty-mind.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2012-with-logotype-021.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2012-with-teeth.jpg" caption="X" %}
+
+2011 was time of loneliness. But besides being down, I fed on all these negative emotions -- I was able to draw like cray cray and to spread my interests over some philosophical subjects and more. This was of course not a thing I wanted or planned, and it was risky and not smart thing to do. I did went out as a better person, though, so YOLO I guess.
+
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2011-01.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2011-02.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2011-03.jpg" caption="X" %}
@@ -49,6 +47,9 @@ The second series of portraits of Leszek. This time more hipsterish and on the s
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2011-with-bias.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2011-with-chaos-024.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2011-with-snake-of-suffering.jpg" caption="X" %}
+
+Aaand 2010 was also not positive time in my life, sorry :-D
+
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2010-045.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2010-047.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="selfportraits/selfportrait-2010-3.jpg" caption="X" %}

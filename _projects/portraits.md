@@ -7,6 +7,10 @@ year: "2009-2014"
 
 I don't know why, but the human always fascinated me. To observe always was and still is my fav activity. The whole body has a language of poses and movement, but it's the face that seems to be much deeper and richer in meanings.
 
+Some of these are completely made up. Probably mirroring myself in a way, some Freudian BS. But most are of real people and were gifts.
+
+I even drew some internet personalities: JewWario `[*]`, Noah Antwiler (The Spoony One), Mark Linsenmayer (from The Partially Examined Life podcast), TJ Kirk (The Amazing Atheist) and actors.
+
 {% include modules/picture/picture.liquid file="portraits/portrait-2014-a-jeweled-girl.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="portraits/portrait-2014-mirror-selfie.jpg" caption="X" %}
 {% include modules/picture/picture.liquid file="portraits/portrait-2014-natalia.jpg" caption="X" %}

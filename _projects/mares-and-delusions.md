@@ -17,6 +17,8 @@ Some experiments happened. Weird shit popped out. Probably the best way to descr
 > Lłąądc
 > </pre>
 
+I remember that one of these has my pubic hair glued on the left side of the drawing (it is a double sided piece of art).
+
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-905.jpg" caption="905, 2010" %}
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-912.jpg" caption="912, 2010" %}
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-915.jpg" caption="915, 2010" %}

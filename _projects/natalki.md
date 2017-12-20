@@ -5,6 +5,8 @@ categories: [illustration]
 year: "2012"
 ---
 
+I met Natalia through internets. She is the most awesome person ever. We were living 300 km apart at that time, so I travelled a lot (with disgusting polish train system). During those trips I started a series of drawings.
+
 {% include modules/picture/picture.liquid file="natalki/natalki-1-2012.jpg" caption="Natalki 1" %}
 {% include modules/picture/picture.liquid file="natalki/natalki-2-2012.jpg" caption="Natalki 2" %}
 {% include modules/picture/picture.liquid file="natalki/natalki-3-2012.jpg" caption="Natalki 3" %}
@@ -18,7 +20,7 @@ year: "2012"
 {% include modules/picture/picture.liquid file="natalki/natalki-b-2012.jpg" caption="Natalki B" %}
 {% include modules/picture/picture.liquid file="natalki/natalki-c-2012.jpg" caption="Natalki C" %}
 
-Some drawings -- at least six of them (from "D" to "H" plus "K") -- are missing and I don't remember what was on them. The thing I do remember is borrowing them to my collage professor [Izabela Gustowska](http://www.gustowska.com/), as she promised to display them on some exhibition. But my memory is POS, so I guess I am to blame for being forgetful.
+Some drawings -- at least six of them (from "D" to "H" plus "K") -- are missing and I don't remember anything about them. The thing I do remember is borrowing them to my collage professor [Izabela Gustowska](http://www.gustowska.com/), as she promised to display them on some exhibition. But my memory is POS, so I guess I am to blame for being forgetful.
 
 {% include modules/picture/picture.liquid file="natalki/natalki-i-2012.jpg" caption="Natalki I" %}
 {% include modules/picture/picture.liquid file="natalki/natalki-j-2012.jpg" caption="Natalki J" %}
