@@ -5,9 +5,17 @@ categories: [illustration]
 year: "2010-2014"
 ---
 
-You wouldn't want to dream up something like this, and definitely wouldn't want to experience those visions while awake -- which unfortunately happened in my case. The only benefit is this modest report in drawing form. Let it serve as a warning.
+Some experiments happened. Weird shit popped out. Probably the best way to describe stuff here would be to quote a short poem of my favourite author (yes, it's me, I don't care, sue me!):
 
-You can find here some tours, escapes, amusing embarrassments and faith in astronauts. Also: a lot of browsing, snooping and encountering.
+> __Abstrakcja 3__ (2015)
+> <pre>
+> Źzęąść
+> Fvyłłł
+> Szdzat
+> Tttrgr
+> Hchchk
+> Lłąądc
+> </pre>
 
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-905.jpg" caption="905, 2010" %}
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-912.jpg" caption="912, 2010" %}
