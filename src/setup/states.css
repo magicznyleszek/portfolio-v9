@@ -3,7 +3,6 @@ user-action influenced states
 *******************************************************************************/
 
 :root {
-    --line-gr-w: 0.125rem;
     --line-gr-solid-c: currentColor 0%, currentColor 0%;
     --line-gr: linear-gradient(to left, var(--line-gr-solid-c));
 
@@ -19,7 +18,7 @@ user-action influenced states
 a {
     /* custom underlines */
     background-position: 0 100%;
-    background-size: var(--line-gr-w) var(--line-gr-w);
+    background-size: var(--s-global-bw) var(--s-global-bw);
     background-image: var(--line-gr);
     background-repeat: repeat-x;
     color: inherit;
@@ -27,7 +26,7 @@ a {
 }
 
 a:hover {
-    background-size: calc(var(--line-gr-w) * 2) calc(var(--line-gr-w) * 2);
+    background-size: calc(var(--s-global-bw) * 2) calc(var(--s-global-bw) * 2);
     color: inherit;
 }
 
