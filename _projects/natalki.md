@@ -20,9 +20,17 @@ I met Natalia through internets. She is the most awesome person ever. We were li
 {% include modules/picture/picture.liquid file="natalki/natalki-b-2012.jpg" caption="Natalki B, 2012" %}
 {% include modules/picture/picture.liquid file="natalki/natalki-c-2012.jpg" caption="Natalki C, 2012" %}
 
-Some drawings -- at least five of them (from "D" to "G" plus "K") -- are missing and I don't remember anything about them. The thing I do remember is borrowing them to my collage professor [Izabela Gustowska](http://www.gustowska.com/), as she promised to display them on some exhibition. But my memory is POS, so don't blame her. Plus she's awesome.
+{% include modules/picture/missing-picture.liquid caption="Natalki D, 2012" %}
+{% include modules/picture/missing-picture.liquid caption="Natalki E, 2012" %}
+{% include modules/picture/missing-picture.liquid caption="Natalki F, 2012" %}
+{% include modules/picture/missing-picture.liquid caption="Natalki G, 2012" %}
+
+Some drawings -- at least five of them (from "D" to "G" plus "K") -- are missing and I don't remember anything about them. The thing I do remember is borrowing them to my collage professor [Izabela Gustowska](http://www.gustowska.com/), as she promised to display them on some exhibition. But my memory is POS, so don't blame her.
 
 {% include modules/picture/picture.liquid file="natalki/natalki-h-2012.jpg" caption="Natalki H, 2012" %}
 {% include modules/picture/picture.liquid file="natalki/natalki-i-2012.jpg" caption="Natalki I, 2012" %}
 {% include modules/picture/picture.liquid file="natalki/natalki-j-2012.jpg" caption="Natalki J, 2012" %}
+
+{% include modules/picture/missing-picture.liquid caption="Natalki K, 2012" %}
+
 {% include modules/picture/picture.liquid file="natalki/natalki-l-2012.jpg" caption="Natalki L, 2012" %}
