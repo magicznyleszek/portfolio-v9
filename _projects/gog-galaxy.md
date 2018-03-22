@@ -1,6 +1,6 @@
 ---
 title: GOG Galaxy
-description: "A desktop application for millions and few AAA games"
+description: "A desktop application for millions plus AAA game"
 categories: [code]
 year: "2014-2018"
 ---
