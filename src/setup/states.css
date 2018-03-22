@@ -30,9 +30,13 @@ a:hover {
     color: inherit;
 }
 
-a:visited { color: var(--c-global-visited); }
+a:visited {
+    color: var(--c-global-visited);
+}
 
-a:active { color: var(--c-global-active); }
+a:active {
+    color: var(--c-global-active);
+}
 
 /* text selection */
 
@@ -40,7 +44,9 @@ a:active { color: var(--c-global-active); }
     outline: var(--focus-outline-w) auto var(--focus-outline-c);
 }
 
-::-moz-focus-inner { border: 0; }
+::-moz-focus-inner {
+    border: 0;
+}
 
 ::selection {
     background-color: var(--selection-bg-c);
@@ -54,5 +60,7 @@ a:active { color: var(--c-global-active); }
     opacity: 0.5;
 
     /* avoid adding up opacity on nested disabled elements */
-    [disabled] { opacity: 1; }
+    [disabled] {
+        opacity: 1;
+    }
 }

@@ -1,57 +1,57 @@
 {
-  "name": "smutnyleszek",
-  "private": true,
-  "version": "9.0.0",
-  "description": "A fistful of drawings and projects by Leszek Pietrzak, a Polish-born illustrator, designer and front-end developer.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/smutnyleszek/portfolio.git"
-  },
-  "author": "Leszek Pietrzak",
-  "license": "CC0 4.0 BY-NC-ND",
-  "bugs": {
-    "url": "https://github.com/smutnyleszek/portfolio/issues",
-    "email": "smutnyleszek@gmail.com"
-  },
-  "homepage": "https://github.com/smutnyleszek/portfolio",
-  "scripts": {
-    "start": "npm-run-all styles-build watch",
-    "test": "npm-run-all lint",
-    "build": "npm-run-all dist-rebuild svg-build styles-build images-build",
-    "watch": "npm-watch",
-    "serve": "npm-run-all jekyll-serve",
-    "lint": "stylelint \"src/**/*.css\"",
-    "dist-rebuild": "rm -rf dist && mkdirp dist",
-    "styles-build": "postcss src/aggregate.css -o dist/smutnyleszek.css",
-    "svg-build": "svgo -f src/symbols/ && svgshelf -p symbol- src/symbols/\\*.svg src/.symbols-merged.svg",
-    "images-build": "node bin/buildImages.js",
-    "jekyll-build": "jekyll build",
-    "jekyll-serve": "jekyll serve --watch --baseurl ''"
-  },
-  "watch": {
-    "styles-build": {
-      "patterns": [
-        "src"
-      ],
-      "extensions": "css",
-      "quiet": false
+    "name": "smutnyleszek",
+    "private": true,
+    "version": "9.0.0",
+    "description":
+        "A fistful of drawings and projects by Leszek Pietrzak, a Polish-born illustrator, designer and front-end developer.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/smutnyleszek/portfolio.git"
+    },
+    "author": "Leszek Pietrzak",
+    "license": "CC0 4.0 BY-NC-ND",
+    "bugs": {
+        "url": "https://github.com/smutnyleszek/portfolio/issues",
+        "email": "smutnyleszek@gmail.com"
+    },
+    "homepage": "https://github.com/smutnyleszek/portfolio",
+    "scripts": {
+        "start": "npm-run-all styles-build watch",
+        "test": "npm-run-all lint",
+        "build": "npm-run-all dist-rebuild svg-build styles-build images-build",
+        "watch": "npm-watch",
+        "serve": "npm-run-all jekyll-serve",
+        "lint": "stylelint \"src/**/*.css\"",
+        "dist-rebuild": "rm -rf dist && mkdirp dist",
+        "styles-build": "postcss src/aggregate.css -o dist/smutnyleszek.css",
+        "svg-build":
+            "svgo --disable={removeTitle,removeViewBox} --enable=removeDimensions -f src/symbols/ && svgshelf -p symbol- src/symbols/\\*.svg src/.symbols-merged.svg",
+        "images-build": "node bin/buildImages.js",
+        "jekyll-build": "jekyll build",
+        "jekyll-serve": "jekyll serve --watch --baseurl ''"
+    },
+    "watch": {
+        "styles-build": {
+            "patterns": ["src"],
+            "extensions": "css",
+            "quiet": false
+        }
+    },
+    "devDependencies": {
+        "autoprefixer": "^8.2.0",
+        "cssnano": "^3.10.0",
+        "gm": "^1.23.1",
+        "mkdirp": "^0.5.1",
+        "npm-run-all": "^4.1.2",
+        "npm-watch": "^0.3.0",
+        "postcss": "^6.0.20",
+        "postcss-cli": "^5.0.0",
+        "postcss-cssnext": "^3.1.0",
+        "postcss-import": "^11.1.0",
+        "stylelint": "^9.1.3",
+        "stylelint-order": "^0.8.1",
+        "stylelint-selector-pattern": "0.0.2",
+        "svgo": "^1.0.5",
+        "svgshelf": "^1.0.3"
     }
-  },
-  "devDependencies": {
-    "autoprefixer": "^7.1.2",
-    "cssnano": "^3.10.0",
-    "gm": "^1.23.0",
-    "mkdirp": "^0.5.1",
-    "npm-run-all": "^4.0.2",
-    "npm-watch": "^0.2.0",
-    "postcss": "^6.0.9",
-    "postcss-cli": "^4.1.0",
-    "postcss-cssnext": "^3.0.2",
-    "postcss-import": "^10.0.0",
-    "stylelint": "^8.0.0",
-    "stylelint-order": "^0.6.0",
-    "stylelint-selector-pattern": "0.0.2",
-    "svgo": "^0.7.2",
-    "svgshelf": "^1.0.3"
-  }
 }
