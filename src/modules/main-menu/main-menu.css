@@ -2,7 +2,9 @@
 main-menu module
 *******************************************************************************/
 
-[i-main-menu] { padding: var(--s-leading); }
+[i-main-menu] {
+    padding: var(--s-leading);
+}
 
 [i-main-menu--categories],
 [i-main-menu--icon-link] {
@@ -39,8 +41,14 @@ icon-link part
 
 /* states ordered to make styles always work */
 
-[i-main-menu--icon-link]:visited svg { fill: currentColor; }
+[i-main-menu--icon-link]:visited svg {
+    fill: currentColor;
+}
 
-[i-main-menu--icon-link]:hover svg { fill: var(--c-global-hover); }
+[i-main-menu--icon-link]:hover svg {
+    fill: var(--c-global-hover);
+}
 
-[i-main-menu--icon-link]:active svg { fill: var(--c-global-active); }
+[i-main-menu--icon-link]:active svg {
+    fill: var(--c-global-active);
+}

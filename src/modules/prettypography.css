@@ -43,7 +43,9 @@ typographic styles for generated content
     max-width: var(--s-max-text-line-width);
 }
 
-[i-prettypography] h1 { font-size: 3rem; }
+[i-prettypography] h1 {
+    font-size: 3rem;
+}
 
 [i-prettypography] h2 {
     padding-top: 0.5rem;
@@ -51,7 +53,9 @@ typographic styles for generated content
     font-size: 2rem;
 }
 
-[i-prettypography] h3 { font-size: 1.5rem; }
+[i-prettypography] h3 {
+    font-size: 1.5rem;
+}
 
 [i-prettypography] h4 {
     font-size: inherit;
@@ -69,9 +73,13 @@ typographic styles for generated content
     padding: 0;
 }
 
-[i-prettypography] ul { list-style-type: disc; }
+[i-prettypography] ul {
+    list-style-type: disc;
+}
 
-[i-prettypography] ol { list-style-type: decimal; }
+[i-prettypography] ol {
+    list-style-type: decimal;
+}
 
 [i-prettypography] small,
 [i-prettypography] sub,
@@ -86,13 +94,21 @@ typographic styles for generated content
     line-height: 0;
 }
 
-[i-prettypography] sup { top: -0.5em; }
+[i-prettypography] sup {
+    top: -0.5em;
+}
 
-[i-prettypography] sub { bottom: -0.25em; }
+[i-prettypography] sub {
+    bottom: -0.25em;
+}
 
-[i-prettypography] strong { font-weight: 700; }
+[i-prettypography] strong {
+    font-weight: 700;
+}
 
-[i-prettypography] em { font-style: italic; }
+[i-prettypography] em {
+    font-style: italic;
+}
 
 [i-prettypography] blockquote {
     margin-left: 0;
