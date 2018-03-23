@@ -5,9 +5,8 @@ categories: [illustration]
 year: "2010-2014"
 ---
 
-Some experiments happened. Weird shit popped out. Probably the best way to describe stuff here would be to quote a short poem of my favourite author (yes, it's me, I don't care, sue me!):
+Some experiments happened. Weird shit popped out. Probably the best way to describe stuff here would be to quote [a short poem](http://dyspoezja.smutnyleszek.com/niewiersze/abstrakcja-3) of my favourite author (yes, it's me!):
 
-> __Abstrakcja 3__ (2015)
 > <pre>
 > Źzęąść
 > Fvyłłł
@@ -43,6 +42,9 @@ I remember that one of these has my pubic hair glued on the left side of the dra
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-landscape-a.jpg" caption="Landscape A, 2010" %}
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-landscape-b.jpg" caption="Landscape B, 2010" %}
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2010-landscape-c.jpg" caption="Landscape C, 2010" %}
+
+3 years passed…
+
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2014-aftermath-1.jpg" caption="Aftermath 1, 2014" %}
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2014-aftermath-4.jpg" caption="Aftermath 4, 2014" %}
 {% include modules/picture/picture.liquid file="mares-and-delusions/mares-and-delusions-2014-aftermath-5.jpg" caption="Aftermath 5, 2014" %}
