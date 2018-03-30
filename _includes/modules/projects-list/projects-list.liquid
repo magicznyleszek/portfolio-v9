@@ -1,5 +1,6 @@
 <section i-projects-list>
-    {% for project in site.pages %}
+    {% assign pagesSorted = (site.pages | sort: "path") %}
+    {% for project in pagesSorted %}
         {% if project.layout == "project" %}
             {% if project.categories contains page.slug or page.slug == "all" %}
                 <article i-listed-project>
