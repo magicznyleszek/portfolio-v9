@@ -6,10 +6,10 @@
     </div>{% comment %}
 
     {% endcomment %}<a i-main-menu--icon-link="double" href="{{ site.baseurl }}/" title="home page">
-        <svg><use xlink:href="#symbol-smutnyleszek-logo"></svg>
+        {% include symbols/smutnyleszek-logo.svg %}
     </a>{% comment %}
 
     {% endcomment %}<a i-main-menu--icon-link href="mailto:{{site.email}}" title="email me">
-        <svg><use xlink:href="#symbol-envelope"></svg>
+        {% include symbols/envelope.svg %}
     </a>
 </nav>

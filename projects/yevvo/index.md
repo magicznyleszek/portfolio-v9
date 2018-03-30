@@ -1,8 +1,10 @@
 ---
-title: Yevvo
+title: "Yevvo"
+slug: "yevvo"
 description: "Logo and icons for startup app."
 categories: [design]
 year: "2014"
+layout: "project"
 ---
 
 Ben Rubin

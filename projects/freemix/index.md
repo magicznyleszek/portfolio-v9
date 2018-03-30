@@ -1,8 +1,10 @@
 ---
-title: Freemix
+title: "Freemix"
+slug: "freemix"
 description: "Logo and icons for artistic app."
 categories: [design]
 year: "2015-2016"
+layout: "project"
 ---
 
 This is a story on how a logo design job can go really bad :-D

@@ -1,8 +1,10 @@
 ---
-title: Selfportraits
+title: "Selfportraits"
+slug: "selfportraits"
 description: "A continuous selfportraiting project."
 categories: [illustration]
 year: "2010-2014"
+layout: "project"
 ---
 
 I learn new things about myself when I draw my selfportraits. On thing I learned is that small area of hair on my head is growing in a spiral way. And it was like that even before I've read "Uzumaki" by Junji Ito.

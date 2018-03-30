@@ -1,8 +1,10 @@
 ---
-title: Mares & Delusions
+title: "Mares & Delusions"
+slug: "mares-and-delusions"
 description: "Dreamlike visions of madness."
 categories: [illustration]
 year: "2010-2014"
+layout: "project"
 ---
 
 Some experiments happened. Weird shit popped out. Probably the best way to describe stuff here would be to quote [a short poem](http://dyspoezja.smutnyleszek.com/niewiersze/abstrakcja-3) of my favourite author (yes, it's me!):

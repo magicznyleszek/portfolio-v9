@@ -1,8 +1,10 @@
 ---
-title: GOG Galaxy
+title: "GOG Galaxy"
+slug: "gog-galaxy"
 description: "A desktop application for millions plus AAA game"
 categories: [code]
 year: "2014-2018"
+layout: "project"
 ---
 
 Application

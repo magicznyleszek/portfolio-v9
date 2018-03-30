@@ -1,8 +1,10 @@
 ---
-title: Kuba Wojtaszczyk books
+title: "Kuba Wojtaszczyk books"
+slug: "kuba-wojtaszczyk-books"
 description: "Taking care of visual side of three books of an upcoming author."
 categories: [design, illustration]
 year: "2014-2017"
+layout: "project"
 ---
 
 ## Book one: "Portret trumienny"[^portret]

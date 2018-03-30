@@ -10,9 +10,7 @@ This template renders links to previous and next projects
         <a i-related-project href="{{ include.older.url }}" title="Older project">
             {{ include.older.title }}
 
-            <svg i-related-project--icon>
-                <use xlink:href="#symbol-project-{{ include.older.slug }}">
-            </svg>
+            {% include symbols/project-{{unclude.older.slug}}.svg %}
         </a>
     {% endif %}
 
@@ -22,9 +20,7 @@ This template renders links to previous and next projects
         <a i-related-project href="{{ include.newer.url }}" title="Newer project">
             {{ include.newer.title }}
 
-            <svg i-related-project--icon>
-                <use xlink:href="#symbol-project-{{ include.newer.slug }}">
-            </svg>
+            {% include symbols/project-{{inlude.newer.slug}}.svg %}
         </a>
     {% endif %}
 </section>

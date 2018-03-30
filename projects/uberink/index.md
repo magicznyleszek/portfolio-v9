@@ -1,8 +1,10 @@
 ---
-title: Überink
+title: "Überink"
+slug: "uberink"
 description: "An identity for imaginary tattoo studio for my GD thesis."
 categories: [design, illustration]
 year: "2013"
+layout: "project"
 ---
 
 Identity design for a nonexisting self-made-up philosophical tattoo studio **überink** -- as a part of the thesis written under the guidance of [Wojtek Janicki](http://gobranding.eu/). Graphical stuff was accompanied by a short essay written on the subject: ["Tatuaż jako sztuka wizualna"]({{site.baseurl}}/assets/files/uberink-historia-tatuazu.pdf).

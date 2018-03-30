@@ -1,5 +1,6 @@
 ---
 title: "Magicxer"
+slug: "magicxer"
 description: "Combines words from list into a list of clever mixes."
 categories: [code, design]
 year: "2018"

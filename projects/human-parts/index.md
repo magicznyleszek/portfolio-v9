@@ -1,8 +1,10 @@
 ---
-title: Human Parts
+title: "Human Parts"
+slug: "human-parts"
 description: "A set of icons depicting common parts of human bodies."
 categories: [design]
 year: "2015"
+layout: "project"
 ---
 
 [You can see/get everything on TNP page][noun-project-human-parts] :obvious_ad_emoji:

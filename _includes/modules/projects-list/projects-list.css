@@ -35,13 +35,7 @@ listed-project link
     background-image: none !important;
 }
 
-[i-listed-project--title] {
-    display: block;
-    font-size: 200%;
-    font-weight: 700;
-}
-
-[i-listed-project--icon] {
+[i-listed-project--link] svg {
     display: block;
     position: absolute;
     top: var(--s-leading);
@@ -49,6 +43,12 @@ listed-project link
     width: var(--s-listed-project-icon);
     height: var(--s-listed-project-icon);
     fill: currentColor;
+}
+
+[i-listed-project--title] {
+    display: block;
+    font-size: 200%;
+    font-weight: 700;
 }
 
 [i-listed-project--description] {
@@ -60,7 +60,7 @@ listed-project link
 selector, as browsers can't inherit or use currentColor properly yet :-( */
 
 [i-listed-project--link]:visited,
-[i-listed-project--link]:visited [i-listed-project--icon],
+[i-listed-project--link]:visited svg,
 [i-listed-project--link]:visited [i-listed-project--title],
 [i-listed-project--link]:visited [i-listed-project--description] {
     color: var(--c-global-visited);
@@ -68,7 +68,7 @@ selector, as browsers can't inherit or use currentColor properly yet :-( */
 }
 
 [i-listed-project--link]:hover,
-[i-listed-project--link]:hover [i-listed-project--icon],
+[i-listed-project--link]:hover svg,
 [i-listed-project--link]:hover [i-listed-project--title],
 [i-listed-project--link]:hover [i-listed-project--description] {
     color: var(--c-global-hover);
@@ -76,7 +76,7 @@ selector, as browsers can't inherit or use currentColor properly yet :-( */
 }
 
 [i-listed-project--link]:active,
-[i-listed-project--link]:active [i-listed-project--icon],
+[i-listed-project--link]:active svg,
 [i-listed-project--link]:active [i-listed-project--title],
 [i-listed-project--link]:active [i-listed-project--description] {
     color: var(--c-global-active);

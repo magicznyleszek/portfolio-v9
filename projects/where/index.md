@@ -1,8 +1,10 @@
 ---
-title: Where
+title: "Where"
+slug: "where"
 description: "A set of icons for describing the position of things."
 categories: [design]
 year: "2016"
+layout: "project"
 ---
 
 [You can see/get everything on TNP page][noun-project-where] :obvious_ad_emoji:

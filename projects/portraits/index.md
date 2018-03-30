@@ -1,8 +1,10 @@
 ---
 title: Portraits
+slug: "portraits"
 description: "Faces of real human beings."
 categories: [illustration]
 year: "2009-2014"
+layout: "project"
 ---
 
 I don't know why, but the human always fascinated me. To observe always was and still is my fav activity. The whole body has a language of poses and movement, but it's the face that seems to be much deeper and richer in meanings.

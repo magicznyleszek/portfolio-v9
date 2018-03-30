@@ -1,8 +1,10 @@
 ---
-title: Die Roboter
+title: "Die Roboter"
+slug: "die-roboter"
 description: "Mechanical lives matter."
 categories: [illustration]
 year: "2009-2010"
+layout: "project"
 ---
 
 Robots are fascinating creatures. I had a phase when I drew lots of them, and then they just died out. In the golden phase of this phase I even wrote a short drama _"Balety, cycuchy, roboty -- część 3"_, which is entirely in a pseudo-szlachta-like fake polish language. I plan (since 2010, mind you) to publish it on the internets as soon as I finish doing illustrations -- hit me up if you're interested in making it happen faster :-*

@@ -1,8 +1,10 @@
 ---
-title: Natalki
+title: "Natalki"
+slug: "natalki"
 description: "A series of drawings depicting me meeting her."
 categories: [illustration]
 year: "2012"
+layout: "project"
 ---
 
 I met Natalia through internets. She is the most awesome person ever. We were living 300 km apart at that time, so I travelled a lot (with disgusting polish train system). During those trips I started a series of drawings.

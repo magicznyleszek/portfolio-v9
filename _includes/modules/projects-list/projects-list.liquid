@@ -1,22 +1,22 @@
 <section i-projects-list>
-    {% for project in site.projects %}
-        {% if project.categories contains page.slug or page.slug == "all" %}
-            <article i-listed-project>
-                <!-- clickable thumbnail -->
-                <a i-listed-project--link href="{{ project.url }}">
-                    <svg i-listed-project--icon>
-                        <use xlink:href="#symbol-project-{{ project.slug }}">
-                    </svg>
+    {% for project in site.pages %}
+        {% if project.layout == "project" %}
+            {% if project.categories contains page.slug or page.slug == "all" %}
+                <article i-listed-project>
+                    <!-- clickable thumbnail -->
+                    <a i-listed-project--link href="{{ project.url }}">
+                        {% include symbols/project-{{project.slug}}.svg %}
 
-                    <h2 i-listed-project--title>{{ project.title }}</h2>
+                        <h2 i-listed-project--title>{{ project.title }}</h2>
 
-                    <p i-listed-project--description>{{ project.description}}</p>
-                </a>
+                        <p i-listed-project--description>{{ project.description}}</p>
+                    </a>
 
-                <time i-listed-project--date>{{ project.year }}</time>
+                    <time i-listed-project--date>{{ project.year }}</time>
 
-                {% include modules/categories-list/categories-list.liquid categories=project.categories %}
-            </article>
+                    {% include modules/categories-list/categories-list.liquid categories=project.categories %}
+                </article>
+            {% endif %}
         {% endif %}
     {% endfor %}
 </section>

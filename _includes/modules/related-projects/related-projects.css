@@ -15,12 +15,12 @@ related-projects module
 }
 
 [i-related-project],
-[i-related-project--icon] {
+[i-related-project] svg {
     display: inline-block;
     vertical-align: middle;
 }
 
-[i-related-project--icon] {
+[i-related-project] svg {
     width: var(--s-leading-double);
     height: var(--s-leading-double);
     fill: currentColor;
@@ -32,7 +32,7 @@ related-projects module
     color: var(--c-global-visited);
 }
 
-[i-related-project]:visited [i-related-project--icon] {
+[i-related-project]:visited svg {
     fill: var(--c-global-visited);
 }
 
@@ -40,7 +40,7 @@ related-projects module
     color: var(--c-global-hover);
 }
 
-[i-related-project]:hover [i-related-project--icon] {
+[i-related-project]:hover svg {
     fill: var(--c-global-hover);
 }
 
@@ -48,6 +48,6 @@ related-projects module
     color: var(--c-global-active);
 }
 
-[i-related-project]:active [i-related-project--icon] {
+[i-related-project]:active svg {
     fill: var(--c-global-active);
 }

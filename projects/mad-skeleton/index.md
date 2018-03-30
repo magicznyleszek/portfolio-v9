@@ -1,8 +1,10 @@
 ---
-title: Mad Skeleton
+title: "Mad Skeleton"
+slug: "mad-skeleton"
 description: "A simple modular attribute-driven CSS wireframe for kickstarting web projects."
 categories: [code, design]
 year: "2017"
+layout: "project"
 ---
 
 [It has a website!][mad-skeleton]

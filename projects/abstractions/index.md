@@ -1,8 +1,10 @@
 ---
-title: Abstractions
+title: "Abstractions"
+slug: "abstractions"
 description: "Removing the traces of reality."
 categories: [illustration]
 year: "2010-2015"
+layout: "project"
 ---
 
 I always thought that drawings depicting feelings and concepts are superior to those that mimic the visible world. This is of course not true, but doesn't change the fact that creating those always __felt right__.
