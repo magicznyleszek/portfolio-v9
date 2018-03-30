@@ -9,8 +9,6 @@ language: "en-US"
 # address settings
 rootSiteUrl: "http://smutnyleszek.com"
 baseurl: "http://portfolio.smutnyleszek.com"
-permalink: /projects/:title
-imagesPath: "/dist/images/"
 
 # urls
 googleFontsCode: family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext
@@ -27,31 +25,12 @@ timezone: Europe/Warsaw
 # 0 to 65535
 port: 2038
 
-# pull includes from other directory
-includes_dir: src
 exclude:
-    # disabled src, as it breaks --watch (see includes_dir)
-    # - src
     - bin
     - node_modules
     - LICENSE
-    - README.md
     - package.json
     - package-lock.json
     - postcss.config.js
+    - README.md
     - VERSION.md
-
-# ------------------------------------------------------------------------------
-# page categories and custom collections
-# ------------------------------------------------------------------------------
-
-collections:
-    projects:
-        output: true
-        permalink: /:collection/:name/index.html
-defaults:
-    - scope:
-        path: ''
-        type: projects
-      values:
-        layout: project

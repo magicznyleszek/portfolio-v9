@@ -2,6 +2,10 @@
 
 This will be 9th version of my portfolio.
 
+## Requirements
+
+* NodeJS
+
 ## Development
 
 To serve local version of the site:
