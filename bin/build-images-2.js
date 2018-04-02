@@ -1,52 +1,115 @@
+/*
+ * dependencies
+ */
 const gm = require("gm");
+const fs = require("fs");
+const path = require("path");
 const process = require("process");
 const imagemin = require("imagemin");
 const imageminPngquant = require("imagemin-pngquant");
 
-// we require projectId to be provided
-const projectId = process.argv[2];
-if (typeof projectId !== "string") {
-    console.error("No projectId provided!");
+/*
+ * config
+ */
+const allowedExtensions = [".jpg", ".jpeg", ".png", ".gif"];
+const thumbSuffix = ".thumb";
+const timeLabel = "Done";
+
+/*
+ * command line arguments read and check
+ */
+const imagesPath = process.argv[2];
+if (typeof imagesPath !== "string") {
+    console.error("No imagesPath provided!");
     process.exit(1);
 }
 
-const doImage = (pathIn, pathOut) => {
-    gm(pathIn)
+/*
+ * helper functions
+ */
+
+const isImageWeAreLookingFor = (file) => {
+    const parsedPath = path.parse(file);
+    return (
+        allowedExtensions.indexOf(parsedPath.ext) !== -1 &&
+        parsedPath.name.indexOf(thumbSuffix) === -1
+    );
+};
+
+const getImagesFromDir = (dir) => {
+    const files = [];
+    fs.readdirSync(dir).forEach((file) => {
+        if (isImageWeAreLookingFor(file)) {
+            files.push(dir + file);
+        }
+    });
+    return files;
+};
+
+const doImage = (file, counter) => {
+    const parsedPath = path.parse(file);
+    const pathOut = path.format({
+        dir: parsedPath.dir,
+        name: parsedPath.name,
+        ext: thumbSuffix + ".png"
+    });
+    const pathOut2x = path.format({
+        dir: parsedPath.dir,
+        name: parsedPath.name,
+        ext: thumbSuffix + "@2x.png"
+    });
+
+    gm(file)
         .background("#ffffff")
         .flatten()
-        .toBuffer("gif", (e1, buffer) => {
-            if (!e1) {
-                console.log("done 1");
+        .toBuffer("png", (err, buffer) => {
+            gm(buffer)
+                .resize(480, 480)
+                .colorspace("YIQ")
+                .colors(64)
+                .dither(true)
+                .write(pathOut, () => {
+                    imagemin([pathOut], parsedPath.dir, {
+                        plugins: [imageminPngquant({quality: "60-80"})]
+                    });
+                });
 
-                gm(buffer)
-                    .resize(640, 640)
-                    .type("Optimize")
-                    .interlace("Line")
-                    .colors(64)
-                    .colorspace("RGB")
-                    .dither(true)
-                    .minify()
-                    .write(pathOut, (e2) => {
-                        if (!e2) {
-                            console.log("done 2");
-
-                            imagemin([pathOut], "./src/images/magicxer/", {
-                                plugins: [imageminPngquant({quality: "60-80"})]
-                            }).then((files) => {
-                                console.log(files);
-                                // => [{data: <Buffer 89 50 4e …>, path: 'build/images/foo.jpg'}, …]
-                            });
+            gm(buffer)
+                .resize(920, 920)
+                .colorspace("YIQ")
+                .colors(64)
+                .dither(true)
+                .write(pathOut2x, () => {
+                    imagemin([pathOut2x], parsedPath.dir, {
+                        plugins: [imageminPngquant({quality: "40-60"})]
+                    }).then(() => {
+                        counter.done++;
+                        console.log(
+                            "\u2713",
+                            parsedPath.base,
+                            `${counter.done}/${counter.total}`
+                        );
+                        if (counter.done === counter.total) {
+                            console.timeEnd(timeLabel);
                         }
                     });
-            }
+                });
         });
 };
 
-doImage(
-    "./src/images/magicxer/magicxer-screenshot.png",
-    "./src/images/magicxer/magicxer-screenshot.min.png"
-);
-doImage(
-    "./src/images/magicxer/portrait-2014-mirror-selfie.jpg",
-    "./src/images/magicxer/portrait-2014-mirror-selfie.min.png"
-);
+/*
+ * running
+ */
+const init = () => {
+    console.time(timeLabel);
+    console.log("Loading files…");
+    const images = getImagesFromDir(imagesPath);
+    const counter = {
+        done: 0,
+        total: images.length
+    };
+    for (const image of images) {
+        doImage(image, counter);
+    }
+};
+init();

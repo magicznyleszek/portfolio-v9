@@ -11,7 +11,7 @@ Magical words mixer. Combines words from list into a list of clever mixes. You c
 
 It also has some code for splitting words to syllables -- simple but imperfect solution for a surprisingly complex problem.
 
-{% include modules/picture/picture.liquid file="magicxer/magicxer-screenshot.jpg" caption="Screenshot of the webapp" %}
+{% include modules/picture/picture.liquid file="magicxer/magicxer-screenshot.png" caption="Screenshot of the webapp" %}
 
 Apart from writing the code, I've also built the visual side.
 

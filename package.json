@@ -20,8 +20,7 @@
         "lint": "stylelint \"smutnyleszek.css\"",
         "styles-build": "postcss _includes/aggregate.css -o smutnyleszek.css",
         "svg-optimize": "svgo --disable={removeTitle,removeViewBox} --enable=removeDimensions -f .",
-        "images-build": "node bin/buildImages.js",
-        "images-build-2": "node ./bin/build-images-2.js",
+        "images-build": "node ./bin/build-images-2.js",
         "jekyll-build": "jekyll build",
         "jekyll-serve": "jekyll serve --watch --baseurl ''"
     },
