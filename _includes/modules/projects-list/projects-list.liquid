@@ -1,8 +1,10 @@
 <section i-projects-list>
     {% assign projectsSorted = "" | split: "" %}
-    {% for page in site.pages | sort: "path" %}
-        {% if page.layout == "project" %}
-            {% assign projectsSorted = projectsSorted | push: page %}
+    {% assign pagesSorted = site.pages | sort: "path" %}
+    {% for apage in pagesSorted %}
+        {% if apage.layout == "project" %}
+            {{ apage.slug }}
+            {% assign projectsSorted = projectsSorted | push: apage %}
         {% endif %}
     {% endfor %}
 
