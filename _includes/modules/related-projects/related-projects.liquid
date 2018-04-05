@@ -1,26 +1,45 @@
 {% comment %}
 This template renders links to previous and next projects
-@param older - comes from page.previous
-@param newer - comes from page.next
+
+Getting previous and next project is a bit tricky, as we're not using posts.
 {% endcomment %}
+
+{% assign projectsSorted = "" | split: "" %}
+{% for page in site.pages | sort: "path" %}
+    {% if page.layout == "project" %}
+        {% assign projectsSorted = projectsSorted | push: page %}
+    {% endif %}
+{% endfor %}
+
+{% assign lastLoopProject = "" %}
+{% for project in projectsSorted %}
+    {% if forloop.first == false and project.slug == page.slug %}
+        {% assign previousProject = lastLoopProject %}
+    {% endif %}
+    {% if forloop.last == false and lastLoopProject.slug == page.slug %}
+        {% assign nextProject = project %}
+    {% endif %}
+    {% assign lastLoopProject = project %}
+{% endfor %}
+
 <section i-related-projects>
     <span i-related-projects--title>Go deeper:</span>
 
-    {% if include.older %}
-        <a i-related-project href="{{ include.older.url }}" title="Older project">
-            {{ include.older.title }}
+    {% if previousProject %}
+        <a i-related-project href="{{ previousProject.url }}" title="Previous project">
+            {{ previousProject.title }}
 
-            {% include symbols/project-{{unclude.older.slug}}.svg %}
+            {% include symbols/project-{{previousProject.slug}}.svg %}
         </a>
     {% endif %}
 
-    {% if include.older and include.newer %}or{% endif %}
+    {% if previousProject and nextProject %}or{% endif %}
 
-    {% if include.newer %}
-        <a i-related-project href="{{ include.newer.url }}" title="Newer project">
-            {{ include.newer.title }}
+    {% if nextProject %}
+        <a i-related-project href="{{ nextProject.url }}" title="Next project">
+            {{ nextProject.title }}
 
-            {% include symbols/project-{{inlude.newer.slug}}.svg %}
+            {% include symbols/project-{{nextProject.slug}}.svg %}
         </a>
     {% endif %}
 </section>

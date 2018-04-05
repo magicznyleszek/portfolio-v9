@@ -1,23 +1,27 @@
 <section i-projects-list>
-    {% assign pagesSorted = (site.pages | sort: "path") %}
-    {% for project in pagesSorted %}
-        {% if project.layout == "project" %}
-            {% if project.categories contains page.slug or page.slug == "all" %}
-                <article i-listed-project>
-                    <!-- clickable thumbnail -->
-                    <a i-listed-project--link href="{{ project.url }}">
-                        {% include symbols/project-{{project.slug}}.svg %}
+    {% assign projectsSorted = "" | split: "" %}
+    {% for page in site.pages | sort: "path" %}
+        {% if page.layout == "project" %}
+            {% assign projectsSorted = projectsSorted | push: page %}
+        {% endif %}
+    {% endfor %}
 
-                        <h2 i-listed-project--title>{{ project.title }}</h2>
+    {% for project in projectsSorted %}
+        {% if project.categories contains page.slug or page.slug == "all" %}
+            <article i-listed-project>
+                <!-- clickable thumbnail -->
+                <a i-listed-project--link href="{{ project.url }}">
+                    {% include symbols/project-{{project.slug}}.svg %}
 
-                        <p i-listed-project--description>{{ project.description}}</p>
-                    </a>
+                    <h2 i-listed-project--title>{{ project.title }}</h2>
 
-                    <time i-listed-project--date>{{ project.year }}</time>
+                    <p i-listed-project--description>{{ project.description}}</p>
+                </a>
 
-                    {% include modules/categories-list/categories-list.liquid categories=project.categories %}
-                </article>
-            {% endif %}
+                <time i-listed-project--date>{{ project.year }}</time>
+
+                {% include modules/categories-list/categories-list.liquid categories=project.categories %}
+            </article>
         {% endif %}
     {% endfor %}
 </section>
