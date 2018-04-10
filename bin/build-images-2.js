@@ -13,7 +13,7 @@ const imageminPngquant = require("imagemin-pngquant");
  */
 const allowedExtensions = [".jpg", ".jpeg", ".png", ".gif"];
 const thumbSuffix = ".thumb";
-const timeLabel = "Done";
+const totalTimeLogLabel = "Done";
 
 /*
  * command line arguments read and check
@@ -59,10 +59,12 @@ const doImage = (file, counter) => {
         ext: thumbSuffix + "@2x.png"
     });
 
+    // first step is flattening the image (we have some transparent pngs)
     gm(file)
         .background("#ffffff")
         .flatten()
         .toBuffer("png", (err, buffer) => {
+            // using flattened buffer to produce thumbnail
             gm(buffer)
                 .resize(480, 480)
                 .colorspace("YIQ")
@@ -74,6 +76,7 @@ const doImage = (file, counter) => {
                     });
                 });
 
+            // using flattened buffer to produce "retina" (@2x) thumbnail
             gm(buffer)
                 .resize(920, 920)
                 .colorspace("YIQ")
@@ -84,13 +87,14 @@ const doImage = (file, counter) => {
                         plugins: [imageminPngquant({quality: "40-60"})]
                     }).then(() => {
                         counter.done++;
+                        // logging done files plus total time
                         console.log(
                             "\u2713",
                             parsedPath.base,
                             `${counter.done}/${counter.total}`
                         );
                         if (counter.done === counter.total) {
-                            console.timeEnd(timeLabel);
+                            console.timeEnd(totalTimeLogLabel);
                         }
                     });
                 });
@@ -101,7 +105,7 @@ const doImage = (file, counter) => {
  * running
  */
 const init = () => {
-    console.time(timeLabel);
+    console.time(totalTimeLogLabel);
     console.log("Loading files…");
     const images = getImagesFromDir(imagesPath);
     const counter = {
