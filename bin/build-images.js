@@ -1,4 +1,12 @@
 /*
+ * node script for building a nice responsive images from the source directory
+ *
+ * NOTE: this can fail when doing stuff over multiple images, see:
+ * https://github.com/aheckmann/gm/issues/502
+ * https://github.com/aheckmann/gm/issues/488
+ */
+
+/*
  * dependencies
  */
 const gm = require("gm");
