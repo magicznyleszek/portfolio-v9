@@ -8,7 +8,6 @@ Getting previous and next project is a bit tricky, as we're not using posts.
 {% assign pagesSorted = site.pages | sort: "path" %}
 {% for apage in pagesSorted %}
     {% if apage.layout == "project" %}
-        {{ apage.slug }}
         {% assign projectsSorted = projectsSorted | push: apage %}
     {% endif %}
 {% endfor %}
