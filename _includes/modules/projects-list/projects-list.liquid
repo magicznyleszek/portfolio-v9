@@ -3,7 +3,6 @@
     {% assign pagesSorted = site.pages | sort: "path" %}
     {% for apage in pagesSorted %}
         {% if apage.layout == "project" %}
-            {{ apage.slug }}
             {% assign projectsSorted = projectsSorted | push: apage %}
         {% endif %}
     {% endfor %}
