@@ -1,24 +1,24 @@
 {
-    "name": "smutnyleszek",
+    "name": "magicznyleszek",
     "private": true,
     "version": "9.0.0",
     "description": "A fistful of drawings and projects by Leszek Pietrzak, a Polish-born illustrator, designer and front-end developer.",
-    "repository": "https://github.com/smutnyleszek/portfolio.git",
+    "repository": "https://github.com/magicznyleszek/portfolio.git",
     "author": "Leszek Pietrzak",
     "license": "CC0 4.0 BY-NC-ND",
     "bugs": {
-        "url": "https://github.com/smutnyleszek/portfolio/issues",
-        "email": "smutnyleszek@gmail.com"
+        "url": "https://github.com/magicznyleszek/portfolio/issues",
+        "email": "leszek@magicznyleszek.xyz"
     },
-    "homepage": "https://github.com/smutnyleszek/portfolio",
+    "homepage": "https://github.com/magicznyleszek/portfolio",
     "scripts": {
         "start": "npm-run-all styles-build watch",
         "test": "npm-run-all lint",
         "build": "npm-run-all svg-optimize styles-build images-build",
         "watch": "npm-watch",
         "serve": "npm run jekyll-serve",
-        "lint": "stylelint \"smutnyleszek.css\"",
-        "styles-build": "postcss _includes/aggregate.css -o smutnyleszek.css",
+        "lint": "stylelint \"magicznyleszek.css\"",
+        "styles-build": "postcss _includes/aggregate.css -o magicznyleszek.css",
         "svg-optimize": "svgo --disable={removeTitle,removeViewBox} --enable=removeDimensions -f .",
         "images-build": "node ./bin/build-images.js",
         "jekyll-build": "jekyll build",

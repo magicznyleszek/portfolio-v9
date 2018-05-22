@@ -7,7 +7,7 @@ year: "2010-2014"
 layout: "project"
 ---
 
-Some experiments happened. Weird shit popped out. Probably the best way to describe stuff here would be to quote [a short poem](http://dyspoezja.smutnyleszek.com/niewiersze/abstrakcja-3) of my favourite author (yes, it's me!):
+Some experiments happened. Weird shit popped out. Probably the best way to describe stuff here would be to quote [a short poem](http://dyspoezja.magicznyleszek.xyz/niewiersze/abstrakcja-3) of my favourite author (yes, it's me!):
 
 > <pre>
 > Źzęąść

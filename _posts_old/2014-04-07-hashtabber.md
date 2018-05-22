@@ -14,7 +14,7 @@ gallery:
 layout: project
 ---
 
-[HashTabber](http://hashtabber.smutnyleszek.com) is a simple `JavaScript` plugin for tabbed navigation with hash-driven links.
+[HashTabber](http://hashtabber.magicznyleszek.xyz) is a simple `JavaScript` plugin for tabbed navigation with hash-driven links.
 
 The plugin was featured i.a. on:
 
@@ -32,7 +32,7 @@ In some free time I built a simple logo based on the shapes of "#" and "T" chara
 
 {% include modules/picture/picture.liquid dir=page.slug filename="hashtabber-02-palette.png" title="Color palette" %}
 
-*Modus operandi* of the script is more precise and technically-wise described [on the website of the project](http://hashtabber.smutnyleszek.com), but in short it can be described by the following diagram:
+*Modus operandi* of the script is more precise and technically-wise described [on the website of the project](http://hashtabber.magicznyleszek.xyz), but in short it can be described by the following diagram:
 
 1. You activate the tab (a simple hash link)
 2. Ther browser's address changes

@@ -7,7 +7,7 @@ year: "2018"
 layout: "project"
 ---
 
-Magical words mixer. Combines words from list into a list of clever mixes. You can check it out live at [magicxer.smutnyleszek.com](http://magicxer.smutnyleszek.com).
+Magical words mixer. Combines words from list into a list of clever mixes. You can check it out live at [magicxer.magicznyleszek.xyz](http://magicxer.magicznyleszek.xyz).
 
 It also has some code for splitting words to syllables -- simple but imperfect solution for a surprisingly complex problem.
 
