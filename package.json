@@ -14,12 +14,12 @@
     "scripts": {
         "start": "npm-run-all styles-build watch",
         "test": "npm-run-all lint",
-        "build": "npm-run-all svg-optimize styles-build images-build",
+        "build": "npm-run-all svg-optimize styles-build",
         "watch": "npm-watch",
         "serve": "npm run jekyll-serve",
         "lint": "stylelint \"magicznyleszek.css\"",
         "styles-build": "postcss _includes/aggregate.css -o magicznyleszek.css",
-        "svg-optimize": "svgo --disable={removeTitle,removeViewBox} --enable=removeDimensions -f .",
+        "svg-optimize": "svgo --disable={removeTitle,removeViewBox} --enable=removeDimensions -f _includes/symbols",
         "images-build": "node ./bin/build-images.js",
         "jekyll-build": "jekyll build",
         "jekyll-serve": "jekyll serve --watch --baseurl ''"
