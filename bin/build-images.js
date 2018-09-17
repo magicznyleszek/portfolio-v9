@@ -1,10 +1,12 @@
 /*
- * node script for building a nice responsive images from the source directory
- *
- * NOTE: this can fail when doing stuff over multiple images, see:
- * https://github.com/aheckmann/gm/issues/502
- * https://github.com/aheckmann/gm/issues/488
- */
+Node script for building a nice responsive images from the source directory.
+
+Pass images path as first CLI argument.
+
+NOTE: this can fail when doing stuff over multiple images, see:
+https://github.com/aheckmann/gm/issues/502
+https://github.com/aheckmann/gm/issues/488
+*/
 
 /*
  * dependencies
