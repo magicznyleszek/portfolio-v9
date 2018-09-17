@@ -6,9 +6,9 @@ typographic styles for generated content
 [i-prettypography] h2,
 [i-prettypography] h3,
 [i-prettypography] h4 {
-    margin: 0;
-    padding: 0;
-    line-height: 1;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
 }
 
 [i-prettypography] h1:not(:last-child),
@@ -20,7 +20,7 @@ typographic styles for generated content
 [i-prettypography] ol:not(:last-child),
 [i-prettypography] blockquote:not(:last-child),
 [i-prettypography] pre:not(:last-child) {
-    margin-bottom: var(--s-leading);
+  margin-bottom: var(--s-leading);
 }
 
 /* custom rules to ensure good distance after i-picture */
@@ -33,117 +33,117 @@ typographic styles for generated content
 [i-prettypography] [i-picture] + ol,
 [i-prettypography] [i-picture] + blockquote,
 [i-prettypography] [i-picture] + pre {
-    margin-top: var(--s-leading);
+  margin-top: var(--s-leading);
 }
 
 [i-prettypography] p,
 [i-prettypography] ul,
 [i-prettypography] ol,
 [i-prettypography] blockquote {
-    max-width: var(--s-max-text-line-width);
+  max-width: var(--s-max-text-line-width);
 }
 
 [i-prettypography] h1 {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 [i-prettypography] h2 {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 [i-prettypography] h3 {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 [i-prettypography] h4 {
-    font-size: inherit;
-    font-weight: 700;
+  font-size: inherit;
+  font-weight: 700;
 }
 
 [i-prettypography] p,
 [i-prettypography] pre {
-    margin: 0;
+  margin: 0;
 }
 
 [i-prettypography] ul,
 [i-prettypography] ol {
-    margin-left: var(--s-leading);
-    padding: 0;
+  margin-left: var(--s-leading);
+  padding: 0;
 }
 
 [i-prettypography] ul {
-    list-style-type: disc;
+  list-style-type: disc;
 }
 
 [i-prettypography] ol {
-    list-style-type: decimal;
+  list-style-type: decimal;
 }
 
 [i-prettypography] small,
 [i-prettypography] sub,
 [i-prettypography] sup {
-    font-size: 75%;
+  font-size: 75%;
 }
 
 [i-prettypography] sub,
 [i-prettypography] sup {
-    vertical-align: baseline;
-    position: relative;
-    line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  line-height: 0;
 }
 
 [i-prettypography] sup {
-    top: -0.5em;
+  top: -0.5em;
 }
 
 [i-prettypography] sub {
-    bottom: -0.25em;
+  bottom: -0.25em;
 }
 
 [i-prettypography] strong {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 [i-prettypography] em {
-    font-style: italic;
+  font-style: italic;
 }
 
 [i-prettypography] blockquote {
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: var(--s-leading);
-    box-shadow: inset 0.25rem 0 0 0 var(--c-silver);
-    font-style: italic;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: var(--s-leading);
+  box-shadow: inset 0.25rem 0 0 0 var(--c-silver);
+  font-style: italic;
 }
 
 [i-prettypography] blockquote cite::before {
-    content: "\2014";
-    display: inline-block;
-    margin-right: 0.25rem;
+  content: "\2014";
+  display: inline-block;
+  margin-right: 0.25rem;
 }
 
 [i-prettypography] code,
 [i-prettypography] pre {
-    font-family: var(--font-monospace);
+  font-family: var(--font-monospace);
 }
 
 [i-prettypography] code {
-    display: inline-block;
-    vertical-align: bottom;
-    border-radius: var(--s-global-br);
-    padding-left: 0.25rem;
-    padding-right: 0.25rem;
-    background-color: var(--c-silver);
-    color: var(--c-blackcurrant);
-    font-size: 0.75rem;
-    line-height: var(--s-leading);
+  display: inline-block;
+  vertical-align: bottom;
+  border-radius: var(--s-global-br);
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  background-color: var(--c-silver);
+  color: var(--c-blackcurrant);
+  font-size: 0.75rem;
+  line-height: var(--s-leading);
 }
 
 /* bigger blocks */
 [i-prettypography] pre code {
-    display: block;
-    overflow: auto;
-    max-width: 100%;
+  display: block;
+  overflow: auto;
+  max-width: 100%;
 }

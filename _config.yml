@@ -20,17 +20,17 @@ future: true
 encoding: utf-8
 markdown: kramdown
 kramdown:
-    auto_ids: false
+  auto_ids: false
 timezone: Europe/Warsaw
 # 0 to 65535
 port: 2038
 
 exclude:
-    - bin
-    - node_modules
-    - LICENSE
-    - package.json
-    - package-lock.json
-    - postcss.config.js
-    - README.md
-    - VERSION.md
+  - bin
+  - node_modules
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - README.md
+  - VERSION.md

@@ -1,22 +1,22 @@
 [
-    {
-        "label": "All",
-        "slug": "all",
-        "url": "/"
-    },
-    {
-        "label": "Code",
-        "slug": "code",
-        "url": "/categories/code"
-    },
-    {
-        "label": "Design",
-        "slug": "design",
-        "url": "/categories/design"
-    },
-    {
-        "label": "Illustration",
-        "slug": "illustration",
-        "url": "/categories/illustration"
-    }
+  {
+    "label": "All",
+    "slug": "all",
+    "url": "/"
+  },
+  {
+    "label": "Code",
+    "slug": "code",
+    "url": "/categories/code"
+  },
+  {
+    "label": "Design",
+    "slug": "design",
+    "url": "/categories/design"
+  },
+  {
+    "label": "Illustration",
+    "slug": "illustration",
+    "url": "/categories/illustration"
+  }
 ]

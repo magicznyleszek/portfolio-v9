@@ -3,24 +3,24 @@ project-header module
 *******************************************************************************/
 
 [i-project-header] {
-    padding: var(--s-leading);
+  padding: var(--s-leading);
 }
 
 [i-project-header--name] {
-    font-weight: 400;
-    font-size: 4rem;
-    line-height: var(--s-leading-double);
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: var(--s-leading-double);
 }
 
 [i-project-header--meta] {
-    display: block;
-    margin-top: var(--s-leading);
-    font-style: italic;
-    text-transform: lowercase;
+  display: block;
+  margin-top: var(--s-leading);
+  font-style: italic;
+  text-transform: lowercase;
 }
 
 [i-project-header--description] {
-    display: block;
-    margin-top: var(--s-leading);
-    font-weight: 700;
+  display: block;
+  margin-top: var(--s-leading);
+  font-weight: 700;
 }

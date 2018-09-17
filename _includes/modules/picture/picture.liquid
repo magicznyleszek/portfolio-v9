@@ -1,19 +1,19 @@
 {% comment %}
-    This template adds an image to page. It should be used together with images:build npm script
-    @param file - image file with extension and parent directory
-    @param caption - optional caption that will be added as figcaption
+This template adds an image to page. It should be used together with images:build npm script
+@param file - image file with extension and parent directory
+@param caption - optional caption that will be added as figcaption
 {% endcomment %}
 {% capture originalImage %}/projects/{{ include.file | url_escape }}{% endcapture %}
 {% capture smallImage %}{{ originalImage | replace: '.png', '.thumb.png' | replace: '.jpg', '.thumb.png' | replace: '.gif', '.thumb.png' }}{% endcapture %}
 {% capture smallRetinaImage %}{{ smallImage | replace: '.thumb.', '.thumb@2x.' }}{% endcapture %}
 <figure i-picture>
-    <a i-picture--link href="{{ originalImage }}" target="_blank">
-        <img
-            i-picture--image
-            src="{{ smallImage }}"
-            srcset="{{ smallImage }} 1x, {{ smallRetinaImage }} 2x"
-            alt="{{ include.file }}"
-        >
-    </a>
-    {% if include.caption %}<figcaption i-picture--caption>{{ include.caption }}</figcaption>{% endif %}
+  <a i-picture--link href="{{ originalImage }}" target="_blank">
+    <img
+      i-picture--image
+      src="{{ smallImage }}"
+      srcset="{{ smallImage }} 1x, {{ smallRetinaImage }} 2x"
+      alt="{{ include.file }}"
+    >
+  </a>
+  {% if include.caption %}<figcaption i-picture--caption>{{ include.caption }}</figcaption>{% endif %}
 </figure>

@@ -3,32 +3,32 @@ signature module
 *******************************************************************************/
 
 [i-signature] {
-    padding: var(--s-leading);
+  padding: var(--s-leading);
 }
 
 [i-signature--link] {
-    display: block;
-    margin: 0 0 0 auto;
-    width: fit-content;
-    /* remove link styles */
-    background-image: none !important;
-    color: currentColor;
-    font-weight: 700;
-    font-style: italic;
-    font-size: 75%;
-    line-height: calc(var(--s-leading) * 2 / 3);
-    text-align: right;
-    text-transform: lowercase;
+  display: block;
+  margin: 0 0 0 auto;
+  width: fit-content;
+  /* remove link styles */
+  background-image: none !important;
+  color: currentColor;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 75%;
+  line-height: calc(var(--s-leading) * 2 / 3);
+  text-align: right;
+  text-transform: lowercase;
 }
 
 [i-signature--link]:visited {
-    color: currentColor;
+  color: currentColor;
 }
 
 [i-signature--link]:hover {
-    color: var(--c-global-hover);
+  color: var(--c-global-hover);
 }
 
 [i-signature--link]:active {
-    color: var(--c-global-active);
+  color: var(--c-global-active);
 }

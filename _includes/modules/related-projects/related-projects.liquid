@@ -7,40 +7,40 @@ Getting previous and next project is a bit tricky, as we're not using posts.
 {% assign projectsSorted = "" | split: "" %}
 {% assign pagesSorted = site.pages | sort: "path" %}
 {% for apage in pagesSorted %}
-    {% if apage.layout == "project" %}
-        {% assign projectsSorted = projectsSorted | push: apage %}
-    {% endif %}
+  {% if apage.layout == "project" %}
+    {% assign projectsSorted = projectsSorted | push: apage %}
+  {% endif %}
 {% endfor %}
 
 {% assign lastLoopProject = "" %}
 {% for project in projectsSorted %}
-    {% if forloop.first == false and project.slug == page.slug %}
-        {% assign previousProject = lastLoopProject %}
-    {% endif %}
-    {% if forloop.last == false and lastLoopProject.slug == page.slug %}
-        {% assign nextProject = project %}
-    {% endif %}
-    {% assign lastLoopProject = project %}
+  {% if forloop.first == false and project.slug == page.slug %}
+    {% assign previousProject = lastLoopProject %}
+  {% endif %}
+  {% if forloop.last == false and lastLoopProject.slug == page.slug %}
+    {% assign nextProject = project %}
+  {% endif %}
+  {% assign lastLoopProject = project %}
 {% endfor %}
 
 <section i-related-projects>
-    <span i-related-projects--title>Go deeper:</span>
+  <span i-related-projects--title>Go deeper:</span>
 
-    {% if previousProject %}
-        <a i-related-project href="{{ previousProject.url }}" title="Previous project">
-            {{ previousProject.title }}
+  {% if previousProject %}
+    <a i-related-project href="{{ previousProject.url }}" title="Previous project">
+      {{ previousProject.title }}
 
-            {% include symbols/project-{{previousProject.slug}}.svg %}
-        </a>
-    {% endif %}
+      {% include symbols/project-{{previousProject.slug}}.svg %}
+    </a>
+  {% endif %}
 
-    {% if previousProject and nextProject %}or{% endif %}
+  {% if previousProject and nextProject %}or{% endif %}
 
-    {% if nextProject %}
-        <a i-related-project href="{{ nextProject.url }}" title="Next project">
-            {{ nextProject.title }}
+  {% if nextProject %}
+    <a i-related-project href="{{ nextProject.url }}" title="Next project">
+      {{ nextProject.title }}
 
-            {% include symbols/project-{{nextProject.slug}}.svg %}
-        </a>
-    {% endif %}
+      {% include symbols/project-{{nextProject.slug}}.svg %}
+    </a>
+  {% endif %}
 </section>

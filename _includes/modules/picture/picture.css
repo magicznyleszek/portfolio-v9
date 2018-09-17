@@ -3,33 +3,33 @@ picture module
 *******************************************************************************/
 
 [i-picture] {
-    display: inline-block;
-    vertical-align: top;
-    padding: var(--s-leading);
+  display: inline-block;
+  vertical-align: top;
+  padding: var(--s-leading);
 }
 
 [i-picture--caption] {
-    font-style: italic;
+  font-style: italic;
 }
 
 [i-picture--caption]::before {
-    content: "\201c";
+  content: "\201c";
 }
 
 [i-picture--caption]::after {
-    content: "\201d";
+  content: "\201d";
 }
 
 [i-picture--link],
 [i-picture--image] {
-    display: inline-block;
-    vertical-align: bottom;
+  display: inline-block;
+  vertical-align: bottom;
 }
 
 [i-picture--image] {
-    position: relative;
-    max-width: 100%;
-    max-height: 100%;
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /*******************************************************************************
@@ -37,24 +37,24 @@ action states
 *******************************************************************************/
 
 [i-picture--link] {
-    border-style: solid;
-    border-width: calc(var(--s-global-bw) * 2);
-    border-color: transparent;
+  border-style: solid;
+  border-width: calc(var(--s-global-bw) * 2);
+  border-color: transparent;
 
-    /* reset default states */
-    background: none;
+  /* reset default states */
+  background: none;
 }
 
 [i-picture--link]:hover {
-    border-color: var(--c-root-txt);
+  border-color: var(--c-root-txt);
 }
 
 [i-picture--link]:hover:visited {
-    border-color: var(--c-global-visited);
+  border-color: var(--c-global-visited);
 }
 
 [i-picture--link]:hover:active {
-    border-color: var(--c-global-active);
+  border-color: var(--c-global-active);
 }
 
 /*******************************************************************************
@@ -62,27 +62,27 @@ style broken images
 *******************************************************************************/
 
 [i-picture--image] {
-    /* for alt text being too long */
-    overflow-wrap: break-word;
-    color: var(--c-root-bg);
-    font-family: var(--font-monospace);
-    font-weight: 300;
+  /* for alt text being too long */
+  overflow-wrap: break-word;
+  color: var(--c-root-bg);
+  font-family: var(--font-monospace);
+  font-weight: 300;
 }
 
 [i-picture--image]::before {
-    content: "(x_x;)";
-    float: right;
-    margin-left: 0.5rem;
+  content: "(x_x;)";
+  float: right;
+  margin-left: 0.5rem;
 }
 
 [i-picture--image]::after {
-    content: "";
-    display: block;
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--c-root-txt);
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--c-root-txt);
 }

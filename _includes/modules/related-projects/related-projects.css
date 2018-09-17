@@ -3,51 +3,51 @@ related-projects module
 *******************************************************************************/
 
 [i-related-projects] {
-    clear: both;
-    overflow: hidden;
-    padding: var(--s-leading);
+  clear: both;
+  overflow: hidden;
+  padding: var(--s-leading);
 }
 
 [i-related-project] {
-    /* remove link styles */
-    background-image: none !important;
-    font-weight: 700;
+  /* remove link styles */
+  background-image: none !important;
+  font-weight: 700;
 }
 
 [i-related-project],
 [i-related-project] svg {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 [i-related-project] svg {
-    width: var(--s-leading-double);
-    height: var(--s-leading-double);
-    fill: currentColor;
+  width: var(--s-leading-double);
+  height: var(--s-leading-double);
+  fill: currentColor;
 }
 
 /* states ordered in a way that makes it just work™ */
 
 [i-related-project]:visited {
-    color: var(--c-global-visited);
+  color: var(--c-global-visited);
 }
 
 [i-related-project]:visited svg {
-    fill: var(--c-global-visited);
+  fill: var(--c-global-visited);
 }
 
 [i-related-project]:hover {
-    color: var(--c-global-hover);
+  color: var(--c-global-hover);
 }
 
 [i-related-project]:hover svg {
-    fill: var(--c-global-hover);
+  fill: var(--c-global-hover);
 }
 
 [i-related-project]:active {
-    color: var(--c-global-active);
+  color: var(--c-global-active);
 }
 
 [i-related-project]:active svg {
-    fill: var(--c-global-active);
+  fill: var(--c-global-active);
 }

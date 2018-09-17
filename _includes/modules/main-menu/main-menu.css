@@ -3,18 +3,18 @@ main-menu module
 *******************************************************************************/
 
 [i-main-menu] {
-    padding: var(--s-leading);
+  padding: var(--s-leading);
 }
 
 [i-main-menu--categories],
 [i-main-menu--icon-link] {
-    display: inline-block;
-    vertical-align: middle;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 [i-main-menu--categories]:not(:last-child),
 [i-main-menu--icon-link]:not(:last-child) {
-    margin-right: 0.625rem;
+  margin-right: 0.625rem;
 }
 
 /*******************************************************************************
@@ -22,33 +22,31 @@ icon-link part
 *******************************************************************************/
 
 [i-main-menu--icon-link] {
-    width: var(--s-leading);
-    height: var(--s-leading);
-    /* remove link styles */
-    background-image: none !important;
+  width: var(--s-leading);
+  height: var(--s-leading);
+  /* remove link styles */
+  background-image: none !important;
 }
 
 [i-main-menu--icon-link~="double"] {
-    width: var(--s-leading-double);
-    height: var(--s-leading-double);
+  width: var(--s-leading-double);
+  height: var(--s-leading-double);
 }
 
 [i-main-menu--icon-link] svg {
-    width: inherit;
-    height: inherit;
-    fill: currentColor;
+  width: inherit;
+  height: inherit;
+  fill: currentColor;
 }
 
-/* states ordered to make styles always work */
-
 [i-main-menu--icon-link]:visited svg {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 [i-main-menu--icon-link]:hover svg {
-    fill: var(--c-global-hover);
+  fill: var(--c-global-hover);
 }
 
 [i-main-menu--icon-link]:active svg {
-    fill: var(--c-global-active);
+  fill: var(--c-global-active);
 }

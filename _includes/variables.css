@@ -3,56 +3,47 @@ variables - all global and pallete variables for project
 *******************************************************************************/
 
 :root {
-    /* colors palette */
-    --c-amaranth: hsl(348, 96%, 56%);
-    --c-purple: hsl(328, 72%, 44%);
-    --c-violet: hsl(276, 60%, 36%);
-    --c-blackcurrant: hsl(276, 32%, 12%);
-    --c-silver: hsl(0, 0%, 80%);
-    --c-white: hsl(0, 0%, 100%);
+  /* colors palette */
+  --c-amaranth: hsl(348, 96%, 56%);
+  --c-purple: hsl(328, 72%, 44%);
+  --c-violet: hsl(276, 60%, 36%);
+  --c-blackcurrant: hsl(276, 32%, 12%);
+  --c-silver: hsl(0, 0%, 80%);
+  --c-white: hsl(0, 0%, 100%);
 
-    /* font families palette */
-    --font-sourceSansPro: "Source Sans Pro", sans-serif;
-    --font-monospace:
-        "Input Mono",
-        "Office Code Pro",
-        "Source Code Pro",
-        "Fira Mono",
-        "Inconsolata",
-        "Monaco",
-        "Consolas",
-        "Lucida Console",
-        "Liberation Mono",
-        "DejaVu Sans Mono",
-        monospace;
+  /* font families palette */
+  --font-sourceSansPro: "Source Sans Pro", sans-serif;
+  --font-monospace: "Input Mono", "Office Code Pro", "Source Code Pro",
+    "Fira Mono", "Inconsolata", "Monaco", "Consolas", "Lucida Console",
+    "Liberation Mono", "DejaVu Sans Mono", monospace;
 
-    /* base */
-    --c-root-txt: var(--c-blackcurrant);
-    --c-root-bg: var(--c-white);
-    --s-root-content: 40rem; /* 640px @ 16px */
+  /* base */
+  --c-root-txt: var(--c-blackcurrant);
+  --c-root-bg: var(--c-white);
+  --s-root-content: 40rem; /* 640px @ 16px */
 
-    /* root typography */
-    --root-fontWeight: 400;
-    --root-lineHeight: 1.5;
-    --root-fontFamily: var(--font-sourceSansPro);
+  /* root typography */
+  --root-fontWeight: 400;
+  --root-lineHeight: 1.5;
+  --root-fontFamily: var(--font-sourceSansPro);
 
-    /* font sizes with respect to user browser default sizes */
-    --root-fontSize-medium: 112.5%; /* probably 18px */
-    --root-fontSize-smaller: 100%; /* probably 16px */
-    --root-fontSize-bigger: 125%; /* probably 20px */
+  /* font sizes with respect to user browser default sizes */
+  --root-fontSize-medium: 112.5%; /* probably 18px */
+  --root-fontSize-smaller: 100%; /* probably 16px */
+  --root-fontSize-bigger: 125%; /* probably 20px */
 
-    /* leading size for all spacing between elements to be pretty */
-    --s-leading: calc(var(--root-lineHeight) * 1rem);
-    --s-leading-double: calc(var(--s-leading) * 2);
+  /* leading size for all spacing between elements to be pretty */
+  --s-leading: calc(var(--root-lineHeight) * 1rem);
+  --s-leading-double: calc(var(--s-leading) * 2);
 
-    /* this should ideally give around 75 cpl (characters per line) */
-    --s-max-text-line-width: 35rem;
+  /* this should ideally give around 75 cpl (characters per line) */
+  --s-max-text-line-width: 35rem;
 
-    /* globals */
-    --s-global-br: 0.125rem;
-    --s-global-bw: 0.125rem;
+  /* globals */
+  --s-global-br: 0.125rem;
+  --s-global-bw: 0.125rem;
 
-    --c-global-hover: var(--c-amaranth);
-    --c-global-active: var(--c-purple);
-    --c-global-visited: var(--c-violet);
+  --c-global-hover: var(--c-amaranth);
+  --c-global-active: var(--c-purple);
+  --c-global-visited: var(--c-violet);
 }

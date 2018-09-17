@@ -3,17 +3,19 @@ layout: null
 ---
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
-
-    <!-- home page -->
-    <url>
-        <loc>{{ site.baseurl }}</loc>
-    </url>
-
-    <!-- all posts -->
-    {% for post in site.posts %}
-        <url>
-            <loc>{{ site.baseurl }}{{ post.url }}</loc>
-        </url>
-    {% endfor %}
-
+  <url>
+    <loc>{{ site.baseurl }}</loc>
+  </url>
+  {% assign projectsSorted = "" | split: "" %}
+  {% assign pagesSorted = site.pages | sort: "path" %}
+  {% for apage in pagesSorted %}
+    {% if apage.layout == "project" %}
+      {% assign projectsSorted = projectsSorted | push: apage %}
+    {% endif %}
+  {% endfor %}
+  {% for project in projectsSorted %}
+  <url>
+    <loc>{{ site.baseurl }}{{ project.url }}</loc>
+  </url>
+  {% endfor %}
 </urlset>

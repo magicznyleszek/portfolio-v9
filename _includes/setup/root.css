@@ -8,14 +8,14 @@ as they tend to add unwanted pixels, thus braking the flow.
 *******************************************************************************/
 
 html {
-    min-height: 100%;
-    background-color: var(--c-root-bg);
-    color: var(--c-root-txt);
-    font-family: var(--root-fontFamily);
-    font-weight: 400;
-    font-size: 100%;
-    line-height: var(--root-lineHeight);
-    text-rendering: optimizeLegibility;
+  min-height: 100%;
+  background-color: var(--c-root-bg);
+  color: var(--c-root-txt);
+  font-family: var(--root-fontFamily);
+  font-weight: 400;
+  font-size: 100%;
+  line-height: var(--root-lineHeight);
+  text-rendering: optimizeLegibility;
 }
 
 /*
@@ -23,10 +23,10 @@ clever page scaling with root font size changes:
 https://www.smashingmagazine.com/2016/05/fluid-typography/
 */
 html {
-    font-size: calc(1rem + (2 - 1) * (100vw - 40rem) / (120 - 40));
+  font-size: calc(1rem + (2 - 1) * (100vw - 40rem) / (120 - 40));
 }
 
 body {
-    margin: 0;
-    width: 100%;
+  margin: 0;
+  width: 100%;
 }

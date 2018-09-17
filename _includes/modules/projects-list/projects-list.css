@@ -3,26 +3,27 @@ listed-project module
 *******************************************************************************/
 
 :root {
-    --s-listed-project-icon: calc(var(--s-leading) * 6);
+  --s-listed-project-icon: calc(var(--s-leading) * 6);
 }
 
 [i-listed-project] {
-    display: block;
-    position: relative;
-    /* to make sure it fits min-height of the icon */
-    box-sizing: content-box;
-    padding: var(--s-leading) var(--s-leading) var(--s-leading) calc(var(--s-listed-project-icon) + var(--s-leading));
-    min-height: var(--s-listed-project-icon);
+  display: block;
+  position: relative;
+  /* to make sure it fits min-height of the icon */
+  box-sizing: content-box;
+  padding: var(--s-leading) var(--s-leading) var(--s-leading)
+    calc(var(--s-listed-project-icon) + var(--s-leading));
+  min-height: var(--s-listed-project-icon);
 }
 
 [i-listed-project--date] {
-    display: block;
-    text-transform: lowercase;
+  display: block;
+  text-transform: lowercase;
 }
 
 [i-listed-project--date]::before {
-    content: "@\00a0";
-    display: inline-block;
+  content: "@\00a0";
+  display: inline-block;
 }
 
 /*******************************************************************************
@@ -30,30 +31,30 @@ listed-project link
 *******************************************************************************/
 
 [i-listed-project--link] {
-    display: block;
-    /* remove link styles */
-    background-image: none !important;
+  display: block;
+  /* remove link styles */
+  background-image: none !important;
 }
 
 [i-listed-project--link] svg {
-    display: block;
-    position: absolute;
-    top: var(--s-leading);
-    left: var(--s-leading);
-    width: var(--s-listed-project-icon);
-    height: var(--s-listed-project-icon);
-    fill: currentColor;
+  display: block;
+  position: absolute;
+  top: var(--s-leading);
+  left: var(--s-leading);
+  width: var(--s-listed-project-icon);
+  height: var(--s-listed-project-icon);
+  fill: currentColor;
 }
 
 [i-listed-project--title] {
-    display: block;
-    font-size: 200%;
-    font-weight: 700;
+  display: block;
+  font-size: 200%;
+  font-weight: 700;
 }
 
 [i-listed-project--description] {
-    display: block;
-    max-width: var(--s-max-text-line-width);
+  display: block;
+  max-width: var(--s-max-text-line-width);
 }
 
 /* states needs to be in this particular order and explicitly set for each
@@ -63,22 +64,22 @@ selector, as browsers can't inherit or use currentColor properly yet :-( */
 [i-listed-project--link]:visited svg,
 [i-listed-project--link]:visited [i-listed-project--title],
 [i-listed-project--link]:visited [i-listed-project--description] {
-    color: var(--c-global-visited);
-    fill: var(--c-global-visited);
+  color: var(--c-global-visited);
+  fill: var(--c-global-visited);
 }
 
 [i-listed-project--link]:hover,
 [i-listed-project--link]:hover svg,
 [i-listed-project--link]:hover [i-listed-project--title],
 [i-listed-project--link]:hover [i-listed-project--description] {
-    color: var(--c-global-hover);
-    fill: var(--c-global-hover);
+  color: var(--c-global-hover);
+  fill: var(--c-global-hover);
 }
 
 [i-listed-project--link]:active,
 [i-listed-project--link]:active svg,
 [i-listed-project--link]:active [i-listed-project--title],
 [i-listed-project--link]:active [i-listed-project--description] {
-    color: var(--c-global-active);
-    fill: var(--c-global-active);
+  color: var(--c-global-active);
+  fill: var(--c-global-active);
 }

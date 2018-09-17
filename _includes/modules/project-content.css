@@ -3,5 +3,5 @@ project-content module
 *******************************************************************************/
 
 [i-project-content] {
-    padding: var(--s-leading);
+  padding: var(--s-leading);
 }

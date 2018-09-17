@@ -1,15 +1,15 @@
 <nav i-main-menu>
-    <div i-main-menu--categories>
-        {% capture categoriesIds %}{% for categoryData in site.data.categories %}{% if forloop.first == false %}|{% endif %}{{categoryData.slug}}{% endfor%}{% endcapture %}
-        {% assign categoriesArray = categoriesIds | replace: " ", "" | split:"|" %}
-        {% include modules/categories-list/categories-list.liquid categories=categoriesArray %}
-    </div>{% comment %}
+  <div i-main-menu--categories>
+    {% capture categoriesIds %}{% for categoryData in site.data.categories %}{% if forloop.first == false %}|{% endif %}{{categoryData.slug}}{% endfor%}{% endcapture %}
+    {% assign categoriesArray = categoriesIds | replace: " ", "" | split:"|" %}
+    {% include modules/categories-list/categories-list.liquid categories=categoriesArray %}
+  </div>{% comment %}
 
-    {% endcomment %}<a i-main-menu--icon-link="double" href="{{ site.baseurl }}/" title="home page">
-        {% include symbols/magicznyleszek-logo.svg %}
-    </a>{% comment %}
+  {% endcomment %}<a i-main-menu--icon-link="double" href="{{ site.baseurl }}/" title="home page">
+    {% include symbols/magicznyleszek-logo.svg %}
+  </a>{% comment %}
 
-    {% endcomment %}<a i-main-menu--icon-link href="mailto:{{site.email}}" title="email me">
-        {% include symbols/envelope.svg %}
-    </a>
+  {% endcomment %}<a i-main-menu--icon-link href="mailto:{{site.email}}" title="email me">
+    {% include symbols/envelope.svg %}
+  </a>
 </nav>

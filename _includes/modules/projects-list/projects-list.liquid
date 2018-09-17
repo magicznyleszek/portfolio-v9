@@ -1,28 +1,28 @@
 <section i-projects-list>
-    {% assign projectsSorted = "" | split: "" %}
-    {% assign pagesSorted = site.pages | sort: "path" %}
-    {% for apage in pagesSorted %}
-        {% if apage.layout == "project" %}
-            {% assign projectsSorted = projectsSorted | push: apage %}
-        {% endif %}
-    {% endfor %}
+  {% assign projectsSorted = "" | split: "" %}
+  {% assign pagesSorted = site.pages | sort: "path" %}
+  {% for apage in pagesSorted %}
+    {% if apage.layout == "project" %}
+      {% assign projectsSorted = projectsSorted | push: apage %}
+    {% endif %}
+  {% endfor %}
 
-    {% for project in projectsSorted %}
-        {% if project.categories contains page.slug or page.slug == "all" %}
-            <article i-listed-project>
-                <!-- clickable thumbnail -->
-                <a i-listed-project--link href="{{ project.url }}">
-                    {% include symbols/project-{{project.slug}}.svg %}
+  {% for project in projectsSorted %}
+    {% if project.categories contains page.slug or page.slug == "all" %}
+      <article i-listed-project>
+        <!-- clickable thumbnail -->
+        <a i-listed-project--link href="{{ project.url }}">
+          {% include symbols/project-{{project.slug}}.svg %}
 
-                    <h2 i-listed-project--title>{{ project.title }}</h2>
+          <h2 i-listed-project--title>{{ project.title }}</h2>
 
-                    <p i-listed-project--description>{{ project.description}}</p>
-                </a>
+          <p i-listed-project--description>{{ project.description}}</p>
+        </a>
 
-                <time i-listed-project--date>{{ project.year }}</time>
+        <time i-listed-project--date>{{ project.year }}</time>
 
-                {% include modules/categories-list/categories-list.liquid categories=project.categories %}
-            </article>
-        {% endif %}
-    {% endfor %}
+        {% include modules/categories-list/categories-list.liquid categories=project.categories %}
+      </article>
+    {% endif %}
+  {% endfor %}
 </section>

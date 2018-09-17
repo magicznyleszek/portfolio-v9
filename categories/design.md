@@ -6,7 +6,7 @@ description: Hopefully useful visual designs for the masses.
 
 To make design you will need:
 
-1. Detective research from CSI: Design
+1. Laboratory from CSI: Design
 2. Doodling like cray cray
 3. Evolutionary math
 4. Pretending being someone else
