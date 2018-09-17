@@ -7,7 +7,7 @@ year: "2009-2010"
 layout: "project"
 ---
 
-Robots are fascinating creatures. I had a phase when I drew lots of them, and then they just died out. In the golden phase of this phase I even wrote a short drama _"Balety, cycuchy, roboty -- część 3"_, which is entirely in a pseudo-szlachta-like fake polish language. I plan (since 2010, mind you) to publish it on the internets as soon as I finish doing illustrations -- hit me up if you're interested in making it happen faster :-*
+Robots are fascinating creatures. I had a phase when I drew lots of them, and then they just died out. In the golden phase of this phase I even wrote [a short drama "Balety, Cycuchy, Roboty -- część 3"](http://bcr3.magicznyleszek.xyz), which is written entirely in a made up pseudo-szlachta-like fake polish language.
 
 They all started as a curious and happy beings. There was some weird things occurring, but nothing really alarming. As you can probably see, I bought a lot of fineliner pens at this time.
 
