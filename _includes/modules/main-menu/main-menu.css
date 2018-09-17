@@ -24,8 +24,7 @@ icon-link part
 [i-main-menu--icon-link] {
   width: var(--s-leading);
   height: var(--s-leading);
-  /* remove link styles */
-  background-image: none !important;
+  border-bottom: none;
 }
 
 [i-main-menu--icon-link~="double"] {

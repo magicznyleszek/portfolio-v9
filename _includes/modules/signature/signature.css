@@ -10,8 +10,6 @@ signature module
   display: block;
   margin: 0 0 0 auto;
   width: fit-content;
-  /* remove link styles */
-  background-image: none !important;
   color: currentColor;
   font-weight: 700;
   font-style: italic;
@@ -19,6 +17,7 @@ signature module
   line-height: calc(var(--s-leading) * 2 / 3);
   text-align: right;
   text-transform: lowercase;
+  border-bottom: none;
 }
 
 [i-signature--link]:visited {

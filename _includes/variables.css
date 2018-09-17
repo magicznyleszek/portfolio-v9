@@ -27,11 +27,6 @@ variables - all global and pallete variables for project
   --root-lineHeight: 1.5;
   --root-fontFamily: var(--font-sourceSansPro);
 
-  /* font sizes with respect to user browser default sizes */
-  --root-fontSize-medium: 112.5%; /* probably 18px */
-  --root-fontSize-smaller: 100%; /* probably 16px */
-  --root-fontSize-bigger: 125%; /* probably 20px */
-
   /* leading size for all spacing between elements to be pretty */
   --s-leading: calc(var(--root-lineHeight) * 1rem);
   --s-leading-double: calc(var(--s-leading) * 2);

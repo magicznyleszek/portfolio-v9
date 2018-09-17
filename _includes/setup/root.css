@@ -18,15 +18,70 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-/*
-clever page scaling with root font size changes:
-https://www.smashingmagazine.com/2016/05/fluid-typography/
-*/
 html {
+  /*
+  clever page scaling with root font size changes:
+  https://www.smashingmagazine.com/2016/05/fluid-typography/
+  calc(AZ + (B - A) * (100vw - CZ) / (D - C))
+  - A: min font size
+  - B: max font size
+  - C: min screen size
+  - D: max screen size
+  - Z: unit (px, rem, etc.)
+  */
   font-size: calc(1rem + (2 - 1) * (100vw - 40rem) / (120 - 40));
 }
 
 body {
   margin: 0;
   width: 100%;
+}
+
+/*******************************************************************************
+user-action influenced states
+*******************************************************************************/
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: var(--s-global-bw) solid currentColor;
+}
+
+a:visited {
+  color: var(--c-global-visited);
+}
+
+a:hover {
+  color: var(--c-global-hover);
+}
+
+a:active {
+  color: var(--c-global-active);
+}
+
+/* text selection */
+
+:focus {
+  outline: 0.25rem auto var(--c-amaranth);
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+::selection {
+  background-color: var(--c-amaranth);
+  color: var(--c-white);
+}
+
+/* disabled elements */
+
+[disabled] {
+  pointer-events: none;
+  opacity: 0.5;
+
+  /* avoid adding up opacity on nested disabled elements */
+  [disabled] {
+    opacity: 1;
+  }
 }

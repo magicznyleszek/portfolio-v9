@@ -2,9 +2,7 @@
 a simple reset
 *******************************************************************************/
 
-*,
-*::after,
-*::before {
+* {
   vertical-align: baseline;
   box-sizing: inherit;
   margin: 0;
@@ -21,10 +19,6 @@ a simple reset
 
 html {
   box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
 }
 
 ul,

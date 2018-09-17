@@ -9,8 +9,7 @@ related-projects module
 }
 
 [i-related-project] {
-  /* remove link styles */
-  background-image: none !important;
+  border-bottom: none;
   font-weight: 700;
 }
 

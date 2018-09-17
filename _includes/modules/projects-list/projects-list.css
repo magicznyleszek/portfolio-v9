@@ -32,8 +32,7 @@ listed-project link
 
 [i-listed-project--link] {
   display: block;
-  /* remove link styles */
-  background-image: none !important;
+  border-bottom: none;
 }
 
 [i-listed-project--link] svg {
