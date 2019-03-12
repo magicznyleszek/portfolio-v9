@@ -13,5 +13,5 @@ So mad it hurts.
 
 {% include modules/picture/picture.liquid file="path/filename.extension" caption="Title, YYYY" %}
 
-[mad-skeleton]: https://mad-skeleton.magicznyleszek.xyz
+[mad-skeleton]: http://mad-skeleton.magicznyleszek.xyz
 {:target="_blank"}
