@@ -7,8 +7,8 @@ email: "leszek@magicznyleszek.xyz"
 language: "en-US"
 
 # address settings
-rootSiteUrl: "http://magicznyleszek.xyz"
-baseurl: "http://portfolio.magicznyleszek.xyz"
+rootSiteUrl: "https://magicznyleszek.xyz"
+baseurl: "https://portfolio.magicznyleszek.xyz"
 
 # urls
 googleFontsCode: family=Source+Sans+Pro:400,700,400italic,700italic&subset=latin,latin-ext
